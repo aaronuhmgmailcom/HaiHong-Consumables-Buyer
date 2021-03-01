@@ -1,0 +1,143 @@
+<?xml version="1.0" standalone="yes"?>
+<Config Name="" Type="" Ver="1.0">
+  <SourceDB DBType="EXCEL" ServerName="" DataBase="" User="" Password="" DBPath="GetErpOrderSend.xls">
+    <SourceTable TableName="sheet1">
+      <SourceField Index="1" Name="ddmxbm" Type="字符型" Length="" Default="" Desc="" />
+      <SourceField Index="2" Name="yybm" Type="字符型" Length="" Default="" Desc="" />
+      <SourceField Index="3" Name="yymc" Type="字符型" Length="" Default="" Desc="" />
+      <SourceField Index="4" Name="yyjc" Type="字符型" Length="" Default="" Desc="" />
+      <SourceField Index="5" Name="cpbh" Type="字符型" Length="" Default="" Desc="" />
+      <SourceField Index="6" Name="cpmc" Type="字符型" Length="" Default="" Desc="" />
+      <SourceField Index="7" Name="cpbh" Type="字符型" Length="" Default="" Desc="" />
+      <SourceField Index="8" Name="cpmc" Type="字符型" Length="" Default="" Desc="" />
+      <SourceField Index="9" Name="jxmc" Type="字符型" Length="" Default="" Desc="" />
+      <SourceField Index="10" Name="ggbzmc" Type="字符型" Length="" Default="" Desc="" />
+      <SourceField Index="11" Name="bzdw" Type="字符型" Length="" Default="" Desc="" />
+      <SourceField Index="12" Name="scqybm" Type="字符型" Length="" Default="" Desc="" />
+      <SourceField Index="13" Name="scqymc" Type="字符型" Length="" Default="" Desc="" />
+      <SourceField Index="14" Name="bzzhb" Type="字符型" Length="" Default="" Desc="" />
+      <SourceField Index="15" Name="ypph" Type="字符型" Length="" Default="" Desc="" />
+      <SourceField Index="16" Name="fhsl" Type="整型" Length="" Default="" Desc="" />
+      <SourceField Index="17" Name="fphm" Type="字符型" Length="" Default="" Desc="" />
+      <SourceField Index="18" Name="fprq" Type="日期型" Length="" Default="" Desc="" />
+      <SourceField Index="19" Name="fpje" Type="字符型" Length="" Default="" Desc="" />
+      <SourceField Index="20" Name="ypxq" Type="日期型" Length="" Default="" Desc="" />
+      <SourceField Index="21" Name="pfj" Type="字符型" Length="" Default="" Desc="" />
+      <SourceField Index="22" Name="lsj" Type="字符型" Length="" Default="" Desc="" />
+      <SourceField Index="23" Name="kl" Type="字符型" Length="" Default="" Desc="" />
+      <SourceField Index="24" Name="fhbz" Type="字符型" Length="" Default="" Desc="" />
+      <SourceField Index="25" Name="pzwh" Type="字符型" Length="" Default="" Desc="" />
+    </SourceTable>
+  </SourceDB>
+  <DestDB DBType="" ServerName="" DataBase="" User="" Password="" DBPath="">
+    <DestTable TableName="">
+      <DestField Index="1" Name="BUYER_CODE" Type="VARCHAR(50)" Length="" Default="" Desc="医院编码">
+      </DestField>
+      <DestField Index="2" Name="BUYER_NAME" Type="VARCHAR(60)" Length="" Default="" Desc="医院名称">
+      </DestField>
+      <DestField Index="3" Name="BUYER_EASY" Type="VARCHAR(50)" Length="" Default="" Desc="医院简称">
+      </DestField>
+      <DestField Index="4" Name="MEDICAL_CODE" Type="VARCHAR(50)" Length="" Default="" Desc="产品编码">
+      </DestField>
+      <DestField Index="5" Name="MEDICAL_NAME" Type="VARCHAR(100)" Length="" Default="" Desc="产品名称">
+      </DestField>
+      <DestField Index="6" Name="PRODUCT_CODE" Type="VARCHAR(50)" Length="" Default="" Desc="产品编码">
+      </DestField>
+      <DestField Index="7" Name="PRODUCT_NAME" Type="VARCHAR(100)" Length="" Default="" Desc="产品名称">
+      </DestField>
+      <DestField Index="8" Name="MEDICAL_MODE_CODE" Type="VARCHAR(30)" Length="" Default="" Desc="产品剂型编码">
+      </DestField>
+      <DestField Index="9" Name="MEDICAL_MODE" Type="VARCHAR(30)" Length="" Default="" Desc="产品剂型名称">
+      </DestField>
+      <DestField Index="10" Name="MEDICAL_SPEC_CODE" Type="VARCHAR(100)" Length="" Default="" Desc="产品规格编码">
+      </DestField>
+      <DestField Index="11" Name="MEDICAL_SPEC" Type="VARCHAR(100)" Length="" Default="" Desc="产品规格名称">
+      </DestField>
+      <DestField Index="12" Name="SPEC_UNIT_CODE" Type="VARCHAR(50)" Length="" Default="" Desc="最小包装单位编码">
+      </DestField>
+      <DestField Index="13" Name="SPEC_UNIT" Type="VARCHAR(50)" Length="" Default="" Desc="最小包装单位">
+      </DestField>
+      <DestField Index="14" Name="FACTORY_CODE" Type="VARCHAR(50)" Length="" Default="" Desc="生产企业编码">
+      </DestField>
+      <DestField Index="15" Name="FACTORY_NAME" Type="VARCHAR(100)" Length="" Default="" Desc="生产企业名称">
+      </DestField>
+      <DestField Index="17" Name="LOT_NO" Type="VARCHAR(30)" Length="" Default="" Desc="批号">
+      </DestField>
+      <DestField Index="18" Name="RECEIVE_QTY" Type="NUMBER(11,0)" Length="" Default="" Desc="发货数量">
+      </DestField>
+      <DestField Index="19" Name="INVOICE_NO" Type="VARCHAR(50)" Length="" Default="" Desc="发票号">
+      </DestField>
+      <DestField Index="20" Name="INVOICE_DATE" Type="Date" Length="" Default="" Desc="发票日期">
+      </DestField>
+      <DestField Index="21" Name="INVOICE_TOTAL" Type="NUMBER(11,2)" Length="" Default="" Desc="发票金额">
+      </DestField>
+      <DestField Index="23" Name="INVOICE_EXPIRE_DATE" Type="Date" Length="" Default="" Desc="有效日期">
+      </DestField>
+      <DestField Index="24" Name="INVOICE_TRADE_PRICE" Type="NUMBER(11,3)" Length="" Default="" Desc="批发价">
+      </DestField>
+      <DestField Index="25" Name="INVOICE_RETAIL_PRICE" Type="NUMBER(11,3)" Length="" Default="" Desc="零售价">
+      </DestField>
+      <DestField Index="26" Name="READY_REMARK" Type="VARCHAR(50)" Length="" Default="" Desc="发货备注">
+      </DestField>
+      <DestField Index="27" Name="READY_DATE" Type="DATE" Length="" Default="" Desc="发货日期">
+      </DestField>
+      <DestField Index="28" Name="INVOICE_DISCOUNT_RATE" Type="NUMBER(11,3)" Length="" Default="" Desc="扣率">
+      </DestField>
+      <DestField Index="29" Name="PERMIT_NO" Type="VARCHAR(50)" Length="" Default="" Desc="批准文号">
+      </DestField>
+      <DestField Index="30" Name="REGISTER_NO" Type="VARCHAR(50)" Length="" Default="" Desc="注册证号">
+      </DestField>
+      <DestField Index="31" Name="SEND_CODE" Type="VARCHAR(50)" Length="" Default="" Desc="流转单号">
+      </DestField>
+      <DestField Index="32" Name="ORD_ITEM_ID" Type="VARCHAR(50)" Length="" Default="" Desc="订单明细ID">
+      </DestField>
+      <DestField Index="33" Name="SENDER_CODE" Type="VARCHAR(50)" Length="" Default="" Desc="配送企业ID">
+      </DestField>
+      <DestField Index="34" Name="STAND_RATE" Type="NUMBER(10)" Length="" Default="" Desc="标准转换比">
+      </DestField>
+    </DestTable>
+  </DestDB>
+  <ContrastList Delimited="">
+    <Contrast SourceField="yybm" DestField="BUYER_CODE" Algorithm="" IsNew="0" DestDBType="VARCHAR(50)" />
+    <Contrast SourceField="yymc" DestField="BUYER_NAME" Algorithm="" IsNew="0" DestDBType="VARCHAR(60)" />
+    <Contrast SourceField="yyjc" DestField="BUYER_EASY" Algorithm="" IsNew="0" DestDBType="VARCHAR(50)" />
+    <Contrast SourceField="cpbh" DestField="MEDICAL_CODE" Algorithm="" IsNew="0" DestDBType="VARCHAR(50)" />
+    <Contrast SourceField="cpmc" DestField="MEDICAL_NAME" Algorithm="" IsNew="0" DestDBType="VARCHAR(100)" />
+    <Contrast SourceField="cpbh" DestField="PRODUCT_CODE" Algorithm="" IsNew="0" DestDBType="VARCHAR(50)" />
+    <Contrast SourceField="cpmc" DestField="PRODUCT_NAME" Algorithm="" IsNew="0" DestDBType="VARCHAR(100)" />
+    <Contrast SourceField="" DestField="MEDICAL_MODE_CODE" Algorithm="" IsNew="0" DestDBType="VARCHAR(30)" />
+    <Contrast SourceField="jxmc" DestField="MEDICAL_MODE" Algorithm="" IsNew="0" DestDBType="VARCHAR(30)" />
+    <Contrast SourceField="" DestField="MEDICAL_SPEC_CODE" Algorithm="" IsNew="0" DestDBType="VARCHAR(100)" />
+    <Contrast SourceField="ggbzmc" DestField="MEDICAL_SPEC" Algorithm="" IsNew="0" DestDBType="VARCHAR(100)" />
+    <Contrast SourceField="" DestField="SPEC_UNIT_CODE" Algorithm="" IsNew="0" DestDBType="VARCHAR(50)" />
+    <Contrast SourceField="bzdw" DestField="SPEC_UNIT" Algorithm="" IsNew="0" DestDBType="VARCHAR(50)" />
+    <Contrast SourceField="scqybm" DestField="FACTORY_CODE" Algorithm="" IsNew="0" DestDBType="VARCHAR(50)" />
+    <Contrast SourceField="scqymc" DestField="FACTORY_NAME" Algorithm="" IsNew="0" DestDBType="VARCHAR(100)" />
+    <Contrast SourceField="ypph" DestField="LOT_NO" Algorithm="" IsNew="0" DestDBType="VARCHAR(30)" />
+    <Contrast SourceField="fhsl" DestField="RECEIVE_QTY" Algorithm="" IsNew="0" DestDBType="NUMBER(11,0)" />
+    <Contrast SourceField="fphm" DestField="INVOICE_NO" Algorithm="" IsNew="0" DestDBType="VARCHAR(50)" />
+    <Contrast SourceField="fprq" DestField="INVOICE_DATE" Algorithm="" IsNew="0" DestDBType="Date" />
+    <Contrast SourceField="fpje" DestField="INVOICE_TOTAL" Algorithm="" IsNew="0" DestDBType="NUMBER(11,2)" />
+    <Contrast SourceField="ypxq" DestField="INVOICE_EXPIRE_DATE" Algorithm="" IsNew="0" DestDBType="Date" />
+    <Contrast SourceField="pfj" DestField="INVOICE_TRADE_PRICE" Algorithm="" IsNew="0" DestDBType="NUMBER(11,3)" />
+    <Contrast SourceField="lsj" DestField="INVOICE_RETAIL_PRICE" Algorithm="" IsNew="0" DestDBType="NUMBER(11,3)" />
+    <Contrast SourceField="fhbz" DestField="READY_REMARK" Algorithm="" IsNew="0" DestDBType="VARCHAR(50)" />
+    <Contrast SourceField="" DestField="READY_DATE" Algorithm="" IsNew="0" DestDBType="DATE" />
+    <Contrast SourceField="kl" DestField="INVOICE_DISCOUNT_RATE" Algorithm="" IsNew="0" DestDBType="NUMBER(11,3)" />
+    <Contrast SourceField="pzwh" DestField="PERMIT_NO" Algorithm="" IsNew="0" DestDBType="VARCHAR(50)" />
+    <Contrast SourceField="" DestField="REGISTER_NO" Algorithm="" IsNew="0" DestDBType="VARCHAR(50)" />
+    <Contrast SourceField="" DestField="SEND_CODE" Algorithm="" IsNew="0" DestDBType="VARCHAR(50)" />
+    <Contrast SourceField="ddmxbm" DestField="ORD_ITEM_ID" Algorithm="" IsNew="0" DestDBType="VARCHAR(50)" />
+    <Contrast SourceField="" DestField="SENDER_CODE" Algorithm="" IsNew="0" DestDBType="VARCHAR(50)" />
+    <Contrast SourceField="bzzhb" DestField="STAND_RATE" Algorithm="" IsNew="0" DestDBType="NUMBER(10)" />
+  </ContrastList>
+  <BeginSql>
+  </BeginSql>
+  <Sqls>
+    <Sql Pattern="0" ExecSort="1">
+      select ddmxbm as ORD_ITEM_ID,yybm as BUYER_CODE,yymc as BUYER_NAME,yyjc as BUYER_EASY,cpbh as MEDICAL_CODE,cpmc as MEDICAL_NAME,cpbh as PRODUCT_CODE,cpmc as PRODUCT_NAME,'' as MEDICAL_MODE_CODE,jxmc as MEDICAL_MODE,'' as MEDICAL_SPEC_CODE,ggbzmc as MEDICAL_SPEC,'' as SPEC_UNIT_CODE,bzdw as SPEC_UNIT,scqybm as FACTORY_CODE,scqymc as FACTORY_NAME,bzzhb as STAND_RATE,ypph as LOT_NO,fhsl as RECEIVE_QTY,fphm as INVOICE_NO,fprq as INVOICE_DATE,fpje as INVOICE_TOTAL,ypxq as INVOICE_EXPIRE_DATE,pfj as INVOICE_TRADE_PRICE,lsj as INVOICE_RETAIL_PRICE,fhbz as READY_REMARK,'' as READY_DATE,kl as INVOICE_DISCOUNT_RATE,pzwh as PERMIT_NO,'' as REGISTER_NO,'' as SEND_CODE,'' as SENDER_CODE from [sheet1$] where  ddmxbm is not null
+    </Sql>
+  </Sqls>
+  <EndSql>
+  </EndSql>
+</Config>

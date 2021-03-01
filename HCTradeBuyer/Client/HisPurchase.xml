@@ -1,0 +1,135 @@
+<?xml version="1.0" standalone="yes"?>
+<Config Name="" Type="" Ver="1.0">
+  <SourceDB DBType="EXCEL" ServerName="" DataBase="" User="" Password="" DBPath="GetPurchase.xls">
+    <SourceTable TableName="sheet1">
+      <SourceField Index="1" Name="cgdbh" Type="字符型" Length="" Default="" Desc="" />
+      <SourceField Index="2" Name="ypbm" Type="字符型" Length="" Default="" Desc="" />
+      <SourceField Index="3" Name="ypmc" Type="字符型" Length="" Default="" Desc="" />
+      <SourceField Index="4" Name="ypbm" Type="字符型" Length="" Default="" Desc="" />
+      <SourceField Index="5" Name="ypmc" Type="字符型" Length="" Default="" Desc="" />
+      <SourceField Index="6" Name="jxmcid" Type="字符型" Length="" Default="" Desc="" />
+      <SourceField Index="7" Name="jxmc" Type="字符型" Length="" Default="" Desc="" />
+      <SourceField Index="8" Name="ggmc" Type="字符型" Length="" Default="" Desc="" />
+      <SourceField Index="9" Name="zhb" Type="字符型" Length="" Default="" Desc="" />
+      <SourceField Index="10" Name="zxsydw" Type="字符型" Length="" Default="" Desc="" />
+      <SourceField Index="11" Name="bzdw" Type="字符型" Length="" Default="" Desc="" />
+      <SourceField Index="12" Name="ykbm" Type="字符型" Length="" Default="" Desc="" />
+      <SourceField Index="13" Name="ykmc" Type="字符型" Length="" Default="" Desc="" />
+      <SourceField Index="14" Name="zbj" Type="浮点数" Length="" Default="" Desc="" />
+      <SourceField Index="15" Name="lsj" Type="浮点数" Length="" Default="" Desc="" />
+      <SourceField Index="16" Name="gjj" Type="浮点数" Length="" Default="" Desc="" />
+      <SourceField Index="17" Name="gmsl" Type="整型" Length="" Default="" Desc="" />
+      <SourceField Index="18" Name="scqybm" Type="字符型" Length="" Default="" Desc="" />
+      <SourceField Index="19" Name="scqymc" Type="字符型" Length="" Default="" Desc="" />
+      <SourceField Index="20" Name="psqybm" Type="字符型" Length="" Default="" Desc="" />
+      <SourceField Index="21" Name="psqymc" Type="字符型" Length="" Default="" Desc="" />
+      <SourceField Index="22" Name="pp" Type="字符型" Length="" Default="" Desc="" />
+    </SourceTable>
+  </SourceDB>
+  <DestDB DBType="" ServerName="" DataBase="" User="" Password="" DBPath="">
+    <DestTable TableName="sheet1">
+      <DestField Index="1" Name="Code" Type="CHAR(24)" Length="" Default="" Desc="采购单明细编号">
+      </DestField>
+      <DestField Index="2" Name="PurchaseCode" Type="CHAR(24)" Length="" Default="" Desc="采购单编号">
+      </DestField>
+      <DestField Index="3" Name="InstruCode" Type="VARCHAR(50)" Length="" Default="" Desc="耗材编码">
+      </DestField>
+      <DestField Index="4" Name="InstruName" Type="VARCHAR(100)" Length="" Default="" Desc="耗材名称">
+      </DestField>
+      <DestField Index="5" Name="ProductCode" Type="VARCHAR(50)" Length="" Default="" Desc="产品编码">
+      </DestField>
+      <DestField Index="6" Name="ProductName" Type="VARCHAR(150)" Length="" Default="" Desc="产品名称">
+      </DestField>
+      <DestField Index="7" Name="ModeId" Type="VARCHAR(50)" Length="" Default="" Desc="型号编码">
+      </DestField>
+      <DestField Index="8" Name="ModeName" Type="VARCHAR(200)" Length="" Default="" Desc="型号名称">
+      </DestField>
+      <DestField Index="9" Name="SpecId" Type="VARCHAR(50)" Length="" Default="" Desc="规格编码">
+      </DestField>
+      <DestField Index="10" Name="Spec" Type="VARCHAR(200)" Length="" Default="" Desc="规格名称">
+      </DestField>
+      <DestField Index="11" Name="StandRate" Type="VARCHAR(50)" Length="" Default="" Desc="最小包装和最小使用单位的比例">
+      </DestField>
+      <DestField Index="12" Name="UseUnitId" Type="VARCHAR(50)" Length="" Default="" Desc="最小使用单位编码">
+      </DestField>
+      <DestField Index="13" Name="UseUnit" Type="VARCHAR(50)" Length="" Default="" Desc="最小使用单位">
+      </DestField>
+      <DestField Index="14" Name="SpecUnitId" Type="VARCHAR(50)" Length="" Default="" Desc="最小包装单位编码">
+      </DestField>
+      <DestField Index="15" Name="SpecUnit" Type="VARCHAR(50)" Length="" Default="" Desc="最小包装单位">
+      </DestField>
+      <DestField Index="16" Name="StockId" Type="VARCHAR(50)" Length="" Default="" Desc="库房编码">
+      </DestField>
+      <DestField Index="17" Name="StockName" Type="VARCHAR(50)" Length="" Default="" Desc="库房名称">
+      </DestField>
+      <DestField Index="18" Name="PermitNo" Type="VARCHAR(50)" Length="" Default="" Desc="批准文号">
+      </DestField>
+      <DestField Index="19" Name="BaseExpireDate" Type="DATE" Length="" Default="" Desc="有效期底线">
+      </DestField>
+      <DestField Index="20" Name="TradePrice" Type="NUMBER(11,3)" Length="" Default="" Desc="批发价">
+      </DestField>
+      <DestField Index="21" Name="RetailPrice" Type="NUMBER(11,3)" Length="" Default="" Desc="零售价">
+      </DestField>
+      <DestField Index="22" Name="Price" Type="NUMBER(11,3)" Length="" Default="" Desc="价　格">
+      </DestField>
+      <DestField Index="23" Name="RequestQty" Type="NUMBER(11,2)" Length="" Default="" Desc="采购数量">
+      </DestField>
+      <DestField Index="24" Name="FactoryCode" Type="VARCHAR(50)" Length="" Default="" Desc="生产企业编码">
+      </DestField>
+      <DestField Index="25" Name="FactoryName" Type="VARCHAR(100)" Length="" Default="" Desc="生产企业名称">
+      </DestField>
+      <DestField Index="26" Name="SenderCode" Type="VARCHAR(50)" Length="" Default="" Desc="配送企业编码">
+      </DestField>
+      <DestField Index="27" Name="SenderName" Type="VARCHAR(100)" Length="" Default="" Desc="配送企业名称">
+      </DestField>
+      <DestField Index="28" Name="SalerCode" Type="VARCHAR(50)" Length="" Default="" Desc="批发企业编码">
+      </DestField>
+      <DestField Index="29" Name="SalerName" Type="VARCHAR(100)" Length="" Default="" Desc="批发企业名称">
+      </DestField>
+      <DestField Index="30" Name="CreateDate" Type="DATE" Length="" Default="" Desc="创建时间">
+      </DestField>
+      <DestField Index="31" Name="Brand" Type="VARCHAR(100)" Length="" Default="" Desc="品牌">
+      </DestField>
+    </DestTable>
+  </DestDB>
+  <ContrastList Delimited="">
+    <Contrast SourceField="" DestField="Code" Algorithm="" IsNew="0" DestDBType="CHAR(24)" />
+    <Contrast SourceField="cgdbh" DestField="PurchaseCode" Algorithm="" IsNew="0" DestDBType="CHAR(24)" />
+    <Contrast SourceField="ypbm" DestField="InstruCode" Algorithm="" IsNew="0" DestDBType="VARCHAR(50)" />
+    <Contrast SourceField="ypmc" DestField="InstruName" Algorithm="" IsNew="0" DestDBType="VARCHAR(100)" />
+    <Contrast SourceField="ypbm" DestField="ProductCode" Algorithm="" IsNew="0" DestDBType="VARCHAR(50)" />
+    <Contrast SourceField="ypmc" DestField="ProductName" Algorithm="" IsNew="0" DestDBType="VARCHAR(150)" />
+    <Contrast SourceField="jxmcid" DestField="ModeId" Algorithm="" IsNew="0" DestDBType="VARCHAR(50)" />
+    <Contrast SourceField="jxmc" DestField="ModeName" Algorithm="" IsNew="0" DestDBType="VARCHAR(200)" />
+    <Contrast SourceField="" DestField="SpecId" Algorithm="" IsNew="0" DestDBType="VARCHAR(50)" />
+    <Contrast SourceField="ggmc" DestField="Spec" Algorithm="iif(instr(ggmc,'''')&gt;0, mid(ggmc,1,instr(ggmc,'''')-1)+'~'+mid(ggmc,instr(ggmc,'''')+1,len(ggmc)-instr(ggmc,'''')),ggmc) " IsNew="0" DestDBType="VARCHAR(200)" />
+    <Contrast SourceField="zhb" DestField="StandRate" Algorithm="iif( zhb = '', '1', zhb)" IsNew="0" DestDBType="VARCHAR(50)" />
+    <Contrast SourceField="" DestField="UseUnitId" Algorithm="" IsNew="0" DestDBType="VARCHAR(50)" />
+    <Contrast SourceField="zxsydw" DestField="UseUnit" Algorithm="" IsNew="0" DestDBType="VARCHAR(50)" />
+    <Contrast SourceField="" DestField="SpecUnitId" Algorithm="" IsNew="0" DestDBType="VARCHAR(50)" />
+    <Contrast SourceField="bzdw" DestField="SpecUnit" Algorithm="" IsNew="0" DestDBType="VARCHAR(50)" />
+    <Contrast SourceField="ykbm" DestField="StockId" Algorithm="" IsNew="0" DestDBType="VARCHAR(50)" />
+    <Contrast SourceField="ykmc" DestField="StockName" Algorithm="" IsNew="0" DestDBType="VARCHAR(50)" />
+    <Contrast SourceField="" DestField="PermitNo" Algorithm="" IsNew="0" DestDBType="VARCHAR(50)" />
+    <Contrast SourceField="" DestField="BaseExpireDate" Algorithm="" IsNew="0" DestDBType="DATE" />
+    <Contrast SourceField="zbj" DestField="TradePrice" Algorithm="" IsNew="0" DestDBType="NUMBER(11,3)" />
+    <Contrast SourceField="lsj" DestField="RetailPrice" Algorithm="" IsNew="0" DestDBType="NUMBER(11,3)" />
+    <Contrast SourceField="gjj" DestField="Price" Algorithm="" IsNew="0" DestDBType="NUMBER(11,3)" />
+    <Contrast SourceField="gmsl" DestField="RequestQty" Algorithm="" IsNew="0" DestDBType="NUMBER(11,2)" />
+    <Contrast SourceField="scqybm" DestField="FactoryCode" Algorithm="" IsNew="0" DestDBType="VARCHAR(50)" />
+    <Contrast SourceField="scqymc" DestField="FactoryName" Algorithm="" IsNew="0" DestDBType="VARCHAR(100)" />
+    <Contrast SourceField="psqybm" DestField="SenderCode" Algorithm="" IsNew="0" DestDBType="VARCHAR(50)" />
+    <Contrast SourceField="psqymc" DestField="SenderName" Algorithm="" IsNew="0" DestDBType="VARCHAR(100)" />
+    <Contrast SourceField="" DestField="SalerCode" Algorithm="" IsNew="0" DestDBType="VARCHAR(50)" />
+    <Contrast SourceField="" DestField="SalerName" Algorithm="" IsNew="0" DestDBType="VARCHAR(100)" />
+    <Contrast SourceField="" DestField="CreateDate" Algorithm="" IsNew="0" DestDBType="DATE" />
+    <Contrast SourceField="pp" DestField="Brand" Algorithm="" IsNew="0" DestDBType="VARCHAR(100)" />
+  </ContrastList>
+  <BeginSql>
+  </BeginSql>
+  <Sqls>
+    <Sql Pattern="0" ExecSort="1">select '' as Code,cgdbh as PurchaseCode,ypbm as InstruCode,ypmc as InstruName,ypbm as ProductCode,ypmc as ProductName,pp as Brand, jxmcid as ModeId,jxmc as ModeName,'' as SpecId,iif(instr(ggmc,'''')&gt;0, mid(ggmc,1,instr(ggmc,'''')-1)+'~'+mid(ggmc,instr(ggmc,'''')+1,len(ggmc)-instr(ggmc,'''')),ggmc)  as Spec,iif( zhb = '', '1', zhb) as StandRate,'' as UseUnitId,zxsydw as UseUnit,'' as SpecUnitId,bzdw as SpecUnit,ykbm as StockId,ykmc as StockName,'' as PermitNo,'' as BaseExpireDate,zbj as TradePrice,lsj as RetailPrice,gjj as Price,gmsl as RequestQty,scqybm as FactoryCode,scqymc as FactoryName,psqybm as SenderCode,psqymc as SenderName,'' as SalerCode,'' as SalerName,'' as CreateDate from `sheet1$`</Sql>
+  </Sqls>
+  <EndSql>
+  </EndSql>
+</Config>

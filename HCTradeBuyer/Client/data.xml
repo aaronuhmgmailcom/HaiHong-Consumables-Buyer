@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<ConfigInfo>
+  <HisPlan>
+    <Node Item="PRODUCT_ID" Value="" />
+    <Node Item="TRADE_NAME" Value="产品名称" />
+    <Node Item="UNIT_NAME" Value="采购单位" />
+    <Node Item="REQUEST_QTY" Value="" />
+    <Node Item="DOSEAGE_FORM" Value="" />
+    <Node Item="SPEC" Value="" />
+    <Node Item="UNIT_PRICE" Value="" />
+    <Node Item="PRODUCER_ID" Value="" />
+    <Node Item="SALER_ID" Value="" />
+  </HisPlan>
+  <OrderReceive>
+    <Node Item="HIS_PRODUCT_ID" Value="产品编码" />
+    <Node Item="HIS_TRADE_NAME" Value="产品名称" />
+    <Node Item="HIS_SPEC" Value="规格名称" />
+    <Node Item="HIS_UNIT_NAME" Value="采购单位" />
+    <Node Item="LOT_NO" Value="生产批号" />
+    <Node Item="UNIT_PRICE" Value="价格" />
+    <Node Item="REQUEST_QTY" Value="定购数量" />
+    <Node Item="RECEIVE_QTY" Value="到货数量" />
+    <Node Item="RECEIVE_DATE" Value="到货日期" />
+    <Node Item="INVOICE_NO" Value="发票号" />
+    <Node Item="INVOICE_DATE" Value="发票日期" />
+    <Node Item="INVOICE_EXPIRE_DATE" Value="产品有效期" />
+    <Node Item="AMOUNT" Value="发票金额" />
+    <Node Item="TRADE_PRICE" Value="批发价" />
+    <Node Item="RETAIL_PRICE" Value="零售价" />
+    <Node Item="DISCOUNT" Value="扣率" />
+    <Node Item="PRODUCER_NAME" Value="" />
+    <Node Item="HIS_SALER_NAME" Value="" />
+    <Node Item="HIS_SALER_ID" Value="" />
+  </OrderReceive>
+</ConfigInfo>

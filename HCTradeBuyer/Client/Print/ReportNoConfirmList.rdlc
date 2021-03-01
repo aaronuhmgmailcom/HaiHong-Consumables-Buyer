@@ -1,0 +1,1626 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Report xmlns="http://schemas.microsoft.com/sqlserver/reporting/2005/01/reportdefinition" xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner">
+  <DataSources>
+    <DataSource Name="DummyDataSource">
+      <ConnectionProperties>
+        <ConnectString />
+        <DataProvider>SQL</DataProvider>
+      </ConnectionProperties>
+      <rd:DataSourceID>7ec6cc26-efa1-42ac-8324-1005f2178d8f</rd:DataSourceID>
+    </DataSource>
+  </DataSources>
+  <BottomMargin>2.5cm</BottomMargin>
+  <RightMargin>2.5cm</RightMargin>
+  <PageWidth>21cm</PageWidth>
+  <ReportParameters>
+    <ReportParameter Name="OrderCode">
+      <DataType>String</DataType>
+      <AllowBlank>true</AllowBlank>
+      <Prompt>Report_Parameter_0</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="BuyerName">
+      <DataType>String</DataType>
+      <AllowBlank>true</AllowBlank>
+      <Prompt>Report_Parameter_1</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="OrderMoney">
+      <DataType>String</DataType>
+      <AllowBlank>true</AllowBlank>
+      <Prompt>Report_Parameter_2</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="CreateName">
+      <DataType>String</DataType>
+      <AllowBlank>true</AllowBlank>
+      <Prompt>Report_Parameter_3</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="WareHouse">
+      <DataType>String</DataType>
+      <AllowBlank>true</AllowBlank>
+      <Prompt>Report_Parameter_4</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="LinkMan">
+      <DataType>String</DataType>
+      <AllowBlank>true</AllowBlank>
+      <Prompt>Report_Parameter_5</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="ReceiveTotal">
+      <DataType>String</DataType>
+      <AllowBlank>true</AllowBlank>
+      <Prompt>Report_Parameter_6</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="CreateDate">
+      <DataType>String</DataType>
+      <AllowBlank>true</AllowBlank>
+      <Prompt>Report_Parameter_7</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="PostCode">
+      <DataType>String</DataType>
+      <AllowBlank>true</AllowBlank>
+      <Prompt>Report_Parameter_8</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="Tel">
+      <DataType>String</DataType>
+      <AllowBlank>true</AllowBlank>
+      <Prompt>Report_Parameter_9</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="OrderState">
+      <DataType>String</DataType>
+      <AllowBlank>true</AllowBlank>
+      <Prompt>Report_Parameter_10</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="BuildOrderName">
+      <DataType>String</DataType>
+      <AllowBlank>true</AllowBlank>
+      <Prompt>Report_Parameter_11</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="Address">
+      <DataType>String</DataType>
+      <AllowBlank>true</AllowBlank>
+      <Prompt>Report_Parameter_12</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="title">
+      <DataType>String</DataType>
+      <AllowBlank>true</AllowBlank>
+      <Prompt>Report_Parameter_13</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="user">
+      <DataType>String</DataType>
+      <AllowBlank>true</AllowBlank>
+      <Prompt>Report_Parameter_14</Prompt>
+    </ReportParameter>
+  </ReportParameters>
+  <rd:DrawGrid>true</rd:DrawGrid>
+  <InteractiveWidth>21cm</InteractiveWidth>
+  <rd:GridSpacing>0.25cm</rd:GridSpacing>
+  <rd:SnapToGrid>true</rd:SnapToGrid>
+  <Body>
+    <ColumnSpacing>1cm</ColumnSpacing>
+    <ReportItems>
+      <Table Name="table1">
+        <Left>0.75cm</Left>
+        <DataSetName>Emedchina_TradeAssistantSaler_Model_Order_SalerOrder_SalerOrderItemModel</DataSetName>
+        <Top>6.25cm</Top>
+        <ZIndex>27</ZIndex>
+        <Width>26.74671cm</Width>
+        <Details>
+          <TableRows>
+            <TableRow>
+              <TableCells>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="BakMedicalName">
+                      <rd:DefaultName>BakMedicalName</rd:DefaultName>
+                      <ZIndex>8</ZIndex>
+                      <Style>
+                        <BorderStyle>
+                          <Top>Solid</Top>
+                          <Right>Solid</Right>
+                        </BorderStyle>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <BorderWidth>
+                          <Top>1pt</Top>
+                          <Right>1pt</Right>
+                        </BorderWidth>
+                        <PaddingBottom>2pt</PaddingBottom>
+                        <BorderColor>
+                          <Top>Black</Top>
+                          <Right>Black</Right>
+                        </BorderColor>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                      </Style>
+                      <CanGrow>true</CanGrow>
+                      <Value>=Fields!BakMedicalName.Value</Value>
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="BakProductName">
+                      <rd:DefaultName>BakProductName</rd:DefaultName>
+                      <ZIndex>7</ZIndex>
+                      <Style>
+                        <BorderStyle>
+                          <Top>Solid</Top>
+                          <Left>Solid</Left>
+                          <Right>Solid</Right>
+                        </BorderStyle>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <BorderWidth>
+                          <Top>1pt</Top>
+                          <Left>1pt</Left>
+                          <Right>1pt</Right>
+                        </BorderWidth>
+                        <PaddingBottom>2pt</PaddingBottom>
+                        <BorderColor>
+                          <Top>Black</Top>
+                          <Left>Black</Left>
+                          <Right>Black</Right>
+                        </BorderColor>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                      </Style>
+                      <CanGrow>true</CanGrow>
+                      <Value>=Fields!BakProductName.Value</Value>
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="BakProductSpec">
+                      <rd:DefaultName>BakProductSpec</rd:DefaultName>
+                      <ZIndex>6</ZIndex>
+                      <Style>
+                        <BorderStyle>
+                          <Top>Solid</Top>
+                          <Left>Solid</Left>
+                          <Right>Solid</Right>
+                        </BorderStyle>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <BorderWidth>
+                          <Top>1pt</Top>
+                          <Left>1pt</Left>
+                          <Right>1pt</Right>
+                        </BorderWidth>
+                        <PaddingBottom>2pt</PaddingBottom>
+                        <BorderColor>
+                          <Top>Black</Top>
+                          <Left>Black</Left>
+                          <Right>Black</Right>
+                        </BorderColor>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                      </Style>
+                      <CanGrow>true</CanGrow>
+                      <Value>=Fields!BakProductSpec.Value</Value>
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="BakFactoryName">
+                      <rd:DefaultName>BakFactoryName</rd:DefaultName>
+                      <ZIndex>5</ZIndex>
+                      <Style>
+                        <BorderStyle>
+                          <Top>Solid</Top>
+                          <Left>Solid</Left>
+                          <Right>Solid</Right>
+                        </BorderStyle>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <BorderWidth>
+                          <Top>1pt</Top>
+                          <Left>1pt</Left>
+                          <Right>1pt</Right>
+                        </BorderWidth>
+                        <PaddingBottom>2pt</PaddingBottom>
+                        <BorderColor>
+                          <Top>Black</Top>
+                          <Left>Black</Left>
+                          <Right>Black</Right>
+                        </BorderColor>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                      </Style>
+                      <CanGrow>true</CanGrow>
+                      <Value>=Fields!BakFactoryName.Value</Value>
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="UnitPrice">
+                      <rd:DefaultName>UnitPrice</rd:DefaultName>
+                      <ZIndex>4</ZIndex>
+                      <Style>
+                        <BorderStyle>
+                          <Top>Solid</Top>
+                          <Left>Solid</Left>
+                          <Right>Solid</Right>
+                        </BorderStyle>
+                        <TextAlign>Right</TextAlign>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <BorderWidth>
+                          <Top>1pt</Top>
+                          <Left>1pt</Left>
+                          <Right>1pt</Right>
+                        </BorderWidth>
+                        <PaddingBottom>2pt</PaddingBottom>
+                        <BorderColor>
+                          <Top>Black</Top>
+                          <Left>Black</Left>
+                          <Right>Black</Right>
+                        </BorderColor>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                      </Style>
+                      <CanGrow>true</CanGrow>
+                      <Value>=Fields!UnitPrice.Value</Value>
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="RequestQty">
+                      <rd:DefaultName>RequestQty</rd:DefaultName>
+                      <ZIndex>3</ZIndex>
+                      <Style>
+                        <BorderStyle>
+                          <Top>Solid</Top>
+                          <Left>Solid</Left>
+                          <Right>Solid</Right>
+                        </BorderStyle>
+                        <TextAlign>Right</TextAlign>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <BorderWidth>
+                          <Top>1pt</Top>
+                          <Left>1pt</Left>
+                          <Right>1pt</Right>
+                        </BorderWidth>
+                        <PaddingBottom>2pt</PaddingBottom>
+                        <BorderColor>
+                          <Top>Black</Top>
+                          <Left>Black</Left>
+                          <Right>Black</Right>
+                        </BorderColor>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                      </Style>
+                      <CanGrow>true</CanGrow>
+                      <Value>=Fields!RequestQty.Value</Value>
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="RepositoryName">
+                      <rd:DefaultName>RepositoryName</rd:DefaultName>
+                      <ZIndex>2</ZIndex>
+                      <Style>
+                        <BorderStyle>
+                          <Top>Solid</Top>
+                          <Left>Solid</Left>
+                          <Right>Solid</Right>
+                        </BorderStyle>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <BorderWidth>
+                          <Top>1pt</Top>
+                          <Left>1pt</Left>
+                          <Right>1pt</Right>
+                        </BorderWidth>
+                        <PaddingBottom>2pt</PaddingBottom>
+                        <BorderColor>
+                          <Top>Black</Top>
+                          <Left>Black</Left>
+                          <Right>Black</Right>
+                        </BorderColor>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                      </Style>
+                      <CanGrow>true</CanGrow>
+                      <Value>=Fields!RepositoryName.Value</Value>
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="OrderStateName">
+                      <rd:DefaultName>OrderStateName</rd:DefaultName>
+                      <ZIndex>1</ZIndex>
+                      <Style>
+                        <BorderStyle>
+                          <Top>Solid</Top>
+                          <Left>Solid</Left>
+                          <Right>Solid</Right>
+                        </BorderStyle>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <BorderWidth>
+                          <Top>1pt</Top>
+                          <Left>1pt</Left>
+                          <Right>1pt</Right>
+                        </BorderWidth>
+                        <PaddingBottom>2pt</PaddingBottom>
+                        <BorderColor>
+                          <Top>Black</Top>
+                          <Left>Black</Left>
+                          <Right>Black</Right>
+                        </BorderColor>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                      </Style>
+                      <CanGrow>true</CanGrow>
+                      <Value>=Fields!OrderStateName.Value</Value>
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="BuyerDesc">
+                      <rd:DefaultName>BuyerDesc</rd:DefaultName>
+                      <Style>
+                        <BorderStyle>
+                          <Top>Solid</Top>
+                          <Left>Solid</Left>
+                        </BorderStyle>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <BorderWidth>
+                          <Top>1pt</Top>
+                          <Left>1pt</Left>
+                        </BorderWidth>
+                        <PaddingBottom>2pt</PaddingBottom>
+                        <BorderColor>
+                          <Top>Black</Top>
+                          <Left>Black</Left>
+                        </BorderColor>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                      </Style>
+                      <CanGrow>true</CanGrow>
+                      <Value>=Fields!BuyerDesc.Value</Value>
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+              </TableCells>
+              <Height>0.63492cm</Height>
+            </TableRow>
+          </TableRows>
+        </Details>
+        <Style>
+          <BorderStyle>
+            <Default>Solid</Default>
+          </BorderStyle>
+          <FontFamily>宋体</FontFamily>
+        </Style>
+        <Header>
+          <TableRows>
+            <TableRow>
+              <TableCells>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="textbox26">
+                      <rd:DefaultName>textbox26</rd:DefaultName>
+                      <ZIndex>17</ZIndex>
+                      <Style>
+                        <BorderStyle>
+                          <Bottom>Solid</Bottom>
+                          <Right>Solid</Right>
+                        </BorderStyle>
+                        <TextAlign>Center</TextAlign>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <BorderWidth>
+                          <Bottom>1pt</Bottom>
+                          <Right>1pt</Right>
+                        </BorderWidth>
+                        <PaddingBottom>2pt</PaddingBottom>
+                        <FontFamily>宋体</FontFamily>
+                        <FontWeight>700</FontWeight>
+                        <BorderColor>
+                          <Bottom>Black</Bottom>
+                          <Right>Black</Right>
+                        </BorderColor>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                      </Style>
+                      <CanGrow>true</CanGrow>
+                      <Value>通用名</Value>
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="textbox30">
+                      <rd:DefaultName>textbox30</rd:DefaultName>
+                      <ZIndex>16</ZIndex>
+                      <Style>
+                        <BorderStyle>
+                          <Bottom>Solid</Bottom>
+                          <Left>Solid</Left>
+                          <Right>Solid</Right>
+                        </BorderStyle>
+                        <TextAlign>Center</TextAlign>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <BorderWidth>
+                          <Bottom>1pt</Bottom>
+                          <Left>1pt</Left>
+                          <Right>1pt</Right>
+                        </BorderWidth>
+                        <PaddingBottom>2pt</PaddingBottom>
+                        <FontFamily>宋体</FontFamily>
+                        <FontWeight>700</FontWeight>
+                        <BorderColor>
+                          <Bottom>Black</Bottom>
+                          <Left>Black</Left>
+                          <Right>Black</Right>
+                        </BorderColor>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                      </Style>
+                      <CanGrow>true</CanGrow>
+                      <Value>商品名</Value>
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="textbox32">
+                      <rd:DefaultName>textbox32</rd:DefaultName>
+                      <ZIndex>15</ZIndex>
+                      <Style>
+                        <BorderStyle>
+                          <Bottom>Solid</Bottom>
+                          <Left>Solid</Left>
+                          <Right>Solid</Right>
+                        </BorderStyle>
+                        <TextAlign>Center</TextAlign>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <BorderWidth>
+                          <Bottom>1pt</Bottom>
+                          <Left>1pt</Left>
+                          <Right>1pt</Right>
+                        </BorderWidth>
+                        <PaddingBottom>2pt</PaddingBottom>
+                        <FontFamily>宋体</FontFamily>
+                        <FontWeight>700</FontWeight>
+                        <BorderColor>
+                          <Bottom>Black</Bottom>
+                          <Left>Black</Left>
+                          <Right>Black</Right>
+                        </BorderColor>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                      </Style>
+                      <CanGrow>true</CanGrow>
+                      <Value>规格包装</Value>
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="textbox34">
+                      <rd:DefaultName>textbox34</rd:DefaultName>
+                      <ZIndex>14</ZIndex>
+                      <Style>
+                        <BorderStyle>
+                          <Bottom>Solid</Bottom>
+                          <Left>Solid</Left>
+                          <Right>Solid</Right>
+                        </BorderStyle>
+                        <TextAlign>Center</TextAlign>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <BorderWidth>
+                          <Bottom>1pt</Bottom>
+                          <Left>1pt</Left>
+                          <Right>1pt</Right>
+                        </BorderWidth>
+                        <PaddingBottom>2pt</PaddingBottom>
+                        <FontFamily>宋体</FontFamily>
+                        <FontWeight>700</FontWeight>
+                        <BorderColor>
+                          <Bottom>Black</Bottom>
+                          <Left>Black</Left>
+                          <Right>Black</Right>
+                        </BorderColor>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                      </Style>
+                      <CanGrow>true</CanGrow>
+                      <Value>生产企业</Value>
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="textbox36">
+                      <rd:DefaultName>textbox36</rd:DefaultName>
+                      <ZIndex>13</ZIndex>
+                      <Style>
+                        <BorderStyle>
+                          <Bottom>Solid</Bottom>
+                          <Left>Solid</Left>
+                          <Right>Solid</Right>
+                        </BorderStyle>
+                        <TextAlign>Center</TextAlign>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <BorderWidth>
+                          <Bottom>1pt</Bottom>
+                          <Left>1pt</Left>
+                          <Right>1pt</Right>
+                        </BorderWidth>
+                        <PaddingBottom>2pt</PaddingBottom>
+                        <FontFamily>宋体</FontFamily>
+                        <FontWeight>700</FontWeight>
+                        <BorderColor>
+                          <Bottom>Black</Bottom>
+                          <Left>Black</Left>
+                          <Right>Black</Right>
+                        </BorderColor>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                      </Style>
+                      <CanGrow>true</CanGrow>
+                      <Value>供应价</Value>
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="textbox38">
+                      <rd:DefaultName>textbox38</rd:DefaultName>
+                      <ZIndex>12</ZIndex>
+                      <Style>
+                        <BorderStyle>
+                          <Bottom>Solid</Bottom>
+                          <Left>Solid</Left>
+                          <Right>Solid</Right>
+                        </BorderStyle>
+                        <TextAlign>Center</TextAlign>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <BorderWidth>
+                          <Bottom>1pt</Bottom>
+                          <Left>1pt</Left>
+                          <Right>1pt</Right>
+                        </BorderWidth>
+                        <PaddingBottom>2pt</PaddingBottom>
+                        <FontFamily>宋体</FontFamily>
+                        <FontWeight>700</FontWeight>
+                        <BorderColor>
+                          <Bottom>Black</Bottom>
+                          <Left>Black</Left>
+                          <Right>Black</Right>
+                        </BorderColor>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                      </Style>
+                      <CanGrow>true</CanGrow>
+                      <Value>订购量</Value>
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="textbox24">
+                      <rd:DefaultName>textbox24</rd:DefaultName>
+                      <ZIndex>11</ZIndex>
+                      <Style>
+                        <BorderStyle>
+                          <Bottom>Solid</Bottom>
+                          <Left>Solid</Left>
+                          <Right>Solid</Right>
+                        </BorderStyle>
+                        <TextAlign>Center</TextAlign>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <BorderWidth>
+                          <Bottom>1pt</Bottom>
+                          <Left>1pt</Left>
+                          <Right>1pt</Right>
+                        </BorderWidth>
+                        <PaddingBottom>2pt</PaddingBottom>
+                        <FontFamily>宋体</FontFamily>
+                        <FontWeight>700</FontWeight>
+                        <BorderColor>
+                          <Bottom>Black</Bottom>
+                          <Left>Black</Left>
+                          <Right>Black</Right>
+                        </BorderColor>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                      </Style>
+                      <CanGrow>true</CanGrow>
+                      <Value>药库</Value>
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="textbox40">
+                      <rd:DefaultName>textbox40</rd:DefaultName>
+                      <ZIndex>10</ZIndex>
+                      <Style>
+                        <BorderStyle>
+                          <Bottom>Solid</Bottom>
+                          <Left>Solid</Left>
+                          <Right>Solid</Right>
+                        </BorderStyle>
+                        <TextAlign>Center</TextAlign>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <BorderWidth>
+                          <Bottom>1pt</Bottom>
+                          <Left>1pt</Left>
+                          <Right>1pt</Right>
+                        </BorderWidth>
+                        <PaddingBottom>2pt</PaddingBottom>
+                        <FontFamily>宋体</FontFamily>
+                        <FontWeight>700</FontWeight>
+                        <BorderColor>
+                          <Bottom>Black</Bottom>
+                          <Left>Black</Left>
+                          <Right>Black</Right>
+                        </BorderColor>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                      </Style>
+                      <CanGrow>true</CanGrow>
+                      <Value>状态</Value>
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="textbox50">
+                      <rd:DefaultName>textbox50</rd:DefaultName>
+                      <ZIndex>9</ZIndex>
+                      <Style>
+                        <BorderStyle>
+                          <Bottom>Solid</Bottom>
+                          <Left>Solid</Left>
+                        </BorderStyle>
+                        <TextAlign>Center</TextAlign>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <BorderWidth>
+                          <Bottom>1pt</Bottom>
+                          <Left>1pt</Left>
+                        </BorderWidth>
+                        <PaddingBottom>2pt</PaddingBottom>
+                        <FontFamily>宋体</FontFamily>
+                        <FontWeight>700</FontWeight>
+                        <BorderColor>
+                          <Bottom>Black</Bottom>
+                          <Left>Black</Left>
+                        </BorderColor>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                      </Style>
+                      <CanGrow>true</CanGrow>
+                      <Value>买方备注</Value>
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+              </TableCells>
+              <Height>0.63492cm</Height>
+            </TableRow>
+          </TableRows>
+        </Header>
+        <TableColumns>
+          <TableColumn>
+            <Width>4.01201cm</Width>
+          </TableColumn>
+          <TableColumn>
+            <Width>3.74454cm</Width>
+          </TableColumn>
+          <TableColumn>
+            <Width>2.67467cm</Width>
+          </TableColumn>
+          <TableColumn>
+            <Width>4.01201cm</Width>
+          </TableColumn>
+          <TableColumn>
+            <Width>2.13974cm</Width>
+          </TableColumn>
+          <TableColumn>
+            <Width>2.4072cm</Width>
+          </TableColumn>
+          <TableColumn>
+            <Width>2.94214cm</Width>
+          </TableColumn>
+          <TableColumn>
+            <Width>2.4072cm</Width>
+          </TableColumn>
+          <TableColumn>
+            <Width>2.4072cm</Width>
+          </TableColumn>
+        </TableColumns>
+      </Table>
+      <Textbox Name="textbox18">
+        <Left>21.75cm</Left>
+        <Top>4cm</Top>
+        <ZIndex>26</ZIndex>
+        <Width>5.25329cm</Width>
+        <Style>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingBottom>2pt</PaddingBottom>
+          <FontFamily>宋体</FontFamily>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+        </Style>
+        <CanGrow>true</CanGrow>
+        <Height>0.63492cm</Height>
+        <Value>=Parameters!CreateDate.Value</Value>
+      </Textbox>
+      <Textbox Name="textbox19">
+        <Left>19.25329cm</Left>
+        <Top>4cm</Top>
+        <ZIndex>25</ZIndex>
+        <Width>2.49671cm</Width>
+        <Style>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingBottom>2pt</PaddingBottom>
+          <FontFamily>宋体</FontFamily>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+        </Style>
+        <CanGrow>true</CanGrow>
+        <Height>0.63492cm</Height>
+        <Value>创建时间：</Value>
+      </Textbox>
+      <Textbox Name="textbox20">
+        <Left>21.75cm</Left>
+        <Top>3.25cm</Top>
+        <ZIndex>24</ZIndex>
+        <Width>5.25329cm</Width>
+        <Style>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingBottom>2pt</PaddingBottom>
+          <FontFamily>宋体</FontFamily>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+        </Style>
+        <CanGrow>true</CanGrow>
+        <Height>0.63492cm</Height>
+        <Value>=Parameters!CreateName.Value</Value>
+      </Textbox>
+      <Textbox Name="textbox21">
+        <Left>19.25329cm</Left>
+        <Top>3.25cm</Top>
+        <ZIndex>23</ZIndex>
+        <Width>2.49671cm</Width>
+        <Style>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingBottom>2pt</PaddingBottom>
+          <FontFamily>宋体</FontFamily>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+        </Style>
+        <CanGrow>true</CanGrow>
+        <Height>0.63492cm</Height>
+        <Value>创 建 人：</Value>
+      </Textbox>
+      <Textbox Name="textbox22">
+        <Left>21.74671cm</Left>
+        <Top>2.5cm</Top>
+        <ZIndex>22</ZIndex>
+        <Width>5.25329cm</Width>
+        <Style>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingBottom>2pt</PaddingBottom>
+          <FontFamily>宋体</FontFamily>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+        </Style>
+        <CanGrow>true</CanGrow>
+        <Height>0.63492cm</Height>
+        <Value>=Parameters!OrderState.Value</Value>
+      </Textbox>
+      <Textbox Name="textbox23">
+        <Left>19.25cm</Left>
+        <Top>2.5cm</Top>
+        <ZIndex>21</ZIndex>
+        <Width>2.49671cm</Width>
+        <Style>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingBottom>2pt</PaddingBottom>
+          <FontFamily>宋体</FontFamily>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+        </Style>
+        <CanGrow>true</CanGrow>
+        <Height>0.63492cm</Height>
+        <Value>订单状态：</Value>
+      </Textbox>
+      <Textbox Name="textbox14">
+        <Left>12.5cm</Left>
+        <Top>4.75cm</Top>
+        <ZIndex>20</ZIndex>
+        <Width>5.25329cm</Width>
+        <Style>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingBottom>2pt</PaddingBottom>
+          <FontFamily>宋体</FontFamily>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+        </Style>
+        <CanGrow>true</CanGrow>
+        <Height>0.63492cm</Height>
+        <Value>=Parameters!Tel.Value</Value>
+      </Textbox>
+      <Textbox Name="textbox15">
+        <Left>10.00329cm</Left>
+        <Top>4.75cm</Top>
+        <ZIndex>19</ZIndex>
+        <Width>2.49671cm</Width>
+        <Style>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingBottom>2pt</PaddingBottom>
+          <FontFamily>宋体</FontFamily>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+        </Style>
+        <CanGrow>true</CanGrow>
+        <Height>0.63492cm</Height>
+        <Value>联系电话：</Value>
+      </Textbox>
+      <Textbox Name="textbox16">
+        <Left>3.25cm</Left>
+        <Top>4cm</Top>
+        <ZIndex>18</ZIndex>
+        <Width>5.25329cm</Width>
+        <Style>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingBottom>2pt</PaddingBottom>
+          <FontFamily>宋体</FontFamily>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+        </Style>
+        <CanGrow>true</CanGrow>
+        <Height>0.63492cm</Height>
+        <Value>=Parameters!WareHouse.Value</Value>
+      </Textbox>
+      <Textbox Name="textbox17">
+        <Left>0.75329cm</Left>
+        <Top>4cm</Top>
+        <ZIndex>17</ZIndex>
+        <Width>2.49671cm</Width>
+        <Style>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingBottom>2pt</PaddingBottom>
+          <FontFamily>宋体</FontFamily>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+        </Style>
+        <CanGrow>true</CanGrow>
+        <Height>0.63492cm</Height>
+        <Value>药　　库：</Value>
+      </Textbox>
+      <Textbox Name="textbox12">
+        <Left>12.5cm</Left>
+        <Top>3.25cm</Top>
+        <ZIndex>16</ZIndex>
+        <Width>5.25329cm</Width>
+        <Style>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingBottom>2pt</PaddingBottom>
+          <FontFamily>宋体</FontFamily>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+        </Style>
+        <CanGrow>true</CanGrow>
+        <Height>0.63492cm</Height>
+        <Value>=Parameters!ReceiveTotal.Value</Value>
+      </Textbox>
+      <Textbox Name="textbox13">
+        <Left>10.00329cm</Left>
+        <Top>3.25cm</Top>
+        <ZIndex>15</ZIndex>
+        <Width>2.49671cm</Width>
+        <Style>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingBottom>2pt</PaddingBottom>
+          <FontFamily>宋体</FontFamily>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+        </Style>
+        <CanGrow>true</CanGrow>
+        <Height>0.63492cm</Height>
+        <Value>到货金额：</Value>
+      </Textbox>
+      <Textbox Name="textbox10">
+        <Left>3.25cm</Left>
+        <Top>4.75cm</Top>
+        <ZIndex>14</ZIndex>
+        <Width>5.25329cm</Width>
+        <Style>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingBottom>2pt</PaddingBottom>
+          <FontFamily>宋体</FontFamily>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+        </Style>
+        <CanGrow>true</CanGrow>
+        <Height>0.63492cm</Height>
+        <Value>=Parameters!LinkMan.Value</Value>
+      </Textbox>
+      <Textbox Name="textbox11">
+        <Left>0.75329cm</Left>
+        <Top>4.75cm</Top>
+        <ZIndex>13</ZIndex>
+        <Width>2.49671cm</Width>
+        <Style>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingBottom>2pt</PaddingBottom>
+          <FontFamily>宋体</FontFamily>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+        </Style>
+        <CanGrow>true</CanGrow>
+        <Height>0.63492cm</Height>
+        <Value>联 系 人：</Value>
+      </Textbox>
+      <Textbox Name="textbox8">
+        <Left>3.25cm</Left>
+        <Top>5.5cm</Top>
+        <ZIndex>12</ZIndex>
+        <Width>5.25329cm</Width>
+        <Style>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingBottom>2pt</PaddingBottom>
+          <FontFamily>宋体</FontFamily>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+        </Style>
+        <CanGrow>true</CanGrow>
+        <Height>0.63492cm</Height>
+        <Value>=Parameters!PostCode.Value</Value>
+      </Textbox>
+      <Textbox Name="textbox9">
+        <Left>0.75329cm</Left>
+        <Top>5.5cm</Top>
+        <ZIndex>11</ZIndex>
+        <Width>2.49671cm</Width>
+        <Style>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingBottom>2pt</PaddingBottom>
+          <FontFamily>宋体</FontFamily>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+        </Style>
+        <CanGrow>true</CanGrow>
+        <Height>0.63492cm</Height>
+        <Value>邮　　编：</Value>
+      </Textbox>
+      <Textbox Name="textbox6">
+        <Left>3.25cm</Left>
+        <Top>3.25cm</Top>
+        <ZIndex>10</ZIndex>
+        <Width>5.25329cm</Width>
+        <Style>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingBottom>2pt</PaddingBottom>
+          <FontFamily>宋体</FontFamily>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+        </Style>
+        <CanGrow>true</CanGrow>
+        <Height>0.63492cm</Height>
+        <Value>=Parameters!OrderMoney.Value</Value>
+      </Textbox>
+      <Textbox Name="textbox7">
+        <Left>0.75329cm</Left>
+        <Top>3.25cm</Top>
+        <ZIndex>9</ZIndex>
+        <Width>2.49671cm</Width>
+        <Style>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingBottom>2pt</PaddingBottom>
+          <FontFamily>宋体</FontFamily>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+        </Style>
+        <CanGrow>true</CanGrow>
+        <Height>0.63492cm</Height>
+        <Value>订单金额：</Value>
+      </Textbox>
+      <Textbox Name="textbox3">
+        <Left>12.5cm</Left>
+        <Top>2.5cm</Top>
+        <ZIndex>8</ZIndex>
+        <Width>5.25329cm</Width>
+        <Style>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingBottom>2pt</PaddingBottom>
+          <FontFamily>宋体</FontFamily>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+        </Style>
+        <CanGrow>true</CanGrow>
+        <Height>0.63492cm</Height>
+        <Value>=Parameters!BuyerName.Value</Value>
+      </Textbox>
+      <Textbox Name="textbox5">
+        <Left>10.00329cm</Left>
+        <Top>2.5cm</Top>
+        <ZIndex>7</ZIndex>
+        <Width>2.49671cm</Width>
+        <Style>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingBottom>2pt</PaddingBottom>
+          <FontFamily>宋体</FontFamily>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+        </Style>
+        <CanGrow>true</CanGrow>
+        <Height>0.63492cm</Height>
+        <Value>买方单位：</Value>
+      </Textbox>
+      <Textbox Name="textbox2">
+        <Left>3.25cm</Left>
+        <Top>2.5cm</Top>
+        <rd:DefaultName>textbox2</rd:DefaultName>
+        <ZIndex>6</ZIndex>
+        <Width>5.25329cm</Width>
+        <Style>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingBottom>2pt</PaddingBottom>
+          <FontFamily>宋体</FontFamily>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+        </Style>
+        <CanGrow>true</CanGrow>
+        <Height>0.63492cm</Height>
+        <Value>=Parameters!OrderCode.Value</Value>
+      </Textbox>
+      <Textbox Name="textbox1">
+        <Left>0.75329cm</Left>
+        <Top>2.5cm</Top>
+        <rd:DefaultName>textbox1</rd:DefaultName>
+        <ZIndex>5</ZIndex>
+        <Width>2.49671cm</Width>
+        <Style>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingBottom>2pt</PaddingBottom>
+          <FontFamily>宋体</FontFamily>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+        </Style>
+        <CanGrow>true</CanGrow>
+        <Height>0.63492cm</Height>
+        <Value>订单编号：</Value>
+      </Textbox>
+      <Textbox Name="textbox4">
+        <Left>10.75658cm</Left>
+        <Top>1.25cm</Top>
+        <rd:DefaultName>textbox4</rd:DefaultName>
+        <ZIndex>4</ZIndex>
+        <Width>6cm</Width>
+        <Style>
+          <TextAlign>Center</TextAlign>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingBottom>2pt</PaddingBottom>
+          <FontFamily>宋体</FontFamily>
+          <FontWeight>900</FontWeight>
+          <FontSize>12pt</FontSize>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+        </Style>
+        <CanGrow>true</CanGrow>
+        <Height>0.86508cm</Height>
+        <Value>=Parameters!title.Value</Value>
+      </Textbox>
+      <Textbox Name="textbox25">
+        <Left>10cm</Left>
+        <Top>4cm</Top>
+        <ZIndex>3</ZIndex>
+        <Width>2.49671cm</Width>
+        <Style>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingBottom>2pt</PaddingBottom>
+          <FontFamily>宋体</FontFamily>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+        </Style>
+        <CanGrow>true</CanGrow>
+        <Height>0.63492cm</Height>
+        <Value>制 单 人：</Value>
+      </Textbox>
+      <Textbox Name="textbox27">
+        <Left>12.5cm</Left>
+        <Top>4cm</Top>
+        <ZIndex>2</ZIndex>
+        <Width>5.25329cm</Width>
+        <Style>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingBottom>2pt</PaddingBottom>
+          <FontFamily>宋体</FontFamily>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+        </Style>
+        <CanGrow>true</CanGrow>
+        <Height>0.63492cm</Height>
+        <Value>=Parameters!BuildOrderName.Value</Value>
+      </Textbox>
+      <Textbox Name="textbox28">
+        <Left>21.75cm</Left>
+        <Top>4.75cm</Top>
+        <ZIndex>1</ZIndex>
+        <Width>5.25329cm</Width>
+        <Style>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingBottom>2pt</PaddingBottom>
+          <FontFamily>宋体</FontFamily>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+        </Style>
+        <CanGrow>true</CanGrow>
+        <Height>0.63492cm</Height>
+        <Value>=Parameters!Address.Value</Value>
+      </Textbox>
+      <Textbox Name="textbox29">
+        <Left>19.25329cm</Left>
+        <Top>4.75cm</Top>
+        <Width>2.49671cm</Width>
+        <Style>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingBottom>2pt</PaddingBottom>
+          <FontFamily>宋体</FontFamily>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+        </Style>
+        <CanGrow>true</CanGrow>
+        <Height>0.63492cm</Height>
+        <Value>联系地址：</Value>
+      </Textbox>
+    </ReportItems>
+    <Height>7.51984cm</Height>
+  </Body>
+  <rd:ReportID>960612d7-8221-43e5-8d37-81e6babb437f</rd:ReportID>
+  <LeftMargin>2.5cm</LeftMargin>
+  <DataSets>
+    <DataSet Name="Emedchina_TradeAssistantSaler_Model_Order_SalerOrder_SalerOrderItemModel">
+      <rd:DataSetInfo>
+        <rd:DataSetName>Emedchina.TradeAssistant.Model.Order.SalerOrder</rd:DataSetName>
+        <rd:ObjectDataSourceType>Emedchina.TradeAssistant.Model.Order.SalerOrder.SalerOrderItemModel, Emedchina.TradeAssistant.Model, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</rd:ObjectDataSourceType>
+        <rd:TableName>SalerOrderItemModel</rd:TableName>
+      </rd:DataSetInfo>
+      <Query>
+        <rd:UseGenericDesigner>true</rd:UseGenericDesigner>
+        <CommandText />
+        <DataSourceName>DummyDataSource</DataSourceName>
+      </Query>
+      <Fields>
+        <Field Name="AgentOrgid">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>AgentOrgid</DataField>
+        </Field>
+        <Field Name="AppNum">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>AppNum</DataField>
+        </Field>
+        <Field Name="BakBuyerName">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>BakBuyerName</DataField>
+        </Field>
+        <Field Name="BakFactoryEasy">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>BakFactoryEasy</DataField>
+        </Field>
+        <Field Name="BakFactoryId">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>BakFactoryId</DataField>
+        </Field>
+        <Field Name="BakFactoryName">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>BakFactoryName</DataField>
+        </Field>
+        <Field Name="BakMassAssignment">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>BakMassAssignment</DataField>
+        </Field>
+        <Field Name="BakMedicalId">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>BakMedicalId</DataField>
+        </Field>
+        <Field Name="BakMedicalMode">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>BakMedicalMode</DataField>
+        </Field>
+        <Field Name="BakMedicalName">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>BakMedicalName</DataField>
+        </Field>
+        <Field Name="BakMedicalSpec">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>BakMedicalSpec</DataField>
+        </Field>
+        <Field Name="BakProductBidWay">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>BakProductBidWay</DataField>
+        </Field>
+        <Field Name="BakProductName">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>BakProductName</DataField>
+        </Field>
+        <Field Name="BakProductSpec">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>BakProductSpec</DataField>
+        </Field>
+        <Field Name="BigMiddleRate">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>BigMiddleRate</DataField>
+        </Field>
+        <Field Name="BuyerDesc">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>BuyerDesc</DataField>
+        </Field>
+        <Field Name="BuyerOrgid">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>BuyerOrgid</DataField>
+        </Field>
+        <Field Name="CheckBoxShow">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>CheckBoxShow</DataField>
+        </Field>
+        <Field Name="CreateDate">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>CreateDate</DataField>
+        </Field>
+        <Field Name="DegreeFlag">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>DegreeFlag</DataField>
+        </Field>
+        <Field Name="DiscountBatchValue">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>DiscountBatchValue</DataField>
+        </Field>
+        <Field Name="DiscountPayatonceValue">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>DiscountPayatonceValue</DataField>
+        </Field>
+        <Field Name="DiscountPaymentValue">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>DiscountPaymentValue</DataField>
+        </Field>
+        <Field Name="DiscountThirtydayValue">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>DiscountThirtydayValue</DataField>
+        </Field>
+        <Field Name="EmergencyType">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>EmergencyType</DataField>
+        </Field>
+        <Field Name="Id">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>Id</DataField>
+        </Field>
+        <Field Name="InvoiceDate">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>InvoiceDate</DataField>
+        </Field>
+        <Field Name="InvoiceDiscountRate">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>InvoiceDiscountRate</DataField>
+        </Field>
+        <Field Name="InvoiceEffectDate">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>InvoiceEffectDate</DataField>
+        </Field>
+        <Field Name="InvoiceExpireDate">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>InvoiceExpireDate</DataField>
+        </Field>
+        <Field Name="InvoiceNo">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>InvoiceNo</DataField>
+        </Field>
+        <Field Name="InvoiceRetailPrice">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>InvoiceRetailPrice</DataField>
+        </Field>
+        <Field Name="InvoiceTotal">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>InvoiceTotal</DataField>
+        </Field>
+        <Field Name="InvoiceTradePrice">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>InvoiceTradePrice</DataField>
+        </Field>
+        <Field Name="IsChecked">
+          <rd:TypeName>System.Boolean</rd:TypeName>
+          <DataField>IsChecked</DataField>
+        </Field>
+        <Field Name="IsInfectShow">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>IsInfectShow</DataField>
+        </Field>
+        <Field Name="LateFlag">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>LateFlag</DataField>
+        </Field>
+        <Field Name="LotNo">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>LotNo</DataField>
+        </Field>
+        <Field Name="MetricName">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>MetricName</DataField>
+        </Field>
+        <Field Name="MiddleStandRate">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>MiddleStandRate</DataField>
+        </Field>
+        <Field Name="OrderCode">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>OrderCode</DataField>
+        </Field>
+        <Field Name="OrderId">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>OrderId</DataField>
+        </Field>
+        <Field Name="OrderItemState">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>OrderItemState</DataField>
+        </Field>
+        <Field Name="OrderStateName">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>OrderStateName</DataField>
+        </Field>
+        <Field Name="PlatId">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>PlatId</DataField>
+        </Field>
+        <Field Name="PrefixBuyerDesc">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>PrefixBuyerDesc</DataField>
+        </Field>
+        <Field Name="ProductId">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>ProductId</DataField>
+        </Field>
+        <Field Name="ReadyDate">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>ReadyDate</DataField>
+        </Field>
+        <Field Name="ReadyFlag">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>ReadyFlag</DataField>
+        </Field>
+        <Field Name="ReadyQty">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>ReadyQty</DataField>
+        </Field>
+        <Field Name="ReadyRemark">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>ReadyRemark</DataField>
+        </Field>
+        <Field Name="ReceiveDate">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>ReceiveDate</DataField>
+        </Field>
+        <Field Name="ReceiveFlag">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>ReceiveFlag</DataField>
+        </Field>
+        <Field Name="ReceiveQty">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>ReceiveQty</DataField>
+        </Field>
+        <Field Name="ReceiveQty1">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>ReceiveQty1</DataField>
+        </Field>
+        <Field Name="RecordId">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>RecordId</DataField>
+        </Field>
+        <Field Name="Remark">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>Remark</DataField>
+        </Field>
+        <Field Name="RepositoryId">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>RepositoryId</DataField>
+        </Field>
+        <Field Name="RepositoryName">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>RepositoryName</DataField>
+        </Field>
+        <Field Name="RequestQty">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>RequestQty</DataField>
+        </Field>
+        <Field Name="RequestTotal">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>RequestTotal</DataField>
+        </Field>
+        <Field Name="SalerDesc">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>SalerDesc</DataField>
+        </Field>
+        <Field Name="SalerOrgid">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>SalerOrgid</DataField>
+        </Field>
+        <Field Name="SenderOrgid">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>SenderOrgid</DataField>
+        </Field>
+        <Field Name="SourceProjectId">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>SourceProjectId</DataField>
+        </Field>
+        <Field Name="SourceType">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>SourceType</DataField>
+        </Field>
+        <Field Name="SourceTypeName">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>SourceTypeName</DataField>
+        </Field>
+        <Field Name="UnitPrice">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>UnitPrice</DataField>
+        </Field>
+        <Field Name="WrapName">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>WrapName</DataField>
+        </Field>
+        <Field Name="MaxQty">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>MaxQty</DataField>
+        </Field>
+        <Field Name="OrderType">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>OrderType</DataField>
+        </Field>
+      </Fields>
+    </DataSet>
+    <DataSet Name="SalerReturnPrint_dtSalerReturnPrint">
+      <rd:DataSetInfo>
+        <rd:DataSetName>SalerReturnPrint</rd:DataSetName>
+        <rd:TableName>dtSalerReturnPrint</rd:TableName>
+      </rd:DataSetInfo>
+      <Query>
+        <rd:UseGenericDesigner>true</rd:UseGenericDesigner>
+        <CommandText />
+        <DataSourceName>DummyDataSource</DataSourceName>
+      </Query>
+      <Fields>
+        <Field Name="RowNum">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>RowNum</DataField>
+        </Field>
+        <Field Name="ID">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>ID</DataField>
+        </Field>
+        <Field Name="bak_medical_name">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>bak_medical_name</DataField>
+        </Field>
+        <Field Name="bak_product_name">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>bak_product_name</DataField>
+        </Field>
+        <Field Name="BAK_MASS_ASSIGNMENT">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>BAK_MASS_ASSIGNMENT</DataField>
+        </Field>
+        <Field Name="bak_medical_mode">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>bak_medical_mode</DataField>
+        </Field>
+        <Field Name="bak_product_spec">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>bak_product_spec</DataField>
+        </Field>
+        <Field Name="bak_buyer_easy">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>bak_buyer_easy</DataField>
+        </Field>
+        <Field Name="lot_no">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>lot_no</DataField>
+        </Field>
+        <Field Name="warehouse_name">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>warehouse_name</DataField>
+        </Field>
+        <Field Name="return_qty">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>return_qty</DataField>
+        </Field>
+        <Field Name="buyer_remark">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>buyer_remark</DataField>
+        </Field>
+        <Field Name="create_date_display">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>create_date_display</DataField>
+        </Field>
+        <Field Name="confirm_date_display">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>confirm_date_display</DataField>
+        </Field>
+        <Field Name="Remark">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>Remark</DataField>
+        </Field>
+      </Fields>
+    </DataSet>
+  </DataSets>
+  <Width>28.77975cm</Width>
+  <InteractiveHeight>29.7cm</InteractiveHeight>
+  <Language>zh-CN</Language>
+  <PageFooter>
+    <ReportItems>
+      <Textbox Name="textbox52">
+        <Left>12.75cm</Left>
+        <Top>1cm</Top>
+        <ZIndex>3</ZIndex>
+        <Width>6.12171cm</Width>
+        <Style>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingBottom>2pt</PaddingBottom>
+          <FontFamily>宋体</FontFamily>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+        </Style>
+        <CanGrow>true</CanGrow>
+        <Height>0.63492cm</Height>
+        <Value>=Parameters!user.Value</Value>
+      </Textbox>
+      <Textbox Name="textbox53">
+        <Left>10.5cm</Left>
+        <Top>1cm</Top>
+        <ZIndex>2</ZIndex>
+        <Width>2.25cm</Width>
+        <Style>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingBottom>2pt</PaddingBottom>
+          <FontFamily>宋体</FontFamily>
+          <FontWeight>700</FontWeight>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+        </Style>
+        <CanGrow>true</CanGrow>
+        <Height>0.63492cm</Height>
+        <Value>打印人：</Value>
+      </Textbox>
+      <Textbox Name="textbox54">
+        <Left>3cm</Left>
+        <Top>1cm</Top>
+        <ZIndex>1</ZIndex>
+        <Width>7cm</Width>
+        <Style>
+          <TextAlign>Left</TextAlign>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingBottom>2pt</PaddingBottom>
+          <FontFamily>宋体</FontFamily>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+        </Style>
+        <CanGrow>true</CanGrow>
+        <Height>0.63492cm</Height>
+        <Value>=Globals!ExecutionTime</Value>
+      </Textbox>
+      <Textbox Name="textbox55">
+        <Left>0.75cm</Left>
+        <Top>1cm</Top>
+        <Width>2.25cm</Width>
+        <Style>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingBottom>2pt</PaddingBottom>
+          <FontFamily>宋体</FontFamily>
+          <FontWeight>700</FontWeight>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+        </Style>
+        <CanGrow>true</CanGrow>
+        <Height>0.63492cm</Height>
+        <Value>打印时间：</Value>
+      </Textbox>
+    </ReportItems>
+    <Height>2cm</Height>
+    <PrintOnLastPage>true</PrintOnLastPage>
+    <PrintOnFirstPage>true</PrintOnFirstPage>
+  </PageFooter>
+  <TopMargin>2.5cm</TopMargin>
+  <PageHeight>29.7cm</PageHeight>
+</Report>

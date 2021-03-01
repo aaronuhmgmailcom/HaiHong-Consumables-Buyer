@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!-- Filename: MsXml4r.Manifest -->
+<!-- Description: MSXML 4.0 SP1 Component Resource Assembly Manifest -->
+<assembly xmlns="urn:schemas-microsoft-com:asm.v1" manifestVersion="1.0">
+
+    <assemblyIdentity type="win32" name="Microsoft.MSXML2R" version="4.1.0.0" processorArchitecture="x86" publicKeyToken="6bd6b9abf345378f"/>
+
+    <file name="msxml4r.dll" hash="e09c7d1cb933719ab19ddae866e6cc0846eccdc4" hashalg="SHA1"/>
+
+</assembly>

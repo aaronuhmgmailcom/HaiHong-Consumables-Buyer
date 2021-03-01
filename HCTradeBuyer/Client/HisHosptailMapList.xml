@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" standalone="yes"?>
+<Config Name="" Type="" Ver="1.0">
+  <SourceDB DBType="EXCEL" ServerName="" DataBase="" User="" Password="" DBPath="GetHisHosptailMapList.xls">
+    <SourceTable TableName="sheet1">
+      <SourceField Index="1" Name="医院编码" Type="字符型" Length="" Default="" Desc="" />
+      <SourceField Index="2" Name="医院全称" Type="字符型" Length="" Default="" Desc="" />
+      <SourceField Index="3" Name="医院简称" Type="字符型" Length="" Default="" Desc="" />
+      <SourceField Index="4" Name="地址" Type="字符型" Length="" Default="" Desc="" />
+      <SourceField Index="5" Name="联系人" Type="字符型" Length="" Default="" Desc="" />
+      <SourceField Index="6" Name="联系电话" Type="字符型" Length="" Default="" Desc="" />
+      <SourceField Index="7" Name="邮政编码" Type="字符型" Length="" Default="" Desc="" />
+      <SourceField Index="8" Name="海虹医院ID" Type="字符型" Length="" Default="" Desc="" />
+      <SourceField Index="9" Name="海虹医院数据ID" Type="字符型" Length="" Default="" Desc="" />
+    </SourceTable>
+  </SourceDB>
+  <DestDB DBType="EXCEL" ServerName="" DataBase="" User="" Password="" DBPath="">
+    <DestTable TableName="">
+      <DestField Index="1" Name="CODE" Type="VARCHAR(50)" Length="" Default="" Desc="医院编码">
+      </DestField>
+      <DestField Index="2" Name="FULL_NAME" Type="VARCHAR(200)" Length="" Default="" Desc="医院全称">
+      </DestField>
+      <DestField Index="3" Name="EASY_NAME" Type="VARCHAR(200)" Length="" Default="" Desc="医院简称">
+      </DestField>
+      <DestField Index="4" Name="ADDRESS" Type="VARCHAR(200)" Length="" Default="" Desc="地址">
+      </DestField>
+      <DestField Index="5" Name="LINKMAN" Type="VARCHAR(50)" Length="" Default="" Desc="联系人">
+      </DestField>
+      <DestField Index="6" Name="TELPHONE" Type="VARCHAR(50)" Length="" Default="" Desc="联系电话">
+      </DestField>
+      <DestField Index="7" Name="POSTCODE" Type="VARCHAR(50)" Length="" Default="" Desc="邮政编码">
+      </DestField>
+      <DestField Index="8" Name="ORG_ID" Type="VARCHAR(50)" Length="" Default="" Desc="海虹医院ID">
+      </DestField>
+      <DestField Index="9" Name="DATA_ORG_ID" Type="VARCHAR(50)" Length="" Default="" Desc="海虹医院数据ID">
+      </DestField>
+
+    </DestTable>
+  </DestDB>
+  <ContrastList Delimited="">
+    <Contrast SourceField="医院编码" DestField="CODE" Algorithm="" IsNew="0" DestDBType="VARCHAR(50)" />
+    <Contrast SourceField="医院全称" DestField="FULL_NAME" Algorithm="" IsNew="0" DestDBType="VARCHAR(200)" />
+    <Contrast SourceField="医院简称" DestField="EASY_NAME" Algorithm="" IsNew="0" DestDBType="VARCHAR(200)" />
+    <Contrast SourceField="地址" DestField="ADDRESS" Algorithm="" IsNew="0" DestDBType="VARCHAR(200)" />
+    <Contrast SourceField="联系人" DestField="LINKMAN" Algorithm="" IsNew="0" DestDBType="VARCHAR(50)" />
+    <Contrast SourceField="联系电话" DestField="TELPHONE" Algorithm="" IsNew="0" DestDBType="VARCHAR(50)" />
+    <Contrast SourceField="邮政编码" DestField="POSTCODE" Algorithm="" IsNew="0" DestDBType="VARCHAR(50)" />
+    <Contrast SourceField="海虹医院ID" DestField="ORG_ID" Algorithm="" IsNew="0" DestDBType="VARCHAR(50)" />
+    <Contrast SourceField="海虹医院数据ID" DestField="DATA_ORG_ID" Algorithm="" IsNew="0" DestDBType="VARCHAR(50)" />
+  </ContrastList>
+  <BeginSql>
+
+  </BeginSql>
+  <Sqls>
+    <Sql Pattern="0" ExecSort="1">select 医院编码 as CODE,医院全称 as FULL_NAME,医院简称 as EASY_NAME,地址 as ADDRESS,联系人 as LINKMAN,联系电话 as TELPHONE,邮政编码 as POSTCODE ,海虹医院ID as ORG_ID,海虹医院数据ID as DATA_ORG_ID from `sheet1$`</Sql>
+  </Sqls>
+  <MSqls>
+    <Sql Pattern="0" ExecSort="1">select 医院编码 as CODE,医院全称 as FULL_NAME,医院简称 as EASY_NAME,地址 as ADDRESS,联系人 as LINKMAN,联系电话 as TELPHONE,邮政编码 as POSTCODE ,海虹医院ID as ORG_ID,海虹医院数据ID as DATA_ORG_ID from Gpo_HisHosptailMap</Sql>
+  </MSqls>
+  <ASqls>
+    <Sql Pattern="0" ExecSort="1">select 医院编码 as CODE,医院全称 as FULL_NAME,医院简称 as EASY_NAME,地址 as ADDRESS,联系人 as LINKMAN,联系电话 as TELPHONE,邮政编码 as POSTCODE ,海虹医院ID as ORG_ID,海虹医院数据ID as DATA_ORG_ID from Gpo_HisHosptailMap</Sql>
+  </ASqls>
+  
+  <EndSql>
+  </EndSql>
+</Config>

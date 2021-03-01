@@ -1,0 +1,5 @@
+E:\HCTradeBuyer\HCTradeBuyer\Model\bin\Debug\Emedchina.TradeAssistant.Model.dll
+E:\HCTradeBuyer\HCTradeBuyer\Model\bin\Debug\Emedchina.TradeAssistant.Model.pdb
+E:\HCTradeBuyer\HCTradeBuyer\Model\obj\Debug\ResolveAssemblyReference.cache
+E:\HCTradeBuyer\HCTradeBuyer\Model\obj\Debug\Emedchina.TradeAssistant.Model.dll
+E:\HCTradeBuyer\HCTradeBuyer\Model\obj\Debug\Emedchina.TradeAssistant.Model.pdb

@@ -1,0 +1,1709 @@
+Tracing Error: 100 : Timestamp: 2007-10-17 8:07:53
+Message: HandlingInstanceID: 66ae9488-99df-4d74-8488-d3886510b85d
+An exception of type 'System.Data.OracleClient.OracleException' occurred and was caught.
+----------------------------------------------------------------------------------------
+10/17/2007 16:07:53
+Type : System.Data.OracleClient.OracleException, System.Data.OracleClient, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+Message : ORA-00904: "MANUFACTURE_NAME_ABBR": invalid identifier
+
+Source : System.Data.OracleClient
+Help link : 
+Code : 904
+ErrorCode : -2146232008
+Data : System.Collections.ListDictionaryInternal
+TargetSite : Void CheckError(System.Data.OracleClient.OciErrorHandle, Int32)
+Stack Trace :    在 System.Data.OracleClient.OracleConnection.CheckError(OciErrorHandle errorHandle, Int32 rc)
+   在 System.Data.OracleClient.OracleCommand.Execute(OciStatementHandle statementHandle, CommandBehavior behavior, Boolean needRowid, OciRowidDescriptor& rowidDescriptor, ArrayList& resultParameterOrdinals)
+   在 System.Data.OracleClient.OracleCommand.Execute(OciStatementHandle statementHandle, CommandBehavior behavior, ArrayList& resultParameterOrdinals)
+   在 System.Data.OracleClient.OracleCommand.ExecuteReader(CommandBehavior behavior)
+   在 System.Data.OracleClient.OracleCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   在 System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader(CommandBehavior behavior)
+   在 System.Data.Common.DbDataAdapter.FillInternal(DataSet dataset, DataTable[] datatables, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   在 System.Data.Common.DbDataAdapter.Fill(DataTable[] dataTables, Int32 startRecord, Int32 maxRecords, IDbCommand command, CommandBehavior behavior)
+   在 System.Data.Common.DbDataAdapter.Fill(DataTable dataTable)
+   在 Emedchina.Commons.Data.DataBaseFacade.SQLExecuteDataTable(String sql, String tableName, IDbDataParameter[] selectParameters) 位置 E:\Work_Llt\HCTradeBuyer\Commons\Data\DataBaseFacade.cs:行号 619
+
+Additional Info:
+
+MachineName : LLT
+TimeStamp : 2007-10-17 8:07:53
+FullName : Microsoft.Practices.EnterpriseLibrary.ExceptionHandling, Version=2.0.0.0, Culture=neutral, PublicKeyToken=null
+AppDomainName : Emedchina.TradeAssistant.Server.exe
+ThreadIdentity : 
+WindowsIdentity : LLT\Administrator
+
+Category: Tracing
+Priority: 0
+EventId: 100
+Severity: Error
+Title:Connection Failed Exception Handler
+Machine: LLT
+App Domain: Emedchina.TradeAssistant.Server.exe
+ProcessId: 7632
+Process Name: E:\Work_Llt\HCTradeBuyer\Server\bin\Debug\Emedchina.TradeAssistant.Server.exe
+Thread Name: 
+Win32 ThreadId:4120
+Extended Properties: 
+Tracing Error: 100 : Timestamp: 2007-10-17 8:43:22
+Message: HandlingInstanceID: 2920ee72-e370-46a8-9c11-5d60c8808dfe
+An exception of type 'System.Data.OracleClient.OracleException' occurred and was caught.
+----------------------------------------------------------------------------------------
+10/17/2007 16:43:22
+Type : System.Data.OracleClient.OracleException, System.Data.OracleClient, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+Message : ORA-00942: table or view does not exist
+
+Source : System.Data.OracleClient
+Help link : 
+Code : 942
+ErrorCode : -2146232008
+Data : System.Collections.ListDictionaryInternal
+TargetSite : Void CheckError(System.Data.OracleClient.OciErrorHandle, Int32)
+Stack Trace :    在 System.Data.OracleClient.OracleConnection.CheckError(OciErrorHandle errorHandle, Int32 rc)
+   在 System.Data.OracleClient.OracleCommand.Execute(OciStatementHandle statementHandle, CommandBehavior behavior, Boolean needRowid, OciRowidDescriptor& rowidDescriptor, ArrayList& resultParameterOrdinals)
+   在 System.Data.OracleClient.OracleCommand.Execute(OciStatementHandle statementHandle, CommandBehavior behavior, ArrayList& resultParameterOrdinals)
+   在 System.Data.OracleClient.OracleCommand.ExecuteReader(CommandBehavior behavior)
+   在 System.Data.OracleClient.OracleCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   在 System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader(CommandBehavior behavior)
+   在 System.Data.Common.DbDataAdapter.FillInternal(DataSet dataset, DataTable[] datatables, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   在 System.Data.Common.DbDataAdapter.Fill(DataTable[] dataTables, Int32 startRecord, Int32 maxRecords, IDbCommand command, CommandBehavior behavior)
+   在 System.Data.Common.DbDataAdapter.Fill(DataTable dataTable)
+   在 Emedchina.Commons.Data.DataBaseFacade.SQLExecuteDataTable(String sql, String tableName, IDbDataParameter[] selectParameters) 位置 E:\Work_Llt\HCTradeBuyer\Commons\Data\DataBaseFacade.cs:行号 619
+
+Additional Info:
+
+MachineName : LLT
+TimeStamp : 2007-10-17 8:43:22
+FullName : Microsoft.Practices.EnterpriseLibrary.ExceptionHandling, Version=2.0.0.0, Culture=neutral, PublicKeyToken=null
+AppDomainName : Emedchina.TradeAssistant.Server.exe
+ThreadIdentity : 
+WindowsIdentity : LLT\Administrator
+
+Category: Tracing
+Priority: 0
+EventId: 100
+Severity: Error
+Title:Connection Failed Exception Handler
+Machine: LLT
+App Domain: Emedchina.TradeAssistant.Server.exe
+ProcessId: 7632
+Process Name: E:\Work_Llt\HCTradeBuyer\Server\bin\Debug\Emedchina.TradeAssistant.Server.exe
+Thread Name: 
+Win32 ThreadId:1588
+Extended Properties: 
+Tracing Error: 100 : Timestamp: 2007-10-17 8:44:39
+Message: HandlingInstanceID: fda18ade-c22f-4c84-8edb-d6689b34e522
+An exception of type 'System.Data.OracleClient.OracleException' occurred and was caught.
+----------------------------------------------------------------------------------------
+10/17/2007 16:44:39
+Type : System.Data.OracleClient.OracleException, System.Data.OracleClient, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+Message : ORA-00904: "MANUFACTURE_NAME_ABBR": invalid identifier
+
+Source : System.Data.OracleClient
+Help link : 
+Code : 904
+ErrorCode : -2146232008
+Data : System.Collections.ListDictionaryInternal
+TargetSite : Void CheckError(System.Data.OracleClient.OciErrorHandle, Int32)
+Stack Trace :    在 System.Data.OracleClient.OracleConnection.CheckError(OciErrorHandle errorHandle, Int32 rc)
+   在 System.Data.OracleClient.OracleCommand.Execute(OciStatementHandle statementHandle, CommandBehavior behavior, Boolean needRowid, OciRowidDescriptor& rowidDescriptor, ArrayList& resultParameterOrdinals)
+   在 System.Data.OracleClient.OracleCommand.Execute(OciStatementHandle statementHandle, CommandBehavior behavior, ArrayList& resultParameterOrdinals)
+   在 System.Data.OracleClient.OracleCommand.ExecuteReader(CommandBehavior behavior)
+   在 System.Data.OracleClient.OracleCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   在 System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader(CommandBehavior behavior)
+   在 System.Data.Common.DbDataAdapter.FillInternal(DataSet dataset, DataTable[] datatables, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   在 System.Data.Common.DbDataAdapter.Fill(DataTable[] dataTables, Int32 startRecord, Int32 maxRecords, IDbCommand command, CommandBehavior behavior)
+   在 System.Data.Common.DbDataAdapter.Fill(DataTable dataTable)
+   在 Emedchina.Commons.Data.DataBaseFacade.SQLExecuteDataTable(String sql, String tableName, IDbDataParameter[] selectParameters) 位置 E:\Work_Llt\HCTradeBuyer\Commons\Data\DataBaseFacade.cs:行号 619
+
+Additional Info:
+
+MachineName : LLT
+TimeStamp : 2007-10-17 8:44:39
+FullName : Microsoft.Practices.EnterpriseLibrary.ExceptionHandling, Version=2.0.0.0, Culture=neutral, PublicKeyToken=null
+AppDomainName : Emedchina.TradeAssistant.Server.exe
+ThreadIdentity : 
+WindowsIdentity : LLT\Administrator
+
+Category: Tracing
+Priority: 0
+EventId: 100
+Severity: Error
+Title:Connection Failed Exception Handler
+Machine: LLT
+App Domain: Emedchina.TradeAssistant.Server.exe
+ProcessId: 7632
+Process Name: E:\Work_Llt\HCTradeBuyer\Server\bin\Debug\Emedchina.TradeAssistant.Server.exe
+Thread Name: 
+Win32 ThreadId:1588
+Extended Properties: 
+Tracing Error: 100 : Timestamp: 2007-10-17 9:01:43
+Message: HandlingInstanceID: 6d100262-dfd6-4117-bc4d-e024124135d3
+An exception of type 'System.Data.OracleClient.OracleException' occurred and was caught.
+----------------------------------------------------------------------------------------
+10/17/2007 17:01:43
+Type : System.Data.OracleClient.OracleException, System.Data.OracleClient, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+Message : ORA-00942: table or view does not exist
+
+Source : System.Data.OracleClient
+Help link : 
+Code : 942
+ErrorCode : -2146232008
+Data : System.Collections.ListDictionaryInternal
+TargetSite : Void CheckError(System.Data.OracleClient.OciErrorHandle, Int32)
+Stack Trace :    在 System.Data.OracleClient.OracleConnection.CheckError(OciErrorHandle errorHandle, Int32 rc)
+   在 System.Data.OracleClient.OracleCommand.Execute(OciStatementHandle statementHandle, CommandBehavior behavior, Boolean needRowid, OciRowidDescriptor& rowidDescriptor, ArrayList& resultParameterOrdinals)
+   在 System.Data.OracleClient.OracleCommand.Execute(OciStatementHandle statementHandle, CommandBehavior behavior, ArrayList& resultParameterOrdinals)
+   在 System.Data.OracleClient.OracleCommand.ExecuteReader(CommandBehavior behavior)
+   在 System.Data.OracleClient.OracleCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   在 System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader(CommandBehavior behavior)
+   在 System.Data.Common.DbDataAdapter.FillInternal(DataSet dataset, DataTable[] datatables, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   在 System.Data.Common.DbDataAdapter.Fill(DataTable[] dataTables, Int32 startRecord, Int32 maxRecords, IDbCommand command, CommandBehavior behavior)
+   在 System.Data.Common.DbDataAdapter.Fill(DataTable dataTable)
+   在 Emedchina.Commons.Data.DataBaseFacade.SQLExecuteDataTable(String sql, String tableName, IDbDataParameter[] selectParameters) 位置 E:\Work_Llt\HCTradeBuyer\Commons\Data\DataBaseFacade.cs:行号 619
+
+Additional Info:
+
+MachineName : LLT
+TimeStamp : 2007-10-17 9:01:43
+FullName : Microsoft.Practices.EnterpriseLibrary.ExceptionHandling, Version=2.0.0.0, Culture=neutral, PublicKeyToken=null
+AppDomainName : Emedchina.TradeAssistant.Server.exe
+ThreadIdentity : 
+WindowsIdentity : LLT\Administrator
+
+Category: Tracing
+Priority: 0
+EventId: 100
+Severity: Error
+Title:Connection Failed Exception Handler
+Machine: LLT
+App Domain: Emedchina.TradeAssistant.Server.exe
+ProcessId: 8144
+Process Name: E:\Work_Llt\HCTradeBuyer\Server\bin\Debug\Emedchina.TradeAssistant.Server.exe
+Thread Name: 
+Win32 ThreadId:524
+Extended Properties: 
+Tracing Error: 100 : Timestamp: 2007-10-17 9:10:10
+Message: HandlingInstanceID: 7887d16e-83f5-4676-8699-8668b5f707fc
+An exception of type 'System.Data.OracleClient.OracleException' occurred and was caught.
+----------------------------------------------------------------------------------------
+10/17/2007 17:10:10
+Type : System.Data.OracleClient.OracleException, System.Data.OracleClient, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+Message : ORA-00942: table or view does not exist
+
+Source : System.Data.OracleClient
+Help link : 
+Code : 942
+ErrorCode : -2146232008
+Data : System.Collections.ListDictionaryInternal
+TargetSite : Void CheckError(System.Data.OracleClient.OciErrorHandle, Int32)
+Stack Trace :    在 System.Data.OracleClient.OracleConnection.CheckError(OciErrorHandle errorHandle, Int32 rc)
+   在 System.Data.OracleClient.OracleCommand.Execute(OciStatementHandle statementHandle, CommandBehavior behavior, Boolean needRowid, OciRowidDescriptor& rowidDescriptor, ArrayList& resultParameterOrdinals)
+   在 System.Data.OracleClient.OracleCommand.Execute(OciStatementHandle statementHandle, CommandBehavior behavior, ArrayList& resultParameterOrdinals)
+   在 System.Data.OracleClient.OracleCommand.ExecuteReader(CommandBehavior behavior)
+   在 System.Data.OracleClient.OracleCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   在 System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader(CommandBehavior behavior)
+   在 System.Data.Common.DbDataAdapter.FillInternal(DataSet dataset, DataTable[] datatables, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   在 System.Data.Common.DbDataAdapter.Fill(DataTable[] dataTables, Int32 startRecord, Int32 maxRecords, IDbCommand command, CommandBehavior behavior)
+   在 System.Data.Common.DbDataAdapter.Fill(DataTable dataTable)
+   在 Emedchina.Commons.Data.DataBaseFacade.SQLExecuteDataTable(String sql, String tableName, IDbDataParameter[] selectParameters) 位置 E:\Work_Llt\HCTradeBuyer\Commons\Data\DataBaseFacade.cs:行号 619
+
+Additional Info:
+
+MachineName : LLT
+TimeStamp : 2007-10-17 9:10:10
+FullName : Microsoft.Practices.EnterpriseLibrary.ExceptionHandling, Version=2.0.0.0, Culture=neutral, PublicKeyToken=null
+AppDomainName : Emedchina.TradeAssistant.Server.exe
+ThreadIdentity : 
+WindowsIdentity : LLT\Administrator
+
+Category: Tracing
+Priority: 0
+EventId: 100
+Severity: Error
+Title:Connection Failed Exception Handler
+Machine: LLT
+App Domain: Emedchina.TradeAssistant.Server.exe
+ProcessId: 7936
+Process Name: E:\Work_Llt\HCTradeBuyer\Server\bin\Debug\Emedchina.TradeAssistant.Server.exe
+Thread Name: 
+Win32 ThreadId:6632
+Extended Properties: 
+Tracing Error: 100 : Timestamp: 2007-10-18 2:22:28
+Message: HandlingInstanceID: e54d1bc6-ce18-4d16-9a41-f14a925881b2
+An exception of type 'System.Data.OracleClient.OracleException' occurred and was caught.
+----------------------------------------------------------------------------------------
+10/18/2007 10:22:28
+Type : System.Data.OracleClient.OracleException, System.Data.OracleClient, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+Message : ORA-00904: "ADUID_USER_ID": invalid identifier
+
+Source : System.Data.OracleClient
+Help link : 
+Code : 904
+ErrorCode : -2146232008
+Data : System.Collections.ListDictionaryInternal
+TargetSite : Void CheckError(System.Data.OracleClient.OciErrorHandle, Int32)
+Stack Trace :    在 System.Data.OracleClient.OracleConnection.CheckError(OciErrorHandle errorHandle, Int32 rc)
+   在 System.Data.OracleClient.OracleCommand.Execute(OciStatementHandle statementHandle, CommandBehavior behavior, Boolean needRowid, OciRowidDescriptor& rowidDescriptor, ArrayList& resultParameterOrdinals)
+   在 System.Data.OracleClient.OracleCommand.Execute(OciStatementHandle statementHandle, CommandBehavior behavior, ArrayList& resultParameterOrdinals)
+   在 System.Data.OracleClient.OracleCommand.ExecuteReader(CommandBehavior behavior)
+   在 System.Data.OracleClient.OracleCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   在 System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader(CommandBehavior behavior)
+   在 System.Data.Common.DbDataAdapter.FillInternal(DataSet dataset, DataTable[] datatables, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   在 System.Data.Common.DbDataAdapter.Fill(DataTable[] dataTables, Int32 startRecord, Int32 maxRecords, IDbCommand command, CommandBehavior behavior)
+   在 System.Data.Common.DbDataAdapter.Fill(DataTable dataTable)
+   在 Emedchina.Commons.Data.DataBaseFacade.SQLExecuteDataTable(String sql, String tableName, IDbDataParameter[] selectParameters) 位置 E:\Work_Llt\HCTradeBuyer\Commons\Data\DataBaseFacade.cs:行号 619
+
+Additional Info:
+
+MachineName : LLT
+TimeStamp : 2007-10-18 2:22:28
+FullName : Microsoft.Practices.EnterpriseLibrary.ExceptionHandling, Version=2.0.0.0, Culture=neutral, PublicKeyToken=null
+AppDomainName : Emedchina.TradeAssistant.Server.exe
+ThreadIdentity : 
+WindowsIdentity : LLT\Administrator
+
+Category: Tracing
+Priority: 0
+EventId: 100
+Severity: Error
+Title:Connection Failed Exception Handler
+Machine: LLT
+App Domain: Emedchina.TradeAssistant.Server.exe
+ProcessId: 6768
+Process Name: E:\Work_Llt\HCTradeBuyer\Server\bin\Debug\Emedchina.TradeAssistant.Server.exe
+Thread Name: 
+Win32 ThreadId:7772
+Extended Properties: 
+Tracing Error: 100 : Timestamp: 2007-10-18 2:24:22
+Message: HandlingInstanceID: 3d8f76da-6132-46b5-8a2f-a99658191585
+An exception of type 'System.Data.OracleClient.OracleException' occurred and was caught.
+----------------------------------------------------------------------------------------
+10/18/2007 10:24:22
+Type : System.Data.OracleClient.OracleException, System.Data.OracleClient, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+Message : ORA-00904: "ADUID_USER_ID": invalid identifier
+
+Source : System.Data.OracleClient
+Help link : 
+Code : 904
+ErrorCode : -2146232008
+Data : System.Collections.ListDictionaryInternal
+TargetSite : Void CheckError(System.Data.OracleClient.OciErrorHandle, Int32)
+Stack Trace :    在 System.Data.OracleClient.OracleConnection.CheckError(OciErrorHandle errorHandle, Int32 rc)
+   在 System.Data.OracleClient.OracleCommand.Execute(OciStatementHandle statementHandle, CommandBehavior behavior, Boolean needRowid, OciRowidDescriptor& rowidDescriptor, ArrayList& resultParameterOrdinals)
+   在 System.Data.OracleClient.OracleCommand.Execute(OciStatementHandle statementHandle, CommandBehavior behavior, ArrayList& resultParameterOrdinals)
+   在 System.Data.OracleClient.OracleCommand.ExecuteReader(CommandBehavior behavior)
+   在 System.Data.OracleClient.OracleCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   在 System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader(CommandBehavior behavior)
+   在 System.Data.Common.DbDataAdapter.FillInternal(DataSet dataset, DataTable[] datatables, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   在 System.Data.Common.DbDataAdapter.Fill(DataTable[] dataTables, Int32 startRecord, Int32 maxRecords, IDbCommand command, CommandBehavior behavior)
+   在 System.Data.Common.DbDataAdapter.Fill(DataTable dataTable)
+   在 Emedchina.Commons.Data.DataBaseFacade.SQLExecuteDataTable(String sql, String tableName, IDbDataParameter[] selectParameters) 位置 E:\Work_Llt\HCTradeBuyer\Commons\Data\DataBaseFacade.cs:行号 619
+
+Additional Info:
+
+MachineName : LLT
+TimeStamp : 2007-10-18 2:24:22
+FullName : Microsoft.Practices.EnterpriseLibrary.ExceptionHandling, Version=2.0.0.0, Culture=neutral, PublicKeyToken=null
+AppDomainName : Emedchina.TradeAssistant.Server.exe
+ThreadIdentity : 
+WindowsIdentity : LLT\Administrator
+
+Category: Tracing
+Priority: 0
+EventId: 100
+Severity: Error
+Title:Connection Failed Exception Handler
+Machine: LLT
+App Domain: Emedchina.TradeAssistant.Server.exe
+ProcessId: 6768
+Process Name: E:\Work_Llt\HCTradeBuyer\Server\bin\Debug\Emedchina.TradeAssistant.Server.exe
+Thread Name: 
+Win32 ThreadId:7748
+Extended Properties: 
+Tracing Error: 100 : Timestamp: 2007-10-18 2:32:12
+Message: HandlingInstanceID: 688161df-e9af-4823-bf07-07857cb791e2
+An exception of type 'System.Data.OracleClient.OracleException' occurred and was caught.
+----------------------------------------------------------------------------------------
+10/18/2007 10:32:12
+Type : System.Data.OracleClient.OracleException, System.Data.OracleClient, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+Message : ORA-00904: "ADUID_USER_ID": invalid identifier
+
+Source : System.Data.OracleClient
+Help link : 
+Code : 904
+ErrorCode : -2146232008
+Data : System.Collections.ListDictionaryInternal
+TargetSite : Void CheckError(System.Data.OracleClient.OciErrorHandle, Int32)
+Stack Trace :    在 System.Data.OracleClient.OracleConnection.CheckError(OciErrorHandle errorHandle, Int32 rc)
+   在 System.Data.OracleClient.OracleCommand.Execute(OciStatementHandle statementHandle, CommandBehavior behavior, Boolean needRowid, OciRowidDescriptor& rowidDescriptor, ArrayList& resultParameterOrdinals)
+   在 System.Data.OracleClient.OracleCommand.Execute(OciStatementHandle statementHandle, CommandBehavior behavior, ArrayList& resultParameterOrdinals)
+   在 System.Data.OracleClient.OracleCommand.ExecuteReader(CommandBehavior behavior)
+   在 System.Data.OracleClient.OracleCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   在 System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader(CommandBehavior behavior)
+   在 System.Data.Common.DbDataAdapter.FillInternal(DataSet dataset, DataTable[] datatables, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   在 System.Data.Common.DbDataAdapter.Fill(DataTable[] dataTables, Int32 startRecord, Int32 maxRecords, IDbCommand command, CommandBehavior behavior)
+   在 System.Data.Common.DbDataAdapter.Fill(DataTable dataTable)
+   在 Emedchina.Commons.Data.DataBaseFacade.SQLExecuteDataTable(String sql, String tableName, IDbDataParameter[] selectParameters) 位置 E:\Work_Llt\HCTradeBuyer\Commons\Data\DataBaseFacade.cs:行号 619
+
+Additional Info:
+
+MachineName : LLT
+TimeStamp : 2007-10-18 2:32:12
+FullName : Microsoft.Practices.EnterpriseLibrary.ExceptionHandling, Version=2.0.0.0, Culture=neutral, PublicKeyToken=null
+AppDomainName : Emedchina.TradeAssistant.Server.exe
+ThreadIdentity : 
+WindowsIdentity : LLT\Administrator
+
+Category: Tracing
+Priority: 0
+EventId: 100
+Severity: Error
+Title:Connection Failed Exception Handler
+Machine: LLT
+App Domain: Emedchina.TradeAssistant.Server.exe
+ProcessId: 6768
+Process Name: E:\Work_Llt\HCTradeBuyer\Server\bin\Debug\Emedchina.TradeAssistant.Server.exe
+Thread Name: 
+Win32 ThreadId:5204
+Extended Properties: 
+Tracing Error: 100 : Timestamp: 2007-10-18 2:33:44
+Message: HandlingInstanceID: b3048fca-bee1-4249-8879-285e5a891be6
+An exception of type 'System.Data.OracleClient.OracleException' occurred and was caught.
+----------------------------------------------------------------------------------------
+10/18/2007 10:33:44
+Type : System.Data.OracleClient.OracleException, System.Data.OracleClient, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+Message : ORA-00904: "ADUID_USER_ID": invalid identifier
+
+Source : System.Data.OracleClient
+Help link : 
+Code : 904
+ErrorCode : -2146232008
+Data : System.Collections.ListDictionaryInternal
+TargetSite : Void CheckError(System.Data.OracleClient.OciErrorHandle, Int32)
+Stack Trace :    在 System.Data.OracleClient.OracleConnection.CheckError(OciErrorHandle errorHandle, Int32 rc)
+   在 System.Data.OracleClient.OracleCommand.Execute(OciStatementHandle statementHandle, CommandBehavior behavior, Boolean needRowid, OciRowidDescriptor& rowidDescriptor, ArrayList& resultParameterOrdinals)
+   在 System.Data.OracleClient.OracleCommand.Execute(OciStatementHandle statementHandle, CommandBehavior behavior, ArrayList& resultParameterOrdinals)
+   在 System.Data.OracleClient.OracleCommand.ExecuteReader(CommandBehavior behavior)
+   在 System.Data.OracleClient.OracleCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   在 System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader(CommandBehavior behavior)
+   在 System.Data.Common.DbDataAdapter.FillInternal(DataSet dataset, DataTable[] datatables, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   在 System.Data.Common.DbDataAdapter.Fill(DataTable[] dataTables, Int32 startRecord, Int32 maxRecords, IDbCommand command, CommandBehavior behavior)
+   在 System.Data.Common.DbDataAdapter.Fill(DataTable dataTable)
+   在 Emedchina.Commons.Data.DataBaseFacade.SQLExecuteDataTable(String sql, String tableName, IDbDataParameter[] selectParameters) 位置 E:\Work_Llt\HCTradeBuyer\Commons\Data\DataBaseFacade.cs:行号 619
+
+Additional Info:
+
+MachineName : LLT
+TimeStamp : 2007-10-18 2:33:44
+FullName : Microsoft.Practices.EnterpriseLibrary.ExceptionHandling, Version=2.0.0.0, Culture=neutral, PublicKeyToken=null
+AppDomainName : Emedchina.TradeAssistant.Server.exe
+ThreadIdentity : 
+WindowsIdentity : LLT\Administrator
+
+Category: Tracing
+Priority: 0
+EventId: 100
+Severity: Error
+Title:Connection Failed Exception Handler
+Machine: LLT
+App Domain: Emedchina.TradeAssistant.Server.exe
+ProcessId: 7428
+Process Name: E:\Work_Llt\HCTradeBuyer\Server\bin\Debug\Emedchina.TradeAssistant.Server.exe
+Thread Name: 
+Win32 ThreadId:5556
+Extended Properties: 
+Tracing Error: 100 : Timestamp: 2007-10-18 2:40:17
+Message: HandlingInstanceID: 24164e14-fbe1-4a73-8de8-ea1d9ac6ff16
+An exception of type 'System.Data.OracleClient.OracleException' occurred and was caught.
+----------------------------------------------------------------------------------------
+10/18/2007 10:40:17
+Type : System.Data.OracleClient.OracleException, System.Data.OracleClient, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+Message : ORA-00904: "ADUID_USER_ID": invalid identifier
+
+Source : System.Data.OracleClient
+Help link : 
+Code : 904
+ErrorCode : -2146232008
+Data : System.Collections.ListDictionaryInternal
+TargetSite : Void CheckError(System.Data.OracleClient.OciErrorHandle, Int32)
+Stack Trace :    在 System.Data.OracleClient.OracleConnection.CheckError(OciErrorHandle errorHandle, Int32 rc)
+   在 System.Data.OracleClient.OracleCommand.Execute(OciStatementHandle statementHandle, CommandBehavior behavior, Boolean needRowid, OciRowidDescriptor& rowidDescriptor, ArrayList& resultParameterOrdinals)
+   在 System.Data.OracleClient.OracleCommand.Execute(OciStatementHandle statementHandle, CommandBehavior behavior, ArrayList& resultParameterOrdinals)
+   在 System.Data.OracleClient.OracleCommand.ExecuteReader(CommandBehavior behavior)
+   在 System.Data.OracleClient.OracleCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   在 System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader(CommandBehavior behavior)
+   在 System.Data.Common.DbDataAdapter.FillInternal(DataSet dataset, DataTable[] datatables, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   在 System.Data.Common.DbDataAdapter.Fill(DataTable[] dataTables, Int32 startRecord, Int32 maxRecords, IDbCommand command, CommandBehavior behavior)
+   在 System.Data.Common.DbDataAdapter.Fill(DataTable dataTable)
+   在 Emedchina.Commons.Data.DataBaseFacade.SQLExecuteDataTable(String sql, String tableName, IDbDataParameter[] selectParameters) 位置 E:\Work_Llt\HCTradeBuyer\Commons\Data\DataBaseFacade.cs:行号 619
+
+Additional Info:
+
+MachineName : LLT
+TimeStamp : 2007-10-18 2:40:17
+FullName : Microsoft.Practices.EnterpriseLibrary.ExceptionHandling, Version=2.0.0.0, Culture=neutral, PublicKeyToken=null
+AppDomainName : Emedchina.TradeAssistant.Server.exe
+ThreadIdentity : 
+WindowsIdentity : LLT\Administrator
+
+Category: Tracing
+Priority: 0
+EventId: 100
+Severity: Error
+Title:Connection Failed Exception Handler
+Machine: LLT
+App Domain: Emedchina.TradeAssistant.Server.exe
+ProcessId: 6132
+Process Name: E:\Work_Llt\HCTradeBuyer\Server\bin\Debug\Emedchina.TradeAssistant.Server.exe
+Thread Name: 
+Win32 ThreadId:5916
+Extended Properties: 
+Tracing Error: 100 : Timestamp: 2007-10-18 3:20:36
+Message: HandlingInstanceID: 3e4ade73-e55d-4794-bd21-2306cea24cd4
+An exception of type 'System.Data.OracleClient.OracleException' occurred and was caught.
+----------------------------------------------------------------------------------------
+10/18/2007 11:20:36
+Type : System.Data.OracleClient.OracleException, System.Data.OracleClient, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+Message : ORA-00904: "ADUID_USER_ID": invalid identifier
+
+Source : System.Data.OracleClient
+Help link : 
+Code : 904
+ErrorCode : -2146232008
+Data : System.Collections.ListDictionaryInternal
+TargetSite : Void CheckError(System.Data.OracleClient.OciErrorHandle, Int32)
+Stack Trace :    在 System.Data.OracleClient.OracleConnection.CheckError(OciErrorHandle errorHandle, Int32 rc)
+   在 System.Data.OracleClient.OracleCommand.Execute(OciStatementHandle statementHandle, CommandBehavior behavior, Boolean needRowid, OciRowidDescriptor& rowidDescriptor, ArrayList& resultParameterOrdinals)
+   在 System.Data.OracleClient.OracleCommand.Execute(OciStatementHandle statementHandle, CommandBehavior behavior, ArrayList& resultParameterOrdinals)
+   在 System.Data.OracleClient.OracleCommand.ExecuteReader(CommandBehavior behavior)
+   在 System.Data.OracleClient.OracleCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   在 System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader(CommandBehavior behavior)
+   在 System.Data.Common.DbDataAdapter.FillInternal(DataSet dataset, DataTable[] datatables, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   在 System.Data.Common.DbDataAdapter.Fill(DataTable[] dataTables, Int32 startRecord, Int32 maxRecords, IDbCommand command, CommandBehavior behavior)
+   在 System.Data.Common.DbDataAdapter.Fill(DataTable dataTable)
+   在 Emedchina.Commons.Data.DataBaseFacade.SQLExecuteDataTable(String sql, String tableName, IDbDataParameter[] selectParameters) 位置 E:\Work_Llt\HCTradeBuyer\Commons\Data\DataBaseFacade.cs:行号 619
+
+Additional Info:
+
+MachineName : LLT
+TimeStamp : 2007-10-18 3:20:36
+FullName : Microsoft.Practices.EnterpriseLibrary.ExceptionHandling, Version=2.0.0.0, Culture=neutral, PublicKeyToken=null
+AppDomainName : Emedchina.TradeAssistant.Server.exe
+ThreadIdentity : 
+WindowsIdentity : LLT\Administrator
+
+Category: Tracing
+Priority: 0
+EventId: 100
+Severity: Error
+Title:Connection Failed Exception Handler
+Machine: LLT
+App Domain: Emedchina.TradeAssistant.Server.exe
+ProcessId: 6672
+Process Name: E:\Work_Llt\HCTradeBuyer\Server\bin\Debug\Emedchina.TradeAssistant.Server.exe
+Thread Name: 
+Win32 ThreadId:8096
+Extended Properties: 
+Tracing Error: 100 : Timestamp: 2007-10-18 3:26:40
+Message: HandlingInstanceID: 2939458f-b77a-4104-bccf-455217e8d20e
+An exception of type 'System.Data.OracleClient.OracleException' occurred and was caught.
+----------------------------------------------------------------------------------------
+10/18/2007 11:26:40
+Type : System.Data.OracleClient.OracleException, System.Data.OracleClient, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+Message : ORA-00904: "ADUID_USER_ID": invalid identifier
+
+Source : System.Data.OracleClient
+Help link : 
+Code : 904
+ErrorCode : -2146232008
+Data : System.Collections.ListDictionaryInternal
+TargetSite : Void CheckError(System.Data.OracleClient.OciErrorHandle, Int32)
+Stack Trace :    在 System.Data.OracleClient.OracleConnection.CheckError(OciErrorHandle errorHandle, Int32 rc)
+   在 System.Data.OracleClient.OracleCommand.Execute(OciStatementHandle statementHandle, CommandBehavior behavior, Boolean needRowid, OciRowidDescriptor& rowidDescriptor, ArrayList& resultParameterOrdinals)
+   在 System.Data.OracleClient.OracleCommand.Execute(OciStatementHandle statementHandle, CommandBehavior behavior, ArrayList& resultParameterOrdinals)
+   在 System.Data.OracleClient.OracleCommand.ExecuteReader(CommandBehavior behavior)
+   在 System.Data.OracleClient.OracleCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   在 System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader(CommandBehavior behavior)
+   在 System.Data.Common.DbDataAdapter.FillInternal(DataSet dataset, DataTable[] datatables, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   在 System.Data.Common.DbDataAdapter.Fill(DataTable[] dataTables, Int32 startRecord, Int32 maxRecords, IDbCommand command, CommandBehavior behavior)
+   在 System.Data.Common.DbDataAdapter.Fill(DataTable dataTable)
+   在 Emedchina.Commons.Data.DataBaseFacade.SQLExecuteDataTable(String sql, String tableName, IDbDataParameter[] selectParameters) 位置 E:\Work_Llt\HCTradeBuyer\Commons\Data\DataBaseFacade.cs:行号 619
+
+Additional Info:
+
+MachineName : LLT
+TimeStamp : 2007-10-18 3:26:40
+FullName : Microsoft.Practices.EnterpriseLibrary.ExceptionHandling, Version=2.0.0.0, Culture=neutral, PublicKeyToken=null
+AppDomainName : Emedchina.TradeAssistant.Server.exe
+ThreadIdentity : 
+WindowsIdentity : LLT\Administrator
+
+Category: Tracing
+Priority: 0
+EventId: 100
+Severity: Error
+Title:Connection Failed Exception Handler
+Machine: LLT
+App Domain: Emedchina.TradeAssistant.Server.exe
+ProcessId: 6672
+Process Name: E:\Work_Llt\HCTradeBuyer\Server\bin\Debug\Emedchina.TradeAssistant.Server.exe
+Thread Name: 
+Win32 ThreadId:5556
+Extended Properties: 
+Tracing Error: 100 : Timestamp: 2007-10-18 5:31:56
+Message: HandlingInstanceID: 11838a34-44e8-4c2f-bf11-dd99c579f2a6
+An exception of type 'System.Data.OracleClient.OracleException' occurred and was caught.
+----------------------------------------------------------------------------------------
+10/18/2007 13:31:55
+Type : System.Data.OracleClient.OracleException, System.Data.OracleClient, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+Message : ORA-00904: "ADUID_USER_ID": invalid identifier
+
+Source : System.Data.OracleClient
+Help link : 
+Code : 904
+ErrorCode : -2146232008
+Data : System.Collections.ListDictionaryInternal
+TargetSite : Void CheckError(System.Data.OracleClient.OciErrorHandle, Int32)
+Stack Trace :    在 System.Data.OracleClient.OracleConnection.CheckError(OciErrorHandle errorHandle, Int32 rc)
+   在 System.Data.OracleClient.OracleCommand.Execute(OciStatementHandle statementHandle, CommandBehavior behavior, Boolean needRowid, OciRowidDescriptor& rowidDescriptor, ArrayList& resultParameterOrdinals)
+   在 System.Data.OracleClient.OracleCommand.Execute(OciStatementHandle statementHandle, CommandBehavior behavior, ArrayList& resultParameterOrdinals)
+   在 System.Data.OracleClient.OracleCommand.ExecuteReader(CommandBehavior behavior)
+   在 System.Data.OracleClient.OracleCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   在 System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader(CommandBehavior behavior)
+   在 System.Data.Common.DbDataAdapter.FillInternal(DataSet dataset, DataTable[] datatables, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   在 System.Data.Common.DbDataAdapter.Fill(DataTable[] dataTables, Int32 startRecord, Int32 maxRecords, IDbCommand command, CommandBehavior behavior)
+   在 System.Data.Common.DbDataAdapter.Fill(DataTable dataTable)
+   在 Emedchina.Commons.Data.DataBaseFacade.SQLExecuteDataTable(String sql, String tableName, IDbDataParameter[] selectParameters) 位置 E:\Work_Llt\HCTradeBuyer\Commons\Data\DataBaseFacade.cs:行号 619
+
+Additional Info:
+
+MachineName : LLT
+TimeStamp : 2007-10-18 5:31:55
+FullName : Microsoft.Practices.EnterpriseLibrary.ExceptionHandling, Version=2.0.0.0, Culture=neutral, PublicKeyToken=null
+AppDomainName : Emedchina.TradeAssistant.Server.exe
+ThreadIdentity : 
+WindowsIdentity : LLT\Administrator
+
+Category: Tracing
+Priority: 0
+EventId: 100
+Severity: Error
+Title:Connection Failed Exception Handler
+Machine: LLT
+App Domain: Emedchina.TradeAssistant.Server.exe
+ProcessId: 6624
+Process Name: E:\Work_Llt\HCTradeBuyer\Server\bin\Debug\Emedchina.TradeAssistant.Server.exe
+Thread Name: 
+Win32 ThreadId:2000
+Extended Properties: 
+Tracing Error: 100 : Timestamp: 2007-10-19 7:52:40
+Message: HandlingInstanceID: 9d3fa620-6c9b-409d-b131-760a0c133142
+An exception of type 'System.Data.OracleClient.OracleException' occurred and was caught.
+----------------------------------------------------------------------------------------
+10/19/2007 15:52:40
+Type : System.Data.OracleClient.OracleException, System.Data.OracleClient, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+Message : ORA-00904: "ADUID_USER_ID": invalid identifier
+
+Source : System.Data.OracleClient
+Help link : 
+Code : 904
+ErrorCode : -2146232008
+Data : System.Collections.ListDictionaryInternal
+TargetSite : Void CheckError(System.Data.OracleClient.OciErrorHandle, Int32)
+Stack Trace :    在 System.Data.OracleClient.OracleConnection.CheckError(OciErrorHandle errorHandle, Int32 rc)
+   在 System.Data.OracleClient.OracleCommand.Execute(OciStatementHandle statementHandle, CommandBehavior behavior, Boolean needRowid, OciRowidDescriptor& rowidDescriptor, ArrayList& resultParameterOrdinals)
+   在 System.Data.OracleClient.OracleCommand.Execute(OciStatementHandle statementHandle, CommandBehavior behavior, ArrayList& resultParameterOrdinals)
+   在 System.Data.OracleClient.OracleCommand.ExecuteReader(CommandBehavior behavior)
+   在 System.Data.OracleClient.OracleCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   在 System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader(CommandBehavior behavior)
+   在 System.Data.Common.DbDataAdapter.FillInternal(DataSet dataset, DataTable[] datatables, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   在 System.Data.Common.DbDataAdapter.Fill(DataTable[] dataTables, Int32 startRecord, Int32 maxRecords, IDbCommand command, CommandBehavior behavior)
+   在 System.Data.Common.DbDataAdapter.Fill(DataTable dataTable)
+   在 Emedchina.Commons.Data.DataBaseFacade.SQLExecuteDataTable(String sql, String tableName, IDbDataParameter[] selectParameters) 位置 E:\Work_Llt\HCTradeBuyer\Commons\Data\DataBaseFacade.cs:行号 619
+
+Additional Info:
+
+MachineName : LLT
+TimeStamp : 2007-10-19 7:52:40
+FullName : Microsoft.Practices.EnterpriseLibrary.ExceptionHandling, Version=2.0.0.0, Culture=neutral, PublicKeyToken=null
+AppDomainName : Emedchina.TradeAssistant.Server.exe
+ThreadIdentity : 
+WindowsIdentity : LLT\Administrator
+
+Category: Tracing
+Priority: 0
+EventId: 100
+Severity: Error
+Title:Connection Failed Exception Handler
+Machine: LLT
+App Domain: Emedchina.TradeAssistant.Server.exe
+ProcessId: 7984
+Process Name: E:\Work_Llt\HCTradeBuyer\Server\bin\Debug\Emedchina.TradeAssistant.Server.exe
+Thread Name: 
+Win32 ThreadId:7220
+Extended Properties: 
+Tracing Error: 100 : Timestamp: 2007-10-19 7:52:41
+Message: HandlingInstanceID: 98e8b2c3-4ec3-4f96-8c44-955dcd4e87f9
+An exception of type 'System.Data.OracleClient.OracleException' occurred and was caught.
+----------------------------------------------------------------------------------------
+10/19/2007 15:52:41
+Type : System.Data.OracleClient.OracleException, System.Data.OracleClient, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+Message : ORA-00904: "STORE_ROOM__ADDRESS": invalid identifier
+
+Source : System.Data.OracleClient
+Help link : 
+Code : 904
+ErrorCode : -2146232008
+Data : System.Collections.ListDictionaryInternal
+TargetSite : Void CheckError(System.Data.OracleClient.OciErrorHandle, Int32)
+Stack Trace :    在 System.Data.OracleClient.OracleConnection.CheckError(OciErrorHandle errorHandle, Int32 rc)
+   在 System.Data.OracleClient.OracleCommand.Execute(OciStatementHandle statementHandle, CommandBehavior behavior, Boolean needRowid, OciRowidDescriptor& rowidDescriptor, ArrayList& resultParameterOrdinals)
+   在 System.Data.OracleClient.OracleCommand.Execute(OciStatementHandle statementHandle, CommandBehavior behavior, ArrayList& resultParameterOrdinals)
+   在 System.Data.OracleClient.OracleCommand.ExecuteReader(CommandBehavior behavior)
+   在 System.Data.OracleClient.OracleCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   在 System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader(CommandBehavior behavior)
+   在 System.Data.Common.DbDataAdapter.FillInternal(DataSet dataset, DataTable[] datatables, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   在 System.Data.Common.DbDataAdapter.Fill(DataTable[] dataTables, Int32 startRecord, Int32 maxRecords, IDbCommand command, CommandBehavior behavior)
+   在 System.Data.Common.DbDataAdapter.Fill(DataTable dataTable)
+   在 Emedchina.Commons.Data.DataBaseFacade.SQLExecuteDataTable(String sql, String tableName, IDbDataParameter[] selectParameters) 位置 E:\Work_Llt\HCTradeBuyer\Commons\Data\DataBaseFacade.cs:行号 619
+
+Additional Info:
+
+MachineName : LLT
+TimeStamp : 2007-10-19 7:52:41
+FullName : Microsoft.Practices.EnterpriseLibrary.ExceptionHandling, Version=2.0.0.0, Culture=neutral, PublicKeyToken=null
+AppDomainName : Emedchina.TradeAssistant.Server.exe
+ThreadIdentity : 
+WindowsIdentity : LLT\Administrator
+
+Category: Tracing
+Priority: 0
+EventId: 100
+Severity: Error
+Title:Connection Failed Exception Handler
+Machine: LLT
+App Domain: Emedchina.TradeAssistant.Server.exe
+ProcessId: 7984
+Process Name: E:\Work_Llt\HCTradeBuyer\Server\bin\Debug\Emedchina.TradeAssistant.Server.exe
+Thread Name: 
+Win32 ThreadId:7220
+Extended Properties: 
+Tracing Error: 100 : Timestamp: 2007-10-19 7:52:41
+Message: HandlingInstanceID: 55566c94-c436-4e1f-a15b-52ac0ef0e91f
+An exception of type 'System.Data.OracleClient.OracleException' occurred and was caught.
+----------------------------------------------------------------------------------------
+10/19/2007 15:52:41
+Type : System.Data.OracleClient.OracleException, System.Data.OracleClient, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+Message : ORA-00904: "STORE_ROOM__ADDRESS": invalid identifier
+
+Source : System.Data.OracleClient
+Help link : 
+Code : 904
+ErrorCode : -2146232008
+Data : System.Collections.ListDictionaryInternal
+TargetSite : Void CheckError(System.Data.OracleClient.OciErrorHandle, Int32)
+Stack Trace :    在 System.Data.OracleClient.OracleConnection.CheckError(OciErrorHandle errorHandle, Int32 rc)
+   在 System.Data.OracleClient.OracleCommand.Execute(OciStatementHandle statementHandle, CommandBehavior behavior, Boolean needRowid, OciRowidDescriptor& rowidDescriptor, ArrayList& resultParameterOrdinals)
+   在 System.Data.OracleClient.OracleCommand.Execute(OciStatementHandle statementHandle, CommandBehavior behavior, ArrayList& resultParameterOrdinals)
+   在 System.Data.OracleClient.OracleCommand.ExecuteReader(CommandBehavior behavior)
+   在 System.Data.OracleClient.OracleCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   在 System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader(CommandBehavior behavior)
+   在 System.Data.Common.DbDataAdapter.FillInternal(DataSet dataset, DataTable[] datatables, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   在 System.Data.Common.DbDataAdapter.Fill(DataTable[] dataTables, Int32 startRecord, Int32 maxRecords, IDbCommand command, CommandBehavior behavior)
+   在 System.Data.Common.DbDataAdapter.Fill(DataTable dataTable)
+   在 Emedchina.Commons.Data.DataBaseFacade.SQLExecuteDataTable(String sql, String tableName, IDbDataParameter[] selectParameters) 位置 E:\Work_Llt\HCTradeBuyer\Commons\Data\DataBaseFacade.cs:行号 619
+
+Additional Info:
+
+MachineName : LLT
+TimeStamp : 2007-10-19 7:52:41
+FullName : Microsoft.Practices.EnterpriseLibrary.ExceptionHandling, Version=2.0.0.0, Culture=neutral, PublicKeyToken=null
+AppDomainName : Emedchina.TradeAssistant.Server.exe
+ThreadIdentity : 
+WindowsIdentity : LLT\Administrator
+
+Category: Tracing
+Priority: 0
+EventId: 100
+Severity: Error
+Title:Connection Failed Exception Handler
+Machine: LLT
+App Domain: Emedchina.TradeAssistant.Server.exe
+ProcessId: 7984
+Process Name: E:\Work_Llt\HCTradeBuyer\Server\bin\Debug\Emedchina.TradeAssistant.Server.exe
+Thread Name: 
+Win32 ThreadId:7220
+Extended Properties: 
+Tracing Error: 100 : Timestamp: 2007-10-19 7:52:41
+Message: HandlingInstanceID: 58bbd7f6-9ca9-4367-8183-47ae2711eb9c
+An exception of type 'System.Data.OracleClient.OracleException' occurred and was caught.
+----------------------------------------------------------------------------------------
+10/19/2007 15:52:41
+Type : System.Data.OracleClient.OracleException, System.Data.OracleClient, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+Message : ORA-00904: "PROJECT_ID": invalid identifier
+
+Source : System.Data.OracleClient
+Help link : 
+Code : 904
+ErrorCode : -2146232008
+Data : System.Collections.ListDictionaryInternal
+TargetSite : Void CheckError(System.Data.OracleClient.OciErrorHandle, Int32)
+Stack Trace :    在 System.Data.OracleClient.OracleConnection.CheckError(OciErrorHandle errorHandle, Int32 rc)
+   在 System.Data.OracleClient.OracleCommand.Execute(OciStatementHandle statementHandle, CommandBehavior behavior, Boolean needRowid, OciRowidDescriptor& rowidDescriptor, ArrayList& resultParameterOrdinals)
+   在 System.Data.OracleClient.OracleCommand.Execute(OciStatementHandle statementHandle, CommandBehavior behavior, ArrayList& resultParameterOrdinals)
+   在 System.Data.OracleClient.OracleCommand.ExecuteReader(CommandBehavior behavior)
+   在 System.Data.OracleClient.OracleCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   在 System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader(CommandBehavior behavior)
+   在 System.Data.Common.DbDataAdapter.FillInternal(DataSet dataset, DataTable[] datatables, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   在 System.Data.Common.DbDataAdapter.Fill(DataTable[] dataTables, Int32 startRecord, Int32 maxRecords, IDbCommand command, CommandBehavior behavior)
+   在 System.Data.Common.DbDataAdapter.Fill(DataTable dataTable)
+   在 Emedchina.Commons.Data.DataBaseFacade.SQLExecuteDataTable(String sql, String tableName, IDbDataParameter[] selectParameters) 位置 E:\Work_Llt\HCTradeBuyer\Commons\Data\DataBaseFacade.cs:行号 619
+
+Additional Info:
+
+MachineName : LLT
+TimeStamp : 2007-10-19 7:52:41
+FullName : Microsoft.Practices.EnterpriseLibrary.ExceptionHandling, Version=2.0.0.0, Culture=neutral, PublicKeyToken=null
+AppDomainName : Emedchina.TradeAssistant.Server.exe
+ThreadIdentity : 
+WindowsIdentity : LLT\Administrator
+
+Category: Tracing
+Priority: 0
+EventId: 100
+Severity: Error
+Title:Connection Failed Exception Handler
+Machine: LLT
+App Domain: Emedchina.TradeAssistant.Server.exe
+ProcessId: 7984
+Process Name: E:\Work_Llt\HCTradeBuyer\Server\bin\Debug\Emedchina.TradeAssistant.Server.exe
+Thread Name: 
+Win32 ThreadId:7220
+Extended Properties: 
+Tracing Error: 100 : Timestamp: 2007-10-19 7:52:41
+Message: HandlingInstanceID: 0df1a84a-a54b-4d51-bc49-ea54d9b61a30
+An exception of type 'System.Data.OracleClient.OracleException' occurred and was caught.
+----------------------------------------------------------------------------------------
+10/19/2007 15:52:41
+Type : System.Data.OracleClient.OracleException, System.Data.OracleClient, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+Message : ORA-00904: "PROJECT_ID": invalid identifier
+
+Source : System.Data.OracleClient
+Help link : 
+Code : 904
+ErrorCode : -2146232008
+Data : System.Collections.ListDictionaryInternal
+TargetSite : Void CheckError(System.Data.OracleClient.OciErrorHandle, Int32)
+Stack Trace :    在 System.Data.OracleClient.OracleConnection.CheckError(OciErrorHandle errorHandle, Int32 rc)
+   在 System.Data.OracleClient.OracleCommand.Execute(OciStatementHandle statementHandle, CommandBehavior behavior, Boolean needRowid, OciRowidDescriptor& rowidDescriptor, ArrayList& resultParameterOrdinals)
+   在 System.Data.OracleClient.OracleCommand.Execute(OciStatementHandle statementHandle, CommandBehavior behavior, ArrayList& resultParameterOrdinals)
+   在 System.Data.OracleClient.OracleCommand.ExecuteReader(CommandBehavior behavior)
+   在 System.Data.OracleClient.OracleCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   在 System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader(CommandBehavior behavior)
+   在 System.Data.Common.DbDataAdapter.FillInternal(DataSet dataset, DataTable[] datatables, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   在 System.Data.Common.DbDataAdapter.Fill(DataTable[] dataTables, Int32 startRecord, Int32 maxRecords, IDbCommand command, CommandBehavior behavior)
+   在 System.Data.Common.DbDataAdapter.Fill(DataTable dataTable)
+   在 Emedchina.Commons.Data.DataBaseFacade.SQLExecuteDataTable(String sql, String tableName, IDbDataParameter[] selectParameters) 位置 E:\Work_Llt\HCTradeBuyer\Commons\Data\DataBaseFacade.cs:行号 619
+
+Additional Info:
+
+MachineName : LLT
+TimeStamp : 2007-10-19 7:52:41
+FullName : Microsoft.Practices.EnterpriseLibrary.ExceptionHandling, Version=2.0.0.0, Culture=neutral, PublicKeyToken=null
+AppDomainName : Emedchina.TradeAssistant.Server.exe
+ThreadIdentity : 
+WindowsIdentity : LLT\Administrator
+
+Category: Tracing
+Priority: 0
+EventId: 100
+Severity: Error
+Title:Connection Failed Exception Handler
+Machine: LLT
+App Domain: Emedchina.TradeAssistant.Server.exe
+ProcessId: 7984
+Process Name: E:\Work_Llt\HCTradeBuyer\Server\bin\Debug\Emedchina.TradeAssistant.Server.exe
+Thread Name: 
+Win32 ThreadId:7220
+Extended Properties: 
+Tracing Error: 100 : Timestamp: 2007-10-19 7:52:41
+Message: HandlingInstanceID: f0d7fe2f-6928-4e32-89a2-ff5246cc3488
+An exception of type 'System.Data.OracleClient.OracleException' occurred and was caught.
+----------------------------------------------------------------------------------------
+10/19/2007 15:52:41
+Type : System.Data.OracleClient.OracleException, System.Data.OracleClient, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+Message : ORA-00904: "STORE_ROOM__ADDRESS": invalid identifier
+
+Source : System.Data.OracleClient
+Help link : 
+Code : 904
+ErrorCode : -2146232008
+Data : System.Collections.ListDictionaryInternal
+TargetSite : Void CheckError(System.Data.OracleClient.OciErrorHandle, Int32)
+Stack Trace :    在 System.Data.OracleClient.OracleConnection.CheckError(OciErrorHandle errorHandle, Int32 rc)
+   在 System.Data.OracleClient.OracleCommand.Execute(OciStatementHandle statementHandle, CommandBehavior behavior, Boolean needRowid, OciRowidDescriptor& rowidDescriptor, ArrayList& resultParameterOrdinals)
+   在 System.Data.OracleClient.OracleCommand.Execute(OciStatementHandle statementHandle, CommandBehavior behavior, ArrayList& resultParameterOrdinals)
+   在 System.Data.OracleClient.OracleCommand.ExecuteReader(CommandBehavior behavior)
+   在 System.Data.OracleClient.OracleCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   在 System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader(CommandBehavior behavior)
+   在 System.Data.Common.DbDataAdapter.FillInternal(DataSet dataset, DataTable[] datatables, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   在 System.Data.Common.DbDataAdapter.Fill(DataTable[] dataTables, Int32 startRecord, Int32 maxRecords, IDbCommand command, CommandBehavior behavior)
+   在 System.Data.Common.DbDataAdapter.Fill(DataTable dataTable)
+   在 Emedchina.Commons.Data.DataBaseFacade.SQLExecuteDataTable(String sql, String tableName, IDbDataParameter[] selectParameters) 位置 E:\Work_Llt\HCTradeBuyer\Commons\Data\DataBaseFacade.cs:行号 619
+
+Additional Info:
+
+MachineName : LLT
+TimeStamp : 2007-10-19 7:52:41
+FullName : Microsoft.Practices.EnterpriseLibrary.ExceptionHandling, Version=2.0.0.0, Culture=neutral, PublicKeyToken=null
+AppDomainName : Emedchina.TradeAssistant.Server.exe
+ThreadIdentity : 
+WindowsIdentity : LLT\Administrator
+
+Category: Tracing
+Priority: 0
+EventId: 100
+Severity: Error
+Title:Connection Failed Exception Handler
+Machine: LLT
+App Domain: Emedchina.TradeAssistant.Server.exe
+ProcessId: 7984
+Process Name: E:\Work_Llt\HCTradeBuyer\Server\bin\Debug\Emedchina.TradeAssistant.Server.exe
+Thread Name: 
+Win32 ThreadId:7220
+Extended Properties: 
+Tracing Error: 100 : Timestamp: 2007-10-19 9:48:33
+Message: HandlingInstanceID: 0bda5eeb-2db4-4b46-99b4-678a8a9a3835
+An exception of type 'System.Data.OracleClient.OracleException' occurred and was caught.
+----------------------------------------------------------------------------------------
+10/19/2007 17:48:33
+Type : System.Data.OracleClient.OracleException, System.Data.OracleClient, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+Message : ORA-00904: "PROJECT_ID": invalid identifier
+
+Source : System.Data.OracleClient
+Help link : 
+Code : 904
+ErrorCode : -2146232008
+Data : System.Collections.ListDictionaryInternal
+TargetSite : Void CheckError(System.Data.OracleClient.OciErrorHandle, Int32)
+Stack Trace :    在 System.Data.OracleClient.OracleConnection.CheckError(OciErrorHandle errorHandle, Int32 rc)
+   在 System.Data.OracleClient.OracleCommand.Execute(OciStatementHandle statementHandle, CommandBehavior behavior, Boolean needRowid, OciRowidDescriptor& rowidDescriptor, ArrayList& resultParameterOrdinals)
+   在 System.Data.OracleClient.OracleCommand.Execute(OciStatementHandle statementHandle, CommandBehavior behavior, ArrayList& resultParameterOrdinals)
+   在 System.Data.OracleClient.OracleCommand.ExecuteReader(CommandBehavior behavior)
+   在 System.Data.OracleClient.OracleCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   在 System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader(CommandBehavior behavior)
+   在 System.Data.Common.DbDataAdapter.FillInternal(DataSet dataset, DataTable[] datatables, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   在 System.Data.Common.DbDataAdapter.Fill(DataTable[] dataTables, Int32 startRecord, Int32 maxRecords, IDbCommand command, CommandBehavior behavior)
+   在 System.Data.Common.DbDataAdapter.Fill(DataTable dataTable)
+   在 Emedchina.Commons.Data.DataBaseFacade.SQLExecuteDataTable(String sql, String tableName, IDbDataParameter[] selectParameters) 位置 E:\Work_Llt\HCTradeBuyer\Commons\Data\DataBaseFacade.cs:行号 619
+
+Additional Info:
+
+MachineName : LLT
+TimeStamp : 2007-10-19 9:48:33
+FullName : Microsoft.Practices.EnterpriseLibrary.ExceptionHandling, Version=2.0.0.0, Culture=neutral, PublicKeyToken=null
+AppDomainName : Emedchina.TradeAssistant.Server.exe
+ThreadIdentity : 
+WindowsIdentity : LLT\Administrator
+
+Category: Tracing
+Priority: 0
+EventId: 100
+Severity: Error
+Title:Connection Failed Exception Handler
+Machine: LLT
+App Domain: Emedchina.TradeAssistant.Server.exe
+ProcessId: 7940
+Process Name: E:\Work_Llt\HCTradeBuyer\Server\bin\Debug\Emedchina.TradeAssistant.Server.exe
+Thread Name: 
+Win32 ThreadId:4372
+Extended Properties: 
+Tracing Error: 100 : Timestamp: 2007-10-19 9:48:33
+Message: HandlingInstanceID: c60d7b9f-9732-4cf9-8f0a-96e22f7cfe70
+An exception of type 'System.Data.OracleClient.OracleException' occurred and was caught.
+----------------------------------------------------------------------------------------
+10/19/2007 17:48:33
+Type : System.Data.OracleClient.OracleException, System.Data.OracleClient, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+Message : ORA-00904: "PROJECT_ID": invalid identifier
+
+Source : System.Data.OracleClient
+Help link : 
+Code : 904
+ErrorCode : -2146232008
+Data : System.Collections.ListDictionaryInternal
+TargetSite : Void CheckError(System.Data.OracleClient.OciErrorHandle, Int32)
+Stack Trace :    在 System.Data.OracleClient.OracleConnection.CheckError(OciErrorHandle errorHandle, Int32 rc)
+   在 System.Data.OracleClient.OracleCommand.Execute(OciStatementHandle statementHandle, CommandBehavior behavior, Boolean needRowid, OciRowidDescriptor& rowidDescriptor, ArrayList& resultParameterOrdinals)
+   在 System.Data.OracleClient.OracleCommand.Execute(OciStatementHandle statementHandle, CommandBehavior behavior, ArrayList& resultParameterOrdinals)
+   在 System.Data.OracleClient.OracleCommand.ExecuteReader(CommandBehavior behavior)
+   在 System.Data.OracleClient.OracleCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   在 System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader(CommandBehavior behavior)
+   在 System.Data.Common.DbDataAdapter.FillInternal(DataSet dataset, DataTable[] datatables, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   在 System.Data.Common.DbDataAdapter.Fill(DataTable[] dataTables, Int32 startRecord, Int32 maxRecords, IDbCommand command, CommandBehavior behavior)
+   在 System.Data.Common.DbDataAdapter.Fill(DataTable dataTable)
+   在 Emedchina.Commons.Data.DataBaseFacade.SQLExecuteDataTable(String sql, String tableName, IDbDataParameter[] selectParameters) 位置 E:\Work_Llt\HCTradeBuyer\Commons\Data\DataBaseFacade.cs:行号 619
+
+Additional Info:
+
+MachineName : LLT
+TimeStamp : 2007-10-19 9:48:33
+FullName : Microsoft.Practices.EnterpriseLibrary.ExceptionHandling, Version=2.0.0.0, Culture=neutral, PublicKeyToken=null
+AppDomainName : Emedchina.TradeAssistant.Server.exe
+ThreadIdentity : 
+WindowsIdentity : LLT\Administrator
+
+Category: Tracing
+Priority: 0
+EventId: 100
+Severity: Error
+Title:Connection Failed Exception Handler
+Machine: LLT
+App Domain: Emedchina.TradeAssistant.Server.exe
+ProcessId: 7940
+Process Name: E:\Work_Llt\HCTradeBuyer\Server\bin\Debug\Emedchina.TradeAssistant.Server.exe
+Thread Name: 
+Win32 ThreadId:4372
+Extended Properties: 
+Tracing Error: 100 : Timestamp: 2007-10-19 10:20:27
+Message: HandlingInstanceID: 1ee55da1-e05b-468a-8edf-5f8a60a27011
+An exception of type 'System.Data.OracleClient.OracleException' occurred and was caught.
+----------------------------------------------------------------------------------------
+10/19/2007 18:20:27
+Type : System.Data.OracleClient.OracleException, System.Data.OracleClient, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+Message : ORA-00904: "PROJECT_ID": invalid identifier
+
+Source : System.Data.OracleClient
+Help link : 
+Code : 904
+ErrorCode : -2146232008
+Data : System.Collections.ListDictionaryInternal
+TargetSite : Void CheckError(System.Data.OracleClient.OciErrorHandle, Int32)
+Stack Trace :    在 System.Data.OracleClient.OracleConnection.CheckError(OciErrorHandle errorHandle, Int32 rc)
+   在 System.Data.OracleClient.OracleCommand.Execute(OciStatementHandle statementHandle, CommandBehavior behavior, Boolean needRowid, OciRowidDescriptor& rowidDescriptor, ArrayList& resultParameterOrdinals)
+   在 System.Data.OracleClient.OracleCommand.Execute(OciStatementHandle statementHandle, CommandBehavior behavior, ArrayList& resultParameterOrdinals)
+   在 System.Data.OracleClient.OracleCommand.ExecuteReader(CommandBehavior behavior)
+   在 System.Data.OracleClient.OracleCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   在 System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader(CommandBehavior behavior)
+   在 System.Data.Common.DbDataAdapter.FillInternal(DataSet dataset, DataTable[] datatables, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   在 System.Data.Common.DbDataAdapter.Fill(DataTable[] dataTables, Int32 startRecord, Int32 maxRecords, IDbCommand command, CommandBehavior behavior)
+   在 System.Data.Common.DbDataAdapter.Fill(DataTable dataTable)
+   在 Emedchina.Commons.Data.DataBaseFacade.SQLExecuteDataTable(String sql, String tableName, IDbDataParameter[] selectParameters) 位置 E:\Work_Llt\HCTradeBuyer\Commons\Data\DataBaseFacade.cs:行号 619
+
+Additional Info:
+
+MachineName : LLT
+TimeStamp : 2007-10-19 10:20:27
+FullName : Microsoft.Practices.EnterpriseLibrary.ExceptionHandling, Version=2.0.0.0, Culture=neutral, PublicKeyToken=null
+AppDomainName : Emedchina.TradeAssistant.Server.exe
+ThreadIdentity : 
+WindowsIdentity : LLT\Administrator
+
+Category: Tracing
+Priority: 0
+EventId: 100
+Severity: Error
+Title:Connection Failed Exception Handler
+Machine: LLT
+App Domain: Emedchina.TradeAssistant.Server.exe
+ProcessId: 7940
+Process Name: E:\Work_Llt\HCTradeBuyer\Server\bin\Debug\Emedchina.TradeAssistant.Server.exe
+Thread Name: 
+Win32 ThreadId:552
+Extended Properties: 
+Tracing Error: 100 : Timestamp: 2007-10-19 10:20:27
+Message: HandlingInstanceID: da7a1043-b192-4f2f-957d-427513fd52af
+An exception of type 'System.Data.OracleClient.OracleException' occurred and was caught.
+----------------------------------------------------------------------------------------
+10/19/2007 18:20:27
+Type : System.Data.OracleClient.OracleException, System.Data.OracleClient, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+Message : ORA-00904: "PROJECT_ID": invalid identifier
+
+Source : System.Data.OracleClient
+Help link : 
+Code : 904
+ErrorCode : -2146232008
+Data : System.Collections.ListDictionaryInternal
+TargetSite : Void CheckError(System.Data.OracleClient.OciErrorHandle, Int32)
+Stack Trace :    在 System.Data.OracleClient.OracleConnection.CheckError(OciErrorHandle errorHandle, Int32 rc)
+   在 System.Data.OracleClient.OracleCommand.Execute(OciStatementHandle statementHandle, CommandBehavior behavior, Boolean needRowid, OciRowidDescriptor& rowidDescriptor, ArrayList& resultParameterOrdinals)
+   在 System.Data.OracleClient.OracleCommand.Execute(OciStatementHandle statementHandle, CommandBehavior behavior, ArrayList& resultParameterOrdinals)
+   在 System.Data.OracleClient.OracleCommand.ExecuteReader(CommandBehavior behavior)
+   在 System.Data.OracleClient.OracleCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   在 System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader(CommandBehavior behavior)
+   在 System.Data.Common.DbDataAdapter.FillInternal(DataSet dataset, DataTable[] datatables, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   在 System.Data.Common.DbDataAdapter.Fill(DataTable[] dataTables, Int32 startRecord, Int32 maxRecords, IDbCommand command, CommandBehavior behavior)
+   在 System.Data.Common.DbDataAdapter.Fill(DataTable dataTable)
+   在 Emedchina.Commons.Data.DataBaseFacade.SQLExecuteDataTable(String sql, String tableName, IDbDataParameter[] selectParameters) 位置 E:\Work_Llt\HCTradeBuyer\Commons\Data\DataBaseFacade.cs:行号 619
+
+Additional Info:
+
+MachineName : LLT
+TimeStamp : 2007-10-19 10:20:27
+FullName : Microsoft.Practices.EnterpriseLibrary.ExceptionHandling, Version=2.0.0.0, Culture=neutral, PublicKeyToken=null
+AppDomainName : Emedchina.TradeAssistant.Server.exe
+ThreadIdentity : 
+WindowsIdentity : LLT\Administrator
+
+Category: Tracing
+Priority: 0
+EventId: 100
+Severity: Error
+Title:Connection Failed Exception Handler
+Machine: LLT
+App Domain: Emedchina.TradeAssistant.Server.exe
+ProcessId: 7940
+Process Name: E:\Work_Llt\HCTradeBuyer\Server\bin\Debug\Emedchina.TradeAssistant.Server.exe
+Thread Name: 
+Win32 ThreadId:552
+Extended Properties: 
+Tracing Error: 100 : Timestamp: 2007-10-24 1:05:32
+Message: HandlingInstanceID: d6f18122-4760-4d86-ba41-3ec52bad3e83
+An exception of type 'System.Data.OracleClient.OracleException' occurred and was caught.
+----------------------------------------------------------------------------------------
+10/24/2007 09:05:31
+Type : System.Data.OracleClient.OracleException, System.Data.OracleClient, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+Message : ORA-00904: "SALER_FALG": invalid identifier
+
+Source : System.Data.OracleClient
+Help link : 
+Code : 904
+ErrorCode : -2146232008
+Data : System.Collections.ListDictionaryInternal
+TargetSite : Void CheckError(System.Data.OracleClient.OciErrorHandle, Int32)
+Stack Trace :    在 System.Data.OracleClient.OracleConnection.CheckError(OciErrorHandle errorHandle, Int32 rc)
+   在 System.Data.OracleClient.OracleCommand.Execute(OciStatementHandle statementHandle, CommandBehavior behavior, Boolean needRowid, OciRowidDescriptor& rowidDescriptor, ArrayList& resultParameterOrdinals)
+   在 System.Data.OracleClient.OracleCommand.Execute(OciStatementHandle statementHandle, CommandBehavior behavior, ArrayList& resultParameterOrdinals)
+   在 System.Data.OracleClient.OracleCommand.ExecuteReader(CommandBehavior behavior)
+   在 System.Data.OracleClient.OracleCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   在 System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader(CommandBehavior behavior)
+   在 System.Data.Common.DbDataAdapter.FillInternal(DataSet dataset, DataTable[] datatables, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   在 System.Data.Common.DbDataAdapter.Fill(DataTable[] dataTables, Int32 startRecord, Int32 maxRecords, IDbCommand command, CommandBehavior behavior)
+   在 System.Data.Common.DbDataAdapter.Fill(DataTable dataTable)
+   在 Emedchina.Commons.Data.DataBaseFacade.SQLExecuteDataTable(String sql, String tableName, IDbDataParameter[] selectParameters) 位置 E:\Work_Llt\HCTradeBuyer\Commons\Data\DataBaseFacade.cs:行号 619
+
+Additional Info:
+
+MachineName : LLT
+TimeStamp : 2007-10-24 1:05:31
+FullName : Microsoft.Practices.EnterpriseLibrary.ExceptionHandling, Version=2.0.0.0, Culture=neutral, PublicKeyToken=null
+AppDomainName : Emedchina.TradeAssistant.Server.exe
+ThreadIdentity : 
+WindowsIdentity : LLT\Administrator
+
+Category: Tracing
+Priority: 0
+EventId: 100
+Severity: Error
+Title:Connection Failed Exception Handler
+Machine: LLT
+App Domain: Emedchina.TradeAssistant.Server.exe
+ProcessId: 8080
+Process Name: E:\Work_Llt\HCTradeBuyer\Server\bin\Debug\Emedchina.TradeAssistant.Server.exe
+Thread Name: 
+Win32 ThreadId:7328
+Extended Properties: 
+Tracing Error: 100 : Timestamp: 2007-10-24 1:05:32
+Message: HandlingInstanceID: 603ed64b-6ac6-4f5f-a211-6ce3e106936a
+An exception of type 'System.Data.OracleClient.OracleException' occurred and was caught.
+----------------------------------------------------------------------------------------
+10/24/2007 09:05:32
+Type : System.Data.OracleClient.OracleException, System.Data.OracleClient, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+Message : ORA-00904: "SALER_FALG": invalid identifier
+
+Source : System.Data.OracleClient
+Help link : 
+Code : 904
+ErrorCode : -2146232008
+Data : System.Collections.ListDictionaryInternal
+TargetSite : Void CheckError(System.Data.OracleClient.OciErrorHandle, Int32)
+Stack Trace :    在 System.Data.OracleClient.OracleConnection.CheckError(OciErrorHandle errorHandle, Int32 rc)
+   在 System.Data.OracleClient.OracleCommand.Execute(OciStatementHandle statementHandle, CommandBehavior behavior, Boolean needRowid, OciRowidDescriptor& rowidDescriptor, ArrayList& resultParameterOrdinals)
+   在 System.Data.OracleClient.OracleCommand.Execute(OciStatementHandle statementHandle, CommandBehavior behavior, ArrayList& resultParameterOrdinals)
+   在 System.Data.OracleClient.OracleCommand.ExecuteReader(CommandBehavior behavior)
+   在 System.Data.OracleClient.OracleCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   在 System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader(CommandBehavior behavior)
+   在 System.Data.Common.DbDataAdapter.FillInternal(DataSet dataset, DataTable[] datatables, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   在 System.Data.Common.DbDataAdapter.Fill(DataTable[] dataTables, Int32 startRecord, Int32 maxRecords, IDbCommand command, CommandBehavior behavior)
+   在 System.Data.Common.DbDataAdapter.Fill(DataTable dataTable)
+   在 Emedchina.Commons.Data.DataBaseFacade.SQLExecuteDataTable(String sql, String tableName, IDbDataParameter[] selectParameters) 位置 E:\Work_Llt\HCTradeBuyer\Commons\Data\DataBaseFacade.cs:行号 619
+
+Additional Info:
+
+MachineName : LLT
+TimeStamp : 2007-10-24 1:05:32
+FullName : Microsoft.Practices.EnterpriseLibrary.ExceptionHandling, Version=2.0.0.0, Culture=neutral, PublicKeyToken=null
+AppDomainName : Emedchina.TradeAssistant.Server.exe
+ThreadIdentity : 
+WindowsIdentity : LLT\Administrator
+
+Category: Tracing
+Priority: 0
+EventId: 100
+Severity: Error
+Title:Connection Failed Exception Handler
+Machine: LLT
+App Domain: Emedchina.TradeAssistant.Server.exe
+ProcessId: 8080
+Process Name: E:\Work_Llt\HCTradeBuyer\Server\bin\Debug\Emedchina.TradeAssistant.Server.exe
+Thread Name: 
+Win32 ThreadId:7328
+Extended Properties: 
+Tracing Error: 100 : Timestamp: 2007-10-24 1:11:48
+Message: HandlingInstanceID: 65a4ba95-6825-4606-b9a7-2c6107000a92
+An exception of type 'System.Data.OracleClient.OracleException' occurred and was caught.
+----------------------------------------------------------------------------------------
+10/24/2007 09:11:48
+Type : System.Data.OracleClient.OracleException, System.Data.OracleClient, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+Message : ORA-00904: "SALER_FALG": invalid identifier
+
+Source : System.Data.OracleClient
+Help link : 
+Code : 904
+ErrorCode : -2146232008
+Data : System.Collections.ListDictionaryInternal
+TargetSite : Void CheckError(System.Data.OracleClient.OciErrorHandle, Int32)
+Stack Trace :    在 System.Data.OracleClient.OracleConnection.CheckError(OciErrorHandle errorHandle, Int32 rc)
+   在 System.Data.OracleClient.OracleCommand.Execute(OciStatementHandle statementHandle, CommandBehavior behavior, Boolean needRowid, OciRowidDescriptor& rowidDescriptor, ArrayList& resultParameterOrdinals)
+   在 System.Data.OracleClient.OracleCommand.Execute(OciStatementHandle statementHandle, CommandBehavior behavior, ArrayList& resultParameterOrdinals)
+   在 System.Data.OracleClient.OracleCommand.ExecuteReader(CommandBehavior behavior)
+   在 System.Data.OracleClient.OracleCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   在 System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader(CommandBehavior behavior)
+   在 System.Data.Common.DbDataAdapter.FillInternal(DataSet dataset, DataTable[] datatables, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   在 System.Data.Common.DbDataAdapter.Fill(DataTable[] dataTables, Int32 startRecord, Int32 maxRecords, IDbCommand command, CommandBehavior behavior)
+   在 System.Data.Common.DbDataAdapter.Fill(DataTable dataTable)
+   在 Emedchina.Commons.Data.DataBaseFacade.SQLExecuteDataTable(String sql, String tableName, IDbDataParameter[] selectParameters) 位置 E:\Work_Llt\HCTradeBuyer\Commons\Data\DataBaseFacade.cs:行号 619
+
+Additional Info:
+
+MachineName : LLT
+TimeStamp : 2007-10-24 1:11:48
+FullName : Microsoft.Practices.EnterpriseLibrary.ExceptionHandling, Version=2.0.0.0, Culture=neutral, PublicKeyToken=null
+AppDomainName : Emedchina.TradeAssistant.Server.exe
+ThreadIdentity : 
+WindowsIdentity : LLT\Administrator
+
+Category: Tracing
+Priority: 0
+EventId: 100
+Severity: Error
+Title:Connection Failed Exception Handler
+Machine: LLT
+App Domain: Emedchina.TradeAssistant.Server.exe
+ProcessId: 8080
+Process Name: E:\Work_Llt\HCTradeBuyer\Server\bin\Debug\Emedchina.TradeAssistant.Server.exe
+Thread Name: 
+Win32 ThreadId:4160
+Extended Properties: 
+Tracing Error: 100 : Timestamp: 2007-10-24 1:11:48
+Message: HandlingInstanceID: f97a99c5-4ef3-4d15-8aef-d3dd719cf30f
+An exception of type 'System.Data.OracleClient.OracleException' occurred and was caught.
+----------------------------------------------------------------------------------------
+10/24/2007 09:11:48
+Type : System.Data.OracleClient.OracleException, System.Data.OracleClient, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+Message : ORA-00904: "SALER_FALG": invalid identifier
+
+Source : System.Data.OracleClient
+Help link : 
+Code : 904
+ErrorCode : -2146232008
+Data : System.Collections.ListDictionaryInternal
+TargetSite : Void CheckError(System.Data.OracleClient.OciErrorHandle, Int32)
+Stack Trace :    在 System.Data.OracleClient.OracleConnection.CheckError(OciErrorHandle errorHandle, Int32 rc)
+   在 System.Data.OracleClient.OracleCommand.Execute(OciStatementHandle statementHandle, CommandBehavior behavior, Boolean needRowid, OciRowidDescriptor& rowidDescriptor, ArrayList& resultParameterOrdinals)
+   在 System.Data.OracleClient.OracleCommand.Execute(OciStatementHandle statementHandle, CommandBehavior behavior, ArrayList& resultParameterOrdinals)
+   在 System.Data.OracleClient.OracleCommand.ExecuteReader(CommandBehavior behavior)
+   在 System.Data.OracleClient.OracleCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   在 System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader(CommandBehavior behavior)
+   在 System.Data.Common.DbDataAdapter.FillInternal(DataSet dataset, DataTable[] datatables, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   在 System.Data.Common.DbDataAdapter.Fill(DataTable[] dataTables, Int32 startRecord, Int32 maxRecords, IDbCommand command, CommandBehavior behavior)
+   在 System.Data.Common.DbDataAdapter.Fill(DataTable dataTable)
+   在 Emedchina.Commons.Data.DataBaseFacade.SQLExecuteDataTable(String sql, String tableName, IDbDataParameter[] selectParameters) 位置 E:\Work_Llt\HCTradeBuyer\Commons\Data\DataBaseFacade.cs:行号 619
+
+Additional Info:
+
+MachineName : LLT
+TimeStamp : 2007-10-24 1:11:48
+FullName : Microsoft.Practices.EnterpriseLibrary.ExceptionHandling, Version=2.0.0.0, Culture=neutral, PublicKeyToken=null
+AppDomainName : Emedchina.TradeAssistant.Server.exe
+ThreadIdentity : 
+WindowsIdentity : LLT\Administrator
+
+Category: Tracing
+Priority: 0
+EventId: 100
+Severity: Error
+Title:Connection Failed Exception Handler
+Machine: LLT
+App Domain: Emedchina.TradeAssistant.Server.exe
+ProcessId: 8080
+Process Name: E:\Work_Llt\HCTradeBuyer\Server\bin\Debug\Emedchina.TradeAssistant.Server.exe
+Thread Name: 
+Win32 ThreadId:4160
+Extended Properties: 
+Tracing Error: 100 : Timestamp: 2007-10-25 8:31:35
+Message: HandlingInstanceID: f22d7c6f-c875-4440-9b57-5414ec16b82c
+An exception of type 'System.Data.OracleClient.OracleException' occurred and was caught.
+----------------------------------------------------------------------------------------
+10/25/2007 16:31:35
+Type : System.Data.OracleClient.OracleException, System.Data.OracleClient, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+Message : ORA-00904: "HOOS"."PORDUCT_PROD_ID": invalid identifier
+
+Source : System.Data.OracleClient
+Help link : 
+Code : 904
+ErrorCode : -2146232008
+Data : System.Collections.ListDictionaryInternal
+TargetSite : Void CheckError(System.Data.OracleClient.OciErrorHandle, Int32)
+Stack Trace :    在 System.Data.OracleClient.OracleConnection.CheckError(OciErrorHandle errorHandle, Int32 rc)
+   在 System.Data.OracleClient.OracleCommand.Execute(OciStatementHandle statementHandle, CommandBehavior behavior, Boolean needRowid, OciRowidDescriptor& rowidDescriptor, ArrayList& resultParameterOrdinals)
+   在 System.Data.OracleClient.OracleCommand.Execute(OciStatementHandle statementHandle, CommandBehavior behavior, ArrayList& resultParameterOrdinals)
+   在 System.Data.OracleClient.OracleCommand.ExecuteReader(CommandBehavior behavior)
+   在 System.Data.OracleClient.OracleCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   在 System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader(CommandBehavior behavior)
+   在 System.Data.Common.DbDataAdapter.FillInternal(DataSet dataset, DataTable[] datatables, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   在 System.Data.Common.DbDataAdapter.Fill(DataTable[] dataTables, Int32 startRecord, Int32 maxRecords, IDbCommand command, CommandBehavior behavior)
+   在 System.Data.Common.DbDataAdapter.Fill(DataTable dataTable)
+   在 Emedchina.Commons.Data.DataBaseFacade.SQLExecuteDataTable(String sql, String tableName, IDbDataParameter[] selectParameters) 位置 E:\Work_Llt\HCTradeBuyer\Commons\Data\DataBaseFacade.cs:行号 619
+
+Additional Info:
+
+MachineName : LLT
+TimeStamp : 2007-10-25 8:31:35
+FullName : Microsoft.Practices.EnterpriseLibrary.ExceptionHandling, Version=2.0.0.0, Culture=neutral, PublicKeyToken=null
+AppDomainName : Emedchina.TradeAssistant.Server.exe
+ThreadIdentity : 
+WindowsIdentity : LLT\Administrator
+
+Category: Tracing
+Priority: 0
+EventId: 100
+Severity: Error
+Title:Connection Failed Exception Handler
+Machine: LLT
+App Domain: Emedchina.TradeAssistant.Server.exe
+ProcessId: 6720
+Process Name: E:\Work_Llt\HCTradeBuyer\Server\bin\Debug\Emedchina.TradeAssistant.Server.exe
+Thread Name: 
+Win32 ThreadId:6696
+Extended Properties: 
+Tracing Error: 100 : Timestamp: 2007-11-5 10:09:20
+Message: HandlingInstanceID: 39da2f75-8403-4fb7-9b66-f4c6633d555f
+An exception of type 'System.Data.OracleClient.OracleException' occurred and was caught.
+----------------------------------------------------------------------------------------
+11/05/2007 18:09:20
+Type : System.Data.OracleClient.OracleException, System.Data.OracleClient, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+Message : ORA-01017: invalid username/password; logon denied
+
+Source : System.Data.OracleClient
+Help link : 
+Code : 1017
+ErrorCode : -2146232008
+Data : System.Collections.ListDictionaryInternal
+TargetSite : Void Check(System.Data.OracleClient.OciErrorHandle, Int32)
+Stack Trace :    在 System.Data.OracleClient.OracleException.Check(OciErrorHandle errorHandle, Int32 rc)
+   在 System.Data.OracleClient.OracleInternalConnection.OpenOnLocalTransaction(String userName, String password, String serverName, Boolean integratedSecurity, Boolean unicode, Boolean omitOracleConnectionName)
+   在 System.Data.OracleClient.OracleInternalConnection..ctor(OracleConnectionString connectionOptions)
+   在 System.Data.OracleClient.OracleConnectionFactory.CreateConnection(DbConnectionOptions options, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningObject)
+   在 System.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnection owningConnection, DbConnectionPool pool, DbConnectionOptions options)
+   在 System.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject)
+   在 System.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject)
+   在 System.Data.ProviderBase.DbConnectionPool.GetConnection(DbConnection owningObject)
+   在 System.Data.ProviderBase.DbConnectionFactory.GetConnection(DbConnection owningConnection)
+   在 System.Data.ProviderBase.DbConnectionClosed.OpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory)
+   在 System.Data.OracleClient.OracleConnection.Open()
+   在 Microsoft.Practices.EnterpriseLibrary.Data.Database.OpenConnection()
+
+Additional Info:
+
+MachineName : LLT
+TimeStamp : 2007-11-5 10:09:20
+FullName : Microsoft.Practices.EnterpriseLibrary.ExceptionHandling, Version=2.0.0.0, Culture=neutral, PublicKeyToken=null
+AppDomainName : Emedchina.TradeAssistant.Server.exe
+ThreadIdentity : 
+WindowsIdentity : LLT\Administrator
+
+Category: Tracing
+Priority: 0
+EventId: 100
+Severity: Error
+Title:Connection Failed Exception Handler
+Machine: LLT
+App Domain: Emedchina.TradeAssistant.Server.exe
+ProcessId: 4280
+Process Name: E:\Work_Llt\HCTradeBuyer\Server\bin\Debug\Emedchina.TradeAssistant.Server.exe
+Thread Name: 
+Win32 ThreadId:2788
+Extended Properties: 
+Tracing Error: 100 : Timestamp: 2007-11-7 1:05:55
+Message: HandlingInstanceID: e5d56916-9f21-420a-a18c-17da56d608c4
+An exception of type 'System.Data.OracleClient.OracleException' occurred and was caught.
+----------------------------------------------------------------------------------------
+11/07/2007 09:05:55
+Type : System.Data.OracleClient.OracleException, System.Data.OracleClient, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+Message : ORA-01017: invalid username/password; logon denied
+
+Source : System.Data.OracleClient
+Help link : 
+Code : 1017
+ErrorCode : -2146232008
+Data : System.Collections.ListDictionaryInternal
+TargetSite : Void Check(System.Data.OracleClient.OciErrorHandle, Int32)
+Stack Trace :    在 System.Data.OracleClient.OracleException.Check(OciErrorHandle errorHandle, Int32 rc)
+   在 System.Data.OracleClient.OracleInternalConnection.OpenOnLocalTransaction(String userName, String password, String serverName, Boolean integratedSecurity, Boolean unicode, Boolean omitOracleConnectionName)
+   在 System.Data.OracleClient.OracleInternalConnection..ctor(OracleConnectionString connectionOptions)
+   在 System.Data.OracleClient.OracleConnectionFactory.CreateConnection(DbConnectionOptions options, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningObject)
+   在 System.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnection owningConnection, DbConnectionPool pool, DbConnectionOptions options)
+   在 System.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject)
+   在 System.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject)
+   在 System.Data.ProviderBase.DbConnectionPool.GetConnection(DbConnection owningObject)
+   在 System.Data.ProviderBase.DbConnectionFactory.GetConnection(DbConnection owningConnection)
+   在 System.Data.ProviderBase.DbConnectionClosed.OpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory)
+   在 System.Data.OracleClient.OracleConnection.Open()
+   在 Microsoft.Practices.EnterpriseLibrary.Data.Database.OpenConnection()
+
+Additional Info:
+
+MachineName : LLT
+TimeStamp : 2007-11-7 1:05:55
+FullName : Microsoft.Practices.EnterpriseLibrary.ExceptionHandling, Version=2.0.0.0, Culture=neutral, PublicKeyToken=null
+AppDomainName : Emedchina.TradeAssistant.Server.exe
+ThreadIdentity : 
+WindowsIdentity : LLT\Administrator
+
+Category: Tracing
+Priority: 0
+EventId: 100
+Severity: Error
+Title:Connection Failed Exception Handler
+Machine: LLT
+App Domain: Emedchina.TradeAssistant.Server.exe
+ProcessId: 6612
+Process Name: E:\Work_Llt\HCTradeBuyer\Server\bin\Debug\Emedchina.TradeAssistant.Server.exe
+Thread Name: 
+Win32 ThreadId:7472
+Extended Properties: 
+Tracing Error: 100 : Timestamp: 2007-11-7 3:13:44
+Message: HandlingInstanceID: 1786683a-56d3-4b7c-8f94-80b276e3c90b
+An exception of type 'System.Data.OracleClient.OracleException' occurred and was caught.
+----------------------------------------------------------------------------------------
+11/07/2007 11:13:44
+Type : System.Data.OracleClient.OracleException, System.Data.OracleClient, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+Message : ORA-01017: invalid username/password; logon denied
+
+Source : System.Data.OracleClient
+Help link : 
+Code : 1017
+ErrorCode : -2146232008
+Data : System.Collections.ListDictionaryInternal
+TargetSite : Void Check(System.Data.OracleClient.OciErrorHandle, Int32)
+Stack Trace :    在 System.Data.OracleClient.OracleException.Check(OciErrorHandle errorHandle, Int32 rc)
+   在 System.Data.OracleClient.OracleInternalConnection.OpenOnLocalTransaction(String userName, String password, String serverName, Boolean integratedSecurity, Boolean unicode, Boolean omitOracleConnectionName)
+   在 System.Data.OracleClient.OracleInternalConnection..ctor(OracleConnectionString connectionOptions)
+   在 System.Data.OracleClient.OracleConnectionFactory.CreateConnection(DbConnectionOptions options, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningObject)
+   在 System.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnection owningConnection, DbConnectionPool pool, DbConnectionOptions options)
+   在 System.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject)
+   在 System.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject)
+   在 System.Data.ProviderBase.DbConnectionPool.GetConnection(DbConnection owningObject)
+   在 System.Data.ProviderBase.DbConnectionFactory.GetConnection(DbConnection owningConnection)
+   在 System.Data.ProviderBase.DbConnectionClosed.OpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory)
+   在 System.Data.OracleClient.OracleConnection.Open()
+   在 Microsoft.Practices.EnterpriseLibrary.Data.Database.OpenConnection()
+
+Additional Info:
+
+MachineName : LLT
+TimeStamp : 2007-11-7 3:13:44
+FullName : Microsoft.Practices.EnterpriseLibrary.ExceptionHandling, Version=2.0.0.0, Culture=neutral, PublicKeyToken=null
+AppDomainName : Emedchina.TradeAssistant.Server.exe
+ThreadIdentity : 
+WindowsIdentity : LLT\Administrator
+
+Category: Tracing
+Priority: 0
+EventId: 100
+Severity: Error
+Title:Connection Failed Exception Handler
+Machine: LLT
+App Domain: Emedchina.TradeAssistant.Server.exe
+ProcessId: 6680
+Process Name: E:\Work_Llt\HCTradeBuyer\Server\bin\Debug\Emedchina.TradeAssistant.Server.exe
+Thread Name: 
+Win32 ThreadId:3668
+Extended Properties: 
+Tracing Error: 100 : Timestamp: 2007-11-7 3:13:50
+Message: HandlingInstanceID: 195f59f1-1dce-4ec8-9871-b3f32bae852e
+An exception of type 'System.Data.OracleClient.OracleException' occurred and was caught.
+----------------------------------------------------------------------------------------
+11/07/2007 11:13:50
+Type : System.Data.OracleClient.OracleException, System.Data.OracleClient, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+Message : ORA-01017: invalid username/password; logon denied
+
+Source : System.Data.OracleClient
+Help link : 
+Code : 1017
+ErrorCode : -2146232008
+Data : System.Collections.ListDictionaryInternal
+TargetSite : Void Check(System.Data.OracleClient.OciErrorHandle, Int32)
+Stack Trace :    在 System.Data.OracleClient.OracleException.Check(OciErrorHandle errorHandle, Int32 rc)
+   在 System.Data.OracleClient.OracleInternalConnection.OpenOnLocalTransaction(String userName, String password, String serverName, Boolean integratedSecurity, Boolean unicode, Boolean omitOracleConnectionName)
+   在 System.Data.OracleClient.OracleInternalConnection..ctor(OracleConnectionString connectionOptions)
+   在 System.Data.OracleClient.OracleConnectionFactory.CreateConnection(DbConnectionOptions options, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningObject)
+   在 System.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnection owningConnection, DbConnectionPool pool, DbConnectionOptions options)
+   在 System.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject)
+   在 System.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject)
+   在 System.Data.ProviderBase.DbConnectionPool.GetConnection(DbConnection owningObject)
+   在 System.Data.ProviderBase.DbConnectionFactory.GetConnection(DbConnection owningConnection)
+   在 System.Data.ProviderBase.DbConnectionClosed.OpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory)
+   在 System.Data.OracleClient.OracleConnection.Open()
+   在 Microsoft.Practices.EnterpriseLibrary.Data.Database.OpenConnection()
+
+Additional Info:
+
+MachineName : LLT
+TimeStamp : 2007-11-7 3:13:50
+FullName : Microsoft.Practices.EnterpriseLibrary.ExceptionHandling, Version=2.0.0.0, Culture=neutral, PublicKeyToken=null
+AppDomainName : Emedchina.TradeAssistant.Server.exe
+ThreadIdentity : 
+WindowsIdentity : LLT\Administrator
+
+Category: Tracing
+Priority: 0
+EventId: 100
+Severity: Error
+Title:Connection Failed Exception Handler
+Machine: LLT
+App Domain: Emedchina.TradeAssistant.Server.exe
+ProcessId: 6680
+Process Name: E:\Work_Llt\HCTradeBuyer\Server\bin\Debug\Emedchina.TradeAssistant.Server.exe
+Thread Name: 
+Win32 ThreadId:3668
+Extended Properties: 
+Tracing Error: 100 : Timestamp: 2007-11-7 3:14:00
+Message: HandlingInstanceID: 37048bae-7103-48d9-8f41-857dd74671ff
+An exception of type 'System.Data.OracleClient.OracleException' occurred and was caught.
+----------------------------------------------------------------------------------------
+11/07/2007 11:14:00
+Type : System.Data.OracleClient.OracleException, System.Data.OracleClient, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+Message : ORA-01017: invalid username/password; logon denied
+
+Source : System.Data.OracleClient
+Help link : 
+Code : 1017
+ErrorCode : -2146232008
+Data : System.Collections.ListDictionaryInternal
+TargetSite : Void Check(System.Data.OracleClient.OciErrorHandle, Int32)
+Stack Trace :    在 System.Data.ProviderBase.DbConnectionPool.GetConnection(DbConnection owningObject)
+   在 System.Data.ProviderBase.DbConnectionFactory.GetConnection(DbConnection owningConnection)
+   在 System.Data.ProviderBase.DbConnectionClosed.OpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory)
+   在 System.Data.OracleClient.OracleConnection.Open()
+   在 Microsoft.Practices.EnterpriseLibrary.Data.Database.OpenConnection()
+
+Additional Info:
+
+MachineName : LLT
+TimeStamp : 2007-11-7 3:14:00
+FullName : Microsoft.Practices.EnterpriseLibrary.ExceptionHandling, Version=2.0.0.0, Culture=neutral, PublicKeyToken=null
+AppDomainName : Emedchina.TradeAssistant.Server.exe
+ThreadIdentity : 
+WindowsIdentity : LLT\Administrator
+
+Category: Tracing
+Priority: 0
+EventId: 100
+Severity: Error
+Title:Connection Failed Exception Handler
+Machine: LLT
+App Domain: Emedchina.TradeAssistant.Server.exe
+ProcessId: 6680
+Process Name: E:\Work_Llt\HCTradeBuyer\Server\bin\Debug\Emedchina.TradeAssistant.Server.exe
+Thread Name: 
+Win32 ThreadId:3668
+Extended Properties: 
+Tracing Error: 100 : Timestamp: 2007-11-8 6:04:18
+Message: HandlingInstanceID: 6ba4f971-b0bb-4d78-be38-069e74476354
+An exception of type 'System.Data.OracleClient.OracleException' occurred and was caught.
+----------------------------------------------------------------------------------------
+11/08/2007 14:04:18
+Type : System.Data.OracleClient.OracleException, System.Data.OracleClient, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+Message : ORA-00904: "MODEL_NAME": invalid identifier
+
+Source : System.Data.OracleClient
+Help link : 
+Code : 904
+ErrorCode : -2146232008
+Data : System.Collections.ListDictionaryInternal
+TargetSite : Void CheckError(System.Data.OracleClient.OciErrorHandle, Int32)
+Stack Trace :    在 System.Data.OracleClient.OracleConnection.CheckError(OciErrorHandle errorHandle, Int32 rc)
+   在 System.Data.OracleClient.OracleCommand.Execute(OciStatementHandle statementHandle, CommandBehavior behavior, Boolean needRowid, OciRowidDescriptor& rowidDescriptor, ArrayList& resultParameterOrdinals)
+   在 System.Data.OracleClient.OracleCommand.Execute(OciStatementHandle statementHandle, CommandBehavior behavior, ArrayList& resultParameterOrdinals)
+   在 System.Data.OracleClient.OracleCommand.ExecuteReader(CommandBehavior behavior)
+   在 System.Data.OracleClient.OracleCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   在 System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader(CommandBehavior behavior)
+   在 System.Data.Common.DbDataAdapter.FillInternal(DataSet dataset, DataTable[] datatables, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   在 System.Data.Common.DbDataAdapter.Fill(DataTable[] dataTables, Int32 startRecord, Int32 maxRecords, IDbCommand command, CommandBehavior behavior)
+   在 System.Data.Common.DbDataAdapter.Fill(DataTable dataTable)
+   在 Emedchina.Commons.Data.DataBaseFacade.SQLExecuteDataTable(String sql, String tableName, IDbDataParameter[] selectParameters)
+
+Additional Info:
+
+MachineName : LLT
+TimeStamp : 2007-11-8 6:04:18
+FullName : Microsoft.Practices.EnterpriseLibrary.ExceptionHandling, Version=2.0.0.0, Culture=neutral, PublicKeyToken=null
+AppDomainName : Emedchina.TradeAssistant.Server.exe
+ThreadIdentity : 
+WindowsIdentity : LLT\Administrator
+
+Category: Tracing
+Priority: 0
+EventId: 100
+Severity: Error
+Title:Connection Failed Exception Handler
+Machine: LLT
+App Domain: Emedchina.TradeAssistant.Server.exe
+ProcessId: 7004
+Process Name: E:\Work_Llt\HCTradeBuyer\Server\bin\Debug\Emedchina.TradeAssistant.Server.exe
+Thread Name: 
+Win32 ThreadId:4236
+Extended Properties: 
+Tracing Error: 100 : Timestamp: 2007-11-9 1:08:12
+Message: HandlingInstanceID: b867c4dd-d5d3-4df4-a5df-bd44715d5fa8
+An exception of type 'System.Data.OracleClient.OracleException' occurred and was caught.
+----------------------------------------------------------------------------------------
+11/09/2007 09:08:12
+Type : System.Data.OracleClient.OracleException, System.Data.OracleClient, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+Message : ORA-00904: "MODEL_NAME": invalid identifier
+
+Source : System.Data.OracleClient
+Help link : 
+Code : 904
+ErrorCode : -2146232008
+Data : System.Collections.ListDictionaryInternal
+TargetSite : Void CheckError(System.Data.OracleClient.OciErrorHandle, Int32)
+Stack Trace :    在 System.Data.OracleClient.OracleConnection.CheckError(OciErrorHandle errorHandle, Int32 rc)
+   在 System.Data.OracleClient.OracleCommand.Execute(OciStatementHandle statementHandle, CommandBehavior behavior, Boolean needRowid, OciRowidDescriptor& rowidDescriptor, ArrayList& resultParameterOrdinals)
+   在 System.Data.OracleClient.OracleCommand.Execute(OciStatementHandle statementHandle, CommandBehavior behavior, ArrayList& resultParameterOrdinals)
+   在 System.Data.OracleClient.OracleCommand.ExecuteReader(CommandBehavior behavior)
+   在 System.Data.OracleClient.OracleCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   在 System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader(CommandBehavior behavior)
+   在 System.Data.Common.DbDataAdapter.FillInternal(DataSet dataset, DataTable[] datatables, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   在 System.Data.Common.DbDataAdapter.Fill(DataTable[] dataTables, Int32 startRecord, Int32 maxRecords, IDbCommand command, CommandBehavior behavior)
+   在 System.Data.Common.DbDataAdapter.Fill(DataTable dataTable)
+   在 Emedchina.Commons.Data.DataBaseFacade.SQLExecuteDataTable(String sql, String tableName, IDbDataParameter[] selectParameters)
+
+Additional Info:
+
+MachineName : LLT
+TimeStamp : 2007-11-9 1:08:12
+FullName : Microsoft.Practices.EnterpriseLibrary.ExceptionHandling, Version=2.0.0.0, Culture=neutral, PublicKeyToken=null
+AppDomainName : Emedchina.TradeAssistant.Server.exe
+ThreadIdentity : 
+WindowsIdentity : LLT\Administrator
+
+Category: Tracing
+Priority: 0
+EventId: 100
+Severity: Error
+Title:Connection Failed Exception Handler
+Machine: LLT
+App Domain: Emedchina.TradeAssistant.Server.exe
+ProcessId: 5920
+Process Name: E:\Work_Llt\HCTradeBuyer\Server\bin\Debug\Emedchina.TradeAssistant.Server.exe
+Thread Name: 
+Win32 ThreadId:632
+Extended Properties: 
+Tracing Error: 100 : Timestamp: 2007-11-9 3:20:40
+Message: HandlingInstanceID: 4270faf2-90d0-4d04-b503-3ed9065141fd
+An exception of type 'System.Data.OracleClient.OracleException' occurred and was caught.
+----------------------------------------------------------------------------------------
+11/09/2007 11:20:40
+Type : System.Data.OracleClient.OracleException, System.Data.OracleClient, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+Message : ORA-01017: invalid username/password; logon denied
+
+Source : System.Data.OracleClient
+Help link : 
+Code : 1017
+ErrorCode : -2146232008
+Data : System.Collections.ListDictionaryInternal
+TargetSite : Void Check(System.Data.OracleClient.OciErrorHandle, Int32)
+Stack Trace :    在 System.Data.OracleClient.OracleException.Check(OciErrorHandle errorHandle, Int32 rc)
+   在 System.Data.OracleClient.OracleInternalConnection.OpenOnLocalTransaction(String userName, String password, String serverName, Boolean integratedSecurity, Boolean unicode, Boolean omitOracleConnectionName)
+   在 System.Data.OracleClient.OracleInternalConnection..ctor(OracleConnectionString connectionOptions)
+   在 System.Data.OracleClient.OracleConnectionFactory.CreateConnection(DbConnectionOptions options, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningObject)
+   在 System.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnection owningConnection, DbConnectionPool pool, DbConnectionOptions options)
+   在 System.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject)
+   在 System.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject)
+   在 System.Data.ProviderBase.DbConnectionPool.GetConnection(DbConnection owningObject)
+   在 System.Data.ProviderBase.DbConnectionFactory.GetConnection(DbConnection owningConnection)
+   在 System.Data.ProviderBase.DbConnectionClosed.OpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory)
+   在 System.Data.OracleClient.OracleConnection.Open()
+   在 Microsoft.Practices.EnterpriseLibrary.Data.Database.OpenConnection()
+
+Additional Info:
+
+MachineName : LLT
+TimeStamp : 2007-11-9 3:20:40
+FullName : Microsoft.Practices.EnterpriseLibrary.ExceptionHandling, Version=2.0.0.0, Culture=neutral, PublicKeyToken=null
+AppDomainName : Emedchina.TradeAssistant.Server.exe
+ThreadIdentity : 
+WindowsIdentity : LLT\Administrator
+
+Category: Tracing
+Priority: 0
+EventId: 100
+Severity: Error
+Title:Connection Failed Exception Handler
+Machine: LLT
+App Domain: Emedchina.TradeAssistant.Server.exe
+ProcessId: 7956
+Process Name: E:\Work_Llt\HCTradeBuyer\Server\bin\Debug\Emedchina.TradeAssistant.Server.exe
+Thread Name: 
+Win32 ThreadId:8116
+Extended Properties: 
+Tracing Error: 100 : Timestamp: 2007-11-9 3:20:48
+Message: HandlingInstanceID: a9f21e94-9d29-4df0-8f1b-d818226e18bb
+An exception of type 'System.Data.OracleClient.OracleException' occurred and was caught.
+----------------------------------------------------------------------------------------
+11/09/2007 11:20:48
+Type : System.Data.OracleClient.OracleException, System.Data.OracleClient, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+Message : ORA-01017: invalid username/password; logon denied
+
+Source : System.Data.OracleClient
+Help link : 
+Code : 1017
+ErrorCode : -2146232008
+Data : System.Collections.ListDictionaryInternal
+TargetSite : Void Check(System.Data.OracleClient.OciErrorHandle, Int32)
+Stack Trace :    在 System.Data.OracleClient.OracleException.Check(OciErrorHandle errorHandle, Int32 rc)
+   在 System.Data.OracleClient.OracleInternalConnection.OpenOnLocalTransaction(String userName, String password, String serverName, Boolean integratedSecurity, Boolean unicode, Boolean omitOracleConnectionName)
+   在 System.Data.OracleClient.OracleInternalConnection..ctor(OracleConnectionString connectionOptions)
+   在 System.Data.OracleClient.OracleConnectionFactory.CreateConnection(DbConnectionOptions options, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningObject)
+   在 System.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnection owningConnection, DbConnectionPool pool, DbConnectionOptions options)
+   在 System.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject)
+   在 System.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject)
+   在 System.Data.ProviderBase.DbConnectionPool.GetConnection(DbConnection owningObject)
+   在 System.Data.ProviderBase.DbConnectionFactory.GetConnection(DbConnection owningConnection)
+   在 System.Data.ProviderBase.DbConnectionClosed.OpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory)
+   在 System.Data.OracleClient.OracleConnection.Open()
+   在 Microsoft.Practices.EnterpriseLibrary.Data.Database.OpenConnection()
+
+Additional Info:
+
+MachineName : LLT
+TimeStamp : 2007-11-9 3:20:48
+FullName : Microsoft.Practices.EnterpriseLibrary.ExceptionHandling, Version=2.0.0.0, Culture=neutral, PublicKeyToken=null
+AppDomainName : Emedchina.TradeAssistant.Server.exe
+ThreadIdentity : 
+WindowsIdentity : LLT\Administrator
+
+Category: Tracing
+Priority: 0
+EventId: 100
+Severity: Error
+Title:Connection Failed Exception Handler
+Machine: LLT
+App Domain: Emedchina.TradeAssistant.Server.exe
+ProcessId: 7956
+Process Name: E:\Work_Llt\HCTradeBuyer\Server\bin\Debug\Emedchina.TradeAssistant.Server.exe
+Thread Name: 
+Win32 ThreadId:8116
+Extended Properties: 

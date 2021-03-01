@@ -1,0 +1,1872 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="3.5">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{B242B058-07FB-4EAD-AF9F-1A6A028B22AB}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Emedchina.TradeAssistant.Client</RootNamespace>
+    <AssemblyName>Client</AssemblyName>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+    <ApplicationIcon>交易助手ico.ico</ApplicationIcon>
+    <ManifestCertificateThumbprint>90C7D1BA4227766D5AB6BFDC0A0E526E08C630BD</ManifestCertificateThumbprint>
+    <ManifestKeyFile>Client_2_TemporaryKey.pfx</ManifestKeyFile>
+    <GenerateManifests>true</GenerateManifests>
+    <SignManifests>true</SignManifests>
+    <IsWebBootstrapper>true</IsWebBootstrapper>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <PublishUrl>E:\work\setup\HCBuyer\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Web</InstallFrom>
+    <UpdateEnabled>true</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <InstallUrl>http://202.96.54.112:8867/</InstallUrl>
+    <UpdateUrl>http://202.96.54.112:8867/</UpdateUrl>
+    <TargetCulture>zh-CHS</TargetCulture>
+    <ProductName>海虹医疗器械电子商务耗材交易系统－买方%28测试%29</ProductName>
+    <PublisherName>海虹医药</PublisherName>
+    <WebPage>index.htm</WebPage>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <BootstrapperComponentsLocation>Relative</BootstrapperComponentsLocation>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <DocumentationFile>bin\Debug\Client.xml</DocumentationFile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.BonusSkins.v7.2, Version=7.2.2.0, Culture=neutral, PublicKeyToken=95fc6c5621878f0a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Data.v7.2, Version=7.2.2.0, Culture=neutral, PublicKeyToken=9b171c9fd64da1d1, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.OfficeSkins.v7.2, Version=7.2.2.0, Culture=neutral, PublicKeyToken=95fc6c5621878f0a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Utils.v7.2, Version=7.2.2.0, Culture=neutral, PublicKeyToken=9b171c9fd64da1d1, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Xpo.v7.2, Version=7.2.2.0, Culture=neutral, PublicKeyToken=9b171c9fd64da1d1" />
+    <Reference Include="DevExpress.XtraBars.v7.2, Version=7.2.2.0, Culture=neutral, PublicKeyToken=9b171c9fd64da1d1, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraCharts.v7.2, Version=7.2.2.0, Culture=neutral, PublicKeyToken=9b171c9fd64da1d1, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraEditors.v7.2, Version=7.2.2.0, Culture=neutral, PublicKeyToken=9b171c9fd64da1d1, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraGrid.v7.2, Version=7.2.2.0, Culture=neutral, PublicKeyToken=9b171c9fd64da1d1" />
+    <Reference Include="DevExpress.XtraLayout.v7.2, Version=7.2.2.0, Culture=neutral, PublicKeyToken=9b171c9fd64da1d1" />
+    <Reference Include="DevExpress.XtraNavBar.v7.2, Version=7.2.2.0, Culture=neutral, PublicKeyToken=9b171c9fd64da1d1" />
+    <Reference Include="DevExpress.XtraPrinting.v7.2, Version=7.2.2.0, Culture=neutral, PublicKeyToken=9b171c9fd64da1d1" />
+    <Reference Include="DevExpress.XtraReports.v7.2, Version=7.2.2.0, Culture=neutral, PublicKeyToken=9b171c9fd64da1d1, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraRichTextEdit.v7.2, Version=7.2.2.0, Culture=neutral, PublicKeyToken=9b171c9fd64da1d1" />
+    <Reference Include="DevExpress.XtraTreeList.v7.2, Version=7.2.2.0, Culture=neutral, PublicKeyToken=9b171c9fd64da1d1" />
+    <Reference Include="DevExpress.XtraVerticalGrid.v7.2, Version=7.2.2.0, Culture=neutral, PublicKeyToken=9b171c9fd64da1d1" />
+    <Reference Include="Excel, Version=1.5.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\External-Bin\Excel.dll</HintPath>
+    </Reference>
+    <Reference Include="IBatisNet.Common, Version=1.3.0.0, Culture=neutral, PublicKeyToken=ed781d9fc396c6ca">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\External-Bin\IBatisNet.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="IBatisNet.Common.Logging.Log4Net, Version=1.0.0.0, Culture=neutral, PublicKeyToken=ed781d9fc396c6ca">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\External-Bin\IBatisNet.Common.Logging.Log4Net.dll</HintPath>
+    </Reference>
+    <Reference Include="log4net, Version=1.2.9.0, Culture=neutral, PublicKeyToken=b32731d11ce58905">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\External-Bin\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.Caching, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\External-Bin\Microsoft.Practices.EnterpriseLibrary.Caching.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.Common, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\External-Bin\Microsoft.Practices.EnterpriseLibrary.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.Data, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\External-Bin\Microsoft.Practices.EnterpriseLibrary.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.ExceptionHandling, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\External-Bin\Microsoft.Practices.EnterpriseLibrary.ExceptionHandling.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.ExceptionHandling.Logging, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\External-Bin\Microsoft.Practices.EnterpriseLibrary.ExceptionHandling.Logging.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.Logging, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\External-Bin\Microsoft.Practices.EnterpriseLibrary.Logging.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.Security, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\External-Bin\Microsoft.Practices.EnterpriseLibrary.Security.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.ObjectBuilder, Version=1.0.51205.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\External-Bin\Microsoft.Practices.ObjectBuilder.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.OracleClient, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\WINNT\assembly\GAC_32\System.Data.OracleClient\2.0.0.0__b77a5c561934e089\System.Data.OracleClient.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Runtime.Remoting" />
+    <Reference Include="System.ServiceProcess" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="TabStrip, Version=1.0.2344.18303, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\External-Bin\TabStrip.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Base\BaseForm.cs">
+    </Compile>
+    <Compile Include="Base\BaseForm.Designer.cs">
+      <DependentUpon>BaseForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Base\ComBase.cs" />
+    <Compile Include="Base\FormBase.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Base\FormBase.Designer.cs">
+      <DependentUpon>FormBase.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BLL\CommonInfo\AfficheInfo\BulletinInfoBLL.cs" />
+    <Compile Include="BLL\CommonInfo\DataFound\OosQueryBLL.cs" />
+    <Compile Include="BLL\CommonInfo\DataFound\PurchaseItemBLL.cs" />
+    <Compile Include="BLL\CommonInfo\DefineCodeSet\DefineCodeBLL.cs" />
+    <Compile Include="BLL\CommonInfo\OrdBuyerReturn\OrdBuyerReturnBLL.cs" />
+    <Compile Include="BLL\CommonInfo\OrdInvoice\OrdInvoiceBLL.cs" />
+    <Compile Include="BLL\CommonInfo\OrdStockUp\OrdStockUpBLL.cs" />
+    <Compile Include="BLL\CommonInfo\OrdStockUp\OrdStockUpItemBLL.cs" />
+    <Compile Include="BLL\CommonInfo\SecondAyplnv\SecondAyplnvBLL.cs" />
+    <Compile Include="BLL\CommonInfo\UseOddAudi\OrdOrderBLL.cs" />
+    <Compile Include="BLL\CommonInfo\OrdOrderReceive\OrdOrderReceiveBLL.cs" />
+    <Compile Include="BLL\CommonInfo\UseOddAudi\OrdPurchaseBLL.cs" />
+    <Compile Include="BLL\CommonInfo\UseOddAudi\OrdSecondAyrlnvUseBLL.cs" />
+    <Compile Include="BLL\CommonInfo\UseOddAudi\UseOddAudiBLL.cs" />
+    <Compile Include="BLL\Comm\CommUtilBLL.cs" />
+    <Compile Include="BLL\DataMaintenance\WarehouseMgrBLL.cs" />
+    <Compile Include="BLL\His\EnterPrice\EnterpriseIDCompareBLL.cs" />
+    <Compile Include="BLL\His\Hosptail\HosptailIDCompareBLL.cs" />
+    <Compile Include="BLL\His\Product\ProductCodeCompareBLL.cs" />
+    <Compile Include="BLL\Order\BuyerOrder\BuyerOrderOfflineBLL.cs" />
+    <Compile Include="BLL\Order\BuyerOrder\OrderDetailOfflineBLL.cs" />
+    <Compile Include="BLL\Order\BuyerOrder\OrderOffLineBLL.cs" />
+    <Compile Include="BLL\Order\BuyerOrder\OrderTempOfflineBLL.cs" />
+    <Compile Include="BLL\Order\PurchaseHandle\HitCommAndContClientBll.cs" />
+    <Compile Include="BLL\Order\PurchaseHandle\PurchaseOfflineBLL.cs" />
+    <Compile Include="BLL\CommonInfo\OrdProduct\OrdProductBLL.cs" />
+    <Compile Include="BLL\CommonInfo\StockList\StockListBLL.cs" />
+    <Compile Include="BLL\Report\ReportBLL.cs" />
+    <Compile Include="BLL\Sync\ClientSyncBLL.cs" />
+    <Compile Include="BLL\Sync\ClientUploadBLL.cs" />
+    <Compile Include="BLL\TradeManage\QueryOrderItemBLL.cs" />
+    <Compile Include="BLL\User\LoginUserOfflineBLL.cs" />
+    <Compile Include="Client.cs" />
+    <Compile Include="ClientCache.cs" />
+    <Compile Include="ClientConfiguration.cs" />
+    <Compile Include="ClientSession.cs" />
+    <Compile Include="Common\Constant.cs" />
+    <Compile Include="Common\FileControl.cs" />
+    <Compile Include="Common\FileOperation.cs" />
+    <Compile Include="Common\InitComboBox.cs" />
+    <Compile Include="Common\Usb.cs" />
+    <Compile Include="Common\UserConfigXml.cs" />
+    <Compile Include="DAL\CommonInfo\DataFound\OosQueryDao.cs" />
+    <Compile Include="DAL\CommonInfo\OrdBuyerReturn\OrdBuyerReturnDao.cs" />
+    <Compile Include="DAL\CommonInfo\OrdInvoice\OrdInvoiceDao.cs" />
+    <Compile Include="DAL\CommonInfo\OrdOrderReceive\OrdOrderReceiveDao.cs" />
+    <Compile Include="DAL\CommonInfo\OrdStockUp\OrdStockUpDao.cs" />
+    <Compile Include="DAL\CommonInfo\OrdStockUp\OrdStockUpItemDao.cs" />
+    <Compile Include="DAL\CommonInfo\SecondAyplnv\SecondAyplnvDao.cs" />
+    <Compile Include="DAL\CommonInfo\UseOddAudi\OrdOrderDao.cs" />
+    <Compile Include="DAL\CommonInfo\UseOddAudi\OrdPurchaseDao.cs" />
+    <Compile Include="DAL\CommonInfo\UseOddAudi\OrdSecondAyrlnvUseDao.cs" />
+    <Compile Include="DAL\CommonInfo\UseOddAudi\UseOddAudiDao.cs" />
+    <Compile Include="DAL\Order\BuyerOrder\BuyerOrderOfflineDAO.cs" />
+    <Compile Include="DAL\Order\BuyerOrder\OrderDetailOfflineDao.cs" />
+    <Compile Include="DAL\Order\BuyerOrder\OrderOffLineDAO.cs" />
+    <Compile Include="DAL\Order\BuyerOrder\OrderTempOfflineDao.cs" />
+    <Compile Include="DAL\Order\PurchaseHandle\HitCommAndContClientDao.cs" />
+    <Compile Include="DAL\Order\PurchaseHandle\PurchaseClientDao.cs" />
+    <Compile Include="DAL\Order\PurchaseHandle\PurchaseOfflineDAO.cs" />
+    <Compile Include="DAL\Query\OrdReceiveExcelDao.cs" />
+    <Compile Include="DAL\Query\OutOrderReceiveDao.cs" />
+    <Compile Include="DAL\Report\ReportDAO.cs" />
+    <Compile Include="DAL\TradeManage\QueryOrderItemDAO.cs" />
+    <Compile Include="DAL\UserInfomation\PassMgrDAO.cs" />
+    <Compile Include="DevExpress.LocalizationCHS.cs">
+    </Compile>
+    <Compile Include="LoginFrm.cs">
+    </Compile>
+    <Compile Include="LoginFrm.Designer.cs">
+      <DependentUpon>LoginFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\CommonInfo\AfficheInfo\BulletinInfoDao.cs" />
+    <Compile Include="DAL\CommonInfo\DataFound\PurchaseItemDao.cs" />
+    <Compile Include="DAL\CommonInfo\DefineCodeSet\DefineCodeDao.cs" />
+    <Compile Include="DAL\Comm\CommUtilDao.cs" />
+    <Compile Include="DAL\DataMaintenance\WarehouseMgrDAO.cs" />
+    <Compile Include="DAL\His\EnterpriseIDCompareDAO.cs" />
+    <Compile Include="DAL\His\HosptailIDCompareDAO.cs" />
+    <Compile Include="DAL\His\ProductCodeCompareDAL.cs" />
+    <Compile Include="DAL\His\RequestSendDal.cs" />
+    <Compile Include="DAL\CommonInfo\OrdProduct\OrdProductDao.cs" />
+    <Compile Include="DAL\CommonInfo\StockList\StockListDao.cs" />
+    <Compile Include="DAL\Sync\ClientSyncDataDAO.cs" />
+    <Compile Include="DAL\Sync\ClientUploadDao.cs" />
+    <Compile Include="DAL\User\LoginUserOfflineDao.cs" />
+    <Compile Include="LoadDataWaiting.cs">
+    </Compile>
+    <Compile Include="LoadDataWaiting.Designer.cs">
+      <DependentUpon>LoadDataWaiting.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PrintRibbonControllerResources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PrintRibbonControllerResources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Base\BaseForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>BaseForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Base\FormBase.resx">
+      <DependentUpon>FormBase.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoginFrm.resx">
+      <DependentUpon>LoginFrm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoadDataWaiting.resx">
+      <DependentUpon>LoadDataWaiting.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PrintRibbonControllerResources.resx">
+      <SubType>Designer</SubType>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>PrintRibbonControllerResources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SystemConfig.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>SystemConfig.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\CommonInfo\AfficheInfo\AfficheInfoForm.resx">
+      <DependentUpon>AfficheInfoForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\CommonInfo\AfficheInfo\ViewAfficheInfoForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ViewAfficheInfoForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\CommonInfo\DataFound\SecondAyrlnvForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>SecondAyrlnvForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\CommonInfo\DefineCodeSet\DefineCodeForm.resx">
+      <DependentUpon>DefineCodeForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\CommonInfo\DataFound\OosQueryForm.resx">
+      <DependentUpon>OosQueryForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\CommonInfo\DataFound\PurchaseCommerceForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>PurchaseCommerceForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\CommonInfo\DataFound\SendProductForm.resx">
+      <DependentUpon>SendProductForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\CommonInfo\OrdBuyerReturn\FoundOrdBuyerReturnForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FoundOrdBuyerReturnForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\CommonInfo\OrdBuyerReturn\OrdBuyerReturnForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>OrdBuyerReturnForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\CommonInfo\OrdInvoice\OrdInvoiceItemForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>OrdInvoiceItemForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\CommonInfo\OrdInvoice\OrdInvoiceListForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>OrdInvoiceListForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\CommonInfo\OrdProduct\ViewOrdProductForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ViewOrdProductForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\CommonInfo\StockList\EditStockListForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>EditStockListForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\CommonInfo\StockList\StockListForm.resx">
+      <DependentUpon>StockListForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\CommonInfo\StockList\ViewStockListForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ViewStockListForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\CommonInfo\StockUp\AffirmOrdStockUpItemForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>AffirmOrdStockUpItemForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\CommonInfo\StockUp\OrdStockUpForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>OrdStockUpForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\CommonInfo\StockUp\OrdStockUpItemForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>OrdStockUpItemForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\CommonInfo\UseOddAudi\UseOddAudiForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>UseOddAudiForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\DataMaintenance\AddWarehouseInfo.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>AddWarehouseInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\DataMaintenance\ModifyWarehouseInfo.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ModifyWarehouseInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\DataMaintenance\WarehouseMgr.resx">
+      <DependentUpon>WarehouseMgr.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Helper\XtraForm1.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>XtraForm1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Order\PurchaseHandle\FormPackage.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FormPackage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Order\PurchaseHandle\FormPurchaseBuild.resx">
+      <DependentUpon>FormPurchaseBuild.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Order\PurchaseHandle\FormPurchaseCheck.resx">
+      <DependentUpon>FormPurchaseCheck.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Order\PurchaseHandle\FormPurchaseCreate.resx">
+      <DependentUpon>FormPurchaseCreate.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Order\PurchaseHandle\FormPurchaseItem.resx">
+      <DependentUpon>FormPurchaseItem.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Order\PurchaseHandle\FormPurchaseOrder.resx">
+      <DependentUpon>FormPurchaseOrder.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Order\PurchaseHandle\HisPlanErrorList.resx">
+      <DependentUpon>HisPlanErrorList.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Order\PurchaseHandle\RequestSend.resx">
+      <DependentUpon>RequestSend.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\PublicModule\BrowserForm.resx">
+      <DependentUpon>BrowserForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\PublicModule\EndForm.resx">
+      <DependentUpon>EndForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\PublicModule\MainForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\PublicModule\ParentForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ParentForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\PublicModule\SyncForm.resx">
+      <DependentUpon>SyncForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Report\ReportFile\ConsumeGoodXtraReport.resx">
+      <DependentUpon>ConsumeGoodXtraReport.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Report\ReportFile\InvoiceFromXtraReport.resx">
+      <DependentUpon>InvoiceFromXtraReport.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Report\ReportFile\OOSQueryXtraReport.resx">
+      <DependentUpon>OOSQueryXtraReport.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Report\ReportFile\OrderXtraReport.resx">
+      <DependentUpon>OrderXtraReport.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Report\ReportFile\PurchaseCommeraceXtraReport.resx">
+      <DependentUpon>PurchaseCommeraceXtraReport.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Report\ReportFile\PurchaseXtraReport.resx">
+      <DependentUpon>PurchaseXtraReport.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Report\ReportFile\QueryOrderItemXtraReport.resx">
+      <DependentUpon>QueryOrderItemXtraReport.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Report\ReportFile\ReturnXtraReport.resx">
+      <DependentUpon>ReturnXtraReport.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Report\ReportFile\StockGoodXtraReport.resx">
+      <DependentUpon>StockGoodXtraReport.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Report\ReportFile\StockXtraReport.resx">
+      <DependentUpon>StockXtraReport.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Report\ReportForm\FrmPrint.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FrmPrint.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\SystemManage\EnterpriceCompare\EnterpriseIDCompareQuery.resx">
+      <DependentUpon>EnterpriseIDCompareQuery.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\SystemManage\EnterpriceCompare\EnterpriseIDComprison.resx">
+      <DependentUpon>EnterpriseIDComprison.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\SystemManage\EnterpriceCompare\EntImpHisPlan.resx">
+      <DependentUpon>EntImpHisPlan.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\SystemManage\EnterpriceCompare\FormCorpMapList.resx">
+      <DependentUpon>FormCorpMapList.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\SystemManage\EnterpriceCompare\FormHisCorpCreate.resx">
+      <DependentUpon>FormHisCorpCreate.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\SystemManage\ProductCompare\ProductCodeCompareForm.resx">
+      <DependentUpon>ProductCodeCompareForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\SystemManage\ProductCompare\ProductCodeCompareQueryForm.resx">
+      <DependentUpon>ProductCodeCompareQueryForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\SystemManage\ProductCompare\ProductCodeForm.resx">
+      <DependentUpon>ProductCodeForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\SystemManage\ProductCompare\ProIDMatchShowBoxForm.resx">
+      <DependentUpon>ProIDMatchShowBoxForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\SystemManage\ProductCompare\ProImpHisPlan.resx">
+      <DependentUpon>ProImpHisPlan.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\SystemManage\SystemConfigMgr.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>SystemConfigMgr.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\SystemManage\UserConfig.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>UserConfig.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\TradeManage\DoWithOrder\BuyerOrderList.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>BuyerOrderList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\TradeManage\DoWithOrder\OutOrderReceive.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>OutOrderReceive.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\TradeManage\DoWithOrder\ViewBuyerOrder.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ViewBuyerOrder.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\TradeManage\DoWithOrder\DoWithOrder.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>DoWithOrder.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\TradeManage\Inv\InvForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>InvForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\TradeManage\QueryOrderItem.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>QueryOrderItem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\TradeStatistic\SalerStatistic.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>SalerStatistic.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\UserManage\UserInfo.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>UserInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <Compile Include="Properties\DataSources\SalerReturnPrint.cs">
+      <DependentUpon>SalerReturnPrint.xsd</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Properties\DataSources\SalerReturnPrint.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SalerReturnPrint.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="App.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="ProxyFactory.cs" />
+    <Compile Include="Settings.cs" />
+    <Compile Include="SystemConfig.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SystemConfig.Designer.cs">
+      <DependentUpon>SystemConfig.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TempTradeDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TempTradeDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="UI\CommonInfo\AfficheInfo\AfficheInfoForm.cs">
+    </Compile>
+    <Compile Include="UI\CommonInfo\AfficheInfo\AfficheInfoForm.Designer.cs">
+      <DependentUpon>AfficheInfoForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\CommonInfo\AfficheInfo\ViewAfficheInfoForm.cs">
+    </Compile>
+    <Compile Include="UI\CommonInfo\AfficheInfo\ViewAfficheInfoForm.Designer.cs">
+      <DependentUpon>ViewAfficheInfoForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\CommonInfo\DataFound\SecondAyrlnvForm.cs">
+    </Compile>
+    <Compile Include="UI\CommonInfo\DataFound\SecondAyrlnvForm.Designer.cs">
+      <DependentUpon>SecondAyrlnvForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\CommonInfo\DefineCodeSet\DefineCodeForm.cs">
+    </Compile>
+    <Compile Include="UI\CommonInfo\DefineCodeSet\DefineCodeForm.Designer.cs">
+      <DependentUpon>DefineCodeForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\CommonInfo\DataFound\OosQueryForm.cs">
+    </Compile>
+    <Compile Include="UI\CommonInfo\DataFound\OosQueryForm.Designer.cs">
+      <DependentUpon>OosQueryForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\CommonInfo\DataFound\PurchaseCommerceForm.cs">
+    </Compile>
+    <Compile Include="UI\CommonInfo\DataFound\PurchaseCommerceForm.Designer.cs">
+      <DependentUpon>PurchaseCommerceForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\CommonInfo\DataFound\SendProductForm.cs">
+    </Compile>
+    <Compile Include="UI\CommonInfo\DataFound\SendProductForm.Designer.cs">
+      <DependentUpon>SendProductForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\CommonInfo\OrdBuyerReturn\FoundOrdBuyerReturnForm.cs">
+    </Compile>
+    <Compile Include="UI\CommonInfo\OrdBuyerReturn\FoundOrdBuyerReturnForm.Designer.cs">
+      <DependentUpon>FoundOrdBuyerReturnForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\CommonInfo\OrdBuyerReturn\OrdBuyerReturnForm.cs">
+    </Compile>
+    <Compile Include="UI\CommonInfo\OrdBuyerReturn\OrdBuyerReturnForm.Designer.cs">
+      <DependentUpon>OrdBuyerReturnForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\CommonInfo\OrdInvoice\OrdInvoiceItemForm.cs">
+    </Compile>
+    <Compile Include="UI\CommonInfo\OrdInvoice\OrdInvoiceItemForm.Designer.cs">
+      <DependentUpon>OrdInvoiceItemForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\CommonInfo\OrdInvoice\OrdInvoiceListForm.cs">
+    </Compile>
+    <Compile Include="UI\CommonInfo\OrdInvoice\OrdInvoiceListForm.Designer.cs">
+      <DependentUpon>OrdInvoiceListForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\CommonInfo\OrdProduct\ViewOrdProductForm.cs">
+    </Compile>
+    <Compile Include="UI\CommonInfo\OrdProduct\ViewOrdProductForm.Designer.cs">
+      <DependentUpon>ViewOrdProductForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\CommonInfo\StockList\EditStockListForm.cs">
+    </Compile>
+    <Compile Include="UI\CommonInfo\StockList\EditStockListForm.Designer.cs">
+      <DependentUpon>EditStockListForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\CommonInfo\StockList\StockListForm.cs">
+    </Compile>
+    <Compile Include="UI\CommonInfo\StockList\StockListForm.Designer.cs">
+      <DependentUpon>StockListForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\CommonInfo\StockList\ViewStockListForm.cs">
+    </Compile>
+    <Compile Include="UI\CommonInfo\StockList\ViewStockListForm.Designer.cs">
+      <DependentUpon>ViewStockListForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\CommonInfo\StockUp\AffirmOrdStockUpItemForm.cs">
+    </Compile>
+    <Compile Include="UI\CommonInfo\StockUp\AffirmOrdStockUpItemForm.Designer.cs">
+      <DependentUpon>AffirmOrdStockUpItemForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\CommonInfo\StockUp\OrdStockUpForm.cs">
+    </Compile>
+    <Compile Include="UI\CommonInfo\StockUp\OrdStockUpForm.Designer.cs">
+      <DependentUpon>OrdStockUpForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\CommonInfo\StockUp\OrdStockUpItemForm.cs">
+    </Compile>
+    <Compile Include="UI\CommonInfo\StockUp\OrdStockUpItemForm.Designer.cs">
+      <DependentUpon>OrdStockUpItemForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\CommonInfo\UseOddAudi\UseOddAudiForm.cs">
+    </Compile>
+    <Compile Include="UI\CommonInfo\UseOddAudi\UseOddAudiForm.Designer.cs">
+      <DependentUpon>UseOddAudiForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\DataMaintenance\AddWarehouseInfo.cs">
+    </Compile>
+    <Compile Include="UI\DataMaintenance\AddWarehouseInfo.Designer.cs">
+      <DependentUpon>AddWarehouseInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\DataMaintenance\ModifyWarehouseInfo.cs">
+    </Compile>
+    <Compile Include="UI\DataMaintenance\ModifyWarehouseInfo.Designer.cs">
+      <DependentUpon>ModifyWarehouseInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\DataMaintenance\WarehouseMgr.cs">
+    </Compile>
+    <Compile Include="UI\DataMaintenance\WarehouseMgr.Designer.cs">
+      <DependentUpon>WarehouseMgr.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Helper\XtraForm1.cs">
+    </Compile>
+    <Compile Include="UI\Helper\XtraForm1.Designer.cs">
+      <DependentUpon>XtraForm1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Order\PurchaseHandle\FormPackage.cs">
+    </Compile>
+    <Compile Include="UI\Order\PurchaseHandle\FormPackage.Designer.cs">
+      <DependentUpon>FormPackage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Order\PurchaseHandle\FormPurchaseBuild.cs">
+    </Compile>
+    <Compile Include="UI\Order\PurchaseHandle\FormPurchaseBuild.designer.cs">
+      <DependentUpon>FormPurchaseBuild.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Order\PurchaseHandle\FormPurchaseCheck.cs">
+    </Compile>
+    <Compile Include="UI\Order\PurchaseHandle\FormPurchaseCheck.designer.cs">
+      <DependentUpon>FormPurchaseCheck.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Order\PurchaseHandle\FormPurchaseCreate.cs">
+    </Compile>
+    <Compile Include="UI\Order\PurchaseHandle\FormPurchaseCreate.designer.cs">
+      <DependentUpon>FormPurchaseCreate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Order\PurchaseHandle\FormPurchaseItem.cs">
+    </Compile>
+    <Compile Include="UI\Order\PurchaseHandle\FormPurchaseItem.designer.cs">
+      <DependentUpon>FormPurchaseItem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Order\PurchaseHandle\FormPurchaseOrder.cs">
+    </Compile>
+    <Compile Include="UI\Order\PurchaseHandle\FormPurchaseOrder.designer.cs">
+      <DependentUpon>FormPurchaseOrder.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Order\PurchaseHandle\HisPlanErrorList.cs">
+    </Compile>
+    <Compile Include="UI\Order\PurchaseHandle\HisPlanErrorList.designer.cs">
+      <DependentUpon>HisPlanErrorList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Order\PurchaseHandle\RequestSend.cs">
+    </Compile>
+    <Compile Include="UI\Order\PurchaseHandle\RequestSend.designer.cs">
+      <DependentUpon>RequestSend.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\PublicModule\BrowserForm.cs">
+    </Compile>
+    <Compile Include="UI\PublicModule\BrowserForm.Designer.cs">
+      <DependentUpon>BrowserForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\PublicModule\EndForm.cs">
+    </Compile>
+    <Compile Include="UI\PublicModule\EndForm.designer.cs">
+      <DependentUpon>EndForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\PublicModule\MainForm.cs">
+    </Compile>
+    <Compile Include="UI\PublicModule\MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\PublicModule\ParentForm.cs">
+    </Compile>
+    <Compile Include="UI\PublicModule\ParentForm.Designer.cs">
+      <DependentUpon>ParentForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\PublicModule\SyncForm.cs">
+    </Compile>
+    <Compile Include="UI\PublicModule\SyncForm.designer.cs">
+      <DependentUpon>SyncForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Report\ReportData\ConsumeGoodDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ConsumeGoodDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Report\ReportData\InvoiceFromDataSet.cs">
+      <DependentUpon>InvoiceFromDataSet.xsd</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UI\Report\ReportData\InvoiceFromDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>InvoiceFromDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Report\ReportData\OOSQueryDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>OOSQueryDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Report\ReportData\OrderDataSet.cs">
+      <DependentUpon>OrderDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Report\ReportData\OrderDataSet.designer.cs">
+      <DependentUpon>OrderDataSet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Report\ReportData\PurchaseCommeraceDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PurchaseCommeraceDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Report\ReportData\PurchaseDataSet.cs">
+      <DependentUpon>PurchaseDataSet.xsd</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UI\Report\ReportData\PurchaseDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PurchaseDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Report\ReportData\QueryOrderItemDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>QueryOrderItemDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Report\ReportData\ReturnDataSet.cs">
+      <DependentUpon>ReturnDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Report\ReportData\ReturnDataSet.designer.cs">
+      <DependentUpon>ReturnDataSet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Report\ReportData\StockDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>StockDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Report\ReportData\StockGoodDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>StockGoodDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Report\ReportFile\ConsumeGoodXtraReport.cs">
+    </Compile>
+    <Compile Include="UI\Report\ReportFile\ConsumeGoodXtraReport.Designer.cs">
+      <DependentUpon>ConsumeGoodXtraReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Report\ReportFile\InvoiceFromXtraReport.cs">
+    </Compile>
+    <Compile Include="UI\Report\ReportFile\InvoiceFromXtraReport.Designer.cs">
+      <DependentUpon>InvoiceFromXtraReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Report\ReportFile\OOSQueryXtraReport.cs">
+    </Compile>
+    <Compile Include="UI\Report\ReportFile\OOSQueryXtraReport.Designer.cs">
+      <DependentUpon>OOSQueryXtraReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Report\ReportFile\OrderXtraReport.cs">
+    </Compile>
+    <Compile Include="UI\Report\ReportFile\OrderXtraReport.Designer.cs">
+      <DependentUpon>OrderXtraReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Report\ReportFile\PurchaseCommeraceXtraReport.cs">
+    </Compile>
+    <Compile Include="UI\Report\ReportFile\PurchaseCommeraceXtraReport.Designer.cs">
+      <DependentUpon>PurchaseCommeraceXtraReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Report\ReportFile\PurchaseXtraReport.cs">
+    </Compile>
+    <Compile Include="UI\Report\ReportFile\PurchaseXtraReport.Designer.cs">
+      <DependentUpon>PurchaseXtraReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Report\ReportFile\QueryOrderItemXtraReport.cs">
+    </Compile>
+    <Compile Include="UI\Report\ReportFile\QueryOrderItemXtraReport.Designer.cs">
+      <DependentUpon>QueryOrderItemXtraReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Report\ReportFile\ReturnXtraReport.cs">
+    </Compile>
+    <Compile Include="UI\Report\ReportFile\ReturnXtraReport.Designer.cs">
+      <DependentUpon>ReturnXtraReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Report\ReportFile\StockGoodXtraReport.cs">
+    </Compile>
+    <Compile Include="UI\Report\ReportFile\StockGoodXtraReport.designer.cs">
+      <DependentUpon>StockGoodXtraReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Report\ReportFile\StockXtraReport.cs">
+    </Compile>
+    <Compile Include="UI\Report\ReportFile\StockXtraReport.Designer.cs">
+      <DependentUpon>StockXtraReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Report\ReportForm\FrmPrint.cs">
+    </Compile>
+    <Compile Include="UI\Report\ReportForm\FrmPrint.Designer.cs">
+      <DependentUpon>FrmPrint.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\SystemManage\EnterpriceCompare\EnterpriseIDCompareQuery.cs">
+    </Compile>
+    <Compile Include="UI\SystemManage\EnterpriceCompare\EnterpriseIDCompareQuery.Designer.cs">
+      <DependentUpon>EnterpriseIDCompareQuery.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\SystemManage\EnterpriceCompare\EnterpriseIDComprison.cs">
+    </Compile>
+    <Compile Include="UI\SystemManage\EnterpriceCompare\EnterpriseIDComprison.Designer.cs">
+      <DependentUpon>EnterpriseIDComprison.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\SystemManage\EnterpriceCompare\EntImpHisPlan.cs">
+    </Compile>
+    <Compile Include="UI\SystemManage\EnterpriceCompare\EntImpHisPlan.Designer.cs">
+      <DependentUpon>EntImpHisPlan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\SystemManage\EnterpriceCompare\FormCorpMapList.cs">
+    </Compile>
+    <Compile Include="UI\SystemManage\EnterpriceCompare\FormCorpMapList.Designer.cs">
+      <DependentUpon>FormCorpMapList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\SystemManage\EnterpriceCompare\FormHisCorpCreate.cs">
+    </Compile>
+    <Compile Include="UI\SystemManage\EnterpriceCompare\FormHisCorpCreate.Designer.cs">
+      <DependentUpon>FormHisCorpCreate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\SystemManage\ProductCompare\ProductCodeCompareForm.cs">
+    </Compile>
+    <Compile Include="UI\SystemManage\ProductCompare\ProductCodeCompareForm.Designer.cs">
+      <DependentUpon>ProductCodeCompareForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\SystemManage\ProductCompare\ProductCodeCompareQueryForm.cs">
+    </Compile>
+    <Compile Include="UI\SystemManage\ProductCompare\ProductCodeCompareQueryForm.Designer.cs">
+      <DependentUpon>ProductCodeCompareQueryForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\SystemManage\ProductCompare\ProductCodeForm.cs">
+    </Compile>
+    <Compile Include="UI\SystemManage\ProductCompare\ProductCodeForm.Designer.cs">
+      <DependentUpon>ProductCodeForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\SystemManage\ProductCompare\ProIDMatchShowBoxForm.cs">
+    </Compile>
+    <Compile Include="UI\SystemManage\ProductCompare\ProIDMatchShowBoxForm.Designer.cs">
+      <DependentUpon>ProIDMatchShowBoxForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\SystemManage\ProductCompare\ProImpHisPlan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\SystemManage\ProductCompare\ProImpHisPlan.Designer.cs">
+      <DependentUpon>ProImpHisPlan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\SystemManage\SystemConfigMgr.cs">
+    </Compile>
+    <Compile Include="UI\SystemManage\SystemConfigMgr.Designer.cs">
+      <DependentUpon>SystemConfigMgr.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\SystemManage\UserConfig.cs">
+    </Compile>
+    <Compile Include="UI\SystemManage\UserConfig.Designer.cs">
+      <DependentUpon>UserConfig.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\TradeManage\DoWithOrder\BuyerOrderList.cs">
+    </Compile>
+    <Compile Include="UI\TradeManage\DoWithOrder\BuyerOrderList.Designer.cs">
+      <DependentUpon>BuyerOrderList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\TradeManage\DoWithOrder\OutOrderReceive.cs">
+    </Compile>
+    <Compile Include="UI\TradeManage\DoWithOrder\OutOrderReceive.Designer.cs">
+      <DependentUpon>OutOrderReceive.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\TradeManage\DoWithOrder\ViewBuyerOrder.cs">
+    </Compile>
+    <Compile Include="UI\TradeManage\DoWithOrder\ViewBuyerOrder.Designer.cs">
+      <DependentUpon>ViewBuyerOrder.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\TradeManage\DoWithOrder\DoWithOrder.cs">
+    </Compile>
+    <Compile Include="UI\TradeManage\DoWithOrder\DoWithOrder.Designer.cs">
+      <DependentUpon>DoWithOrder.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\TradeManage\Inv\InvForm.cs">
+    </Compile>
+    <Compile Include="UI\TradeManage\Inv\InvForm.Designer.cs">
+      <DependentUpon>InvForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\TradeManage\QueryOrderItem.cs">
+    </Compile>
+    <Compile Include="UI\TradeManage\QueryOrderItem.Designer.cs">
+      <DependentUpon>QueryOrderItem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\TradeManage\XtraForm1.cs">
+    </Compile>
+    <Compile Include="UI\TradeManage\XtraForm1.Designer.cs">
+      <DependentUpon>XtraForm1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\TradeStatistic\SalerStatistic.cs">
+    </Compile>
+    <Compile Include="UI\TradeStatistic\SalerStatistic.Designer.cs">
+      <DependentUpon>SalerStatistic.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\TradeStatistic\XtraForm1.cs">
+    </Compile>
+    <Compile Include="UI\TradeStatistic\XtraForm1.Designer.cs">
+      <DependentUpon>XtraForm1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\UserManage\UserInfo.cs">
+    </Compile>
+    <Compile Include="UI\UserManage\UserInfo.Designer.cs">
+      <DependentUpon>UserInfo.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BLL\BLL.csproj">
+      <Project>{FCE95495-B52E-44DF-AAA9-F64124EF9A2A}</Project>
+      <Name>BLL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Commons\Commons.csproj">
+      <Project>{8B169C40-BE25-48D6-AB75-1D52E1FD796E}</Project>
+      <Name>Commons</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DAL\DAL.csproj">
+      <Project>{B93120EE-09BF-457D-A127-40748A6132B5}</Project>
+      <Name>DAL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\EmedHisCommonLibrary\EmedHisCommonLibrary.csproj">
+      <Project>{D4E12ED1-F54A-4F69-A1F5-39E3449B8E94}</Project>
+      <Name>EmedHisCommonLibrary</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\EmedHisHelper\EmedHisHelper.csproj">
+      <Project>{26A991F0-502E-4820-9591-3FDFC6C6D530}</Project>
+      <Name>EmedHisHelper</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Model\Model.csproj">
+      <Project>{F94BEE76-C0F9-4553-A60C-FC52EED3F058}</Project>
+      <Name>Model</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Remoting\Remoting.csproj">
+      <Project>{7A880E8F-4E14-4AA1-9DE8-A90763C38ED6}</Project>
+      <Name>Remoting</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="ConfigInfo.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="data.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="DB\TempTrade.mdf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="DB\TempTrade_log.LDF">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <DependentUpon>TempTrade.mdf</DependentUpon>
+    </Content>
+    <Content Include="eps3knd_stdSimpChinese.exe">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="epsft11_stdSimpChinese.exe">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ErpOrderExport.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ErpOrderSend.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="GpoOrderExport.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="GpoOrderSend.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="HisHosptailMapList.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="HisOrderReceive.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="HisProConfigList.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="HisProductMapList.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="HisPurchase.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="logo2_16.ICO" />
+    <None Include="Client_1_TemporaryKey.pfx" />
+    <Content Include="GetHisHosptailMapList.xls">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ExportErpOrder.xls">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="GetErpOrderSend.xls">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="GetHisProductList.xls">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="GetPurchase.xls">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <None Include="Client_2_TemporaryKey.pfx" />
+    <None Include="Properties\DataSources\Emedchina.TradeAssistantSaler.Model.Order.SalerOrder.OutputInfoModel.datasource" />
+    <None Include="Properties\DataSources\Emedchina.TradeAssistantSaler.Model.Order.SalerOrder.SalerOrderItemModel.datasource" />
+    <None Include="Properties\DataSources\SalerReturnPrint.xsc">
+      <DependentUpon>SalerReturnPrint.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\DataSources\SalerReturnPrint.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>SalerReturnPrint.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Properties\DataSources\SalerReturnPrint.xss">
+      <DependentUpon>SalerReturnPrint.xsd</DependentUpon>
+    </None>
+    <None Include="Resources\20061119213708170.png" />
+    <None Include="Resources\bg.gif" />
+    <Content Include="Resources\btn_01_16.png" />
+    <Content Include="Resources\btn_01_24.gif" />
+    <Content Include="Resources\btn_01_24.png" />
+    <Content Include="Resources\btn_02_16.png" />
+    <Content Include="Resources\btn_02_24.gif" />
+    <Content Include="Resources\btn_02_24.png" />
+    <Content Include="Resources\btn_03_16.png" />
+    <Content Include="Resources\btn_03_24.gif" />
+    <Content Include="Resources\btn_03_24.png" />
+    <Content Include="Resources\btn_04_16.png" />
+    <Content Include="Resources\btn_04_24.gif" />
+    <Content Include="Resources\btn_04_24.png" />
+    <Content Include="Resources\btn_05_16.png" />
+    <None Include="Resources\btn_dl.gif" />
+    <None Include="Resources\btn_pz.gif" />
+    <None Include="Resources\btn_qx.gif" />
+    <None Include="Resources\clockPic.jpg" />
+    <Content Include="Resources\Color_Append_01.bmp" />
+    <None Include="Resources\exit.gif" />
+    <Content Include="Resources\index_01.gif" />
+    <Content Include="Resources\index_02.gif" />
+    <Content Include="Resources\index_03.gif" />
+    <Content Include="Resources\index_04.gif" />
+    <Content Include="Resources\index_05.gif" />
+    <Content Include="Resources\index_06.gif" />
+    <Content Include="Resources\index_07.gif" />
+    <Content Include="Resources\index_08.gif" />
+    <Content Include="Resources\index_09.gif" />
+    <Content Include="Resources\index_10.gif" />
+    <Content Include="Resources\index_11.gif" />
+    <None Include="Resources\login.gif" />
+    <None Include="Resources\海虹医药交易助手.chm" />
+    <None Include="Resources\login.jpg" />
+    <None Include="Resources\lg.jpg" />
+    <Content Include="SendReceive.xls">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SendReceiveBak.xls">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <None Include="TempTradeDataSet.xsc">
+      <DependentUpon>TempTradeDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="TempTradeDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>TempTradeDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="TempTradeDataSet.xss">
+      <DependentUpon>TempTradeDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="TradeAssistant_TemporaryKey.pfx" />
+    <Content Include="Help.chm">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <None Include="Resources\loginPic.jpg" />
+    <Content Include="Resources\logo.ico" />
+    <Content Include="Resources\logo2_16.ICO" />
+    <None Include="Resources\Search02.bmp" />
+    <None Include="Resources\Search021.bmp" />
+    <None Include="Resources\Search02.gif" />
+    <Content Include="Resources\交易助手ico.ico" />
+    <Content Include="Sync.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="UserConfig.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="交易助手ico.ico" />
+    <None Include="Resources\Main12.jpg" />
+    <None Include="Resources\Main07.jpg" />
+    <None Include="Resources\Main05.jpg" />
+    <None Include="Resources\Main06.jpg" />
+    <None Include="Resources\Main04.jpg" />
+    <None Include="Resources\Main03.jpg" />
+    <None Include="Resources\Main02.jpg" />
+    <None Include="Resources\Main01.jpg" />
+    <None Include="Resources\Main08.jpg" />
+    <None Include="Resources\按钮-取消.gif" />
+    <None Include="Resources\按钮-配置.gif" />
+    <None Include="Resources\按钮-登录.gif" />
+    <None Include="Resources\title.JPG" />
+    <None Include="Resources\title04.JPG" />
+    <None Include="Resources\title03.JPG" />
+    <None Include="Resources\title02.JPG" />
+    <None Include="Resources\title01.JPG" />
+    <None Include="Resources\Main13.jpg" />
+    <None Include="Resources\Main11.jpg" />
+    <None Include="Resources\Main10.jpg" />
+    <None Include="Resources\Main09.jpg" />
+    <None Include="Resources\登录窗口.jpg" />
+    <None Include="UI\Report\ReportData\ConsumeGoodDataSet.xsc">
+      <DependentUpon>ConsumeGoodDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="UI\Report\ReportData\ConsumeGoodDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>ConsumeGoodDataSet.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="UI\Report\ReportData\ConsumeGoodDataSet.xss">
+      <DependentUpon>ConsumeGoodDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="UI\Report\ReportData\InvoiceFromDataSet.xsc">
+      <DependentUpon>InvoiceFromDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="UI\Report\ReportData\InvoiceFromDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>InvoiceFromDataSet.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="UI\Report\ReportData\InvoiceFromDataSet.xss">
+      <DependentUpon>InvoiceFromDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="UI\Report\ReportData\OOSQueryDataSet.xsc">
+      <DependentUpon>OOSQueryDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="UI\Report\ReportData\OOSQueryDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>OOSQueryDataSet.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="UI\Report\ReportData\OOSQueryDataSet.xss">
+      <DependentUpon>OOSQueryDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="UI\Report\ReportData\OrderDataSet.xsc">
+      <DependentUpon>OrderDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="UI\Report\ReportData\OrderDataSet.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="UI\Report\ReportData\OrderDataSet.xss">
+      <DependentUpon>OrderDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="UI\Report\ReportData\PurchaseCommeraceDataSet.xsc">
+      <DependentUpon>PurchaseCommeraceDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="UI\Report\ReportData\PurchaseCommeraceDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>PurchaseCommeraceDataSet.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="UI\Report\ReportData\PurchaseCommeraceDataSet.xss">
+      <DependentUpon>PurchaseCommeraceDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="UI\Report\ReportData\PurchaseDataSet.xsc">
+      <DependentUpon>PurchaseDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="UI\Report\ReportData\PurchaseDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>PurchaseDataSet.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="UI\Report\ReportData\PurchaseDataSet.xss">
+      <DependentUpon>PurchaseDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="UI\Report\ReportData\QueryOrderItemDataSet.xsc">
+      <DependentUpon>QueryOrderItemDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="UI\Report\ReportData\QueryOrderItemDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>QueryOrderItemDataSet.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="UI\Report\ReportData\QueryOrderItemDataSet.xss">
+      <DependentUpon>QueryOrderItemDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="UI\Report\ReportData\ReturnDataSet.xsc">
+      <DependentUpon>ReturnDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="UI\Report\ReportData\ReturnDataSet.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="UI\Report\ReportData\ReturnDataSet.xss">
+      <DependentUpon>ReturnDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="UI\Report\ReportData\StockDataSet.xsc">
+      <DependentUpon>StockDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="UI\Report\ReportData\StockDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>StockDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="UI\Report\ReportData\StockDataSet.xss">
+      <DependentUpon>StockDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="UI\Report\ReportData\StockGoodDataSet.xsc">
+      <DependentUpon>StockGoodDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="UI\Report\ReportData\StockGoodDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>StockGoodDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="UI\Report\ReportData\StockGoodDataSet.xss">
+      <DependentUpon>StockGoodDataSet.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Data.Access.Components.2.8">
+      <Visible>False</Visible>
+      <ProductName>Microsoft Data Access Components 2.8</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0 %28x86%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Sql.Server.Express.1.0">
+      <Visible>False</Visible>
+      <ProductName>SQL Server 2005 Express Edition</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <PublishFile Include="ADODB">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="ConfigInfo.xml">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>File</FileType>
+    </PublishFile>
+    <PublishFile Include="dao">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="data.xml">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>File</FileType>
+    </PublishFile>
+    <PublishFile Include="DevExpress.BonusSkins.v7.2">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="DevExpress.Data.v7.2">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="DevExpress.Data.v7.2.xml">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>File</FileType>
+    </PublishFile>
+    <PublishFile Include="DevExpress.OfficeSkins.v7.2">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="DevExpress.Utils.v7.2">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="DevExpress.Utils.v7.2.xml">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>File</FileType>
+    </PublishFile>
+    <PublishFile Include="DevExpress.Xpo.v7.2">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="DevExpress.Xpo.v7.2.xml">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>File</FileType>
+    </PublishFile>
+    <PublishFile Include="DevExpress.XtraBars.v7.2">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="DevExpress.XtraBars.v7.2.xml">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>File</FileType>
+    </PublishFile>
+    <PublishFile Include="DevExpress.XtraCharts.v7.2">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="DevExpress.XtraCharts.v7.2.xml">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>File</FileType>
+    </PublishFile>
+    <PublishFile Include="DevExpress.XtraEditors.v7.2">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="DevExpress.XtraEditors.v7.2.xml">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>File</FileType>
+    </PublishFile>
+    <PublishFile Include="DevExpress.XtraGrid.v7.2">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="DevExpress.XtraGrid.v7.2.xml">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>File</FileType>
+    </PublishFile>
+    <PublishFile Include="DevExpress.XtraLayout.v7.2">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="DevExpress.XtraLayout.v7.2.xml">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>File</FileType>
+    </PublishFile>
+    <PublishFile Include="DevExpress.XtraNavBar.v7.2">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="DevExpress.XtraNavBar.v7.2.xml">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>File</FileType>
+    </PublishFile>
+    <PublishFile Include="DevExpress.XtraPrinting.v7.2">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="DevExpress.XtraPrinting.v7.2.xml">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>File</FileType>
+    </PublishFile>
+    <PublishFile Include="DevExpress.XtraReports.v7.2">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="DevExpress.XtraReports.v7.2.xml">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>File</FileType>
+    </PublishFile>
+    <PublishFile Include="DevExpress.XtraRichTextEdit.v7.2">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="DevExpress.XtraTreeList.v7.2">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="DevExpress.XtraTreeList.v7.2.xml">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>File</FileType>
+    </PublishFile>
+    <PublishFile Include="DevExpress.XtraVerticalGrid.v7.2">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="DevExpress.XtraVerticalGrid.v7.2.xml">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>File</FileType>
+    </PublishFile>
+    <PublishFile Include="Excel">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="ExportErpOrder.xls">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>DataFile</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>File</FileType>
+    </PublishFile>
+    <PublishFile Include="GetErpOrderSend.xls">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>DataFile</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>File</FileType>
+    </PublishFile>
+    <PublishFile Include="GetHisHosptailMapList.xls">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>DataFile</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>File</FileType>
+    </PublishFile>
+    <PublishFile Include="GetHisProductList.xls">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>DataFile</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>File</FileType>
+    </PublishFile>
+    <PublishFile Include="GetPurchase.xls">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>DataFile</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>File</FileType>
+    </PublishFile>
+    <PublishFile Include="Microsoft.Office.Interop.Access">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="Microsoft.ReportViewer.Common">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="Microsoft.ReportViewer.ProcessingObjectModel">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="Microsoft.ReportViewer.WinForms">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="Microsoft.Vbe.Interop">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="office">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="SendReceive.xls">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>DataFile</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>File</FileType>
+    </PublishFile>
+    <PublishFile Include="SendReceiveBak.xls">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>DataFile</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>File</FileType>
+    </PublishFile>
+    <PublishFile Include="stdole">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="Sync.xml">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>File</FileType>
+    </PublishFile>
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="EMEDEPASSLib">
+      <Guid>{5E1E7C0C-0BC6-489A-ADA7-DB386CDB52CA}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

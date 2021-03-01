@@ -1,0 +1,123 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="3.5">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{F94BEE76-C0F9-4553-A60C-FC52EED3F058}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Emedchina.TradeAssistant.Model</RootNamespace>
+    <AssemblyName>Emedchina.TradeAssistant.Model</AssemblyName>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.Data.v7.2, Version=7.2.2.0, Culture=neutral, PublicKeyToken=9b171c9fd64da1d1, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Utils.v7.2, Version=7.2.2.0, Culture=neutral, PublicKeyToken=9b171c9fd64da1d1, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraEditors.v7.2, Version=7.2.2.0, Culture=neutral, PublicKeyToken=9b171c9fd64da1d1, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CommInfo\BulletinInfoModel.cs" />
+    <Compile Include="CommInfo\DefineInfoModel.cs" />
+    <Compile Include="CommInfo\OrdBuyerReturnModel.cs" />
+    <Compile Include="CommInfo\OrdHitCommMode.cs" />
+    <Compile Include="CommInfo\OrdInvoiceFromItemModel.cs" />
+    <Compile Include="CommInfo\OrdInvoiceFromModel.cs" />
+    <Compile Include="CommInfo\OrdOrderItemModel.cs" />
+    <Compile Include="CommInfo\OrdOrderModel.cs" />
+    <Compile Include="CommInfo\OrdOrderReceiveModel.cs" />
+    <Compile Include="CommInfo\OrdProductModel.cs" />
+    <Compile Include="CommInfo\OrdPurchaseItemModel.cs" />
+    <Compile Include="CommInfo\OrdPurchaseModel.cs" />
+    <Compile Include="CommInfo\OrdSecondAyplnvModel.cs" />
+    <Compile Include="CommInfo\OrdSecondAyrlnvUseModel.cs" />
+    <Compile Include="CommInfo\OrdStockUpItemModel.cs" />
+    <Compile Include="CommInfo\OrdStockUpModel.cs" />
+    <Compile Include="DataMaintenance\WarehouseModel.cs" />
+    <Compile Include="Exceptions\LoginException.cs" />
+    <Compile Include="His\ContProductModel.cs" />
+    <Compile Include="His\Gpo_EnterPrice_MapModel.cs" />
+    <Compile Include="His\Gpo_Hosptail_MapModel.cs" />
+    <Compile Include="His\Gpo_Product_MapModel.cs" />
+    <Compile Include="Map\ContProductModel.cs" />
+    <Compile Include="Map\GpoCorpModel.cs" />
+    <Compile Include="Map\Gpo_Hosptail_MapModel.cs" />
+    <Compile Include="Map\Gpo_Product_MapModel.cs" />
+    <Compile Include="Map\ProductCropModel.cs" />
+    <Compile Include="Map\ShowBoxInstance.cs" />
+    <Compile Include="Order\ApplyerProcess\GpoOutReceiveModel.cs" />
+    <Compile Include="Order\BuyerOrder\BuyerOrderModel.cs" />
+    <Compile Include="Order\BuyerOrder\OrderDetailSearchModel.cs" />
+    <Compile Include="Order\BuyerOrder\OrderItemInputModel.cs" />
+    <Compile Include="Order\DiscountInfo\ConItemBuyerDiscountModel.cs" />
+    <Compile Include="Order\PurchaseHandle\ContItemInfoModel.cs" />
+    <Compile Include="Order\PurchaseHandle\HitCommModel.cs" />
+    <Compile Include="Order\PurchaseHandle\ImputPurchaseModel.cs" />
+    <Compile Include="Order\PurchaseHandle\ItemStatusModel.cs" />
+    <Compile Include="Order\PurchaseHandle\PurchaseCreateModel.cs" />
+    <Compile Include="Order\PurchaseHandle\PurchaseItemModel.cs" />
+    <Compile Include="Order\PurchaseHandle\PurchaseOrderItemModel.cs" />
+    <Compile Include="Order\PurchaseHandle\PurchaseOrderModel.cs" />
+    <Compile Include="Order\PurchaseHandle\PurchaseSaveModel.cs" />
+    <Compile Include="Order\PurchaseHandle\UserInfoModel.cs" />
+    <Compile Include="Order\SalerOrder\SalerOrderListModel.cs" />
+    <Compile Include="Order\SalerReturn\SalerReturnModel.cs" />
+    <Compile Include="Org\CatBuyer.cs" />
+    <Compile Include="Org\CatOrg.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="User\LogedInUser.cs" />
+    <Compile Include="User\UserArea.cs" />
+    <Compile Include="User\UserInfo.cs" />
+    <Compile Include="User\UserKey.cs" />
+    <Compile Include="User\UserModule.cs" />
+    <Compile Include="User\UserOrg.cs" />
+    <Compile Include="User\UserOrgRole.cs" />
+    <Compile Include="User\UserOrgType.cs" />
+    <Compile Include="User\UserRegion.cs" />
+    <Compile Include="User\UserRegionRange.cs" />
+    <Compile Include="User\UserRole.cs" />
+    <Compile Include="User\UserRoleModule.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

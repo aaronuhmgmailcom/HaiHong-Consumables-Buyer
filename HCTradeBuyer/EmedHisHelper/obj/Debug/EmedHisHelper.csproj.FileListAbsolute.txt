@@ -1,0 +1,11 @@
+E:\HCTradeBuyer\HCTradeBuyer\EmedHisHelper\obj\Debug\ResolveAssemblyReference.cache
+E:\HCTradeBuyer\HCTradeBuyer\EmedHisHelper\obj\Debug\EmedHisHelper.FormColumns.resources
+E:\HCTradeBuyer\HCTradeBuyer\EmedHisHelper\obj\Debug\EmedHisHelper.FormDataView.resources
+E:\HCTradeBuyer\HCTradeBuyer\EmedHisHelper\obj\Debug\Emedchina.TradeAsst.EmedHisHelper.FormDBConfig.resources
+E:\HCTradeBuyer\HCTradeBuyer\EmedHisHelper\obj\Debug\Emedchina.TradeAsst.EmedHisHelper.FormMain.resources
+E:\HCTradeBuyer\HCTradeBuyer\EmedHisHelper\obj\Debug\EmedHisHelper.FormSql.resources
+E:\HCTradeBuyer\HCTradeBuyer\EmedHisHelper\obj\Debug\EmedHisHelper.Properties.Resources.resources
+E:\HCTradeBuyer\HCTradeBuyer\EmedHisHelper\obj\Debug\EmedHisHelper.csproj.GenerateResource.Cache
+E:\HCTradeBuyer\HCTradeBuyer\EmedHisHelper\obj\Debug\EmedHisHelper.dll.licenses
+E:\HCTradeBuyer\HCTradeBuyer\EmedHisHelper\obj\Debug\EmedHisHelper.dll
+E:\HCTradeBuyer\HCTradeBuyer\EmedHisHelper\obj\Debug\EmedHisHelper.pdb

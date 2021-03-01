@@ -1,0 +1,15 @@
+bin\Debug\EmedHisCommonLibrary.dll
+bin\Debug\EmedHisCommonLibrary.pdb
+bin\Debug\Emedchina.Commons.dll
+bin\Debug\Microsoft.Practices.EnterpriseLibrary.Common.dll
+bin\Debug\C1.C1Zip.dll
+bin\Debug\IBatisNet.Common.dll
+bin\Debug\Microsoft.Practices.EnterpriseLibrary.Data.dll
+bin\Debug\Microsoft.Practices.ObjectBuilder.dll
+bin\Debug\Microsoft.Practices.EnterpriseLibrary.ExceptionHandling.dll
+bin\Debug\Emedchina.Commons.pdb
+obj\Debug\ResolveAssemblyReference.cache
+obj\Debug\Emedchina.TradeAsst.EmedHisCommonLibrary.SqlConfig.resources
+obj\Debug\EmedHisCommonLibrary.csproj.GenerateResource.Cache
+obj\Debug\EmedHisCommonLibrary.dll
+obj\Debug\EmedHisCommonLibrary.pdb

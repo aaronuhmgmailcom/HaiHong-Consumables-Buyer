@@ -1,0 +1,633 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<sync>
+
+
+  <!--用户信息表-->
+  <sql table="GPO_USR_USER">
+    <sqlstring>
+      SELECT
+      usr.ID, usr.CODE as USER_CODE, usr.NAME as USER_NAME, usr.PASSWORD as USER_PASSWORD, usr.ROLE_ID, usr.ORG_ID, usr.TEL as USER_TEL, usr.MOBILE as USER_MOBILE, usr.EMAIL as USER_EMAIL, usr.HEADSHIP as USER_HEADSHIP, usr.DESCRIBE as USER_DESCRIBE, usr.ENABLE_FLAG, usr.ADMIN_FLAG, usr.TRADE_NO, usr.CREATE_USER, usr.CREATE_DATE, usr.CREATE_ORG, usr.LAST_UPDATE_USER, usr.LAST_UPDATE_DATE, usr.LAST_UPDATE_ORG, usr.ENCRYPT, usr.LAST_LOGIN_REG_PLAT, usr.FORBID_REMARK, usr.PW_ENABLE_FLAG, usr.USER_TYPE,'1' As SYNC_STATE
+      FROM GPO_USR_USER usr,GPO_USR_ORG org
+      Where Org.id = usr.org_id and Org.reg_org_id = :buyerId
+    </sqlstring>
+    <keysql>
+      Select
+      usr.ID
+      From GPO_USR_USER usr,GPO_USR_ORG org
+      Where Org.id = usr.org_id and Org.reg_org_id = :buyerId
+    </keysql>
+    <timefield>usr.CREATE_DATE,usr.LAST_UPDATE_DATE</timefield>
+  </sql>
+
+
+  <!--用户可用模块表-->
+  <sql table="GPO_USR_USER_MODULE">
+    <sqlstring>
+      Select
+      guum.ID,guum.USER_ID,guum.MODULE_ID,'1' AS SYNC_STATE
+      From GPO_USR_USER_MODULE guum,Gpo_Usr_User guu,gpo_usr_org guo
+      Where guu.id = guum.user_id and guu.org_id = guo.id and guo.reg_org_id = :buyerId
+    </sqlstring>
+    <keysql>
+      Select
+      guum.ID
+      From GPO_USR_USER_MODULE guum,Gpo_Usr_User guu,gpo_usr_org guo
+      Where guu.id = guum.user_id and guu.org_id = guo.id and guo.reg_org_id = :buyerId
+    </keysql>
+    <timefield></timefield>
+  </sql>
+
+  <!--用户角色信息表-->
+  <sql table="GPO_USR_ROLE">
+    <sqlstring>
+      Select Distinct
+      Role.ID,Role.NAME,Role.TYPE_NAME,Role.TYPE,Role.SORT,Role.ENABLE_FLAG ,Role.CREATE_USER,Role.CREATE_DATE,Role.CREATE_ORG ,Role.LAST_UPDATE_USER,
+      Role.LAST_UPDATE_DATE,Role.LAST_UPDATE_ORG,Role.FORBID_REMARK,'1' As SYNC_STATE
+      From GPO_USR_ROLE Role,GPO_USR_USER Usr,GPO_USR_ORG org
+      Where Role.ID = Usr.role_id and Usr.org_id = Org.id and Org.reg_org_id = :buyerId
+    </sqlstring>
+    <keysql>
+      Select Distinct
+      Role.ID
+      From GPO_USR_ROLE Role,GPO_USR_USER Usr,GPO_USR_ORG org
+      Where Role.ID = Usr.role_id and Usr.org_id = Org.id and Org.reg_org_id = :buyerId
+    </keysql>
+    <timefield>Role.CREATE_DATE,Role.LAST_UPDATE_DATE</timefield>
+  </sql>
+
+  <!--用户区域表-->
+  <sql table="GPO_USR_USER_AREA">
+    <sqlstring>
+      Select Distinct
+      area.ID,area.USER_ID,area.AREA_ID,'1' As SYNC_STATE
+      From GPO_USR_USER_AREA area,GPO_USR_USER Usr,GPO_USR_ORG org
+      Where area.USER_ID = Usr.id and Org.id = Usr.org_id And Org.reg_org_id = :buyerId
+    </sqlstring>
+    <keysql>
+      Select Distinct
+      area.ID
+      From GPO_USR_USER_AREA area,GPO_USR_USER Usr,GPO_USR_ORG org
+      Where area.USER_ID = Usr.id and Org.id = Usr.org_id And Org.reg_org_id = :buyerId
+    </keysql>
+    <timefield></timefield>
+  </sql>
+
+  <!--用户区域表-->
+  <sql table="GPO_REG_AREA">
+    <sqlstring>
+      SELECT ID,NAME,PLAT_ID,AREA_LEVEL,FATHER_ID,CREATE_DATE,LAST_UPDATE_DATE
+      FROM GPO_REG_AREA
+    </sqlstring>
+    <keysql>
+      SELECT ID 
+      FROM GPO_REG_AREA
+    </keysql>
+    <timefield>CREATE_DATE,LAST_UPDATE_DATE</timefield>
+  </sql>
+  
+  
+  <!--用户机构信息表-->
+  <sql table="GPO_USR_ORG">
+    <sqlstring>
+      Select guo.ID,
+      guo.REG_ORG_ID,
+      guo.NAME,
+      guo.SORT,
+      guo.PHONE,
+      guo.ENABLE_FLAG,
+      guo.CREATE_USER,
+      guo.CREATE_DATE,
+      guo.CREATE_ORG,
+      guo.LAST_UPDATE_USER,
+      guo.LAST_UPDATE_DATE,
+      guo.LAST_UPDATE_ORG,
+      guo.FORBID_REMARK,
+      '1' AS SYNC_STATE
+      From gpo_usr_org guo
+      WHERE guo.REG_ORG_ID = :buyerId
+    </sqlstring>
+    <keysql>
+      Select
+      guo.ID
+      From gpo_usr_org guo
+      WHERE guo.REG_ORG_ID = :buyerId
+    </keysql>
+    <timefield>guo.LAST_UPDATE_DATE</timefield>
+  </sql>
+
+
+
+  <!--用户菜单设置表-->
+  <sql table="CLIENT_MENU">
+    <sqlstring>
+      SELECT ID, MODULE_ID, SORT_SN, NAME, FATHER, MODULE_ACTION, URL, WEB_FLAG, MODIFY_DATE, '1' As SYNC_STATE, CLIENT_ID, SHORTCUT, IMAGE AS IMAGE_M, ENABLE_FLAG
+      FROM CLIENT_MENU WHERE instr(CLIENT_ID,'H') = 0 OR CLIENT_ID IS NULL
+    </sqlstring>
+    <keysql>
+
+    </keysql>
+    <timefield></timefield>
+  </sql>
+
+  <!--
+  <sql table="CAT_BUYER" >
+    <sqlstring>
+      SELECT cb.ID, cb.ORG_ADDRESS,cb.CREATE_DATE,cb.LAST_UPDATE_DATE From cat_buyer cb
+    </sqlstring>
+    <keysql>
+      Select
+      cb.Id
+      From cat_buyer cb
+    </keysql>
+    <timefield>cb.CREATE_DATE,cb.LAST_UPDATE_DATE</timefield>
+  </sql>
+
+<sql table="CAT_ORG" >
+  <sqlstring>
+    select id,name,abbr,spell_abbr,name_wb,create_date,last_update_date from cat_org
+  </sqlstring>
+  <keysql>
+    select id from cat_org
+  </keysql>
+  <timefield>create_date,last_update_date</timefield>
+</sql>
+-->
+<!--买方注册信息表-->
+  <sql table="GPO_REG_BUYER">
+    <sqlstring>
+      Select distinct grb.ID,
+      grb.DATA_BUYER_ID,
+      grb.STATUS,
+      grb.REG_DATE,
+      grb.REG_END_DATE,
+      grb.LINK_PERSON,
+      grb.LINK_PHONE,
+      grb.EXPIRY_STATUS,
+      grb.CREATE_DATE,
+      grb.CREATE_USER,
+      grb.LAST_UPDATE_DATE,
+      cb.ORG_ADDRESS,
+      grb.LAST_UPDATE_USER,
+      grb.REMARK,
+      grb.POST_CODE,
+      grb.COUNTY_CLASS,
+      '1' As SYNC_STATE,
+      co.name,
+      co.CODE,
+      co.ABBR,
+      co.SPELL_ABBR,
+      co.NAME_WB
+      From GPO_REG_BUYER grb,cat_org co,cat_buyer cb,cont_list cl
+      WHERE co.id = grb.data_buyer_id and grb.data_buyer_id = cb.id and grb.id = cl.a_id and cl.b_id = :buyerId
+    </sqlstring>
+    <keysql>
+      Select distinct grb.ID
+      From GPO_REG_BUYER grb,cat_org co,cat_buyer cb,cont_list cl
+      WHERE co.id = grb.data_buyer_id and grb.data_buyer_id = cb.id and grb.id = cl.a_id and cl.b_id = :buyerId
+    </keysql>
+    <timefield>grb.CREATE_DATE,grb.LAST_UPDATE_DATE</timefield>
+  </sql>
+
+  <!--药库表-->
+  <sql table="GPO_WAREHOUSE" >
+    <sqlstring>
+      SELECT ID, WAREHOUSE_NAME,'1' AS SYNC_STATE,WAREHOUSE_ADDRESS FROM GPO_WAREHOUSE where ORG_ID = :buyerId
+    </sqlstring>
+    <keysql>
+      SELECT ID FROM GPO_WAREHOUSE where ORG_ID = :buyerId
+    </keysql>
+    <timefield>MODIFY_DATE</timefield>
+  </sql>
+
+  <!--采购单表-->
+  <sql table="GPO_PURCHASE" >
+    <sqlstring>
+      Select distinct gp.id,gp.CREATE_USERNAME,gp.CREATE_DATE,gp.APPROVE_USERNAME,'1' AS SYNC_STATE
+      From Gpo_Purchase gp,GPO_PURCHASE_ITEM gpi WHERE gp.id = gpi.PURCHASE_ID and gpi.SALER_ID = :buyerId
+    </sqlstring>
+    <keysql>SELECT distinct gp.ID From Gpo_Purchase gp,GPO_PURCHASE_ITEM gpi WHERE gp.id = gpi.PURCHASE_ID and gpi.SALER_ID = :buyerId </keysql>
+    <timefield>gp.CREATE_DATE,gp.MODIFY_DATE</timefield>
+  </sql>
+  
+  <!--采购单明细表-->
+  <sql table="GPO_PURCHASE_ITEM" >
+    <sqlstring>
+      Select Id, Buyer_Remark, Modify_Date, Modify_Userid,'1' AS SYNC_STATE
+      From Gpo_Purchase_Item WHERE SALER_ID = :buyerId
+    </sqlstring>
+    <keysql>SELECT ID FROM GPO_PURCHASE_ITEM WHERE SALER_ID = :buyerId </keysql>
+    <timefield>MODIFY_DATE</timefield>
+  </sql>
+
+  <!--采购供应目录表-->
+  <sql table="GPO_HIT_COMM" >
+    <sqlstring>
+      SELECT RECORD_ID, AREA_ID, SALER_ID,BUYER_ID,PRODUCT_ID, MEDICAL_NAME, TRADE_NAME,MEDICAL_WUBI,MEDICAL_PINYIN,MEDICAL_CODE,
+      SPELL_ABBR,NAME_WB,DOSEAGE_FORM,SPEC, STAND_RATE, USE_UNIT,
+      SPEC_UNIT, WRAP_NAME, WRAP_CODE,QUALITY_NAME,PROVIDE_PRICE,PRODUCER_SHORTNAME,PRODUCER_FULLNAME,PRODUCER_WUBI,PRODUCER_PINYIN,
+      BUYER_FULLNAME,BUYER_SHORTNAME,BUYER_WUBI,BUYER_PINYIN,
+      LAST_UPDATE_USER,LAST_UPDATE_DATE,'1' As SYNC_STATE
+      FROM GPO_HIT_COMM WHERE DEALER_ID = :buyerId
+    </sqlstring>
+    <keysql>SELECT RECORD_ID FROM GPO_HIT_COMM_LOG WHERE DEALER_ID = :buyerId and OPERATE_DATE >= to_date(:delDate,'yyyy-mm-dd hh24:mi:ss') and (OPERATE = '3' or OPERATE = '5') </keysql>
+    <timefield>CREATE_DATE,LAST_UPDATE_DATE</timefield>
+  </sql>
+
+  <!--订单表-->
+  <sql table="GPO_ORDER" >
+    <sqlstring>
+      Select Order_Id, Purchase_Id, Order_Code, Order_State, Area_Id, Buyer_Orgid,REPOSITORY_ID,REPOSITORY_ADDR, Request_Total,
+      Bak_Buyer_Name, Bak_Buyer_Easy, Bak_Buyer_Fast,
+      Bak_Buyer_Wubi, Buyer_Link_Tel, Saler_Id, Saler_Name,
+      Saler_Easy, Saler_Fast, Saler_Wubi, Create_Username,Create_Userid, Create_Date, MODIFY_USERID,Modify_Date, Order_Remark,'1' As Sync_State
+      From Gpo_Order
+      Where Saler_Id = :buyerId
+    </sqlstring>
+    <keysql>SELECT ORDER_ID FROM GPO_ORDER WHERE Saler_Id = :buyerId </keysql>
+    <timefield>CREATE_DATE,MODIFY_DATE</timefield>
+  </sql>
+  <sql table="GPO_ORDER_ITEM" >
+    <sqlstring>
+      SELECT goi.RECORD_ID, goi.PURCHASE_ITEM_ID, goi.HIT_COMM_ID, goi.ORDER_ID, goi.AREA_ID, goi.BUYER_ORGID, goi.UNIT_PRICE, goi.READY_FLAG, goi.REQUEST_QTY, goi.REPOSITORY_ID,
+      goi.BUYER_DESC,goi.SALER_DESC,goi.DEGREE_FLAG,goi.REMARK,ITEM_STATUS, goi.MAX_PRICE, goi.ORDER_TYPE,goi.CREATE_DATE,goi.MODIFY_USERID, goi.MODIFY_DATE,'1' AS SYNC_STATE
+      FROM GPO_ORDER_ITEM goi , Gpo_Order go WHERE goi.order_id = go.order_id and go.Saler_Id = :buyerId
+    </sqlstring>
+    <keysql>SELECT goi.RECORD_ID FROM GPO_ORDER_ITEM goi , Gpo_Order go WHERE goi.order_id = go.order_id and go.Saler_Id = :buyerId </keysql>
+    <timefield>goi.CREATE_DATE,goi.MODIFY_DATE</timefield>
+  </sql>
+  <sql table="GPO_ITEM_STATUS" >
+    <sqlstring>
+      Select
+      gis.Id,gis.RECORD_ID,gis.ORDER_ITEM_STATE,gis.MODIFY_USERID,gis.MODIFY_USERNAME,gis.MODIFY_DATE,'1' AS Sync_State
+      FROM GPO_ITEM_STATUS gis, GPO_ORDER_ITEM goi ,Gpo_Order go WHERE gis.RECORD_ID = goi.RECORD_ID and goi.order_id = go.order_id and go.Saler_Id = :buyerId
+    </sqlstring>
+    <keysql>SELECT gis.ID FROM GPO_ITEM_STATUS gis, GPO_ORDER_ITEM goi ,Gpo_Order go WHERE gis.RECORD_ID = goi.RECORD_ID and goi.order_id = go.order_id and go.Saler_Id = :buyerId </keysql>
+    <timefield>gis.MODIFY_DATE</timefield>
+  </sql>
+
+  <sql table="GPO_ORDER_STOCKUP" >
+    <sqlstring>
+      Select id,os.order_id,order_item_id,product_id,send_lot,lot_no,invoice_no,invoice_date,invoice_expire_date,amount,trade_price,
+      retail_price,discount,stockup_qty,os.repository_id,remark,ready_userid,ready_date,invoice_total,
+      ready_flag,modify_user,os.MODIFY_DATE,'1' AS SYNC_STATE
+      From Gpo_Order_Stockup os,GPO_ORDER ord
+      Where os.ORDER_ID=ord.ORDER_ID And ord.Saler_Id = :buyerId
+    </sqlstring>
+    <keysql>Select Id From Gpo_Order_Stockup os,GPO_ORDER ord Where os.ORDER_ID=ord.ORDER_ID And ord.Saler_Id = :buyerId</keysql>
+    <timefield>Os.MODIFY_DATE</timefield>
+  </sql>
+
+  <sql table="GPO_ORDER_RECEIVE" >
+    <sqlstring>
+      Select Gor.Id, Gor.Order_Id, Gor.Order_Item_Id, Gor.Lot_No,Gor.Invoice_No,Gor.Invoice_Date,Gor.Receive_Qty,Gor.Receive_Date,Gor.TRADE_QTY,
+      Gor.Modify_user,Gor.MODIFY_DATE, '1' As Sync_State
+      From Gpo_Order_Receive Gor, Gpo_Order Ord
+      Where Gor.Order_Id = Ord.Order_Id And Ord.Saler_Id = :buyerId
+    </sqlstring>
+    <keysql>
+      Select Gor.Id
+      From Gpo_Order_Receive Gor, Gpo_Order Ord
+      Where Gor.Order_Id = Ord.Order_Id And Ord.Saler_Id = :buyerId
+    </keysql>
+    <timefield>Gor.Receive_Date</timefield>
+  </sql>
+
+  <sql table="GPO_CORP_MAP">
+    <sqlstring>
+      select id,
+      map_orgtype,
+      map_orgid,
+      org_id,
+      data_org_id,
+      code,
+      full_name,
+      easy_name,
+      address,
+      postcode,
+      telphone,
+      linkman,
+      isfactory,
+      issender,
+      issaler,
+      modify_userid,
+      modify_date,
+      process_flag,
+      '1' as sync_state,
+      remark,
+      ismap
+      from gpo_corp_map
+      where map_orgid= :buyerId
+
+    </sqlstring>
+    <keysql>
+      select id
+      from gpo_corp_map
+      where map_orgid= :buyerId
+    </keysql>
+    <timefield>modify_date</timefield>
+  </sql>
+
+  <sql table="GPO_PRODUCT_MAP">
+    <sqlstring>
+      select id,
+      map_orgtype,
+      map_orgid,
+      hit_comm_id,
+      product_id,
+      data_product_id,
+      factory_id,
+      saler_id,
+      sender_id,
+      enter_id,
+      medical_code,
+      product_code,
+      common_name,
+      product_name,
+      mode_id,
+      mode_name,
+      medical_spec_id,
+      medical_spec,
+      stand_rate,
+      use_unit_id,
+      use_unit,
+      spec_unit_id,
+      spec_unit,
+      permit_no,
+      factory_code,
+      factory_name,
+      saler_code,
+      saler_name,
+      sender_code,
+      sender_name,
+      category_id,
+      category_name,
+      stock_id,
+      stock_name,
+      package_rate,
+      modify_userid,
+      modify_date,
+      process_flag,
+      '1' as sync_state,
+      remark,
+      ismap
+      from gpo_product_map
+      where map_orgid= :buyerId
+    </sqlstring>
+    <keysql>
+      select id
+      from gpo_product_map
+      where map_orgid= :buyerId
+    </keysql>
+    <timefield>modify_date</timefield>
+  </sql>
+
+  <sql table="PROJECT_TYPE" >
+    <sqlstring>
+      SELECT CODE, NAME, REMARK,'1' AS SYNC_STATE FROM PROJECT_TYPE
+    </sqlstring>
+    <keysql></keysql>
+    <timefield></timefield>
+  </sql>
+
+
+  
+
+
+  <sql table="GPO_REG_PRODUCT_PUBLIC" >
+    <sqlstring>
+      SELECT distinct GRPP.ID AS ID,
+      GRPP.DATA_PRODUCT_ID AS DATA_PRODUCT_ID,
+      CP.PERMIT_NUMBER AS PERMIT_NUMBER,
+      GRPP.CREATE_DATE AS CREATE_DATE,
+      '1' AS SYNC_STATE
+      FROM GPO_REG_PRODUCT_PUBLIC GRPP, CAT_PRODUCT CP,GPO_PRODUCT_MAP GPM
+      WHERE GRPP.DATA_PRODUCT_ID = CP.ID
+      AND GRPP.DATA_PRODUCT_ID = GPM.Data_Product_Id
+      AND GPM.MAP_ORGID= :buyerId
+    </sqlstring>
+    <keysql>
+      SELECT distinct GRPP.ID AS ID
+      FROM GPO_REG_PRODUCT_PUBLIC GRPP, CAT_PRODUCT CP,GPO_PRODUCT_MAP GPM
+      WHERE GRPP.DATA_PRODUCT_ID = CP.ID
+      AND GRPP.DATA_PRODUCT_ID = GPM.Data_Product_Id
+      AND GPM.MAP_ORGID= :buyerId
+    </keysql>
+    <timefield>GRPP.CREATE_DATE,GRPP.LAST_UPDATE_DATE</timefield>
+  </sql>
+
+
+  <sql table="GPO_REG_ORG" >
+    <sqlstring>
+      select distinct gro.id,
+      gro.data_org_id,
+      gro.create_date,
+      gro.create_user,
+      gro.last_update_date,
+      gro.last_update_user,
+      gro.remark,
+      gro.factory_flag,
+      gro.saler_flag,
+      gro.sender_flag,
+      gro.buyer_flag,
+      gro.agency_flag,
+      gro.gov_flag
+      from gpo_reg_org gro,gpo_corp_map gcm
+      where gro.data_org_id = gcm.data_org_id
+      AND gcm.MAP_ORGID= :buyerId
+    </sqlstring>
+    <keysql>
+      select distinct gro.id
+      from gpo_reg_org gro,gpo_corp_map gcm
+      where gro.data_org_id = gcm.data_org_id
+      AND gcm.MAP_ORGID= :buyerId
+    </keysql>
+    <timefield>gro.create_date,gro.last_update_date</timefield>
+  </sql>
+
+  <sql table="CONT_ORG" >
+    <sqlstring>
+      SELECT distinct co.PROJECT_ID,
+      co.ORG_ID,
+      co.AREA_ID,
+      co.ORG_NAME,
+      co.ORG_EASY,
+      co.ORG_PINYIN,
+      co.ORG_WUBI,
+      co.CREATE_DATE,
+      co.LAST_UPDATE_DATE,
+      '1' AS SYNC_STATE,
+      gro.data_org_id
+      FROM cont_org co, gpo_reg_org gro,cont_list cl
+      where co.org_id = gro.id(+)
+      and co.project_id = cl.project_id
+      and  cl.B_ID = :buyerId
+    </sqlstring>
+    <keysql>
+      SELECT distinct co.PROJECT_ID,
+      co.ORG_ID
+      FROM cont_org_log co, gpo_reg_org gro,cont_list cl
+      where co.org_id = gro.id(+)
+      and co.project_id = cl.project_id
+      and  cl.B_ID = :buyerId and co.OPERATE_DATE >= to_date(:delDate,'yyyy-mm-dd hh24:mi:ss') and (co.OPERATE = '3' or co.OPERATE = '5')
+    </keysql>
+    <timefield>co.CREATE_DATE,co.LAST_UPDATE_DATE</timefield>
+  </sql>
+
+  <sql table="CONT_PRODUCT" >
+    <sqlstring>
+      SELECT distinct cp.PRODUCT_ID,
+      cp.MEDICAL_ID,
+      cp.MEDICAL_NAME,
+      cp.MEDICAL_WUBI,
+      cp.MEDICAL_PINYIN,
+      cp.MEDICAL_CODE,
+      cp.SPELL_ABBR,
+      cp.NAME_WB,
+      cp.QUALITY_NAME,
+      cp.MIDDLE_STAND_RATE,
+      cp.BIG_MIDDLE_RATE,
+      cp.WRAP_CODE,
+      cp.PROVINCE_INSURANCE_FLAG,
+      cp.TEMP_PRICE,
+      cp.PROVINCE_MAX_PRICE,
+      cp.CREATE_DATE,
+      cp.LAST_UPDATE_DATE,
+      cp.PROJECT_ID,
+      cp.TRADE_NAME,
+      cp.SPEC,
+      '1' AS SYNC_STATE
+      FROM CONT_PRODUCT cp,cont_list cl
+      where cp.project_id = cl.project_id
+      and  cl.B_ID = :buyerId
+    </sqlstring>
+    <keysql>
+      SELECT distinct cp.PRODUCT_ID,
+      cp.PROJECT_ID
+      FROM CONT_PRODUCT_LOG cp,cont_list cl
+      where cp.project_id = cl.project_id
+      and  cl.B_ID = :buyerId and cp.OPERATE_DATE >= to_date(:delDate,'yyyy-mm-dd hh24:mi:ss') and (cp.OPERATE = '3' or cp.OPERATE = '5')
+    </keysql>
+    <timefield>cp.CREATE_DATE,cp.LAST_UPDATE_DATE</timefield>
+  </sql>
+
+  <!--合同明细表-->
+  <sql table="CONT_ITEM" >
+    <sqlstring>
+      SELECT ci.ID,
+      ci.CONTRACT_ID,
+      ci.AREA_ID,
+      ci.SALER_ID,
+      ci.BUYER_ID,
+      ci.ORD_SEND_ID,
+      ci.BIDER_ID,
+      ci.MANUFACTURE_ID,
+      ci.PRODUCT_ID,
+      ci.MEDICAL_NAME,
+      ci.TRADE_NAME,
+      ci.DOSEAGE_FORM,
+      ci.SPEC,
+      ci.STAND_RATE,
+      ci.USE_UNIT,
+      ci.SPEC_UNIT,
+      ci.WRAP_NAME,
+      ci.PROVIDE_PRICE,
+      ci.PLAN_QTY,
+      ci.PROVIDE_END_DATE,
+      ci.PROVIDE_START_DATE,
+      ci.PAY_ORGID,
+      ci.BID_TYPE,
+      ci.DISC_SCHEMA_ID,
+      ci.DISC_SCHEMA_TYPE,
+      ci.ENABLE_FLAG,
+      ci.CREATE_DATE,
+      ci.LAST_UPDATE_DATE,
+      ci.PROJECT_ID,
+      ci.FACTORY_NAME,
+      '1' AS SYNC_STATE,
+      ci.FACTORY_ID,
+      co.org_name as co_name,
+      co.org_easy as co_abbr,
+      cto.org_name as cto_name,
+      cto.org_easy as cto_easy,
+      cto.org_wubi as cto_wubi,
+      cto.org_pinyin as cto_pinyin,
+      ci.saler_id as cto_id
+      FROM CONT_ITEM    ci,
+      cont_org     co,
+      cont_org     cto
+      WHERE ci.factory_id = co.org_id(+) and ci.project_id = co.project_id(+)
+      and ci.saler_id = cto.org_id and ci.project_id = cto.project_id
+      and ci.saler_ID = :buyerId
+    </sqlstring>
+    <keysql>
+      SELECT ID
+      FROM CONT_ITEM_LOG
+      WHERE saler_ID = :buyerId  and OPERATE_DATE >= to_date(:delDate,'yyyy-mm-dd hh24:mi:ss') and (OPERATE = '3' or OPERATE = '5')
+    </keysql>
+    <timefield>ci.CREATE_DATE,ci.LAST_UPDATE_DATE</timefield>
+  </sql>
+
+  <sql table="CONT_LIST" >
+    <sqlstring>
+      SELECT ID, AREA_ID, NAME, CODE, PROJECT_ID, TYPE_CODE, STATUS_FLAG, END_DATE, A_ID, B_ID,A_SIGN_FLAG,B_SIGN_FLAG, CREATE_DATE, LAST_UPDATE_DATE,'1' AS SYNC_STATE
+      FROM CONT_LIST WHERE B_ID = :buyerId
+    </sqlstring>
+    <keysql>SELECT ID FROM CONT_LIST_LOG WHERE B_ID = :buyerId  and OPERATE_DATE >= to_date(:delDate,'yyyy-mm-dd hh24:mi:ss') and (OPERATE = '3' or OPERATE = '5')</keysql>
+    <timefield>CREATE_DATE,LAST_UPDATE_DATE</timefield>
+  </sql>
+  
+  <upload>
+
+    <!--订单表-->
+    <GPO_ORDER>
+      <operator insert ="0" update ="1" delete="0">
+        <insertTimeCol>CREATE_DATE,MODIFY_DATE</insertTimeCol>
+        <insertTimeValue>sysdate,sysdate</insertTimeValue>
+        <updateTimeCol>MODIFY_DATE=sysdate</updateTimeCol>
+      </operator>
+    </GPO_ORDER>
+    <!--订单明细表-->
+    <GPO_ORDER_ITEM>
+      <operator insert ="0" update ="1" delete="0">
+        <insertTimeCol>CREATE_DATE,MODIFY_DATE</insertTimeCol>
+        <insertTimeValue>sysdate,sysdate</insertTimeValue>
+        <updateTimeCol>MODIFY_DATE=sysdate</updateTimeCol>
+      </operator>
+    </GPO_ORDER_ITEM>
+    <!--订单明细状态表-->
+    <GPO_ITEM_STATUS>
+      <operator insert ="1" update ="0" delete="0">
+        <insertTimeCol>MODIFY_DATE</insertTimeCol>
+        <insertTimeValue>sysdate</insertTimeValue>
+        <updateTimeCol>MODIFY_DATE=sysdate</updateTimeCol>
+      </operator>
+    </GPO_ITEM_STATUS>
+
+    <!--订单备货表-->
+    <GPO_ORDER_STOCKUP>
+      <operator insert ="1" update ="1" delete="1">
+        <insertTimeCol>MODIFY_DATE</insertTimeCol>
+        <insertTimeValue>sysdate</insertTimeValue>
+        <updateTimeCol>MODIFY_DATE=sysdate</updateTimeCol>
+      </operator>
+    </GPO_ORDER_STOCKUP>
+
+    <!--产品匹配表-->
+    <GPO_PRODUCT_MAP>
+      <operator insert ="1" update ="1" delete="1">
+        <insertTimeCol>MODIFY_DATE</insertTimeCol>
+        <insertTimeValue>sysdate</insertTimeValue>
+        <updateTimeCol>MODIFY_DATE=sysdate</updateTimeCol>
+      </operator>
+    </GPO_PRODUCT_MAP>
+    <!--企业匹配表-->
+    <GPO_CORP_MAP>
+      <operator insert ="1" update ="1" delete="1">
+        <insertTimeCol>MODIFY_DATE</insertTimeCol>
+        <insertTimeValue>sysdate</insertTimeValue>
+        <updateTimeCol>MODIFY_DATE=sysdate</updateTimeCol>
+      </operator>
+    </GPO_CORP_MAP>
+  </upload>
+
+</sync>

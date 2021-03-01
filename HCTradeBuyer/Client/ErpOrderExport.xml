@@ -1,0 +1,106 @@
+﻿<?xml version="1.0" standalone="yes"?>
+<Config Name="" Type="" Ver="1.0">
+  <SourceDB DBType="" ServerName="" DataBase="" User="" Password="" DBPath="">
+    <SourceTable TableName="">
+      <SourceField Index="1" Name="OrderID" Type="CHAR(24)" Length="" Default="" Desc="订单编码">
+      </SourceField>
+      <SourceField Index="2" Name="RecordId" Type="CHAR(24)" Length="" Default="" Desc="订单明细编码">
+      </SourceField>
+      <SourceField Index="3" Name="BuyerOrgid" Type="VARCHAR(24)" Length="" Default="" Desc="医院编码">
+      </SourceField>
+      <SourceField Index="4" Name="BuyerName" Type="VARCHAR(100)" Length="" Default="" Desc="医院名称">
+      </SourceField>
+      <SourceField Index="5" Name="BuyerEasy" Type="VARCHAR(50)" Length="" Default="" Desc="医院简称">
+      </SourceField>
+      <SourceField Index="6" Name="MedicalId" Type="VARCHAR(24)" Length="" Default="" Desc="产品编码">
+      </SourceField>
+      <SourceField Index="7" Name="MedicalName" Type="VARCHAR(50)" Length="" Default="" Desc="产品名称">
+      </SourceField>
+      <SourceField Index="8" Name="ProductId" Type="VARCHAR(24)" Length="" Default="" Desc="产品编码">
+      </SourceField>
+      <SourceField Index="9" Name="ProductName" Type="VARCHAR(50)" Length="" Default="" Desc="产品名称">
+      </SourceField>
+      <SourceField Index="10" Name="MedicalModeId" Type="VARCHAR(24)" Length="" Default="" Desc="产品剂型编码">
+      </SourceField>
+      <SourceField Index="11" Name="MedicalMode" Type="VARCHAR(50)" Length="" Default="" Desc="产品剂型">
+      </SourceField>
+      <SourceField Index="12" Name="MedicalSpecId" Type="VARCHAR(24)" Length="" Default="" Desc="产品规格编码">
+      </SourceField>
+      <SourceField Index="13" Name="MedicalSpec" Type="VARCHAR(50)" Length="" Default="" Desc="产品规格">
+      </SourceField>
+      <SourceField Index="14" Name="MetricNameId" Type="VARCHAR(24)" Length="" Default="" Desc="产品单位编码">
+      </SourceField>
+      <SourceField Index="15" Name="MetricName" Type="VARCHAR(50)" Length="" Default="" Desc="产品单位">
+      </SourceField>
+      <SourceField Index="16" Name="FatoryId" Type="VARCHAR(24)" Length="" Default="" Desc="生产企业编码">
+      </SourceField>
+      <SourceField Index="17" Name="FactoryName" Type="VARCHAR(50)" Length="" Default="" Desc="生产企业名称">
+      </SourceField>
+      <SourceField Index="18" Name="RequestQty" Type="VARCHAR(50)" Length="" Default="" Desc="订购数量">
+      </SourceField>
+      <SourceField Index="19" Name="Price" Type="VARCHAR(50)" Length="" Default="" Desc="产品单价">
+      </SourceField>
+      <SourceField Index="20" Name="CreateDate" Type="VARCHAR(50)" Length="" Default="" Desc="创建时间">
+      </SourceField>
+      <SourceField Index="21" Name="ModifyDate" Type="VARCHAR(50)" Length="" Default="" Desc="最后修改时间">
+      </SourceField>
+      <SourceField Index="22" Name="Degree" Type="VARCHAR(1)" Length="" Default="" Desc="紧急程度">
+      </SourceField>
+      <SourceField Index="23" Name="OrderRemark" Type="VARCHAR(1000)" Length="" Default="" Desc="总单备注">
+      </SourceField>
+      <SourceField Index="24" Name="Remark" Type="VARCHAR(1000)" Length="" Default="" Desc="明细备注">
+      </SourceField>
+      <SourceField Index="25" Name="RequestTotal" Type="VARCHAR(1000)" Length="" Default="" Desc="订购金额">
+      </SourceField>
+      <SourceField Index="26" Name="STAND_RATE" Type="VARCHAR(1000)" Length="" Default="" Desc="标准转换比">
+      </SourceField>
+    </SourceTable>
+  </SourceDB>
+  <DestDB DBType="EXCEL" ServerName="" DataBase="" User="" Password="" DBPath="ExportErpOrder.xls">
+    <DestTable TableName="Sheet1">
+      <DestField Index="1" Name="ddmxbm" Type="字符型" Length="" Default="" Desc="" />
+      <DestField Index="2" Name="yybm" Type="字符型" Length="" Default="" Desc="" />
+      <DestField Index="3" Name="yymc" Type="字符型" Length="" Default="" Desc="" />
+      <DestField Index="4" Name="yyjc" Type="字符型" Length="" Default="" Desc="" />
+      <DestField Index="5" Name="cpbh" Type="字符型" Length="" Default="" Desc="" />
+      <DestField Index="6" Name="cpmc" Type="字符型" Length="" Default="" Desc="" />
+      <DestField Index="7" Name="jxmc" Type="字符型" Length="" Default="" Desc="" />
+      <DestField Index="8" Name="ggbzmc" Type="字符型" Length="" Default="" Desc="" />
+      <DestField Index="9" Name="bzdw" Type="字符型" Length="" Default="" Desc="" />
+      <DestField Index="10" Name="scqybm" Type="字符型" Length="" Default="" Desc="" />
+      <DestField Index="11" Name="scqymc" Type="字符型" Length="" Default="" Desc="" />
+      <DestField Index="12" Name="dgsl" Type="浮点数" Length="" Default="" Desc="" />
+      <DestField Index="13" Name="dgj" Type="浮点数" Length="" Default="" Desc="" />
+      <DestField Index="14" Name="dgrq" Type="日期型" Length="" Default="" Desc="" />
+      <DestField Index="15" Name="yybz" Type="字符型" Length="" Default="" Desc="" />
+      <DestField Index="16" Name="dgje" Type="浮点数" Length="" Default="" Desc="" />
+      <DestField Index="17" Name="bzzhb" Type="浮点数" Length="" Default="" Desc="" />
+    </DestTable>
+  </DestDB>
+  <ContrastList Delimited=",">
+    <Contrast SourceField="RecordId" DestField="ddmxbm" Algorithm="" IsNew="0" DestDBType="字符型" />
+    <Contrast SourceField="BuyerOrgid" DestField="yybm" Algorithm="" IsNew="0" DestDBType="字符型" />
+    <Contrast SourceField="BuyerName" DestField="yymc" Algorithm="" IsNew="0" DestDBType="字符型" />
+    <Contrast SourceField="BuyerEasy" DestField="yyjc" Algorithm="" IsNew="0" DestDBType="字符型" />
+    <Contrast SourceField="MedicalId" DestField="cpbh" Algorithm="" IsNew="0" DestDBType="字符型" />
+    <Contrast SourceField="ProductName" DestField="cpmc" Algorithm="" IsNew="0" DestDBType="字符型" />
+    <Contrast SourceField="MedicalMode" DestField="jxmc" Algorithm="" IsNew="0" DestDBType="字符型" />
+    <Contrast SourceField="MedicalSpec" DestField="ggbzmc" Algorithm="" IsNew="0" DestDBType="字符型" />
+    <Contrast SourceField="MetricName" DestField="bzdw" Algorithm="" IsNew="0" DestDBType="字符型" />
+    <Contrast SourceField="FatoryId" DestField="scqybm" Algorithm="" IsNew="0" DestDBType="字符型" />
+    <Contrast SourceField="FactoryName" DestField="scqymc" Algorithm="" IsNew="0" DestDBType="字符型" />
+    <Contrast SourceField="RequestQty" DestField="dgsl" Algorithm="" IsNew="0" DestDBType="浮点数" />
+    <Contrast SourceField="Price" DestField="dgj" Algorithm="" IsNew="0" DestDBType="浮点数" />
+    <Contrast SourceField="CreateDate" DestField="dgrq" Algorithm="" IsNew="0" DestDBType="日期型" />
+    <Contrast SourceField="Remark" DestField="yybz" Algorithm="" IsNew="0" DestDBType="字符型" />
+    <Contrast SourceField="RequestTotal" DestField="dgje" Algorithm="" IsNew="0" DestDBType="浮点数" />
+    <Contrast SourceField="STAND_RATE" DestField="bzzhb" Algorithm="" IsNew="0" DestDBType="浮点数" />
+  </ContrastList>
+  <BeginSql>
+  </BeginSql>
+  <Sqls>
+    <Sql Pattern="1" ExecSort="1">Insert into [Sheet1$] ( ddmxbm,yybm,yymc,yyjc,cpbh,cpmc,jxmc,ggbzmc,bzdw,scqybm,scqymc,dgsl,dgj,dgrq,yybz,dgje,bzzhb ) Select @RecordId,@BuyerOrgid,@BuyerName,@BuyerEasy,@MedicalId,@ProductName,@MedicalMode,@MedicalSpec,@MetricName,@FatoryId,@FactoryName,@RequestQty,@Price,@CreateDate,@Remark,@RequestTotal,@STAND_RATE</Sql>
+  </Sqls>
+  <EndSql>
+  </EndSql>
+</Config>

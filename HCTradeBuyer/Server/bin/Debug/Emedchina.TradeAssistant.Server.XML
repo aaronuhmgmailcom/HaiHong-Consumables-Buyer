@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>HCServer</name>
+    </assembly>
+    <members>
+        <member name="T:Emedchina.TradeAssistant.Server.Program">
+            <summary>
+            
+            </summary>
+        </member>
+    </members>
+</doc>

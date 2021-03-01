@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="StockDataSet" targetNamespace="http://tempuri.org/StockDataSet.xsd" xmlns:mstns="http://tempuri.org/StockDataSet.xsd" xmlns="http://tempuri.org/StockDataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="1" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="TempTradeConnectionString" IsAppSettingsProperty="True" Modifier="Assembly" Name="TempTradeConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.Emedchina.TradeAssistant.Client.Properties.Settings.GlobalReference.Default.TempTradeConnectionString" Provider="System.Data.SqlClient">
+          </Connection>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="TradeAssistantConnectionString" ConnectionStringObject="" IsAppSettingsProperty="True" Modifier="Assembly" Name="TradeAssistantConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.Emedchina.TradeAssistant.Client.Properties.Settings.GlobalReference.Default.TradeAssistantConnectionString" Provider="System.Data.SqlClient">
+          </Connection>
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="HC_ORD_ORD_STOCKTableAdapter" GeneratorDataComponentClassName="HC_ORD_ORD_STOCKTableAdapter" Name="HC_ORD_ORD_STOCK" UserDataComponentName="HC_ORD_ORD_STOCKTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="TradeAssistantConnectionString (Settings)" DbObjectName="" DbObjectType="Unknown" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="False" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="False" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="True">
+                    <CommandText> select hs.code,
+             hs.create_user_name,
+             hs.create_date,
+             hs.state,
+             hs.sender_name,
+             hs.remark,
+             hi.product_name,
+             hi.manufacture_name,
+             hi.spec,
+             hi.model,
+             hi.barcode,
+             hi.batch_no,
+             hi.num,      
+             hop.price,
+             hi.valid_date      
+      from hc_ord_ord_stock hs left join hc_ord_ord_stock_item hi
+      on hs.id = hi.stock_id left join hc_ord_product hop on hop.id = hi.project_prod_id</CommandText>
+                    <Parameters>
+                    </Parameters>
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="code" DataSetColumn="code" />
+              <Mapping SourceColumn="create_user_name" DataSetColumn="create_user_name" />
+              <Mapping SourceColumn="create_date" DataSetColumn="create_date" />
+              <Mapping SourceColumn="state" DataSetColumn="state" />
+              <Mapping SourceColumn="sender_name" DataSetColumn="sender_name" />
+              <Mapping SourceColumn="remark" DataSetColumn="remark" />
+              <Mapping SourceColumn="product_name" DataSetColumn="product_name" />
+              <Mapping SourceColumn="manufacture_name" DataSetColumn="manufacture_name" />
+              <Mapping SourceColumn="spec" DataSetColumn="spec" />
+              <Mapping SourceColumn="model" DataSetColumn="model" />
+              <Mapping SourceColumn="barcode" DataSetColumn="barcode" />
+              <Mapping SourceColumn="batch_no" DataSetColumn="batch_no" />
+              <Mapping SourceColumn="num" DataSetColumn="num" />
+              <Mapping SourceColumn="valid_date" DataSetColumn="valid_date" />
+              <Mapping SourceColumn="price" DataSetColumn="price" />
+            </Mappings>
+            <Sources>
+              <DbSource ConnectionRef="TradeAssistantConnectionString (Settings)" DbObjectName="" DbObjectType="Unknown" FillMethodModifier="Public" FillMethodName="FillBy" GenerateMethods="Both" GenerateShortCommands="True" GeneratorGetMethodName="GetDataBy" GeneratorSourceName="FillBy" GetMethodModifier="Public" GetMethodName="GetDataBy" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="True" UserGetMethodName="GetDataBy" UserSourceName="FillBy">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="True">
+                    <CommandText> select hs.code,
+             hs.create_user_name,
+             hs.create_date,
+             hs.state,
+             hs.sender_name,
+             hs.remark,
+             hi.product_name,
+             hi.manufacture_name,
+             hi.spec,
+             hi.model,
+             hi.barcode,
+             hi.batch_no,
+             hi.num,
+             hop.price,
+             hi.valid_date      
+      from hc_ord_ord_stock hs left join hc_ord_ord_stock_item hi
+      on hs.id = hi.stock_id  left join hc_ord_product   hop  on hi.project_prod_id = hop.id</CommandText>
+                    <Parameters>
+                    </Parameters>
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </Sources>
+          </TableAdapter>
+        </Tables>
+        <Sources>
+        </Sources>
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="StockDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="StockDataSet" msprop:Generator_DataSetName="StockDataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="HC_ORD_ORD_STOCK" msprop:Generator_UserTableName="HC_ORD_ORD_STOCK" msprop:Generator_RowDeletedName="HC_ORD_ORD_STOCKRowDeleted" msprop:Generator_RowChangedName="HC_ORD_ORD_STOCKRowChanged" msprop:Generator_RowClassName="HC_ORD_ORD_STOCKRow" msprop:Generator_RowChangingName="HC_ORD_ORD_STOCKRowChanging" msprop:Generator_RowEvArgName="HC_ORD_ORD_STOCKRowChangeEvent" msprop:Generator_RowEvHandlerName="HC_ORD_ORD_STOCKRowChangeEventHandler" msprop:Generator_TableClassName="HC_ORD_ORD_STOCKDataTable" msprop:Generator_TableVarName="tableHC_ORD_ORD_STOCK" msprop:Generator_RowDeletingName="HC_ORD_ORD_STOCKRowDeleting" msprop:Generator_TablePropName="HC_ORD_ORD_STOCK">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="code" msprop:Generator_UserColumnName="code" msprop:Generator_ColumnPropNameInRow="code" msprop:Generator_ColumnVarNameInTable="columncode" msprop:Generator_ColumnPropNameInTable="codeColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="create_user_name" msprop:Generator_UserColumnName="create_user_name" msprop:Generator_ColumnPropNameInRow="create_user_name" msprop:Generator_ColumnVarNameInTable="columncreate_user_name" msprop:Generator_ColumnPropNameInTable="create_user_nameColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="200" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="create_date" msprop:Generator_UserColumnName="create_date" msprop:Generator_ColumnPropNameInRow="create_date" msprop:Generator_ColumnVarNameInTable="columncreate_date" msprop:Generator_ColumnPropNameInTable="create_dateColumn" type="xs:dateTime" />
+              <xs:element name="state" msprop:Generator_UserColumnName="state" msprop:Generator_ColumnPropNameInRow="state" msprop:Generator_ColumnVarNameInTable="columnstate" msprop:Generator_ColumnPropNameInTable="stateColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="sender_name" msprop:Generator_UserColumnName="sender_name" msprop:Generator_ColumnPropNameInRow="sender_name" msprop:Generator_ColumnVarNameInTable="columnsender_name" msprop:Generator_ColumnPropNameInTable="sender_nameColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="150" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="remark" msprop:Generator_UserColumnName="remark" msprop:Generator_ColumnPropNameInRow="remark" msprop:Generator_ColumnVarNameInTable="columnremark" msprop:Generator_ColumnPropNameInTable="remarkColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1000" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="product_name" msprop:Generator_UserColumnName="product_name" msprop:Generator_ColumnPropNameInRow="product_name" msprop:Generator_ColumnVarNameInTable="columnproduct_name" msprop:Generator_ColumnPropNameInTable="product_nameColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="manufacture_name" msprop:Generator_UserColumnName="manufacture_name" msprop:Generator_ColumnPropNameInRow="manufacture_name" msprop:Generator_ColumnVarNameInTable="columnmanufacture_name" msprop:Generator_ColumnPropNameInTable="manufacture_nameColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="150" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="spec" msprop:Generator_UserColumnName="spec" msprop:Generator_ColumnPropNameInRow="spec" msprop:Generator_ColumnVarNameInTable="columnspec" msprop:Generator_ColumnPropNameInTable="specColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="4000" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="model" msprop:Generator_UserColumnName="model" msprop:Generator_ColumnPropNameInRow="model" msprop:Generator_ColumnVarNameInTable="columnmodel" msprop:Generator_ColumnPropNameInTable="modelColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="3000" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="barcode" msprop:Generator_UserColumnName="barcode" msprop:Generator_ColumnPropNameInRow="barcode" msprop:Generator_ColumnVarNameInTable="columnbarcode" msprop:Generator_ColumnPropNameInTable="barcodeColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="batch_no" msprop:Generator_UserColumnName="batch_no" msprop:Generator_ColumnPropNameInRow="batch_no" msprop:Generator_ColumnVarNameInTable="columnbatch_no" msprop:Generator_ColumnPropNameInTable="batch_noColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="128" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="num" msprop:Generator_UserColumnName="num" msprop:Generator_ColumnPropNameInRow="num" msprop:Generator_ColumnVarNameInTable="columnnum" msprop:Generator_ColumnPropNameInTable="numColumn" type="xs:decimal" minOccurs="0" />
+              <xs:element name="valid_date" msprop:Generator_UserColumnName="valid_date" msprop:Generator_ColumnPropNameInRow="valid_date" msprop:Generator_ColumnVarNameInTable="columnvalid_date" msprop:Generator_ColumnPropNameInTable="valid_dateColumn" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="price" msprop:Generator_UserColumnName="price" msprop:Generator_ColumnVarNameInTable="columnprice" msprop:Generator_ColumnPropNameInRow="price" msprop:Generator_ColumnPropNameInTable="priceColumn" type="xs:decimal" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

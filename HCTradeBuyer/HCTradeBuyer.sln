@@ -1,0 +1,89 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "External-Bin", "External-Bin", "{D2CE480E-352D-4261-9D9F-D5A96889238C}"
+	ProjectSection(SolutionItems) = preProject
+		External-Bin\C1.C1Zip.dll = External-Bin\C1.C1Zip.dll
+		External-Bin\Excel.dll = External-Bin\Excel.dll
+		External-Bin\IBatisNet.Common.dll = External-Bin\IBatisNet.Common.dll
+		External-Bin\IBatisNet.Common.Logging.Log4Net.dll = External-Bin\IBatisNet.Common.Logging.Log4Net.dll
+		External-Bin\log4net.dll = External-Bin\log4net.dll
+		External-Bin\Microsoft.Practices.EnterpriseLibrary.Caching.dll = External-Bin\Microsoft.Practices.EnterpriseLibrary.Caching.dll
+		External-Bin\Microsoft.Practices.EnterpriseLibrary.Common.dll = External-Bin\Microsoft.Practices.EnterpriseLibrary.Common.dll
+		External-Bin\Microsoft.Practices.EnterpriseLibrary.Data.dll = External-Bin\Microsoft.Practices.EnterpriseLibrary.Data.dll
+		External-Bin\Microsoft.Practices.EnterpriseLibrary.ExceptionHandling.dll = External-Bin\Microsoft.Practices.EnterpriseLibrary.ExceptionHandling.dll
+		External-Bin\Microsoft.Practices.EnterpriseLibrary.ExceptionHandling.Logging.dll = External-Bin\Microsoft.Practices.EnterpriseLibrary.ExceptionHandling.Logging.dll
+		External-Bin\Microsoft.Practices.EnterpriseLibrary.Logging.dll = External-Bin\Microsoft.Practices.EnterpriseLibrary.Logging.dll
+		External-Bin\Microsoft.Practices.EnterpriseLibrary.Security.dll = External-Bin\Microsoft.Practices.EnterpriseLibrary.Security.dll
+		External-Bin\Microsoft.Practices.ObjectBuilder.dll = External-Bin\Microsoft.Practices.ObjectBuilder.dll
+		External-Bin\nunit.core.dll = External-Bin\nunit.core.dll
+		External-Bin\nunit.framework.dll = External-Bin\nunit.framework.dll
+		External-Bin\TabStrip.dll = External-Bin\TabStrip.dll
+		External-Bin\vfpodbc.dll = External-Bin\vfpodbc.dll
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Commons", "Commons\Commons.csproj", "{8B169C40-BE25-48D6-AB75-1D52E1FD796E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BLL", "BLL\BLL.csproj", "{FCE95495-B52E-44DF-AAA9-F64124EF9A2A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Model", "Model\Model.csproj", "{F94BEE76-C0F9-4553-A60C-FC52EED3F058}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Server", "Server\Server.csproj", "{DF700BB1-60D8-4560-826D-037AB2071AD6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DAL", "DAL\DAL.csproj", "{B93120EE-09BF-457D-A127-40748A6132B5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Remoting", "Remoting\Remoting.csproj", "{7A880E8F-4E14-4AA1-9DE8-A90763C38ED6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Client", "Client\Client.csproj", "{B242B058-07FB-4EAD-AF9F-1A6A028B22AB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EmedHisHelper", "EmedHisHelper\EmedHisHelper.csproj", "{26A991F0-502E-4820-9591-3FDFC6C6D530}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EmedHisCommonLibrary", "EmedHisCommonLibrary\EmedHisCommonLibrary.csproj", "{D4E12ED1-F54A-4F69-A1F5-39E3449B8E94}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8B169C40-BE25-48D6-AB75-1D52E1FD796E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8B169C40-BE25-48D6-AB75-1D52E1FD796E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8B169C40-BE25-48D6-AB75-1D52E1FD796E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8B169C40-BE25-48D6-AB75-1D52E1FD796E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FCE95495-B52E-44DF-AAA9-F64124EF9A2A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FCE95495-B52E-44DF-AAA9-F64124EF9A2A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FCE95495-B52E-44DF-AAA9-F64124EF9A2A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FCE95495-B52E-44DF-AAA9-F64124EF9A2A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F94BEE76-C0F9-4553-A60C-FC52EED3F058}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F94BEE76-C0F9-4553-A60C-FC52EED3F058}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F94BEE76-C0F9-4553-A60C-FC52EED3F058}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F94BEE76-C0F9-4553-A60C-FC52EED3F058}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DF700BB1-60D8-4560-826D-037AB2071AD6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DF700BB1-60D8-4560-826D-037AB2071AD6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DF700BB1-60D8-4560-826D-037AB2071AD6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DF700BB1-60D8-4560-826D-037AB2071AD6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B93120EE-09BF-457D-A127-40748A6132B5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B93120EE-09BF-457D-A127-40748A6132B5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B93120EE-09BF-457D-A127-40748A6132B5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B93120EE-09BF-457D-A127-40748A6132B5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7A880E8F-4E14-4AA1-9DE8-A90763C38ED6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7A880E8F-4E14-4AA1-9DE8-A90763C38ED6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7A880E8F-4E14-4AA1-9DE8-A90763C38ED6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7A880E8F-4E14-4AA1-9DE8-A90763C38ED6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B242B058-07FB-4EAD-AF9F-1A6A028B22AB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B242B058-07FB-4EAD-AF9F-1A6A028B22AB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B242B058-07FB-4EAD-AF9F-1A6A028B22AB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B242B058-07FB-4EAD-AF9F-1A6A028B22AB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{26A991F0-502E-4820-9591-3FDFC6C6D530}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{26A991F0-502E-4820-9591-3FDFC6C6D530}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{26A991F0-502E-4820-9591-3FDFC6C6D530}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{26A991F0-502E-4820-9591-3FDFC6C6D530}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D4E12ED1-F54A-4F69-A1F5-39E3449B8E94}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D4E12ED1-F54A-4F69-A1F5-39E3449B8E94}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D4E12ED1-F54A-4F69-A1F5-39E3449B8E94}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D4E12ED1-F54A-4F69-A1F5-39E3449B8E94}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,126 @@
+<?xml version="1.0" standalone="yes"?>
+<Config Name="" Type="" Ver="1.0">
+  <SourceDB DBType="FOXPRO" ServerName="" DataBase="" User="" Password="" DBPath="">
+    <SourceTable TableName="">
+      <SourceField Index="1" Name="PURCHASE_CODE" Type="CHAR(24)" Length="" Default="" Desc="采购单编号">
+      </SourceField>
+      <SourceField Index="2" Name="product_code" Type="VARCHAR(50)" Length="" Default="" Desc="产品编码">
+      </SourceField>
+      <SourceField Index="3" Name="cpmc" Type="VARCHAR(100)" Length="" Default="" Desc="产品名称">
+      </SourceField>
+      <SourceField Index="4" Name="mode_name" Type="VARCHAR(50)" Length="" Default="" Desc="型号名称">
+      </SourceField>
+      <SourceField Index="5" Name="medicalspec" Type="VARCHAR(50)" Length="" Default="" Desc="规格名称">
+      </SourceField>
+      <SourceField Index="6" Name="BASE_MEASURE" Type="VARCHAR(50)" Length="" Default="" Desc="基础计量单位">
+      </SourceField>
+      <SourceField Index="7" Name="BASEMEASURESPEC" Type="VARCHAR(50)" Length="" Default="" Desc="基础单位规格">
+      </SourceField>
+      <SourceField Index="8" Name="stand_rate" Type="VARCHAR(50)" Length="" Default="" Desc="转换比">
+      </SourceField>
+      <SourceField Index="9" Name="factory_code" Type="VARCHAR(50)" Length="" Default="" Desc="生产企业编码">
+      </SourceField>
+      <SourceField Index="10" Name="factory_name" Type="VARCHAR(100)" Length="" Default="" Desc="生产企业名称">
+      </SourceField>      
+      <SourceField Index="11" Name="stock_id" Type="VARCHAR(50)" Length="" Default="" Desc="药库编码">
+      </SourceField>
+      <SourceField Index="12" Name="stock_name" Type="VARCHAR(50)" Length="" Default="" Desc="药库名称">
+      </SourceField>
+      <SourceField Index="13" Name="zbj" Type="VARCHAR(50)" Length="" Default="" Desc="中标价">
+      </SourceField>
+      <SourceField Index="14" Name="gjj" Type="VARCHAR(50)" Length="" Default="" Desc="购进价">
+      </SourceField>
+      <SourceField Index="15" Name="lsj" Type="VARCHAR(50)" Length="" Default="" Desc="零售价">
+      </SourceField>
+      <SourceField Index="16" Name="gmsl" Type="VARCHAR(50)" Length="" Default="" Desc="购买数量">
+      </SourceField>
+      <SourceField Index="17" Name="psqybm" Type="VARCHAR(50)" Length="" Default="" Desc="卖方企业编码">
+      </SourceField>
+      <SourceField Index="18" Name="psqymc" Type="VARCHAR(100)" Length="" Default="" Desc="卖方企业名称">
+      </SourceField>
+      <SourceField Index="19" Name="receive_date" Type="VARCHAR(50)" Length="" Default="" Desc="到货日期">
+      </SourceField>      
+      <SourceField Index="20" Name="dhsl" Type="VARCHAR(50)" Length="" Default="" Desc="到货数量">
+      </SourceField>     
+      <SourceField Index="21" Name="ypph" Type="VARCHAR(50)" Length="" Default="" Desc="入库商品批次">
+      </SourceField>      
+      <SourceField Index="22" Name="dhbz" Type="VARCHAR(50)" Length="" Default="" Desc="到货备注">
+      </SourceField>
+      <SourceField Index="23" Name="hhdhid" Type="CHAR(24)" Length="" Default="" Desc="海虹到货ID">
+      </SourceField>     
+    </SourceTable>
+  </SourceDB>
+  <DestDB DBType="EXCEL" ServerName="172.25.0.156" DataBase="devdb" User="sa" Password="" DBPath="SendReceive.xls">
+    <DestTable TableName="sheet1">
+      <DestField Index="1" Name="cgdbh" Type="字符型" Length="" Default="" Desc="" />
+      <DestField Index="2" Name="ypbm" Type="字符型" Length="" Default="" Desc="" />
+      <DestField Index="3" Name="cpmc" Type="字符型" Length="" Default="" Desc="" />
+      <DestField Index="4" Name="jxmc" Type="字符型" Length="" Default="" Desc="" />
+      <DestField Index="5" Name="ggmc" Type="字符型" Length="" Default="" Desc="" />
+      <DestField Index="6" Name="zhb" Type="字符型" Length="" Default="" Desc="" />
+      <DestField Index="7" Name="zxsydw" Type="字符型" Length="" Default="" Desc="" />
+      <DestField Index="8" Name="bzdw" Type="字符型" Length="" Default="" Desc="" />
+      <DestField Index="9" Name="ykbm" Type="字符型" Length="" Default="" Desc="" />
+      <DestField Index="10" Name="ykmc" Type="字符型" Length="" Default="" Desc="" />
+      <DestField Index="11" Name="ypph" Type="字符型" Length="" Default="" Desc="" />
+      <DestField Index="12" Name="zbj" Type="浮点数" Length="" Default="" Desc="" />
+      <DestField Index="13" Name="gmsl" Type="整型" Length="" Default="" Desc="" />
+      <DestField Index="14" Name="dhsl" Type="整型" Length="" Default="" Desc="" />
+      <DestField Index="15" Name="dhrq" Type="日期型" Length="" Default="" Desc="" /> 
+      <DestField Index="16" Name="gjj" Type="浮点数" Length="" Default="" Desc="" />
+      <DestField Index="17" Name="lsj" Type="浮点数" Length="" Default="" Desc="" />
+      <DestField Index="18" Name="scqybm" Type="字符型" Length="" Default="" Desc="" />
+      <DestField Index="19" Name="scqymc" Type="字符型" Length="" Default="" Desc="" />
+      <DestField Index="20" Name="psqybm" Type="字符型" Length="" Default="" Desc="" />
+      <DestField Index="21" Name="psqymc" Type="字符型" Length="" Default="" Desc="" />
+      <DestField Index="22" Name="dhbz" Type="字符型" Length="" Default="" Desc="" />
+      <DestField Index="23" Name="hhdhid" Type="字符型" Length="" Default="" Desc="" />
+    </DestTable>
+  </DestDB>
+  <ContrastList Delimited=",">
+    <Contrast SourceField="PURCHASE_CODE" DestField="cgdbh" Algorithm="" IsNew="0" DestDBType="字符型" />
+    <Contrast SourceField="product_code" DestField="ypbm" Algorithm="" IsNew="0" DestDBType="字符型" />
+    <Contrast SourceField="cpmc" DestField="cpmc" Algorithm="" IsNew="0" DestDBType="字符型" />
+    <Contrast SourceField="mode_name" DestField="jxmc" Algorithm="" IsNew="0" DestDBType="字符型" />
+    <Contrast SourceField="medicalspec" DestField="ggmc" Algorithm="" IsNew="0" DestDBType="字符型" />
+    <Contrast SourceField="stand_rate" DestField="zhb" Algorithm="iif( @stand_rate = '', '1', @stand_rate )" IsNew="0" DestDBType="字符型" />
+    <Contrast SourceField="BASEMEASURESPEC" DestField="zxsydw" Algorithm="" IsNew="0" DestDBType="字符型" />
+    <Contrast SourceField="BASE_MEASURE" DestField="bzdw" Algorithm="" IsNew="0" DestDBType="字符型" />
+    <Contrast SourceField="stock_id" DestField="ykbm" Algorithm="" IsNew="0" DestDBType="字符型" />
+    <Contrast SourceField="stock_name" DestField="ykmc" Algorithm="" IsNew="0" DestDBType="字符型" />
+    <Contrast SourceField="ypph" DestField="ypph" Algorithm="" IsNew="0" DestDBType="字符型" />
+    <Contrast SourceField="zbj" DestField="zbj" Algorithm="format(@zbj, '0.0000')" IsNew="0" DestDBType="浮点数" />
+    <Contrast SourceField="gmsl" DestField="gmsl" Algorithm="" IsNew="0" DestDBType="整型" />
+    <Contrast SourceField="dhsl" DestField="dhsl" Algorithm="" IsNew="0" DestDBType="整型" />
+    <Contrast SourceField="receive_date" DestField="dhrq" Algorithm="format('@receive_date','yyyy-MM-dd')" IsNew="0" DestDBType="日期型" />
+    <Contrast SourceField="gjj" DestField="gjj" Algorithm="format(@gjj, '0.0000')" IsNew="0" DestDBType="浮点数" />
+    <Contrast SourceField="lsj" DestField="lsj" Algorithm="format(@lsj, '0.0000')" IsNew="0" DestDBType="浮点数" />
+    <Contrast SourceField="factory_code" DestField="scqybm" Algorithm="" IsNew="0" DestDBType="字符型" />
+    <Contrast SourceField="factory_name" DestField="scqymc" Algorithm="" IsNew="0" DestDBType="字符型" />
+    <Contrast SourceField="psqybm" DestField="psqybm" Algorithm="" IsNew="0" DestDBType="字符型" />
+    <Contrast SourceField="psqymc" DestField="psqymc" Algorithm="" IsNew="0" DestDBType="字符型" />
+    <Contrast SourceField="dhbz" DestField="dhbz" Algorithm="" IsNew="0" DestDBType="字符型" />
+    <Contrast SourceField="hhdhid" DestField="hhdhid" Algorithm="" IsNew="0" DestDBType="字符型" />
+  </ContrastList>
+  <BeginSql>
+    <Sql Pattern="0" ExecSort="1">
+    </Sql>
+    <Sql Pattern="0" ExecSort="2">
+    </Sql>
+  </BeginSql>
+  <Sqls>
+    <Sql Pattern="1" ExecSort="1">Insert into [sheet1$] ( hhdhid,cgdbh,ypbm,cpmc,jxmc,ggmc,zhb,zxsydw,bzdw,ykbm,ykmc,ypph,zbj,gmsl,dhsl,dhrq,gjj,lsj,scqybm,scqymc,psqybm,psqymc,dhbz ) Select @hhdhid,@PURCHASE_CODE,@product_code,@cpmc,@mode_name,@medicalspec,iif( @stand_rate = '', '1', @stand_rate ),@BASEMEASURESPEC,@BASE_MEASURE,@stock_id,@stock_name,@ypph,format(@zbj, '0.0000'),@gmsl,@dhsl,format(@receive_date,'yyyy-MM-dd'),format(@gjj, '0.0000'),format(@lsj, '0.0000'),@factory_code,@factory_name,@psqybm,@psqymc,@dhbz</Sql>
+  </Sqls>
+  <MSqls>
+    <Sql Pattern="1" ExecSort="1">Insert into Gpo_SendReceive ( hhdhid,cgdbh,ypbm,ypmc,jxmc,ggmc,zhb,zxsydw,bzdw,ykbm,ykmc,ypph,zbj,gmsl,dhsl,dhrq,fphm,fprq,ypxq,fpje,gjj,lsj,scqybm,scqymc,psqybm,psqymc,dhbz ) Select @hhdhid,@PURCHASE_CODE,@product_code,@ypmc,@mode_name,@medical_spec,@stand_rate,@use_unit,@spec_unit,@stock_id,@stock_name,@ypph,isnull(@zbj, '0.0000'),@gmsl,@dhsl,@receive_date,@fphm,@fprq,@ypxq,isnull(@fpje, '0.0000'),isnull(@gjj, '0.0000'),isnull(@lsj, '0.0000'),@factory_code,@factory_name,@psqybm,@psqymc,@dhbz</Sql>
+  </MSqls>
+  <ASqls>
+    <Sql Pattern="1" ExecSort="1">Insert into Gpo_SendReceive ( hhdhid,cgdbh,ypbm,ypmc,jxmc,ggmc,zhb,zxsydw,bzdw,ykbm,ykmc,ypph,zbj,gmsl,dhsl,dhrq,fphm,fprq,ypxq,fpje,gjj,lsj,scqybm,scqymc,psqybm,psqymc,dhbz ) Select @hhdhid,@PURCHASE_CODE,@product_code,@ypmc,@mode_name,@medical_spec,@stand_rate,@use_unit,@spec_unit,@stock_id,@stock_name,@ypph,format(@zbj, '0.0000'),@gmsl,@dhsl,'@receive_date',@fphm,'@fprq','@ypxq',format(@fpje, '0.0000'),format(@gjj, '0.0000'),format(@lsj, '0.0000'),@factory_code,@factory_name,@psqybm,@psqymc,@dhbz</Sql>
+  </ASqls>
+  
+  <DelSqls>
+    <Sql>Delete From Gpo_SendReceive Where hhdhid = @hhdhid</Sql>
+  </DelSqls>  
+  <EndSql>
+  </EndSql>
+</Config>

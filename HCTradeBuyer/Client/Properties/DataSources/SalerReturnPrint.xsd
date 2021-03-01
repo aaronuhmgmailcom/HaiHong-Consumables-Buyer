@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="SalerReturnPrint" targetNamespace="http://tempuri.org/SalerReturnPrint.xsd" xmlns:mstns="http://tempuri.org/SalerReturnPrint.xsd" xmlns="http://tempuri.org/SalerReturnPrint.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+        </Connections>
+        <Tables>
+        </Tables>
+        <Sources>
+        </Sources>
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="SalerReturnPrint" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="SalerReturnPrint" msprop:Generator_DataSetName="SalerReturnPrint">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="dtSalerReturnPrint" msprop:Generator_UserTableName="dtSalerReturnPrint" msprop:Generator_RowDeletedName="dtSalerReturnPrintRowDeleted" msprop:Generator_TableClassName="dtSalerReturnPrintDataTable" msprop:Generator_RowChangedName="dtSalerReturnPrintRowChanged" msprop:Generator_RowClassName="dtSalerReturnPrintRow" msprop:Generator_RowChangingName="dtSalerReturnPrintRowChanging" msprop:Generator_RowEvArgName="dtSalerReturnPrintRowChangeEvent" msprop:Generator_RowEvHandlerName="dtSalerReturnPrintRowChangeEventHandler" msprop:Generator_TablePropName="dtSalerReturnPrint" msprop:Generator_TableVarName="tabledtSalerReturnPrint" msprop:Generator_RowDeletingName="dtSalerReturnPrintRowDeleting">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="RowNum" msprop:Generator_UserColumnName="RowNum" msprop:Generator_ColumnPropNameInRow="RowNum" msprop:Generator_ColumnVarNameInTable="columnRowNum" msprop:Generator_ColumnPropNameInTable="RowNumColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="ID" msdata:Caption="Column1" msprop:Generator_UserColumnName="ID" msprop:Generator_ColumnPropNameInRow="ID" msprop:Generator_ColumnVarNameInTable="columnID" msprop:Generator_ColumnPropNameInTable="IDColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="bak_medical_name" msdata:Caption="Column1" msprop:Generator_UserColumnName="bak_medical_name" msprop:Generator_ColumnPropNameInRow="bak_medical_name" msprop:Generator_ColumnVarNameInTable="columnbak_medical_name" msprop:Generator_ColumnPropNameInTable="bak_medical_nameColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="bak_product_name" msdata:Caption="Column1" msprop:Generator_UserColumnName="bak_product_name" msprop:Generator_ColumnPropNameInRow="bak_product_name" msprop:Generator_ColumnVarNameInTable="columnbak_product_name" msprop:Generator_ColumnPropNameInTable="bak_product_nameColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="BAK_MASS_ASSIGNMENT" msdata:Caption="Column1" msprop:Generator_UserColumnName="BAK_MASS_ASSIGNMENT" msprop:Generator_ColumnPropNameInRow="BAK_MASS_ASSIGNMENT" msprop:Generator_ColumnVarNameInTable="columnBAK_MASS_ASSIGNMENT" msprop:Generator_ColumnPropNameInTable="BAK_MASS_ASSIGNMENTColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="bak_medical_mode" msdata:Caption="Column1" msprop:Generator_UserColumnName="bak_medical_mode" msprop:Generator_ColumnPropNameInRow="bak_medical_mode" msprop:Generator_ColumnVarNameInTable="columnbak_medical_mode" msprop:Generator_ColumnPropNameInTable="bak_medical_modeColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="bak_product_spec" msdata:Caption="Column1" msprop:Generator_UserColumnName="bak_product_spec" msprop:Generator_ColumnPropNameInRow="bak_product_spec" msprop:Generator_ColumnVarNameInTable="columnbak_product_spec" msprop:Generator_ColumnPropNameInTable="bak_product_specColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="bak_buyer_easy" msdata:Caption="Column1" msprop:Generator_UserColumnName="bak_buyer_easy" msprop:Generator_ColumnPropNameInRow="bak_buyer_easy" msprop:Generator_ColumnVarNameInTable="columnbak_buyer_easy" msprop:Generator_ColumnPropNameInTable="bak_buyer_easyColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="lot_no" msdata:Caption="Column1" msprop:Generator_UserColumnName="lot_no" msprop:Generator_ColumnPropNameInRow="lot_no" msprop:Generator_ColumnVarNameInTable="columnlot_no" msprop:Generator_ColumnPropNameInTable="lot_noColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="warehouse_name" msdata:Caption="Column1" msprop:Generator_UserColumnName="warehouse_name" msprop:Generator_ColumnPropNameInRow="warehouse_name" msprop:Generator_ColumnVarNameInTable="columnwarehouse_name" msprop:Generator_ColumnPropNameInTable="warehouse_nameColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="return_qty" msdata:Caption="Column1" msprop:Generator_UserColumnName="return_qty" msprop:Generator_ColumnPropNameInRow="return_qty" msprop:Generator_ColumnVarNameInTable="columnreturn_qty" msprop:Generator_ColumnPropNameInTable="return_qtyColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="buyer_remark" msdata:Caption="Column1" msprop:Generator_UserColumnName="buyer_remark" msprop:Generator_ColumnPropNameInRow="buyer_remark" msprop:Generator_ColumnVarNameInTable="columnbuyer_remark" msprop:Generator_ColumnPropNameInTable="buyer_remarkColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="create_date_display" msdata:Caption="Column1" msprop:Generator_UserColumnName="create_date_display" msprop:Generator_ColumnPropNameInRow="create_date_display" msprop:Generator_ColumnVarNameInTable="columncreate_date_display" msprop:Generator_ColumnPropNameInTable="create_date_displayColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="confirm_date_display" msdata:Caption="Column1" msprop:Generator_UserColumnName="confirm_date_display" msprop:Generator_ColumnPropNameInRow="confirm_date_display" msprop:Generator_ColumnVarNameInTable="columnconfirm_date_display" msprop:Generator_ColumnPropNameInTable="confirm_date_displayColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="Remark" msdata:Caption="Column1" msprop:Generator_UserColumnName="Remark" msprop:Generator_ColumnPropNameInRow="Remark" msprop:Generator_ColumnVarNameInTable="columnRemark" msprop:Generator_ColumnPropNameInTable="RemarkColumn" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

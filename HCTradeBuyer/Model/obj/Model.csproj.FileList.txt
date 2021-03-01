@@ -1,0 +1,5 @@
+bin\Debug\Emedchina.TradeAssistant.Model.dll
+bin\Debug\Emedchina.TradeAssistant.Model.pdb
+obj\Debug\ResolveAssemblyReference.cache
+obj\Debug\Emedchina.TradeAssistant.Model.dll
+obj\Debug\Emedchina.TradeAssistant.Model.pdb

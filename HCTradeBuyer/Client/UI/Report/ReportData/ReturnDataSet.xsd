@@ -1,0 +1,889 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="ReturnDataSet" targetNamespace="http://tempuri.org/ReturnDataSet.xsd" xmlns:mstns="http://tempuri.org/ReturnDataSet.xsd" xmlns="http://tempuri.org/ReturnDataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="1" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="TempTradeConnectionString" IsAppSettingsProperty="True" Modifier="Assembly" Name="TempTradeConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.Emedchina.TradeAssistant.Client.Properties.Settings.GlobalReference.Default.TempTradeConnectionString" Provider="System.Data.SqlClient">
+          </Connection>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="TradeAssistantConnectionString" ConnectionStringObject="" IsAppSettingsProperty="True" Modifier="Assembly" Name="TradeAssistantConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.Emedchina.TradeAssistant.Client.Properties.Settings.GlobalReference.Default.TradeAssistantConnectionString" Provider="System.Data.SqlClient">
+          </Connection>
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="HC_ORD_BUYER_RETURNTableAdapter" GeneratorDataComponentClassName="HC_ORD_BUYER_RETURNTableAdapter" Name="HC_ORD_BUYER_RETURN" UserDataComponentName="HC_ORD_BUYER_RETURNTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="TradeAssistantConnectionString (Settings)" DbObjectName="" DbObjectType="Unknown" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="True" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="True" UserGetMethodName="GetData" UserSourceName="Fill">
+                <DeleteCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="False">
+                    <CommandText>DELETE FROM [dbo].[HC_ORD_BUYER_RETURN] WHERE (([ID] = @Original_ID) AND ((@IsNull_DATA_PRODUCT_ID = 1 AND [DATA_PRODUCT_ID] IS NULL) OR ([DATA_PRODUCT_ID] = @Original_DATA_PRODUCT_ID)) AND ([PROJECT_ID] = @Original_PROJECT_ID) AND ([CODE] = @Original_CODE) AND ([RECEIVE_ID] = @Original_RECEIVE_ID) AND ((@IsNull_ORD_ID = 1 AND [ORD_ID] IS NULL) OR ([ORD_ID] = @Original_ORD_ID)) AND ((@IsNull_ORD_ITEM_ID = 1 AND [ORD_ITEM_ID] IS NULL) OR ([ORD_ITEM_ID] = @Original_ORD_ITEM_ID)) AND ([PROJECT_PRODUCT_ID] = @Original_PROJECT_PRODUCT_ID) AND ([BUYER_ID] = @Original_BUYER_ID) AND ([BUYER_NAME] = @Original_BUYER_NAME) AND ([BUYER_NAME_ABBR] = @Original_BUYER_NAME_ABBR) AND ([SALER_ID] = @Original_SALER_ID) AND ([SALER_NAME] = @Original_SALER_NAME) AND ([SALER_NAME_ABBR] = @Original_SALER_NAME_ABBR) AND ([SENDER_ID] = @Original_SENDER_ID) AND ([SENDER_NAME] = @Original_SENDER_NAME) AND ([SENDER_NAME_ABBR] = @Original_SENDER_NAME_ABBR) AND ([MANUFACTURE_ID] = @Original_MANUFACTURE_ID) AND ([MANUFACTURE_NAME] = @Original_MANUFACTURE_NAME) AND ([MANUFACTURE_NAME_ABBR] = @Original_MANUFACTURE_NAME_ABBR) AND ([COMMON_NAME] = @Original_COMMON_NAME) AND ([PRODUCT_NAME] = @Original_PRODUCT_NAME) AND ([PRODUCT_CODE] = @Original_PRODUCT_CODE) AND ((@IsNull_GOODS_NO = 1 AND [GOODS_NO] IS NULL) OR ([GOODS_NO] = @Original_GOODS_NO)) AND ((@IsNull_BARCODE = 1 AND [BARCODE] IS NULL) OR ([BARCODE] = @Original_BARCODE)) AND ([PBNO] = @Original_PBNO) AND ([BRAND] = @Original_BRAND) AND ([SPEC_ID] = @Original_SPEC_ID) AND ([MODEL_ID] = @Original_MODEL_ID) AND ([SPEC] = @Original_SPEC) AND ([MODEL] = @Original_MODEL) AND ([SEND_BATCH_NO] = @Original_SEND_BATCH_NO) AND ([INSTORE_BATCH_NO] = @Original_INSTORE_BATCH_NO) AND ([PRICE] = @Original_PRICE) AND ([SUM] = @Original_SUM) AND ([BASE_MEASURE_SPEC] = @Original_BASE_MEASURE_SPEC) AND ([BASE_MEARSURE_MATER] = @Original_BASE_MEARSURE_MATER) AND ([BASE_MEASURE] = @Original_BASE_MEASURE) AND ([SEND_MEASURE] = @Original_SEND_MEASURE) AND ([SEND_MEASURE_EX] = @Original_SEND_MEASURE_EX) AND ([AMOUNT] = @Original_AMOUNT) AND ([STATE] = @Original_STATE) AND ((@IsNull_SEND_OPERATOR_ID = 1 AND [SEND_OPERATOR_ID] IS NULL) OR ([SEND_OPERATOR_ID] = @Original_SEND_OPERATOR_ID)) AND ((@IsNull_SEND_OPERATOR_NAME = 1 AND [SEND_OPERATOR_NAME] IS NULL) OR ([SEND_OPERATOR_NAME] = @Original_SEND_OPERATOR_NAME)) AND ((@IsNull_SEND_OPERATE_DATE = 1 AND [SEND_OPERATE_DATE] IS NULL) OR ([SEND_OPERATE_DATE] = @Original_SEND_OPERATE_DATE)) AND ((@IsNull_INSTORE_OPERATOR_ID = 1 AND [INSTORE_OPERATOR_ID] IS NULL) OR ([INSTORE_OPERATOR_ID] = @Original_INSTORE_OPERATOR_ID)) AND ((@IsNull_INSTORE_OPERATOR_NAME = 1 AND [INSTORE_OPERATOR_NAME] IS NULL) OR ([INSTORE_OPERATOR_NAME] = @Original_INSTORE_OPERATOR_NAME)) AND ((@IsNull_INSTORE_OPERATE_DATE = 1 AND [INSTORE_OPERATE_DATE] IS NULL) OR ([INSTORE_OPERATE_DATE] = @Original_INSTORE_OPERATE_DATE)) AND ((@IsNull_BUYER_DESCRIPTIONS = 1 AND [BUYER_DESCRIPTIONS] IS NULL) OR ([BUYER_DESCRIPTIONS] = @Original_BUYER_DESCRIPTIONS)) AND ([CREATE_USER_ID] = @Original_CREATE_USER_ID) AND ([CREATE_USER_NAME] = @Original_CREATE_USER_NAME) AND ([CREATE_DATE] = @Original_CREATE_DATE) AND ([MODIFY_USER_ID] = @Original_MODIFY_USER_ID) AND ([MODIFY_USER_NAME] = @Original_MODIFY_USER_NAME) AND ([MODIFY_DATE] = @Original_MODIFY_DATE) AND ((@IsNull_SALER_DESCRIPTIONS = 1 AND [SALER_DESCRIPTIONS] IS NULL) OR ([SALER_DESCRIPTIONS] = @Original_SALER_DESCRIPTIONS)) AND ([sync_state] = @Original_sync_state))</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="False" AutogeneratedName="" DataSourceName="" DbType="Decimal" Direction="Input" ParameterName="@Original_ID" Precision="18" ProviderType="Decimal" Scale="0" Size="0" SourceColumn="ID" SourceColumnNullMapping="False" SourceVersion="Original">
+                      </Parameter>
+                      <Parameter AllowDbNull="True" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_DATA_PRODUCT_ID" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="DATA_PRODUCT_ID" SourceColumnNullMapping="True" SourceVersion="Original">
+                      </Parameter>
+                      <Parameter AllowDbNull="True" AutogeneratedName="" DataSourceName="" DbType="Decimal" Direction="Input" ParameterName="@Original_DATA_PRODUCT_ID" Precision="18" ProviderType="Decimal" Scale="0" Size="0" SourceColumn="DATA_PRODUCT_ID" SourceColumnNullMapping="False" SourceVersion="Original">
+                      </Parameter>
+                      <Parameter AllowDbNull="False" AutogeneratedName="" DataSourceName="" DbType="Decimal" Direction="Input" ParameterName="@Original_PROJECT_ID" Precision="18" ProviderType="Decimal" Scale="0" Size="0" SourceColumn="PROJECT_ID" SourceColumnNullMapping="False" SourceVersion="Original">
+                      </Parameter>
+                      <Parameter AllowDbNull="False" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_CODE" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="CODE" SourceColumnNullMapping="False" SourceVersion="Original">
+                      </Parameter>
+                      <Parameter AllowDbNull="False" AutogeneratedName="" DataSourceName="" DbType="Decimal" Direction="Input" ParameterName="@Original_RECEIVE_ID" Precision="18" ProviderType="Decimal" Scale="0" Size="0" SourceColumn="RECEIVE_ID" SourceColumnNullMapping="False" SourceVersion="Original">
+                      </Parameter>
+                      <Parameter AllowDbNull="True" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_ORD_ID" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="ORD_ID" SourceColumnNullMapping="True" SourceVersion="Original">
+                      </Parameter>
+                      <Parameter AllowDbNull="True" AutogeneratedName="" DataSourceName="" DbType="Decimal" Direction="Input" ParameterName="@Original_ORD_ID" Precision="18" ProviderType="Decimal" Scale="0" Size="0" SourceColumn="ORD_ID" SourceColumnNullMapping="False" SourceVersion="Original">
+                      </Parameter>
+                      <Parameter AllowDbNull="True" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_ORD_ITEM_ID" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="ORD_ITEM_ID" SourceColumnNullMapping="True" SourceVersion="Original">
+                      </Parameter>
+                      <Parameter AllowDbNull="True" AutogeneratedName="" DataSourceName="" DbType="Decimal" Direction="Input" ParameterName="@Original_ORD_ITEM_ID" Precision="18" ProviderType="Decimal" Scale="0" Size="0" SourceColumn="ORD_ITEM_ID" SourceColumnNullMapping="False" SourceVersion="Original">
+                      </Parameter>
+                      <Parameter AllowDbNull="False" AutogeneratedName="" DataSourceName="" DbType="Decimal" Direction="Input" ParameterName="@Original_PROJECT_PRODUCT_ID" Precision="18" ProviderType="Decimal" Scale="0" Size="0" SourceColumn="PROJECT_PRODUCT_ID" SourceColumnNullMapping="False" SourceVersion="Original">
+                      </Parameter>
+                      <Parameter AllowDbNull="False" AutogeneratedName="" DataSourceName="" DbType="Decimal" Direction="Input" ParameterName="@Original_BUYER_ID" Precision="18" ProviderType="Decimal" Scale="0" Size="0" SourceColumn="BUYER_ID" SourceColumnNullMapping="False" SourceVersion="Original">
+                      </Parameter>
+                      <Parameter AllowDbNull="False" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_BUYER_NAME" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="BUYER_NAME" SourceColumnNullMapping="False" SourceVersion="Original">
+                      </Parameter>
+                      <Parameter AllowDbNull="False" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_BUYER_NAME_ABBR" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="BUYER_NAME_ABBR" SourceColumnNullMapping="False" SourceVersion="Original">
+                      </Parameter>
+                      <Parameter AllowDbNull="False" AutogeneratedName="" DataSourceName="" DbType="Decimal" Direction="Input" ParameterName="@Original_SALER_ID" Precision="18" ProviderType="Decimal" Scale="0" Size="0" SourceColumn="SALER_ID" SourceColumnNullMapping="False" SourceVersion="Original">
+                      </Parameter>
+                      <Parameter AllowDbNull="False" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_SALER_NAME" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="SALER_NAME" SourceColumnNullMapping="False" SourceVersion="Original">
+                      </Parameter>
+                      <Parameter AllowDbNull="False" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_SALER_NAME_ABBR" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="SALER_NAME_ABBR" SourceColumnNullMapping="False" SourceVersion="Original">
+                      </Parameter>
+                      <Parameter AllowDbNull="False" AutogeneratedName="" DataSourceName="" DbType="Decimal" Direction="Input" ParameterName="@Original_SENDER_ID" Precision="18" ProviderType="Decimal" Scale="0" Size="0" SourceColumn="SENDER_ID" SourceColumnNullMapping="False" SourceVersion="Original">
+                      </Parameter>
+                      <Parameter AllowDbNull="False" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_SENDER_NAME" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="SENDER_NAME" SourceColumnNullMapping="False" SourceVersion="Original">
+                      </Parameter>
+                      <Parameter AllowDbNull="False" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_SENDER_NAME_ABBR" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="SENDER_NAME_ABBR" SourceColumnNullMapping="False" SourceVersion="Original">
+                      </Parameter>
+                      <Parameter AllowDbNull="False" AutogeneratedName="" DataSourceName="" DbType="Decimal" Direction="Input" ParameterName="@Original_MANUFACTURE_ID" Precision="18" ProviderType="Decimal" Scale="0" Size="0" SourceColumn="MANUFACTURE_ID" SourceColumnNullMapping="False" SourceVersion="Original">
+                      </Parameter>
+                      <Parameter AllowDbNull="False" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_MANUFACTURE_NAME" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="MANUFACTURE_NAME" SourceColumnNullMapping="False" SourceVersion="Original">
+                      </Parameter>
+                      <Parameter AllowDbNull="False" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_MANUFACTURE_NAME_ABBR" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="MANUFACTURE_NAME_ABBR" SourceColumnNullMapping="False" SourceVersion="Original">
+                      </Parameter>
+                      <Parameter AllowDbNull="False" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_COMMON_NAME" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="COMMON_NAME" SourceColumnNullMapping="False" SourceVersion="Original">
+                      </Parameter>
+                      <Parameter AllowDbNull="False" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_PRODUCT_NAME" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="PRODUCT_NAME" SourceColumnNullMapping="False" SourceVersion="Original">
+                      </Parameter>
+                      <Parameter AllowDbNull="False" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_PRODUCT_CODE" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="PRODUCT_CODE" SourceColumnNullMapping="False" SourceVersion="Original">
+                      </Parameter>
+                      <Parameter AllowDbNull="True" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_GOODS_NO" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="GOODS_NO" SourceColumnNullMapping="True" SourceVersion="Original">
+                      </Parameter>
+                      <Parameter AllowDbNull="True" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_GOODS_NO" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="GOODS_NO" SourceColumnNullMapping="False" SourceVersion="Original">
+                      </Parameter>
+                      <Parameter AllowDbNull="True" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_BARCODE" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="BARCODE" SourceColumnNullMapping="True" SourceVersion="Original">
+                      </Parameter>
+                      <Parameter AllowDbNull="True" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_BARCODE" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="BARCODE" SourceColumnNullMapping="False" SourceVersion="Original">
+                      </Parameter>
+                      <Parameter AllowDbNull="False" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_PBNO" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="PBNO" SourceColumnNullMapping="False" SourceVersion="Original">
+                      </Parameter>
+                      <Parameter AllowDbNull="False" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_BRAND" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="BRAND" SourceColumnNullMapping="False" SourceVersion="Original">
+                      </Parameter>
+                      <Parameter AllowDbNull="False" AutogeneratedName="" DataSourceName="" DbType="Decimal" Direction="Input" ParameterName="@Original_SPEC_ID" Precision="18" ProviderType="Decimal" Scale="0" Size="0" SourceColumn="SPEC_ID" SourceColumnNullMapping="False" SourceVersion="Original">
+                      </Parameter>
+                      <Parameter AllowDbNull="False" AutogeneratedName="" DataSourceName="" DbType="Decimal" Direction="Input" ParameterName="@Original_MODEL_ID" Precision="18" ProviderType="Decimal" Scale="0" Size="0" SourceColumn="MODEL_ID" SourceColumnNullMapping="False" SourceVersion="Original">
+                      </Parameter>
+                      <Parameter AllowDbNull="False" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_SPEC" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="SPEC" SourceColumnNullMapping="False" SourceVersion="Original">
+                      </Parameter>
+                      <Parameter AllowDbNull="False" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_MODEL" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="MODEL" SourceColumnNullMapping="False" SourceVersion="Original">
+                      </Parameter>
+                      <Parameter AllowDbNull="False" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_SEND_BATCH_NO" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="SEND_BATCH_NO" SourceColumnNullMapping="False" SourceVersion="Original">
+                      </Parameter>
+                      <Parameter AllowDbNull="False" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_INSTORE_BATCH_NO" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="INSTORE_BATCH_NO" SourceColumnNullMapping="False" SourceVersion="Original">
+                      </Parameter>
+                      <Parameter AllowDbNull="False" AutogeneratedName="" DataSourceName="" DbType="Currency" Direction="Input" ParameterName="@Original_PRICE" Precision="0" ProviderType="Money" Scale="0" Size="0" SourceColumn="PRICE" SourceColumnNullMapping="False" SourceVersion="Original">
+                      </Parameter>
+                      <Parameter AllowDbNull="False" AutogeneratedName="" DataSourceName="" DbType="Currency" Direction="Input" ParameterName="@Original_SUM" Precision="0" ProviderType="Money" Scale="0" Size="0" SourceColumn="SUM" SourceColumnNullMapping="False" SourceVersion="Original">
+                      </Parameter>
+                      <Parameter AllowDbNull="False" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_BASE_MEASURE_SPEC" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="BASE_MEASURE_SPEC" SourceColumnNullMapping="False" SourceVersion="Original">
+                      </Parameter>
+                      <Parameter AllowDbNull="False" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_BASE_MEARSURE_MATER" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="BASE_MEARSURE_MATER" SourceColumnNullMapping="False" SourceVersion="Original">
+                      </Parameter>
+                      <Parameter AllowDbNull="False" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_BASE_MEASURE" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="BASE_MEASURE" SourceColumnNullMapping="False" SourceVersion="Original">
+                      </Parameter>
+                      <Parameter AllowDbNull="False" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_SEND_MEASURE" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="SEND_MEASURE" SourceColumnNullMapping="False" SourceVersion="Original">
+                      </Parameter>
+                      <Parameter AllowDbNull="False" AutogeneratedName="" DataSourceName="" DbType="Decimal" Direction="Input" ParameterName="@Original_SEND_MEASURE_EX" Precision="13" ProviderType="Decimal" Scale="4" Size="0" SourceColumn="SEND_MEASURE_EX" SourceColumnNullMapping="False" SourceVersion="Original">
+                      </Parameter>
+                      <Parameter AllowDbNull="False" AutogeneratedName="" DataSourceName="" DbType="Decimal" Direction="Input" ParameterName="@Original_AMOUNT" Precision="13" ProviderType="Decimal" Scale="4" Size="0" SourceColumn="AMOUNT" SourceColumnNullMapping="False" SourceVersion="Original">
+                      </Parameter>
+                      <Parameter AllowDbNull="False" AutogeneratedName="" DataSourceName="" DbType="AnsiStringFixedLength" Direction="Input" ParameterName="@Original_STATE" Precision="0" ProviderType="Char" Scale="0" Size="0" SourceColumn="STATE" SourceColumnNullMapping="False" SourceVersion="Original">
+                      </Parameter>
+                      <Parameter AllowDbNull="True" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_SEND_OPERATOR_ID" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="SEND_OPERATOR_ID" SourceColumnNullMapping="True" SourceVersion="Original">
+                      </Parameter>
+                      <Parameter AllowDbNull="True" AutogeneratedName="" DataSourceName="" DbType="Decimal" Direction="Input" ParameterName="@Original_SEND_OPERATOR_ID" Precision="18" ProviderType="Decimal" Scale="0" Size="0" SourceColumn="SEND_OPERATOR_ID" SourceColumnNullMapping="False" SourceVersion="Original">
+                      </Parameter>
+                      <Parameter AllowDbNull="True" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_SEND_OPERATOR_NAME" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="SEND_OPERATOR_NAME" SourceColumnNullMapping="True" SourceVersion="Original">
+                      </Parameter>
+                      <Parameter AllowDbNull="True" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_SEND_OPERATOR_NAME" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="SEND_OPERATOR_NAME" SourceColumnNullMapping="False" SourceVersion="Original">
+                      </Parameter>
+                      <Parameter AllowDbNull="True" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_SEND_OPERATE_DATE" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="SEND_OPERATE_DATE" SourceColumnNullMapping="True" SourceVersion="Original">
+                      </Parameter>
+                      <Parameter AllowDbNull="True" AutogeneratedName="" DataSourceName="" DbType="DateTime" Direction="Input" ParameterName="@Original_SEND_OPERATE_DATE" Precision="0" ProviderType="DateTime" Scale="0" Size="0" SourceColumn="SEND_OPERATE_DATE" SourceColumnNullMapping="False" SourceVersion="Original">
+                      </Parameter>
+                      <Parameter AllowDbNull="True" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_INSTORE_OPERATOR_ID" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="INSTORE_OPERATOR_ID" SourceColumnNullMapping="True" SourceVersion="Original">
+                      </Parameter>
+                      <Parameter AllowDbNull="True" AutogeneratedName="" DataSourceName="" DbType="Decimal" Direction="Input" ParameterName="@Original_INSTORE_OPERATOR_ID" Precision="18" ProviderType="Decimal" Scale="0" Size="0" SourceColumn="INSTORE_OPERATOR_ID" SourceColumnNullMapping="False" SourceVersion="Original">
+                      </Parameter>
+                      <Parameter AllowDbNull="True" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_INSTORE_OPERATOR_NAME" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="INSTORE_OPERATOR_NAME" SourceColumnNullMapping="True" SourceVersion="Original">
+                      </Parameter>
+                      <Parameter AllowDbNull="True" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_INSTORE_OPERATOR_NAME" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="INSTORE_OPERATOR_NAME" SourceColumnNullMapping="False" SourceVersion="Original">
+                      </Parameter>
+                      <Parameter AllowDbNull="True" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_INSTORE_OPERATE_DATE" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="INSTORE_OPERATE_DATE" SourceColumnNullMapping="True" SourceVersion="Original">
+                      </Parameter>
+                      <Parameter AllowDbNull="True" AutogeneratedName="" DataSourceName="" DbType="DateTime" Direction="Input" ParameterName="@Original_INSTORE_OPERATE_DATE" Precision="0" ProviderType="DateTime" Scale="0" Size="0" SourceColumn="INSTORE_OPERATE_DATE" SourceColumnNullMapping="False" SourceVersion="Original">
+                      </Parameter>
+                      <Parameter AllowDbNull="True" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_BUYER_DESCRIPTIONS" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="BUYER_DESCRIPTIONS" SourceColumnNullMapping="True" SourceVersion="Original">
+                      </Parameter>
+                      <Parameter AllowDbNull="True" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_BUYER_DESCRIPTIONS" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="BUYER_DESCRIPTIONS" SourceColumnNullMapping="False" SourceVersion="Original">
+                      </Parameter>
+                      <Parameter AllowDbNull="False" AutogeneratedName="" DataSourceName="" DbType="Decimal" Direction="Input" ParameterName="@Original_CREATE_USER_ID" Precision="18" ProviderType="Decimal" Scale="0" Size="0" SourceColumn="CREATE_USER_ID" SourceColumnNullMapping="False" SourceVersion="Original">
+                      </Parameter>
+                      <Parameter AllowDbNull="False" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_CREATE_USER_NAME" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="CREATE_USER_NAME" SourceColumnNullMapping="False" SourceVersion="Original">
+                      </Parameter>
+                      <Parameter AllowDbNull="False" AutogeneratedName="" DataSourceName="" DbType="DateTime" Direction="Input" ParameterName="@Original_CREATE_DATE" Precision="0" ProviderType="DateTime" Scale="0" Size="0" SourceColumn="CREATE_DATE" SourceColumnNullMapping="False" SourceVersion="Original">
+                      </Parameter>
+                      <Parameter AllowDbNull="False" AutogeneratedName="" DataSourceName="" DbType="Decimal" Direction="Input" ParameterName="@Original_MODIFY_USER_ID" Precision="18" ProviderType="Decimal" Scale="0" Size="0" SourceColumn="MODIFY_USER_ID" SourceColumnNullMapping="False" SourceVersion="Original">
+                      </Parameter>
+                      <Parameter AllowDbNull="False" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_MODIFY_USER_NAME" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="MODIFY_USER_NAME" SourceColumnNullMapping="False" SourceVersion="Original">
+                      </Parameter>
+                      <Parameter AllowDbNull="False" AutogeneratedName="" DataSourceName="" DbType="DateTime" Direction="Input" ParameterName="@Original_MODIFY_DATE" Precision="0" ProviderType="DateTime" Scale="0" Size="0" SourceColumn="MODIFY_DATE" SourceColumnNullMapping="False" SourceVersion="Original">
+                      </Parameter>
+                      <Parameter AllowDbNull="True" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_SALER_DESCRIPTIONS" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="SALER_DESCRIPTIONS" SourceColumnNullMapping="True" SourceVersion="Original">
+                      </Parameter>
+                      <Parameter AllowDbNull="True" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_SALER_DESCRIPTIONS" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="SALER_DESCRIPTIONS" SourceColumnNullMapping="False" SourceVersion="Original">
+                      </Parameter>
+                      <Parameter AllowDbNull="False" AutogeneratedName="" DataSourceName="" DbType="AnsiStringFixedLength" Direction="Input" ParameterName="@Original_sync_state" Precision="0" ProviderType="Char" Scale="0" Size="0" SourceColumn="sync_state" SourceColumnNullMapping="False" SourceVersion="Original">
+                      </Parameter>
+                    </Parameters>
+                  </DbCommand>
+                </DeleteCommand>
+                <InsertCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="False">
+                    <CommandText>INSERT INTO [dbo].[HC_ORD_BUYER_RETURN] ([ID], [DATA_PRODUCT_ID], [PROJECT_ID], [CODE], [RECEIVE_ID], [ORD_ID], [ORD_ITEM_ID], [PROJECT_PRODUCT_ID], [BUYER_ID], [BUYER_NAME], [BUYER_NAME_ABBR], [SALER_ID], [SALER_NAME], [SALER_NAME_ABBR], [SENDER_ID], [SENDER_NAME], [SENDER_NAME_ABBR], [MANUFACTURE_ID], [MANUFACTURE_NAME], [MANUFACTURE_NAME_ABBR], [COMMON_NAME], [PRODUCT_NAME], [PRODUCT_CODE], [GOODS_NO], [BARCODE], [PBNO], [BRAND], [SPEC_ID], [MODEL_ID], [SPEC], [MODEL], [SEND_BATCH_NO], [INSTORE_BATCH_NO], [PRICE], [SUM], [BASE_MEASURE_SPEC], [BASE_MEARSURE_MATER], [BASE_MEASURE], [SEND_MEASURE], [SEND_MEASURE_EX], [AMOUNT], [STATE], [SEND_OPERATOR_ID], [SEND_OPERATOR_NAME], [SEND_OPERATE_DATE], [INSTORE_OPERATOR_ID], [INSTORE_OPERATOR_NAME], [INSTORE_OPERATE_DATE], [BUYER_DESCRIPTIONS], [CREATE_USER_ID], [CREATE_USER_NAME], [CREATE_DATE], [MODIFY_USER_ID], [MODIFY_USER_NAME], [MODIFY_DATE], [SALER_DESCRIPTIONS], [sync_state]) VALUES (@ID, @DATA_PRODUCT_ID, @PROJECT_ID, @CODE, @RECEIVE_ID, @ORD_ID, @ORD_ITEM_ID, @PROJECT_PRODUCT_ID, @BUYER_ID, @BUYER_NAME, @BUYER_NAME_ABBR, @SALER_ID, @SALER_NAME, @SALER_NAME_ABBR, @SENDER_ID, @SENDER_NAME, @SENDER_NAME_ABBR, @MANUFACTURE_ID, @MANUFACTURE_NAME, @MANUFACTURE_NAME_ABBR, @COMMON_NAME, @PRODUCT_NAME, @PRODUCT_CODE, @GOODS_NO, @BARCODE, @PBNO, @BRAND, @SPEC_ID, @MODEL_ID, @SPEC, @MODEL, @SEND_BATCH_NO, @INSTORE_BATCH_NO, @PRICE, @SUM, @BASE_MEASURE_SPEC, @BASE_MEARSURE_MATER, @BASE_MEASURE, @SEND_MEASURE, @SEND_MEASURE_EX, @AMOUNT, @STATE, @SEND_OPERATOR_ID, @SEND_OPERATOR_NAME, @SEND_OPERATE_DATE, @INSTORE_OPERATOR_ID, @INSTORE_OPERATOR_NAME, @INSTORE_OPERATE_DATE, @BUYER_DESCRIPTIONS, @CREATE_USER_ID, @CREATE_USER_NAME, @CREATE_DATE, @MODIFY_USER_ID, @MODIFY_USER_NAME, @MODIFY_DATE, @SALER_DESCRIPTIONS, @sync_state);
+SELECT ID, DATA_PRODUCT_ID, PROJECT_ID, CODE, RECEIVE_ID, ORD_ID, ORD_ITEM_ID, PROJECT_PRODUCT_ID, BUYER_ID, BUYER_NAME, BUYER_NAME_ABBR, SALER_ID, SALER_NAME, SALER_NAME_ABBR, SENDER_ID, SENDER_NAME, SENDER_NAME_ABBR, MANUFACTURE_ID, MANUFACTURE_NAME, MANUFACTURE_NAME_ABBR, COMMON_NAME, PRODUCT_NAME, PRODUCT_CODE, GOODS_NO, BARCODE, PBNO, BRAND, SPEC_ID, MODEL_ID, SPEC, MODEL, SEND_BATCH_NO, INSTORE_BATCH_NO, PRICE, SUM, BASE_MEASURE_SPEC, BASE_MEARSURE_MATER, BASE_MEASURE, SEND_MEASURE, SEND_MEASURE_EX, AMOUNT, STATE, SEND_OPERATOR_ID, SEND_OPERATOR_NAME, SEND_OPERATE_DATE, INSTORE_OPERATOR_ID, INSTORE_OPERATOR_NAME, INSTORE_OPERATE_DATE, BUYER_DESCRIPTIONS, CREATE_USER_ID, CREATE_USER_NAME, CREATE_DATE, MODIFY_USER_ID, MODIFY_USER_NAME, MODIFY_DATE, SALER_DESCRIPTIONS, sync_state FROM HC_ORD_BUYER_RETURN WHERE (ID = @ID)</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="False" AutogeneratedName="" DataSourceName="" DbType="Decimal" Direction="Input" ParameterName="@ID" Precision="18" ProviderType="Decimal" Scale="0" Size="0" SourceColumn="ID" SourceColumnNullMapping="False" SourceVersion="Current">
+                      </Parameter>
+                      <Parameter AllowDbNull="True" AutogeneratedName="" DataSourceName="" DbType="Decimal" Direction="Input" ParameterName="@DATA_PRODUCT_ID" Precision="18" ProviderType="Decimal" Scale="0" Size="0" SourceColumn="DATA_PRODUCT_ID" SourceColumnNullMapping="False" SourceVersion="Current">
+                      </Parameter>
+                      <Parameter AllowDbNull="False" AutogeneratedName="" DataSourceName="" DbType="Decimal" Direction="Input" ParameterName="@PROJECT_ID" Precision="18" ProviderType="Decimal" Scale="0" Size="0" SourceColumn="PROJECT_ID" SourceColumnNullMapping="False" SourceVersion="Current">
+                      </Parameter>
+                      <Parameter AllowDbNull="False" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@CODE" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="CODE" SourceColumnNullMapping="False" SourceVersion="Current">
+                      </Parameter>
+                      <Parameter AllowDbNull="False" AutogeneratedName="" DataSourceName="" DbType="Decimal" Direction="Input" ParameterName="@RECEIVE_ID" Precision="18" ProviderType="Decimal" Scale="0" Size="0" SourceColumn="RECEIVE_ID" SourceColumnNullMapping="False" SourceVersion="Current">
+                      </Parameter>
+                      <Parameter AllowDbNull="True" AutogeneratedName="" DataSourceName="" DbType="Decimal" Direction="Input" ParameterName="@ORD_ID" Precision="18" ProviderType="Decimal" Scale="0" Size="0" SourceColumn="ORD_ID" SourceColumnNullMapping="False" SourceVersion="Current">
+                      </Parameter>
+                      <Parameter AllowDbNull="True" AutogeneratedName="" DataSourceName="" DbType="Decimal" Direction="Input" ParameterName="@ORD_ITEM_ID" Precision="18" ProviderType="Decimal" Scale="0" Size="0" SourceColumn="ORD_ITEM_ID" SourceColumnNullMapping="False" SourceVersion="Current">
+                      </Parameter>
+                      <Parameter AllowDbNull="False" AutogeneratedName="" DataSourceName="" DbType="Decimal" Direction="Input" ParameterName="@PROJECT_PRODUCT_ID" Precision="18" ProviderType="Decimal" Scale="0" Size="0" SourceColumn="PROJECT_PRODUCT_ID" SourceColumnNullMapping="False" SourceVersion="Current">
+                      </Parameter>
+                      <Parameter AllowDbNull="False" AutogeneratedName="" DataSourceName="" DbType="Decimal" Direction="Input" ParameterName="@BUYER_ID" Precision="18" ProviderType="Decimal" Scale="0" Size="0" SourceColumn="BUYER_ID" SourceColumnNullMapping="False" SourceVersion="Current">
+                      </Parameter>
+                      <Parameter AllowDbNull="False" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@BUYER_NAME" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="BUYER_NAME" SourceColumnNullMapping="False" SourceVersion="Current">
+                      </Parameter>
+                      <Parameter AllowDbNull="False" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@BUYER_NAME_ABBR" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="BUYER_NAME_ABBR" SourceColumnNullMapping="False" SourceVersion="Current">
+                      </Parameter>
+                      <Parameter AllowDbNull="False" AutogeneratedName="" DataSourceName="" DbType="Decimal" Direction="Input" ParameterName="@SALER_ID" Precision="18" ProviderType="Decimal" Scale="0" Size="0" SourceColumn="SALER_ID" SourceColumnNullMapping="False" SourceVersion="Current">
+                      </Parameter>
+                      <Parameter AllowDbNull="False" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@SALER_NAME" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="SALER_NAME" SourceColumnNullMapping="False" SourceVersion="Current">
+                      </Parameter>
+                      <Parameter AllowDbNull="False" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@SALER_NAME_ABBR" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="SALER_NAME_ABBR" SourceColumnNullMapping="False" SourceVersion="Current">
+                      </Parameter>
+                      <Parameter AllowDbNull="False" AutogeneratedName="" DataSourceName="" DbType="Decimal" Direction="Input" ParameterName="@SENDER_ID" Precision="18" ProviderType="Decimal" Scale="0" Size="0" SourceColumn="SENDER_ID" SourceColumnNullMapping="False" SourceVersion="Current">
+                      </Parameter>
+                      <Parameter AllowDbNull="False" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@SENDER_NAME" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="SENDER_NAME" SourceColumnNullMapping="False" SourceVersion="Current">
+                      </Parameter>
+                      <Parameter AllowDbNull="False" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@SENDER_NAME_ABBR" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="SENDER_NAME_ABBR" SourceColumnNullMapping="False" SourceVersion="Current">
+                      </Parameter>
+                      <Parameter AllowDbNull="False" AutogeneratedName="" DataSourceName="" DbType="Decimal" Direction="Input" ParameterName="@MANUFACTURE_ID" Precision="18" ProviderType="Decimal" Scale="0" Size="0" SourceColumn="MANUFACTURE_ID" SourceColumnNullMapping="False" SourceVersion="Current">
+                      </Parameter>
+                      <Parameter AllowDbNull="False" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@MANUFACTURE_NAME" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="MANUFACTURE_NAME" SourceColumnNullMapping="False" SourceVersion="Current">
+                      </Parameter>
+                      <Parameter AllowDbNull="False" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@MANUFACTURE_NAME_ABBR" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="MANUFACTURE_NAME_ABBR" SourceColumnNullMapping="False" SourceVersion="Current">
+                      </Parameter>
+                      <Parameter AllowDbNull="False" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@COMMON_NAME" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="COMMON_NAME" SourceColumnNullMapping="False" SourceVersion="Current">
+                      </Parameter>
+                      <Parameter AllowDbNull="False" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@PRODUCT_NAME" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="PRODUCT_NAME" SourceColumnNullMapping="False" SourceVersion="Current">
+                      </Parameter>
+                      <Parameter AllowDbNull="False" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@PRODUCT_CODE" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="PRODUCT_CODE" SourceColumnNullMapping="False" SourceVersion="Current">
+                      </Parameter>
+                      <Parameter AllowDbNull="True" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@GOODS_NO" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="GOODS_NO" SourceColumnNullMapping="False" SourceVersion="Current">
+                      </Parameter>
+                      <Parameter AllowDbNull="True" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@BARCODE" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="BARCODE" SourceColumnNullMapping="False" SourceVersion="Current">
+                      </Parameter>
+                      <Parameter AllowDbNull="False" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@PBNO" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="PBNO" SourceColumnNullMapping="False" SourceVersion="Current">
+                      </Parameter>
+                      <Parameter AllowDbNull="False" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@BRAND" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="BRAND" SourceColumnNullMapping="False" SourceVersion="Current">
+                      </Parameter>
+                      <Parameter AllowDbNull="False" AutogeneratedName="" DataSourceName="" DbType="Decimal" Direction="Input" ParameterName="@SPEC_ID" Precision="18" ProviderType="Decimal" Scale="0" Size="0" SourceColumn="SPEC_ID" SourceColumnNullMapping="False" SourceVersion="Current">
+                      </Parameter>
+                      <Parameter AllowDbNull="False" AutogeneratedName="" DataSourceName="" DbType="Decimal" Direction="Input" ParameterName="@MODEL_ID" Precision="18" ProviderType="Decimal" Scale="0" Size="0" SourceColumn="MODEL_ID" SourceColumnNullMapping="False" SourceVersion="Current">
+                      </Parameter>
+                      <Parameter AllowDbNull="False" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@SPEC" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="SPEC" SourceColumnNullMapping="False" SourceVersion="Current">
+                      </Parameter>
+                      <Parameter AllowDbNull="False" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@MODEL" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="MODEL" SourceColumnNullMapping="False" SourceVersion="Current">
+                      </Parameter>
+                      <Parameter AllowDbNull="False" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@SEND_BATCH_NO" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="SEND_BATCH_NO" SourceColumnNullMapping="False" SourceVersion="Current">
+                      </Parameter>
+                      <Parameter AllowDbNull="False" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@INSTORE_BATCH_NO" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="INSTORE_BATCH_NO" SourceColumnNullMapping="False" SourceVersion="Current">
+                      </Parameter>
+                      <Parameter AllowDbNull="False" AutogeneratedName="" DataSourceName="" DbType="Currency" Direction="Input" ParameterName="@PRICE" Precision="0" ProviderType="Money" Scale="0" Size="0" SourceColumn="PRICE" SourceColumnNullMapping="False" SourceVersion="Current">
+                      </Parameter>
+                      <Parameter AllowDbNull="False" AutogeneratedName="" DataSourceName="" DbType="Currency" Direction="Input" ParameterName="@SUM" Precision="0" ProviderType="Money" Scale="0" Size="0" SourceColumn="SUM" SourceColumnNullMapping="False" SourceVersion="Current">
+                      </Parameter>
+                      <Parameter AllowDbNull="False" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@BASE_MEASURE_SPEC" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="BASE_MEASURE_SPEC" SourceColumnNullMapping="False" SourceVersion="Current">
+                      </Parameter>
+                      <Parameter AllowDbNull="False" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@BASE_MEARSURE_MATER" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="BASE_MEARSURE_MATER" SourceColumnNullMapping="False" SourceVersion="Current">
+                      </Parameter>
+                      <Parameter AllowDbNull="False" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@BASE_MEASURE" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="BASE_MEASURE" SourceColumnNullMapping="False" SourceVersion="Current">
+                      </Parameter>
+                      <Parameter AllowDbNull="False" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@SEND_MEASURE" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="SEND_MEASURE" SourceColumnNullMapping="False" SourceVersion="Current">
+                      </Parameter>
+                      <Parameter AllowDbNull="False" AutogeneratedName="" DataSourceName="" DbType="Decimal" Direction="Input" ParameterName="@SEND_MEASURE_EX" Precision="13" ProviderType="Decimal" Scale="4" Size="0" SourceColumn="SEND_MEASURE_EX" SourceColumnNullMapping="False" SourceVersion="Current">
+                      </Parameter>
+                      <Parameter AllowDbNull="False" AutogeneratedName="" DataSourceName="" DbType="Decimal" Direction="Input" ParameterName="@AMOUNT" Precision="13" ProviderType="Decimal" Scale="4" Size="0" SourceColumn="AMOUNT" SourceColumnNullMapping="False" SourceVersion="Current">
+                      </Parameter>
+                      <Parameter AllowDbNull="False" AutogeneratedName="" DataSourceName="" DbType="AnsiStringFixedLength" Direction="Input" ParameterName="@STATE" Precision="0" ProviderType="Char" Scale="0" Size="0" SourceColumn="STATE" SourceColumnNullMapping="False" SourceVersion="Current">
+                      </Parameter>
+                      <Parameter AllowDbNull="True" AutogeneratedName="" DataSourceName="" DbType="Decimal" Direction="Input" ParameterName="@SEND_OPERATOR_ID" Precision="18" ProviderType="Decimal" Scale="0" Size="0" SourceColumn="SEND_OPERATOR_ID" SourceColumnNullMapping="False" SourceVersion="Current">
+                      </Parameter>
+                      <Parameter AllowDbNull="True" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@SEND_OPERATOR_NAME" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="SEND_OPERATOR_NAME" SourceColumnNullMapping="False" SourceVersion="Current">
+                      </Parameter>
+                      <Parameter AllowDbNull="True" AutogeneratedName="" DataSourceName="" DbType="DateTime" Direction="Input" ParameterName="@SEND_OPERATE_DATE" Precision="0" ProviderType="DateTime" Scale="0" Size="0" SourceColumn="SEND_OPERATE_DATE" SourceColumnNullMapping="False" SourceVersion="Current">
+                      </Parameter>
+                      <Parameter AllowDbNull="True" AutogeneratedName="" DataSourceName="" DbType="Decimal" Direction="Input" ParameterName="@INSTORE_OPERATOR_ID" Precision="18" ProviderType="Decimal" Scale="0" Size="0" SourceColumn="INSTORE_OPERATOR_ID" SourceColumnNullMapping="False" SourceVersion="Current">
+                      </Parameter>
+                      <Parameter AllowDbNull="True" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@INSTORE_OPERATOR_NAME" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="INSTORE_OPERATOR_NAME" SourceColumnNullMapping="False" SourceVersion="Current">
+                      </Parameter>
+                      <Parameter AllowDbNull="True" AutogeneratedName="" DataSourceName="" DbType="DateTime" Direction="Input" ParameterName="@INSTORE_OPERATE_DATE" Precision="0" ProviderType="DateTime" Scale="0" Size="0" SourceColumn="INSTORE_OPERATE_DATE" SourceColumnNullMapping="False" SourceVersion="Current">
+                      </Parameter>
+                      <Parameter AllowDbNull="True" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@BUYER_DESCRIPTIONS" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="BUYER_DESCRIPTIONS" SourceColumnNullMapping="False" SourceVersion="Current">
+                      </Parameter>
+                      <Parameter AllowDbNull="False" AutogeneratedName="" DataSourceName="" DbType="Decimal" Direction="Input" ParameterName="@CREATE_USER_ID" Precision="18" ProviderType="Decimal" Scale="0" Size="0" SourceColumn="CREATE_USER_ID" SourceColumnNullMapping="False" SourceVersion="Current">
+                      </Parameter>
+                      <Parameter AllowDbNull="False" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@CREATE_USER_NAME" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="CREATE_USER_NAME" SourceColumnNullMapping="False" SourceVersion="Current">
+                      </Parameter>
+                      <Parameter AllowDbNull="False" AutogeneratedName="" DataSourceName="" DbType="DateTime" Direction="Input" ParameterName="@CREATE_DATE" Precision="0" ProviderType="DateTime" Scale="0" Size="0" SourceColumn="CREATE_DATE" SourceColumnNullMapping="False" SourceVersion="Current">
+                      </Parameter>
+                      <Parameter AllowDbNull="False" AutogeneratedName="" DataSourceName="" DbType="Decimal" Direction="Input" ParameterName="@MODIFY_USER_ID" Precision="18" ProviderType="Decimal" Scale="0" Size="0" SourceColumn="MODIFY_USER_ID" SourceColumnNullMapping="False" SourceVersion="Current">
+                      </Parameter>
+                      <Parameter AllowDbNull="False" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@MODIFY_USER_NAME" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="MODIFY_USER_NAME" SourceColumnNullMapping="False" SourceVersion="Current">
+                      </Parameter>
+                      <Parameter AllowDbNull="False" AutogeneratedName="" DataSourceName="" DbType="DateTime" Direction="Input" ParameterName="@MODIFY_DATE" Precision="0" ProviderType="DateTime" Scale="0" Size="0" SourceColumn="MODIFY_DATE" SourceColumnNullMapping="False" SourceVersion="Current">
+                      </Parameter>
+                      <Parameter AllowDbNull="True" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@SALER_DESCRIPTIONS" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="SALER_DESCRIPTIONS" SourceColumnNullMapping="False" SourceVersion="Current">
+                      </Parameter>
+                      <Parameter AllowDbNull="False" AutogeneratedName="" DataSourceName="" DbType="AnsiStringFixedLength" Direction="Input" ParameterName="@sync_state" Precision="0" ProviderType="Char" Scale="0" Size="0" SourceColumn="sync_state" SourceColumnNullMapping="False" SourceVersion="Current">
+                      </Parameter>
+                    </Parameters>
+                  </DbCommand>
+                </InsertCommand>
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="True">
+                    <CommandText>SELECT ID, DATA_PRODUCT_ID, PROJECT_ID, CODE, RECEIVE_ID, ORD_ID, ORD_ITEM_ID, PROJECT_PRODUCT_ID, BUYER_ID, BUYER_NAME, BUYER_NAME_ABBR, SALER_ID, SALER_NAME, SALER_NAME_ABBR, SENDER_ID, SENDER_NAME, SENDER_NAME_ABBR, MANUFACTURE_ID, MANUFACTURE_NAME, MANUFACTURE_NAME_ABBR, COMMON_NAME, PRODUCT_NAME, PRODUCT_CODE, GOODS_NO, BARCODE, PBNO, BRAND, SPEC_ID, MODEL_ID, SPEC, MODEL, SEND_BATCH_NO, INSTORE_BATCH_NO, PRICE, SUM, BASE_MEASURE_SPEC, BASE_MEARSURE_MATER, BASE_MEASURE, SEND_MEASURE, SEND_MEASURE_EX, AMOUNT, STATE, SEND_OPERATOR_ID, SEND_OPERATOR_NAME, SEND_OPERATE_DATE, INSTORE_OPERATOR_ID, INSTORE_OPERATOR_NAME, INSTORE_OPERATE_DATE, BUYER_DESCRIPTIONS, CREATE_USER_ID, CREATE_USER_NAME, CREATE_DATE, MODIFY_USER_ID, MODIFY_USER_NAME, MODIFY_DATE, SALER_DESCRIPTIONS, sync_state FROM dbo.HC_ORD_BUYER_RETURN</CommandText>
+                    <Parameters>
+                    </Parameters>
+                  </DbCommand>
+                </SelectCommand>
+                <UpdateCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="False">
+                    <CommandText>UPDATE [dbo].[HC_ORD_BUYER_RETURN] SET [ID] = @ID, [DATA_PRODUCT_ID] = @DATA_PRODUCT_ID, [PROJECT_ID] = @PROJECT_ID, [CODE] = @CODE, [RECEIVE_ID] = @RECEIVE_ID, [ORD_ID] = @ORD_ID, [ORD_ITEM_ID] = @ORD_ITEM_ID, [PROJECT_PRODUCT_ID] = @PROJECT_PRODUCT_ID, [BUYER_ID] = @BUYER_ID, [BUYER_NAME] = @BUYER_NAME, [BUYER_NAME_ABBR] = @BUYER_NAME_ABBR, [SALER_ID] = @SALER_ID, [SALER_NAME] = @SALER_NAME, [SALER_NAME_ABBR] = @SALER_NAME_ABBR, [SENDER_ID] = @SENDER_ID, [SENDER_NAME] = @SENDER_NAME, [SENDER_NAME_ABBR] = @SENDER_NAME_ABBR, [MANUFACTURE_ID] = @MANUFACTURE_ID, [MANUFACTURE_NAME] = @MANUFACTURE_NAME, [MANUFACTURE_NAME_ABBR] = @MANUFACTURE_NAME_ABBR, [COMMON_NAME] = @COMMON_NAME, [PRODUCT_NAME] = @PRODUCT_NAME, [PRODUCT_CODE] = @PRODUCT_CODE, [GOODS_NO] = @GOODS_NO, [BARCODE] = @BARCODE, [PBNO] = @PBNO, [BRAND] = @BRAND, [SPEC_ID] = @SPEC_ID, [MODEL_ID] = @MODEL_ID, [SPEC] = @SPEC, [MODEL] = @MODEL, [SEND_BATCH_NO] = @SEND_BATCH_NO, [INSTORE_BATCH_NO] = @INSTORE_BATCH_NO, [PRICE] = @PRICE, [SUM] = @SUM, [BASE_MEASURE_SPEC] = @BASE_MEASURE_SPEC, [BASE_MEARSURE_MATER] = @BASE_MEARSURE_MATER, [BASE_MEASURE] = @BASE_MEASURE, [SEND_MEASURE] = @SEND_MEASURE, [SEND_MEASURE_EX] = @SEND_MEASURE_EX, [AMOUNT] = @AMOUNT, [STATE] = @STATE, [SEND_OPERATOR_ID] = @SEND_OPERATOR_ID, [SEND_OPERATOR_NAME] = @SEND_OPERATOR_NAME, [SEND_OPERATE_DATE] = @SEND_OPERATE_DATE, [INSTORE_OPERATOR_ID] = @INSTORE_OPERATOR_ID, [INSTORE_OPERATOR_NAME] = @INSTORE_OPERATOR_NAME, [INSTORE_OPERATE_DATE] = @INSTORE_OPERATE_DATE, [BUYER_DESCRIPTIONS] = @BUYER_DESCRIPTIONS, [CREATE_USER_ID] = @CREATE_USER_ID, [CREATE_USER_NAME] = @CREATE_USER_NAME, [CREATE_DATE] = @CREATE_DATE, [MODIFY_USER_ID] = @MODIFY_USER_ID, [MODIFY_USER_NAME] = @MODIFY_USER_NAME, [MODIFY_DATE] = @MODIFY_DATE, [SALER_DESCRIPTIONS] = @SALER_DESCRIPTIONS, [sync_state] = @sync_state WHERE (([ID] = @Original_ID) AND ((@IsNull_DATA_PRODUCT_ID = 1 AND [DATA_PRODUCT_ID] IS NULL) OR ([DATA_PRODUCT_ID] = @Original_DATA_PRODUCT_ID)) AND ([PROJECT_ID] = @Original_PROJECT_ID) AND ([CODE] = @Original_CODE) AND ([RECEIVE_ID] = @Original_RECEIVE_ID) AND ((@IsNull_ORD_ID = 1 AND [ORD_ID] IS NULL) OR ([ORD_ID] = @Original_ORD_ID)) AND ((@IsNull_ORD_ITEM_ID = 1 AND [ORD_ITEM_ID] IS NULL) OR ([ORD_ITEM_ID] = @Original_ORD_ITEM_ID)) AND ([PROJECT_PRODUCT_ID] = @Original_PROJECT_PRODUCT_ID) AND ([BUYER_ID] = @Original_BUYER_ID) AND ([BUYER_NAME] = @Original_BUYER_NAME) AND ([BUYER_NAME_ABBR] = @Original_BUYER_NAME_ABBR) AND ([SALER_ID] = @Original_SALER_ID) AND ([SALER_NAME] = @Original_SALER_NAME) AND ([SALER_NAME_ABBR] = @Original_SALER_NAME_ABBR) AND ([SENDER_ID] = @Original_SENDER_ID) AND ([SENDER_NAME] = @Original_SENDER_NAME) AND ([SENDER_NAME_ABBR] = @Original_SENDER_NAME_ABBR) AND ([MANUFACTURE_ID] = @Original_MANUFACTURE_ID) AND ([MANUFACTURE_NAME] = @Original_MANUFACTURE_NAME) AND ([MANUFACTURE_NAME_ABBR] = @Original_MANUFACTURE_NAME_ABBR) AND ([COMMON_NAME] = @Original_COMMON_NAME) AND ([PRODUCT_NAME] = @Original_PRODUCT_NAME) AND ([PRODUCT_CODE] = @Original_PRODUCT_CODE) AND ((@IsNull_GOODS_NO = 1 AND [GOODS_NO] IS NULL) OR ([GOODS_NO] = @Original_GOODS_NO)) AND ((@IsNull_BARCODE = 1 AND [BARCODE] IS NULL) OR ([BARCODE] = @Original_BARCODE)) AND ([PBNO] = @Original_PBNO) AND ([BRAND] = @Original_BRAND) AND ([SPEC_ID] = @Original_SPEC_ID) AND ([MODEL_ID] = @Original_MODEL_ID) AND ([SPEC] = @Original_SPEC) AND ([MODEL] = @Original_MODEL) AND ([SEND_BATCH_NO] = @Original_SEND_BATCH_NO) AND ([INSTORE_BATCH_NO] = @Original_INSTORE_BATCH_NO) AND ([PRICE] = @Original_PRICE) AND ([SUM] = @Original_SUM) AND ([BASE_MEASURE_SPEC] = @Original_BASE_MEASURE_SPEC) AND ([BASE_MEARSURE_MATER] = @Original_BASE_MEARSURE_MATER) AND ([BASE_MEASURE] = @Original_BASE_MEASURE) AND ([SEND_MEASURE] = @Original_SEND_MEASURE) AND ([SEND_MEASURE_EX] = @Original_SEND_MEASURE_EX) AND ([AMOUNT] = @Original_AMOUNT) AND ([STATE] = @Original_STATE) AND ((@IsNull_SEND_OPERATOR_ID = 1 AND [SEND_OPERATOR_ID] IS NULL) OR ([SEND_OPERATOR_ID] = @Original_SEND_OPERATOR_ID)) AND ((@IsNull_SEND_OPERATOR_NAME = 1 AND [SEND_OPERATOR_NAME] IS NULL) OR ([SEND_OPERATOR_NAME] = @Original_SEND_OPERATOR_NAME)) AND ((@IsNull_SEND_OPERATE_DATE = 1 AND [SEND_OPERATE_DATE] IS NULL) OR ([SEND_OPERATE_DATE] = @Original_SEND_OPERATE_DATE)) AND ((@IsNull_INSTORE_OPERATOR_ID = 1 AND [INSTORE_OPERATOR_ID] IS NULL) OR ([INSTORE_OPERATOR_ID] = @Original_INSTORE_OPERATOR_ID)) AND ((@IsNull_INSTORE_OPERATOR_NAME = 1 AND [INSTORE_OPERATOR_NAME] IS NULL) OR ([INSTORE_OPERATOR_NAME] = @Original_INSTORE_OPERATOR_NAME)) AND ((@IsNull_INSTORE_OPERATE_DATE = 1 AND [INSTORE_OPERATE_DATE] IS NULL) OR ([INSTORE_OPERATE_DATE] = @Original_INSTORE_OPERATE_DATE)) AND ((@IsNull_BUYER_DESCRIPTIONS = 1 AND [BUYER_DESCRIPTIONS] IS NULL) OR ([BUYER_DESCRIPTIONS] = @Original_BUYER_DESCRIPTIONS)) AND ([CREATE_USER_ID] = @Original_CREATE_USER_ID) AND ([CREATE_USER_NAME] = @Original_CREATE_USER_NAME) AND ([CREATE_DATE] = @Original_CREATE_DATE) AND ([MODIFY_USER_ID] = @Original_MODIFY_USER_ID) AND ([MODIFY_USER_NAME] = @Original_MODIFY_USER_NAME) AND ([MODIFY_DATE] = @Original_MODIFY_DATE) AND ((@IsNull_SALER_DESCRIPTIONS = 1 AND [SALER_DESCRIPTIONS] IS NULL) OR ([SALER_DESCRIPTIONS] = @Original_SALER_DESCRIPTIONS)) AND ([sync_state] = @Original_sync_state));
+SELECT ID, DATA_PRODUCT_ID, PROJECT_ID, CODE, RECEIVE_ID, ORD_ID, ORD_ITEM_ID, PROJECT_PRODUCT_ID, BUYER_ID, BUYER_NAME, BUYER_NAME_ABBR, SALER_ID, SALER_NAME, SALER_NAME_ABBR, SENDER_ID, SENDER_NAME, SENDER_NAME_ABBR, MANUFACTURE_ID, MANUFACTURE_NAME, MANUFACTURE_NAME_ABBR, COMMON_NAME, PRODUCT_NAME, PRODUCT_CODE, GOODS_NO, BARCODE, PBNO, BRAND, SPEC_ID, MODEL_ID, SPEC, MODEL, SEND_BATCH_NO, INSTORE_BATCH_NO, PRICE, SUM, BASE_MEASURE_SPEC, BASE_MEARSURE_MATER, BASE_MEASURE, SEND_MEASURE, SEND_MEASURE_EX, AMOUNT, STATE, SEND_OPERATOR_ID, SEND_OPERATOR_NAME, SEND_OPERATE_DATE, INSTORE_OPERATOR_ID, INSTORE_OPERATOR_NAME, INSTORE_OPERATE_DATE, BUYER_DESCRIPTIONS, CREATE_USER_ID, CREATE_USER_NAME, CREATE_DATE, MODIFY_USER_ID, MODIFY_USER_NAME, MODIFY_DATE, SALER_DESCRIPTIONS, sync_state FROM HC_ORD_BUYER_RETURN WHERE (ID = @ID)</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="False" AutogeneratedName="" DataSourceName="" DbType="Decimal" Direction="Input" ParameterName="@ID" Precision="18" ProviderType="Decimal" Scale="0" Size="0" SourceColumn="ID" SourceColumnNullMapping="False" SourceVersion="Current">
+                      </Parameter>
+                      <Parameter AllowDbNull="True" AutogeneratedName="" DataSourceName="" DbType="Decimal" Direction="Input" ParameterName="@DATA_PRODUCT_ID" Precision="18" ProviderType="Decimal" Scale="0" Size="0" SourceColumn="DATA_PRODUCT_ID" SourceColumnNullMapping="False" SourceVersion="Current">
+                      </Parameter>
+                      <Parameter AllowDbNull="False" AutogeneratedName="" DataSourceName="" DbType="Decimal" Direction="Input" ParameterName="@PROJECT_ID" Precision="18" ProviderType="Decimal" Scale="0" Size="0" SourceColumn="PROJECT_ID" SourceColumnNullMapping="False" SourceVersion="Current">
+                      </Parameter>
+                      <Parameter AllowDbNull="False" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@CODE" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="CODE" SourceColumnNullMapping="False" SourceVersion="Current">
+                      </Parameter>
+                      <Parameter AllowDbNull="False" AutogeneratedName="" DataSourceName="" DbType="Decimal" Direction="Input" ParameterName="@RECEIVE_ID" Precision="18" ProviderType="Decimal" Scale="0" Size="0" SourceColumn="RECEIVE_ID" SourceColumnNullMapping="False" SourceVersion="Current">
+                      </Parameter>
+                      <Parameter AllowDbNull="True" AutogeneratedName="" DataSourceName="" DbType="Decimal" Direction="Input" ParameterName="@ORD_ID" Precision="18" ProviderType="Decimal" Scale="0" Size="0" SourceColumn="ORD_ID" SourceColumnNullMapping="False" SourceVersion="Current">
+                      </Parameter>
+                      <Parameter AllowDbNull="True" AutogeneratedName="" DataSourceName="" DbType="Decimal" Direction="Input" ParameterName="@ORD_ITEM_ID" Precision="18" ProviderType="Decimal" Scale="0" Size="0" SourceColumn="ORD_ITEM_ID" SourceColumnNullMapping="False" SourceVersion="Current">
+                      </Parameter>
+                      <Parameter AllowDbNull="False" AutogeneratedName="" DataSourceName="" DbType="Decimal" Direction="Input" ParameterName="@PROJECT_PRODUCT_ID" Precision="18" ProviderType="Decimal" Scale="0" Size="0" SourceColumn="PROJECT_PRODUCT_ID" SourceColumnNullMapping="False" SourceVersion="Current">
+                      </Parameter>
+                      <Parameter AllowDbNull="False" AutogeneratedName="" DataSourceName="" DbType="Decimal" Direction="Input" ParameterName="@BUYER_ID" Precision="18" ProviderType="Decimal" Scale="0" Size="0" SourceColumn="BUYER_ID" SourceColumnNullMapping="False" SourceVersion="Current">
+                      </Parameter>
+                      <Parameter AllowDbNull="False" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@BUYER_NAME" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="BUYER_NAME" SourceColumnNullMapping="False" SourceVersion="Current">
+                      </Parameter>
+                      <Parameter AllowDbNull="False" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@BUYER_NAME_ABBR" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="BUYER_NAME_ABBR" SourceColumnNullMapping="False" SourceVersion="Current">
+                      </Parameter>
+                      <Parameter AllowDbNull="False" AutogeneratedName="" DataSourceName="" DbType="Decimal" Direction="Input" ParameterName="@SALER_ID" Precision="18" ProviderType="Decimal" Scale="0" Size="0" SourceColumn="SALER_ID" SourceColumnNullMapping="False" SourceVersion="Current">
+                      </Parameter>
+                      <Parameter AllowDbNull="False" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@SALER_NAME" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="SALER_NAME" SourceColumnNullMapping="False" SourceVersion="Current">
+                      </Parameter>
+                      <Parameter AllowDbNull="False" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@SALER_NAME_ABBR" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="SALER_NAME_ABBR" SourceColumnNullMapping="False" SourceVersion="Current">
+                      </Parameter>
+                      <Parameter AllowDbNull="False" AutogeneratedName="" DataSourceName="" DbType="Decimal" Direction="Input" ParameterName="@SENDER_ID" Precision="18" ProviderType="Decimal" Scale="0" Size="0" SourceColumn="SENDER_ID" SourceColumnNullMapping="False" SourceVersion="Current">
+                      </Parameter>
+                      <Parameter AllowDbNull="False" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@SENDER_NAME" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="SENDER_NAME" SourceColumnNullMapping="False" SourceVersion="Current">
+                      </Parameter>
+                      <Parameter AllowDbNull="False" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@SENDER_NAME_ABBR" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="SENDER_NAME_ABBR" SourceColumnNullMapping="False" SourceVersion="Current">
+                      </Parameter>
+                      <Parameter AllowDbNull="False" AutogeneratedName="" DataSourceName="" DbType="Decimal" Direction="Input" ParameterName="@MANUFACTURE_ID" Precision="18" ProviderType="Decimal" Scale="0" Size="0" SourceColumn="MANUFACTURE_ID" SourceColumnNullMapping="False" SourceVersion="Current">
+                      </Parameter>
+                      <Parameter AllowDbNull="False" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@MANUFACTURE_NAME" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="MANUFACTURE_NAME" SourceColumnNullMapping="False" SourceVersion="Current">
+                      </Parameter>
+                      <Parameter AllowDbNull="False" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@MANUFACTURE_NAME_ABBR" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="MANUFACTURE_NAME_ABBR" SourceColumnNullMapping="False" SourceVersion="Current">
+                      </Parameter>
+                      <Parameter AllowDbNull="False" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@COMMON_NAME" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="COMMON_NAME" SourceColumnNullMapping="False" SourceVersion="Current">
+                      </Parameter>
+                      <Parameter AllowDbNull="False" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@PRODUCT_NAME" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="PRODUCT_NAME" SourceColumnNullMapping="False" SourceVersion="Current">
+                      </Parameter>
+                      <Parameter AllowDbNull="False" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@PRODUCT_CODE" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="PRODUCT_CODE" SourceColumnNullMapping="False" SourceVersion="Current">
+                      </Parameter>
+                      <Parameter AllowDbNull="True" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@GOODS_NO" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="GOODS_NO" SourceColumnNullMapping="False" SourceVersion="Current">
+                      </Parameter>
+                      <Parameter AllowDbNull="True" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@BARCODE" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="BARCODE" SourceColumnNullMapping="False" SourceVersion="Current">
+                      </Parameter>
+                      <Parameter AllowDbNull="False" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@PBNO" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="PBNO" SourceColumnNullMapping="False" SourceVersion="Current">
+                      </Parameter>
+                      <Parameter AllowDbNull="False" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@BRAND" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="BRAND" SourceColumnNullMapping="False" SourceVersion="Current">
+                      </Parameter>
+                      <Parameter AllowDbNull="False" AutogeneratedName="" DataSourceName="" DbType="Decimal" Direction="Input" ParameterName="@SPEC_ID" Precision="18" ProviderType="Decimal" Scale="0" Size="0" SourceColumn="SPEC_ID" SourceColumnNullMapping="False" SourceVersion="Current">
+                      </Parameter>
+                      <Parameter AllowDbNull="False" AutogeneratedName="" DataSourceName="" DbType="Decimal" Direction="Input" ParameterName="@MODEL_ID" Precision="18" ProviderType="Decimal" Scale="0" Size="0" SourceColumn="MODEL_ID" SourceColumnNullMapping="False" SourceVersion="Current">
+                      </Parameter>
+                      <Parameter AllowDbNull="False" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@SPEC" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="SPEC" SourceColumnNullMapping="False" SourceVersion="Current">
+                      </Parameter>
+                      <Parameter AllowDbNull="False" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@MODEL" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="MODEL" SourceColumnNullMapping="False" SourceVersion="Current">
+                      </Parameter>
+                      <Parameter AllowDbNull="False" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@SEND_BATCH_NO" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="SEND_BATCH_NO" SourceColumnNullMapping="False" SourceVersion="Current">
+                      </Parameter>
+                      <Parameter AllowDbNull="False" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@INSTORE_BATCH_NO" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="INSTORE_BATCH_NO" SourceColumnNullMapping="False" SourceVersion="Current">
+                      </Parameter>
+                      <Parameter AllowDbNull="False" AutogeneratedName="" DataSourceName="" DbType="Currency" Direction="Input" ParameterName="@PRICE" Precision="0" ProviderType="Money" Scale="0" Size="0" SourceColumn="PRICE" SourceColumnNullMapping="False" SourceVersion="Current">
+                      </Parameter>
+                      <Parameter AllowDbNull="False" AutogeneratedName="" DataSourceName="" DbType="Currency" Direction="Input" ParameterName="@SUM" Precision="0" ProviderType="Money" Scale="0" Size="0" SourceColumn="SUM" SourceColumnNullMapping="False" SourceVersion="Current">
+                      </Parameter>
+                      <Parameter AllowDbNull="False" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@BASE_MEASURE_SPEC" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="BASE_MEASURE_SPEC" SourceColumnNullMapping="False" SourceVersion="Current">
+                      </Parameter>
+                      <Parameter AllowDbNull="False" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@BASE_MEARSURE_MATER" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="BASE_MEARSURE_MATER" SourceColumnNullMapping="False" SourceVersion="Current">
+                      </Parameter>
+                      <Parameter AllowDbNull="False" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@BASE_MEASURE" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="BASE_MEASURE" SourceColumnNullMapping="False" SourceVersion="Current">
+                      </Parameter>
+                      <Parameter AllowDbNull="False" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@SEND_MEASURE" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="SEND_MEASURE" SourceColumnNullMapping="False" SourceVersion="Current">
+                      </Parameter>
+                      <Parameter AllowDbNull="False" AutogeneratedName="" DataSourceName="" DbType="Decimal" Direction="Input" ParameterName="@SEND_MEASURE_EX" Precision="13" ProviderType="Decimal" Scale="4" Size="0" SourceColumn="SEND_MEASURE_EX" SourceColumnNullMapping="False" SourceVersion="Current">
+                      </Parameter>
+                      <Parameter AllowDbNull="False" AutogeneratedName="" DataSourceName="" DbType="Decimal" Direction="Input" ParameterName="@AMOUNT" Precision="13" ProviderType="Decimal" Scale="4" Size="0" SourceColumn="AMOUNT" SourceColumnNullMapping="False" SourceVersion="Current">
+                      </Parameter>
+                      <Parameter AllowDbNull="False" AutogeneratedName="" DataSourceName="" DbType="AnsiStringFixedLength" Direction="Input" ParameterName="@STATE" Precision="0" ProviderType="Char" Scale="0" Size="0" SourceColumn="STATE" SourceColumnNullMapping="False" SourceVersion="Current">
+                      </Parameter>
+                      <Parameter AllowDbNull="True" AutogeneratedName="" DataSourceName="" DbType="Decimal" Direction="Input" ParameterName="@SEND_OPERATOR_ID" Precision="18" ProviderType="Decimal" Scale="0" Size="0" SourceColumn="SEND_OPERATOR_ID" SourceColumnNullMapping="False" SourceVersion="Current">
+                      </Parameter>
+                      <Parameter AllowDbNull="True" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@SEND_OPERATOR_NAME" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="SEND_OPERATOR_NAME" SourceColumnNullMapping="False" SourceVersion="Current">
+                      </Parameter>
+                      <Parameter AllowDbNull="True" AutogeneratedName="" DataSourceName="" DbType="DateTime" Direction="Input" ParameterName="@SEND_OPERATE_DATE" Precision="0" ProviderType="DateTime" Scale="0" Size="0" SourceColumn="SEND_OPERATE_DATE" SourceColumnNullMapping="False" SourceVersion="Current">
+                      </Parameter>
+                      <Parameter AllowDbNull="True" AutogeneratedName="" DataSourceName="" DbType="Decimal" Direction="Input" ParameterName="@INSTORE_OPERATOR_ID" Precision="18" ProviderType="Decimal" Scale="0" Size="0" SourceColumn="INSTORE_OPERATOR_ID" SourceColumnNullMapping="False" SourceVersion="Current">
+                      </Parameter>
+                      <Parameter AllowDbNull="True" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@INSTORE_OPERATOR_NAME" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="INSTORE_OPERATOR_NAME" SourceColumnNullMapping="False" SourceVersion="Current">
+                      </Parameter>
+                      <Parameter AllowDbNull="True" AutogeneratedName="" DataSourceName="" DbType="DateTime" Direction="Input" ParameterName="@INSTORE_OPERATE_DATE" Precision="0" ProviderType="DateTime" Scale="0" Size="0" SourceColumn="INSTORE_OPERATE_DATE" SourceColumnNullMapping="False" SourceVersion="Current">
+                      </Parameter>
+                      <Parameter AllowDbNull="True" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@BUYER_DESCRIPTIONS" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="BUYER_DESCRIPTIONS" SourceColumnNullMapping="False" SourceVersion="Current">
+                      </Parameter>
+                      <Parameter AllowDbNull="False" AutogeneratedName="" DataSourceName="" DbType="Decimal" Direction="Input" ParameterName="@CREATE_USER_ID" Precision="18" ProviderType="Decimal" Scale="0" Size="0" SourceColumn="CREATE_USER_ID" SourceColumnNullMapping="False" SourceVersion="Current">
+                      </Parameter>
+                      <Parameter AllowDbNull="False" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@CREATE_USER_NAME" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="CREATE_USER_NAME" SourceColumnNullMapping="False" SourceVersion="Current">
+                      </Parameter>
+                      <Parameter AllowDbNull="False" AutogeneratedName="" DataSourceName="" DbType="DateTime" Direction="Input" ParameterName="@CREATE_DATE" Precision="0" ProviderType="DateTime" Scale="0" Size="0" SourceColumn="CREATE_DATE" SourceColumnNullMapping="False" SourceVersion="Current">
+                      </Parameter>
+                      <Parameter AllowDbNull="False" AutogeneratedName="" DataSourceName="" DbType="Decimal" Direction="Input" ParameterName="@MODIFY_USER_ID" Precision="18" ProviderType="Decimal" Scale="0" Size="0" SourceColumn="MODIFY_USER_ID" SourceColumnNullMapping="False" SourceVersion="Current">
+                      </Parameter>
+                      <Parameter AllowDbNull="False" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@MODIFY_USER_NAME" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="MODIFY_USER_NAME" SourceColumnNullMapping="False" SourceVersion="Current">
+                      </Parameter>
+                      <Parameter AllowDbNull="False" AutogeneratedName="" DataSourceName="" DbType="DateTime" Direction="Input" ParameterName="@MODIFY_DATE" Precision="0" ProviderType="DateTime" Scale="0" Size="0" SourceColumn="MODIFY_DATE" SourceColumnNullMapping="False" SourceVersion="Current">
+                      </Parameter>
+                      <Parameter AllowDbNull="True" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@SALER_DESCRIPTIONS" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="SALER_DESCRIPTIONS" SourceColumnNullMapping="False" SourceVersion="Current">
+                      </Parameter>
+                      <Parameter AllowDbNull="False" AutogeneratedName="" DataSourceName="" DbType="AnsiStringFixedLength" Direction="Input" ParameterName="@sync_state" Precision="0" ProviderType="Char" Scale="0" Size="0" SourceColumn="sync_state" SourceColumnNullMapping="False" SourceVersion="Current">
+                      </Parameter>
+                      <Parameter AllowDbNull="False" AutogeneratedName="" DataSourceName="" DbType="Decimal" Direction="Input" ParameterName="@Original_ID" Precision="18" ProviderType="Decimal" Scale="0" Size="0" SourceColumn="ID" SourceColumnNullMapping="False" SourceVersion="Original">
+                      </Parameter>
+                      <Parameter AllowDbNull="True" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_DATA_PRODUCT_ID" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="DATA_PRODUCT_ID" SourceColumnNullMapping="True" SourceVersion="Original">
+                      </Parameter>
+                      <Parameter AllowDbNull="True" AutogeneratedName="" DataSourceName="" DbType="Decimal" Direction="Input" ParameterName="@Original_DATA_PRODUCT_ID" Precision="18" ProviderType="Decimal" Scale="0" Size="0" SourceColumn="DATA_PRODUCT_ID" SourceColumnNullMapping="False" SourceVersion="Original">
+                      </Parameter>
+                      <Parameter AllowDbNull="False" AutogeneratedName="" DataSourceName="" DbType="Decimal" Direction="Input" ParameterName="@Original_PROJECT_ID" Precision="18" ProviderType="Decimal" Scale="0" Size="0" SourceColumn="PROJECT_ID" SourceColumnNullMapping="False" SourceVersion="Original">
+                      </Parameter>
+                      <Parameter AllowDbNull="False" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_CODE" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="CODE" SourceColumnNullMapping="False" SourceVersion="Original">
+                      </Parameter>
+                      <Parameter AllowDbNull="False" AutogeneratedName="" DataSourceName="" DbType="Decimal" Direction="Input" ParameterName="@Original_RECEIVE_ID" Precision="18" ProviderType="Decimal" Scale="0" Size="0" SourceColumn="RECEIVE_ID" SourceColumnNullMapping="False" SourceVersion="Original">
+                      </Parameter>
+                      <Parameter AllowDbNull="True" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_ORD_ID" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="ORD_ID" SourceColumnNullMapping="True" SourceVersion="Original">
+                      </Parameter>
+                      <Parameter AllowDbNull="True" AutogeneratedName="" DataSourceName="" DbType="Decimal" Direction="Input" ParameterName="@Original_ORD_ID" Precision="18" ProviderType="Decimal" Scale="0" Size="0" SourceColumn="ORD_ID" SourceColumnNullMapping="False" SourceVersion="Original">
+                      </Parameter>
+                      <Parameter AllowDbNull="True" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_ORD_ITEM_ID" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="ORD_ITEM_ID" SourceColumnNullMapping="True" SourceVersion="Original">
+                      </Parameter>
+                      <Parameter AllowDbNull="True" AutogeneratedName="" DataSourceName="" DbType="Decimal" Direction="Input" ParameterName="@Original_ORD_ITEM_ID" Precision="18" ProviderType="Decimal" Scale="0" Size="0" SourceColumn="ORD_ITEM_ID" SourceColumnNullMapping="False" SourceVersion="Original">
+                      </Parameter>
+                      <Parameter AllowDbNull="False" AutogeneratedName="" DataSourceName="" DbType="Decimal" Direction="Input" ParameterName="@Original_PROJECT_PRODUCT_ID" Precision="18" ProviderType="Decimal" Scale="0" Size="0" SourceColumn="PROJECT_PRODUCT_ID" SourceColumnNullMapping="False" SourceVersion="Original">
+                      </Parameter>
+                      <Parameter AllowDbNull="False" AutogeneratedName="" DataSourceName="" DbType="Decimal" Direction="Input" ParameterName="@Original_BUYER_ID" Precision="18" ProviderType="Decimal" Scale="0" Size="0" SourceColumn="BUYER_ID" SourceColumnNullMapping="False" SourceVersion="Original">
+                      </Parameter>
+                      <Parameter AllowDbNull="False" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_BUYER_NAME" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="BUYER_NAME" SourceColumnNullMapping="False" SourceVersion="Original">
+                      </Parameter>
+                      <Parameter AllowDbNull="False" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_BUYER_NAME_ABBR" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="BUYER_NAME_ABBR" SourceColumnNullMapping="False" SourceVersion="Original">
+                      </Parameter>
+                      <Parameter AllowDbNull="False" AutogeneratedName="" DataSourceName="" DbType="Decimal" Direction="Input" ParameterName="@Original_SALER_ID" Precision="18" ProviderType="Decimal" Scale="0" Size="0" SourceColumn="SALER_ID" SourceColumnNullMapping="False" SourceVersion="Original">
+                      </Parameter>
+                      <Parameter AllowDbNull="False" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_SALER_NAME" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="SALER_NAME" SourceColumnNullMapping="False" SourceVersion="Original">
+                      </Parameter>
+                      <Parameter AllowDbNull="False" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_SALER_NAME_ABBR" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="SALER_NAME_ABBR" SourceColumnNullMapping="False" SourceVersion="Original">
+                      </Parameter>
+                      <Parameter AllowDbNull="False" AutogeneratedName="" DataSourceName="" DbType="Decimal" Direction="Input" ParameterName="@Original_SENDER_ID" Precision="18" ProviderType="Decimal" Scale="0" Size="0" SourceColumn="SENDER_ID" SourceColumnNullMapping="False" SourceVersion="Original">
+                      </Parameter>
+                      <Parameter AllowDbNull="False" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_SENDER_NAME" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="SENDER_NAME" SourceColumnNullMapping="False" SourceVersion="Original">
+                      </Parameter>
+                      <Parameter AllowDbNull="False" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_SENDER_NAME_ABBR" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="SENDER_NAME_ABBR" SourceColumnNullMapping="False" SourceVersion="Original">
+                      </Parameter>
+                      <Parameter AllowDbNull="False" AutogeneratedName="" DataSourceName="" DbType="Decimal" Direction="Input" ParameterName="@Original_MANUFACTURE_ID" Precision="18" ProviderType="Decimal" Scale="0" Size="0" SourceColumn="MANUFACTURE_ID" SourceColumnNullMapping="False" SourceVersion="Original">
+                      </Parameter>
+                      <Parameter AllowDbNull="False" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_MANUFACTURE_NAME" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="MANUFACTURE_NAME" SourceColumnNullMapping="False" SourceVersion="Original">
+                      </Parameter>
+                      <Parameter AllowDbNull="False" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_MANUFACTURE_NAME_ABBR" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="MANUFACTURE_NAME_ABBR" SourceColumnNullMapping="False" SourceVersion="Original">
+                      </Parameter>
+                      <Parameter AllowDbNull="False" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_COMMON_NAME" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="COMMON_NAME" SourceColumnNullMapping="False" SourceVersion="Original">
+                      </Parameter>
+                      <Parameter AllowDbNull="False" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_PRODUCT_NAME" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="PRODUCT_NAME" SourceColumnNullMapping="False" SourceVersion="Original">
+                      </Parameter>
+                      <Parameter AllowDbNull="False" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_PRODUCT_CODE" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="PRODUCT_CODE" SourceColumnNullMapping="False" SourceVersion="Original">
+                      </Parameter>
+                      <Parameter AllowDbNull="True" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_GOODS_NO" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="GOODS_NO" SourceColumnNullMapping="True" SourceVersion="Original">
+                      </Parameter>
+                      <Parameter AllowDbNull="True" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_GOODS_NO" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="GOODS_NO" SourceColumnNullMapping="False" SourceVersion="Original">
+                      </Parameter>
+                      <Parameter AllowDbNull="True" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_BARCODE" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="BARCODE" SourceColumnNullMapping="True" SourceVersion="Original">
+                      </Parameter>
+                      <Parameter AllowDbNull="True" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_BARCODE" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="BARCODE" SourceColumnNullMapping="False" SourceVersion="Original">
+                      </Parameter>
+                      <Parameter AllowDbNull="False" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_PBNO" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="PBNO" SourceColumnNullMapping="False" SourceVersion="Original">
+                      </Parameter>
+                      <Parameter AllowDbNull="False" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_BRAND" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="BRAND" SourceColumnNullMapping="False" SourceVersion="Original">
+                      </Parameter>
+                      <Parameter AllowDbNull="False" AutogeneratedName="" DataSourceName="" DbType="Decimal" Direction="Input" ParameterName="@Original_SPEC_ID" Precision="18" ProviderType="Decimal" Scale="0" Size="0" SourceColumn="SPEC_ID" SourceColumnNullMapping="False" SourceVersion="Original">
+                      </Parameter>
+                      <Parameter AllowDbNull="False" AutogeneratedName="" DataSourceName="" DbType="Decimal" Direction="Input" ParameterName="@Original_MODEL_ID" Precision="18" ProviderType="Decimal" Scale="0" Size="0" SourceColumn="MODEL_ID" SourceColumnNullMapping="False" SourceVersion="Original">
+                      </Parameter>
+                      <Parameter AllowDbNull="False" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_SPEC" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="SPEC" SourceColumnNullMapping="False" SourceVersion="Original">
+                      </Parameter>
+                      <Parameter AllowDbNull="False" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_MODEL" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="MODEL" SourceColumnNullMapping="False" SourceVersion="Original">
+                      </Parameter>
+                      <Parameter AllowDbNull="False" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_SEND_BATCH_NO" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="SEND_BATCH_NO" SourceColumnNullMapping="False" SourceVersion="Original">
+                      </Parameter>
+                      <Parameter AllowDbNull="False" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_INSTORE_BATCH_NO" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="INSTORE_BATCH_NO" SourceColumnNullMapping="False" SourceVersion="Original">
+                      </Parameter>
+                      <Parameter AllowDbNull="False" AutogeneratedName="" DataSourceName="" DbType="Currency" Direction="Input" ParameterName="@Original_PRICE" Precision="0" ProviderType="Money" Scale="0" Size="0" SourceColumn="PRICE" SourceColumnNullMapping="False" SourceVersion="Original">
+                      </Parameter>
+                      <Parameter AllowDbNull="False" AutogeneratedName="" DataSourceName="" DbType="Currency" Direction="Input" ParameterName="@Original_SUM" Precision="0" ProviderType="Money" Scale="0" Size="0" SourceColumn="SUM" SourceColumnNullMapping="False" SourceVersion="Original">
+                      </Parameter>
+                      <Parameter AllowDbNull="False" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_BASE_MEASURE_SPEC" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="BASE_MEASURE_SPEC" SourceColumnNullMapping="False" SourceVersion="Original">
+                      </Parameter>
+                      <Parameter AllowDbNull="False" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_BASE_MEARSURE_MATER" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="BASE_MEARSURE_MATER" SourceColumnNullMapping="False" SourceVersion="Original">
+                      </Parameter>
+                      <Parameter AllowDbNull="False" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_BASE_MEASURE" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="BASE_MEASURE" SourceColumnNullMapping="False" SourceVersion="Original">
+                      </Parameter>
+                      <Parameter AllowDbNull="False" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_SEND_MEASURE" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="SEND_MEASURE" SourceColumnNullMapping="False" SourceVersion="Original">
+                      </Parameter>
+                      <Parameter AllowDbNull="False" AutogeneratedName="" DataSourceName="" DbType="Decimal" Direction="Input" ParameterName="@Original_SEND_MEASURE_EX" Precision="13" ProviderType="Decimal" Scale="4" Size="0" SourceColumn="SEND_MEASURE_EX" SourceColumnNullMapping="False" SourceVersion="Original">
+                      </Parameter>
+                      <Parameter AllowDbNull="False" AutogeneratedName="" DataSourceName="" DbType="Decimal" Direction="Input" ParameterName="@Original_AMOUNT" Precision="13" ProviderType="Decimal" Scale="4" Size="0" SourceColumn="AMOUNT" SourceColumnNullMapping="False" SourceVersion="Original">
+                      </Parameter>
+                      <Parameter AllowDbNull="False" AutogeneratedName="" DataSourceName="" DbType="AnsiStringFixedLength" Direction="Input" ParameterName="@Original_STATE" Precision="0" ProviderType="Char" Scale="0" Size="0" SourceColumn="STATE" SourceColumnNullMapping="False" SourceVersion="Original">
+                      </Parameter>
+                      <Parameter AllowDbNull="True" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_SEND_OPERATOR_ID" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="SEND_OPERATOR_ID" SourceColumnNullMapping="True" SourceVersion="Original">
+                      </Parameter>
+                      <Parameter AllowDbNull="True" AutogeneratedName="" DataSourceName="" DbType="Decimal" Direction="Input" ParameterName="@Original_SEND_OPERATOR_ID" Precision="18" ProviderType="Decimal" Scale="0" Size="0" SourceColumn="SEND_OPERATOR_ID" SourceColumnNullMapping="False" SourceVersion="Original">
+                      </Parameter>
+                      <Parameter AllowDbNull="True" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_SEND_OPERATOR_NAME" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="SEND_OPERATOR_NAME" SourceColumnNullMapping="True" SourceVersion="Original">
+                      </Parameter>
+                      <Parameter AllowDbNull="True" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_SEND_OPERATOR_NAME" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="SEND_OPERATOR_NAME" SourceColumnNullMapping="False" SourceVersion="Original">
+                      </Parameter>
+                      <Parameter AllowDbNull="True" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_SEND_OPERATE_DATE" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="SEND_OPERATE_DATE" SourceColumnNullMapping="True" SourceVersion="Original">
+                      </Parameter>
+                      <Parameter AllowDbNull="True" AutogeneratedName="" DataSourceName="" DbType="DateTime" Direction="Input" ParameterName="@Original_SEND_OPERATE_DATE" Precision="0" ProviderType="DateTime" Scale="0" Size="0" SourceColumn="SEND_OPERATE_DATE" SourceColumnNullMapping="False" SourceVersion="Original">
+                      </Parameter>
+                      <Parameter AllowDbNull="True" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_INSTORE_OPERATOR_ID" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="INSTORE_OPERATOR_ID" SourceColumnNullMapping="True" SourceVersion="Original">
+                      </Parameter>
+                      <Parameter AllowDbNull="True" AutogeneratedName="" DataSourceName="" DbType="Decimal" Direction="Input" ParameterName="@Original_INSTORE_OPERATOR_ID" Precision="18" ProviderType="Decimal" Scale="0" Size="0" SourceColumn="INSTORE_OPERATOR_ID" SourceColumnNullMapping="False" SourceVersion="Original">
+                      </Parameter>
+                      <Parameter AllowDbNull="True" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_INSTORE_OPERATOR_NAME" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="INSTORE_OPERATOR_NAME" SourceColumnNullMapping="True" SourceVersion="Original">
+                      </Parameter>
+                      <Parameter AllowDbNull="True" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_INSTORE_OPERATOR_NAME" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="INSTORE_OPERATOR_NAME" SourceColumnNullMapping="False" SourceVersion="Original">
+                      </Parameter>
+                      <Parameter AllowDbNull="True" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_INSTORE_OPERATE_DATE" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="INSTORE_OPERATE_DATE" SourceColumnNullMapping="True" SourceVersion="Original">
+                      </Parameter>
+                      <Parameter AllowDbNull="True" AutogeneratedName="" DataSourceName="" DbType="DateTime" Direction="Input" ParameterName="@Original_INSTORE_OPERATE_DATE" Precision="0" ProviderType="DateTime" Scale="0" Size="0" SourceColumn="INSTORE_OPERATE_DATE" SourceColumnNullMapping="False" SourceVersion="Original">
+                      </Parameter>
+                      <Parameter AllowDbNull="True" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_BUYER_DESCRIPTIONS" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="BUYER_DESCRIPTIONS" SourceColumnNullMapping="True" SourceVersion="Original">
+                      </Parameter>
+                      <Parameter AllowDbNull="True" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_BUYER_DESCRIPTIONS" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="BUYER_DESCRIPTIONS" SourceColumnNullMapping="False" SourceVersion="Original">
+                      </Parameter>
+                      <Parameter AllowDbNull="False" AutogeneratedName="" DataSourceName="" DbType="Decimal" Direction="Input" ParameterName="@Original_CREATE_USER_ID" Precision="18" ProviderType="Decimal" Scale="0" Size="0" SourceColumn="CREATE_USER_ID" SourceColumnNullMapping="False" SourceVersion="Original">
+                      </Parameter>
+                      <Parameter AllowDbNull="False" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_CREATE_USER_NAME" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="CREATE_USER_NAME" SourceColumnNullMapping="False" SourceVersion="Original">
+                      </Parameter>
+                      <Parameter AllowDbNull="False" AutogeneratedName="" DataSourceName="" DbType="DateTime" Direction="Input" ParameterName="@Original_CREATE_DATE" Precision="0" ProviderType="DateTime" Scale="0" Size="0" SourceColumn="CREATE_DATE" SourceColumnNullMapping="False" SourceVersion="Original">
+                      </Parameter>
+                      <Parameter AllowDbNull="False" AutogeneratedName="" DataSourceName="" DbType="Decimal" Direction="Input" ParameterName="@Original_MODIFY_USER_ID" Precision="18" ProviderType="Decimal" Scale="0" Size="0" SourceColumn="MODIFY_USER_ID" SourceColumnNullMapping="False" SourceVersion="Original">
+                      </Parameter>
+                      <Parameter AllowDbNull="False" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_MODIFY_USER_NAME" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="MODIFY_USER_NAME" SourceColumnNullMapping="False" SourceVersion="Original">
+                      </Parameter>
+                      <Parameter AllowDbNull="False" AutogeneratedName="" DataSourceName="" DbType="DateTime" Direction="Input" ParameterName="@Original_MODIFY_DATE" Precision="0" ProviderType="DateTime" Scale="0" Size="0" SourceColumn="MODIFY_DATE" SourceColumnNullMapping="False" SourceVersion="Original">
+                      </Parameter>
+                      <Parameter AllowDbNull="True" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_SALER_DESCRIPTIONS" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="SALER_DESCRIPTIONS" SourceColumnNullMapping="True" SourceVersion="Original">
+                      </Parameter>
+                      <Parameter AllowDbNull="True" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_SALER_DESCRIPTIONS" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="SALER_DESCRIPTIONS" SourceColumnNullMapping="False" SourceVersion="Original">
+                      </Parameter>
+                      <Parameter AllowDbNull="False" AutogeneratedName="" DataSourceName="" DbType="AnsiStringFixedLength" Direction="Input" ParameterName="@Original_sync_state" Precision="0" ProviderType="Char" Scale="0" Size="0" SourceColumn="sync_state" SourceColumnNullMapping="False" SourceVersion="Original">
+                      </Parameter>
+                    </Parameters>
+                  </DbCommand>
+                </UpdateCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="ID" DataSetColumn="ID" />
+              <Mapping SourceColumn="DATA_PRODUCT_ID" DataSetColumn="DATA_PRODUCT_ID" />
+              <Mapping SourceColumn="PROJECT_ID" DataSetColumn="PROJECT_ID" />
+              <Mapping SourceColumn="CODE" DataSetColumn="CODE" />
+              <Mapping SourceColumn="RECEIVE_ID" DataSetColumn="RECEIVE_ID" />
+              <Mapping SourceColumn="ORD_ID" DataSetColumn="ORD_ID" />
+              <Mapping SourceColumn="ORD_ITEM_ID" DataSetColumn="ORD_ITEM_ID" />
+              <Mapping SourceColumn="PROJECT_PRODUCT_ID" DataSetColumn="PROJECT_PRODUCT_ID" />
+              <Mapping SourceColumn="BUYER_ID" DataSetColumn="BUYER_ID" />
+              <Mapping SourceColumn="BUYER_NAME" DataSetColumn="BUYER_NAME" />
+              <Mapping SourceColumn="BUYER_NAME_ABBR" DataSetColumn="BUYER_NAME_ABBR" />
+              <Mapping SourceColumn="SALER_ID" DataSetColumn="SALER_ID" />
+              <Mapping SourceColumn="SALER_NAME" DataSetColumn="SALER_NAME" />
+              <Mapping SourceColumn="SALER_NAME_ABBR" DataSetColumn="SALER_NAME_ABBR" />
+              <Mapping SourceColumn="SENDER_ID" DataSetColumn="SENDER_ID" />
+              <Mapping SourceColumn="SENDER_NAME" DataSetColumn="SENDER_NAME" />
+              <Mapping SourceColumn="SENDER_NAME_ABBR" DataSetColumn="SENDER_NAME_ABBR" />
+              <Mapping SourceColumn="MANUFACTURE_ID" DataSetColumn="MANUFACTURE_ID" />
+              <Mapping SourceColumn="MANUFACTURE_NAME" DataSetColumn="MANUFACTURE_NAME" />
+              <Mapping SourceColumn="MANUFACTURE_NAME_ABBR" DataSetColumn="MANUFACTURE_NAME_ABBR" />
+              <Mapping SourceColumn="COMMON_NAME" DataSetColumn="COMMON_NAME" />
+              <Mapping SourceColumn="PRODUCT_NAME" DataSetColumn="PRODUCT_NAME" />
+              <Mapping SourceColumn="PRODUCT_CODE" DataSetColumn="PRODUCT_CODE" />
+              <Mapping SourceColumn="GOODS_NO" DataSetColumn="GOODS_NO" />
+              <Mapping SourceColumn="BARCODE" DataSetColumn="BARCODE" />
+              <Mapping SourceColumn="PBNO" DataSetColumn="PBNO" />
+              <Mapping SourceColumn="BRAND" DataSetColumn="BRAND" />
+              <Mapping SourceColumn="SPEC_ID" DataSetColumn="SPEC_ID" />
+              <Mapping SourceColumn="MODEL_ID" DataSetColumn="MODEL_ID" />
+              <Mapping SourceColumn="SPEC" DataSetColumn="SPEC" />
+              <Mapping SourceColumn="MODEL" DataSetColumn="MODEL" />
+              <Mapping SourceColumn="SEND_BATCH_NO" DataSetColumn="SEND_BATCH_NO" />
+              <Mapping SourceColumn="INSTORE_BATCH_NO" DataSetColumn="INSTORE_BATCH_NO" />
+              <Mapping SourceColumn="PRICE" DataSetColumn="PRICE" />
+              <Mapping SourceColumn="SUM" DataSetColumn="SUM" />
+              <Mapping SourceColumn="BASE_MEASURE_SPEC" DataSetColumn="BASE_MEASURE_SPEC" />
+              <Mapping SourceColumn="BASE_MEARSURE_MATER" DataSetColumn="BASE_MEARSURE_MATER" />
+              <Mapping SourceColumn="BASE_MEASURE" DataSetColumn="BASE_MEASURE" />
+              <Mapping SourceColumn="SEND_MEASURE" DataSetColumn="SEND_MEASURE" />
+              <Mapping SourceColumn="SEND_MEASURE_EX" DataSetColumn="SEND_MEASURE_EX" />
+              <Mapping SourceColumn="AMOUNT" DataSetColumn="AMOUNT" />
+              <Mapping SourceColumn="STATE" DataSetColumn="STATE" />
+              <Mapping SourceColumn="SEND_OPERATOR_ID" DataSetColumn="SEND_OPERATOR_ID" />
+              <Mapping SourceColumn="SEND_OPERATOR_NAME" DataSetColumn="SEND_OPERATOR_NAME" />
+              <Mapping SourceColumn="SEND_OPERATE_DATE" DataSetColumn="SEND_OPERATE_DATE" />
+              <Mapping SourceColumn="INSTORE_OPERATOR_ID" DataSetColumn="INSTORE_OPERATOR_ID" />
+              <Mapping SourceColumn="INSTORE_OPERATOR_NAME" DataSetColumn="INSTORE_OPERATOR_NAME" />
+              <Mapping SourceColumn="INSTORE_OPERATE_DATE" DataSetColumn="INSTORE_OPERATE_DATE" />
+              <Mapping SourceColumn="BUYER_DESCRIPTIONS" DataSetColumn="BUYER_DESCRIPTIONS" />
+              <Mapping SourceColumn="CREATE_USER_ID" DataSetColumn="CREATE_USER_ID" />
+              <Mapping SourceColumn="CREATE_USER_NAME" DataSetColumn="CREATE_USER_NAME" />
+              <Mapping SourceColumn="CREATE_DATE" DataSetColumn="CREATE_DATE" />
+              <Mapping SourceColumn="MODIFY_USER_ID" DataSetColumn="MODIFY_USER_ID" />
+              <Mapping SourceColumn="MODIFY_USER_NAME" DataSetColumn="MODIFY_USER_NAME" />
+              <Mapping SourceColumn="MODIFY_DATE" DataSetColumn="MODIFY_DATE" />
+              <Mapping SourceColumn="SALER_DESCRIPTIONS" DataSetColumn="SALER_DESCRIPTIONS" />
+              <Mapping SourceColumn="sync_state" DataSetColumn="sync_state" />
+            </Mappings>
+            <Sources>
+            </Sources>
+          </TableAdapter>
+        </Tables>
+        <Sources>
+        </Sources>
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="ReturnDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="ReturnDataSet" msprop:Generator_DataSetName="ReturnDataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="HC_ORD_BUYER_RETURN" msprop:Generator_UserTableName="HC_ORD_BUYER_RETURN" msprop:Generator_RowDeletedName="HC_ORD_BUYER_RETURNRowDeleted" msprop:Generator_RowChangedName="HC_ORD_BUYER_RETURNRowChanged" msprop:Generator_RowClassName="HC_ORD_BUYER_RETURNRow" msprop:Generator_RowChangingName="HC_ORD_BUYER_RETURNRowChanging" msprop:Generator_RowEvArgName="HC_ORD_BUYER_RETURNRowChangeEvent" msprop:Generator_RowEvHandlerName="HC_ORD_BUYER_RETURNRowChangeEventHandler" msprop:Generator_TableClassName="HC_ORD_BUYER_RETURNDataTable" msprop:Generator_TableVarName="tableHC_ORD_BUYER_RETURN" msprop:Generator_RowDeletingName="HC_ORD_BUYER_RETURNRowDeleting" msprop:Generator_TablePropName="HC_ORD_BUYER_RETURN">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ID" msprop:Generator_UserColumnName="ID" msprop:Generator_ColumnVarNameInTable="columnID" msprop:Generator_ColumnPropNameInRow="ID" msprop:Generator_ColumnPropNameInTable="IDColumn" type="xs:decimal" />
+              <xs:element name="DATA_PRODUCT_ID" msprop:Generator_UserColumnName="DATA_PRODUCT_ID" msprop:Generator_ColumnVarNameInTable="columnDATA_PRODUCT_ID" msprop:Generator_ColumnPropNameInRow="DATA_PRODUCT_ID" msprop:Generator_ColumnPropNameInTable="DATA_PRODUCT_IDColumn" type="xs:decimal" minOccurs="0" />
+              <xs:element name="PROJECT_ID" msprop:Generator_UserColumnName="PROJECT_ID" msprop:Generator_ColumnVarNameInTable="columnPROJECT_ID" msprop:Generator_ColumnPropNameInRow="PROJECT_ID" msprop:Generator_ColumnPropNameInTable="PROJECT_IDColumn" type="xs:decimal" />
+              <xs:element name="CODE" msprop:Generator_UserColumnName="CODE" msprop:Generator_ColumnVarNameInTable="columnCODE" msprop:Generator_ColumnPropNameInRow="CODE" msprop:Generator_ColumnPropNameInTable="CODEColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="RECEIVE_ID" msprop:Generator_UserColumnName="RECEIVE_ID" msprop:Generator_ColumnVarNameInTable="columnRECEIVE_ID" msprop:Generator_ColumnPropNameInRow="RECEIVE_ID" msprop:Generator_ColumnPropNameInTable="RECEIVE_IDColumn" type="xs:decimal" />
+              <xs:element name="ORD_ID" msprop:Generator_UserColumnName="ORD_ID" msprop:Generator_ColumnVarNameInTable="columnORD_ID" msprop:Generator_ColumnPropNameInRow="ORD_ID" msprop:Generator_ColumnPropNameInTable="ORD_IDColumn" type="xs:decimal" minOccurs="0" />
+              <xs:element name="ORD_ITEM_ID" msprop:Generator_UserColumnName="ORD_ITEM_ID" msprop:Generator_ColumnVarNameInTable="columnORD_ITEM_ID" msprop:Generator_ColumnPropNameInRow="ORD_ITEM_ID" msprop:Generator_ColumnPropNameInTable="ORD_ITEM_IDColumn" type="xs:decimal" minOccurs="0" />
+              <xs:element name="PROJECT_PRODUCT_ID" msprop:Generator_UserColumnName="PROJECT_PRODUCT_ID" msprop:Generator_ColumnVarNameInTable="columnPROJECT_PRODUCT_ID" msprop:Generator_ColumnPropNameInRow="PROJECT_PRODUCT_ID" msprop:Generator_ColumnPropNameInTable="PROJECT_PRODUCT_IDColumn" type="xs:decimal" />
+              <xs:element name="BUYER_ID" msprop:Generator_UserColumnName="BUYER_ID" msprop:Generator_ColumnVarNameInTable="columnBUYER_ID" msprop:Generator_ColumnPropNameInRow="BUYER_ID" msprop:Generator_ColumnPropNameInTable="BUYER_IDColumn" type="xs:decimal" />
+              <xs:element name="BUYER_NAME" msprop:Generator_UserColumnName="BUYER_NAME" msprop:Generator_ColumnVarNameInTable="columnBUYER_NAME" msprop:Generator_ColumnPropNameInRow="BUYER_NAME" msprop:Generator_ColumnPropNameInTable="BUYER_NAMEColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="150" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="BUYER_NAME_ABBR" msprop:Generator_UserColumnName="BUYER_NAME_ABBR" msprop:Generator_ColumnVarNameInTable="columnBUYER_NAME_ABBR" msprop:Generator_ColumnPropNameInRow="BUYER_NAME_ABBR" msprop:Generator_ColumnPropNameInTable="BUYER_NAME_ABBRColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="150" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="SALER_ID" msprop:Generator_UserColumnName="SALER_ID" msprop:Generator_ColumnVarNameInTable="columnSALER_ID" msprop:Generator_ColumnPropNameInRow="SALER_ID" msprop:Generator_ColumnPropNameInTable="SALER_IDColumn" type="xs:decimal" />
+              <xs:element name="SALER_NAME" msprop:Generator_UserColumnName="SALER_NAME" msprop:Generator_ColumnVarNameInTable="columnSALER_NAME" msprop:Generator_ColumnPropNameInRow="SALER_NAME" msprop:Generator_ColumnPropNameInTable="SALER_NAMEColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="150" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="SALER_NAME_ABBR" msprop:Generator_UserColumnName="SALER_NAME_ABBR" msprop:Generator_ColumnVarNameInTable="columnSALER_NAME_ABBR" msprop:Generator_ColumnPropNameInRow="SALER_NAME_ABBR" msprop:Generator_ColumnPropNameInTable="SALER_NAME_ABBRColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="150" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="SENDER_ID" msprop:Generator_UserColumnName="SENDER_ID" msprop:Generator_ColumnVarNameInTable="columnSENDER_ID" msprop:Generator_ColumnPropNameInRow="SENDER_ID" msprop:Generator_ColumnPropNameInTable="SENDER_IDColumn" type="xs:decimal" />
+              <xs:element name="SENDER_NAME" msprop:Generator_UserColumnName="SENDER_NAME" msprop:Generator_ColumnVarNameInTable="columnSENDER_NAME" msprop:Generator_ColumnPropNameInRow="SENDER_NAME" msprop:Generator_ColumnPropNameInTable="SENDER_NAMEColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="150" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="SENDER_NAME_ABBR" msprop:Generator_UserColumnName="SENDER_NAME_ABBR" msprop:Generator_ColumnVarNameInTable="columnSENDER_NAME_ABBR" msprop:Generator_ColumnPropNameInRow="SENDER_NAME_ABBR" msprop:Generator_ColumnPropNameInTable="SENDER_NAME_ABBRColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="150" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="MANUFACTURE_ID" msprop:Generator_UserColumnName="MANUFACTURE_ID" msprop:Generator_ColumnVarNameInTable="columnMANUFACTURE_ID" msprop:Generator_ColumnPropNameInRow="MANUFACTURE_ID" msprop:Generator_ColumnPropNameInTable="MANUFACTURE_IDColumn" type="xs:decimal" />
+              <xs:element name="MANUFACTURE_NAME" msprop:Generator_UserColumnName="MANUFACTURE_NAME" msprop:Generator_ColumnVarNameInTable="columnMANUFACTURE_NAME" msprop:Generator_ColumnPropNameInRow="MANUFACTURE_NAME" msprop:Generator_ColumnPropNameInTable="MANUFACTURE_NAMEColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="150" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="MANUFACTURE_NAME_ABBR" msprop:Generator_UserColumnName="MANUFACTURE_NAME_ABBR" msprop:Generator_ColumnVarNameInTable="columnMANUFACTURE_NAME_ABBR" msprop:Generator_ColumnPropNameInRow="MANUFACTURE_NAME_ABBR" msprop:Generator_ColumnPropNameInTable="MANUFACTURE_NAME_ABBRColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="150" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="COMMON_NAME" msprop:Generator_UserColumnName="COMMON_NAME" msprop:Generator_ColumnVarNameInTable="columnCOMMON_NAME" msprop:Generator_ColumnPropNameInRow="COMMON_NAME" msprop:Generator_ColumnPropNameInTable="COMMON_NAMEColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="PRODUCT_NAME" msprop:Generator_UserColumnName="PRODUCT_NAME" msprop:Generator_ColumnVarNameInTable="columnPRODUCT_NAME" msprop:Generator_ColumnPropNameInRow="PRODUCT_NAME" msprop:Generator_ColumnPropNameInTable="PRODUCT_NAMEColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="PRODUCT_CODE" msprop:Generator_UserColumnName="PRODUCT_CODE" msprop:Generator_ColumnVarNameInTable="columnPRODUCT_CODE" msprop:Generator_ColumnPropNameInRow="PRODUCT_CODE" msprop:Generator_ColumnPropNameInTable="PRODUCT_CODEColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="GOODS_NO" msprop:Generator_UserColumnName="GOODS_NO" msprop:Generator_ColumnVarNameInTable="columnGOODS_NO" msprop:Generator_ColumnPropNameInRow="GOODS_NO" msprop:Generator_ColumnPropNameInTable="GOODS_NOColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="BARCODE" msprop:Generator_UserColumnName="BARCODE" msprop:Generator_ColumnVarNameInTable="columnBARCODE" msprop:Generator_ColumnPropNameInRow="BARCODE" msprop:Generator_ColumnPropNameInTable="BARCODEColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="PBNO" msprop:Generator_UserColumnName="PBNO" msprop:Generator_ColumnVarNameInTable="columnPBNO" msprop:Generator_ColumnPropNameInRow="PBNO" msprop:Generator_ColumnPropNameInTable="PBNOColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="BRAND" msprop:Generator_UserColumnName="BRAND" msprop:Generator_ColumnVarNameInTable="columnBRAND" msprop:Generator_ColumnPropNameInRow="BRAND" msprop:Generator_ColumnPropNameInTable="BRANDColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="SPEC_ID" msprop:Generator_UserColumnName="SPEC_ID" msprop:Generator_ColumnVarNameInTable="columnSPEC_ID" msprop:Generator_ColumnPropNameInRow="SPEC_ID" msprop:Generator_ColumnPropNameInTable="SPEC_IDColumn" type="xs:decimal" />
+              <xs:element name="MODEL_ID" msprop:Generator_UserColumnName="MODEL_ID" msprop:Generator_ColumnVarNameInTable="columnMODEL_ID" msprop:Generator_ColumnPropNameInRow="MODEL_ID" msprop:Generator_ColumnPropNameInTable="MODEL_IDColumn" type="xs:decimal" />
+              <xs:element name="SPEC" msprop:Generator_UserColumnName="SPEC" msprop:Generator_ColumnVarNameInTable="columnSPEC" msprop:Generator_ColumnPropNameInRow="SPEC" msprop:Generator_ColumnPropNameInTable="SPECColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="4000" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="MODEL" msprop:Generator_UserColumnName="MODEL" msprop:Generator_ColumnVarNameInTable="columnMODEL" msprop:Generator_ColumnPropNameInRow="MODEL" msprop:Generator_ColumnPropNameInTable="MODELColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="3000" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="SEND_BATCH_NO" msprop:Generator_UserColumnName="SEND_BATCH_NO" msprop:Generator_ColumnVarNameInTable="columnSEND_BATCH_NO" msprop:Generator_ColumnPropNameInRow="SEND_BATCH_NO" msprop:Generator_ColumnPropNameInTable="SEND_BATCH_NOColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="INSTORE_BATCH_NO" msprop:Generator_UserColumnName="INSTORE_BATCH_NO" msprop:Generator_ColumnVarNameInTable="columnINSTORE_BATCH_NO" msprop:Generator_ColumnPropNameInRow="INSTORE_BATCH_NO" msprop:Generator_ColumnPropNameInTable="INSTORE_BATCH_NOColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="PRICE" msprop:Generator_UserColumnName="PRICE" msprop:Generator_ColumnVarNameInTable="columnPRICE" msprop:Generator_ColumnPropNameInRow="PRICE" msprop:Generator_ColumnPropNameInTable="PRICEColumn" type="xs:decimal" />
+              <xs:element name="SUM" msprop:Generator_UserColumnName="SUM" msprop:Generator_ColumnVarNameInTable="columnSUM" msprop:Generator_ColumnPropNameInRow="SUM" msprop:Generator_ColumnPropNameInTable="SUMColumn" type="xs:decimal" />
+              <xs:element name="BASE_MEASURE_SPEC" msprop:Generator_UserColumnName="BASE_MEASURE_SPEC" msprop:Generator_ColumnVarNameInTable="columnBASE_MEASURE_SPEC" msprop:Generator_ColumnPropNameInRow="BASE_MEASURE_SPEC" msprop:Generator_ColumnPropNameInTable="BASE_MEASURE_SPECColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="BASE_MEARSURE_MATER" msprop:Generator_UserColumnName="BASE_MEARSURE_MATER" msprop:Generator_ColumnVarNameInTable="columnBASE_MEARSURE_MATER" msprop:Generator_ColumnPropNameInRow="BASE_MEARSURE_MATER" msprop:Generator_ColumnPropNameInTable="BASE_MEARSURE_MATERColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="BASE_MEASURE" msprop:Generator_UserColumnName="BASE_MEASURE" msprop:Generator_ColumnVarNameInTable="columnBASE_MEASURE" msprop:Generator_ColumnPropNameInRow="BASE_MEASURE" msprop:Generator_ColumnPropNameInTable="BASE_MEASUREColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="SEND_MEASURE" msprop:Generator_UserColumnName="SEND_MEASURE" msprop:Generator_ColumnVarNameInTable="columnSEND_MEASURE" msprop:Generator_ColumnPropNameInRow="SEND_MEASURE" msprop:Generator_ColumnPropNameInTable="SEND_MEASUREColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="SEND_MEASURE_EX" msprop:Generator_UserColumnName="SEND_MEASURE_EX" msprop:Generator_ColumnVarNameInTable="columnSEND_MEASURE_EX" msprop:Generator_ColumnPropNameInRow="SEND_MEASURE_EX" msprop:Generator_ColumnPropNameInTable="SEND_MEASURE_EXColumn" type="xs:decimal" />
+              <xs:element name="AMOUNT" msprop:Generator_UserColumnName="AMOUNT" msprop:Generator_ColumnVarNameInTable="columnAMOUNT" msprop:Generator_ColumnPropNameInRow="AMOUNT" msprop:Generator_ColumnPropNameInTable="AMOUNTColumn" type="xs:decimal" />
+              <xs:element name="STATE" msprop:Generator_UserColumnName="STATE" msprop:Generator_ColumnVarNameInTable="columnSTATE" msprop:Generator_ColumnPropNameInRow="STATE" msprop:Generator_ColumnPropNameInTable="STATEColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="SEND_OPERATOR_ID" msprop:Generator_UserColumnName="SEND_OPERATOR_ID" msprop:Generator_ColumnVarNameInTable="columnSEND_OPERATOR_ID" msprop:Generator_ColumnPropNameInRow="SEND_OPERATOR_ID" msprop:Generator_ColumnPropNameInTable="SEND_OPERATOR_IDColumn" type="xs:decimal" minOccurs="0" />
+              <xs:element name="SEND_OPERATOR_NAME" msprop:Generator_UserColumnName="SEND_OPERATOR_NAME" msprop:Generator_ColumnVarNameInTable="columnSEND_OPERATOR_NAME" msprop:Generator_ColumnPropNameInRow="SEND_OPERATOR_NAME" msprop:Generator_ColumnPropNameInTable="SEND_OPERATOR_NAMEColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="150" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="SEND_OPERATE_DATE" msprop:Generator_UserColumnName="SEND_OPERATE_DATE" msprop:Generator_ColumnVarNameInTable="columnSEND_OPERATE_DATE" msprop:Generator_ColumnPropNameInRow="SEND_OPERATE_DATE" msprop:Generator_ColumnPropNameInTable="SEND_OPERATE_DATEColumn" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="INSTORE_OPERATOR_ID" msprop:Generator_UserColumnName="INSTORE_OPERATOR_ID" msprop:Generator_ColumnVarNameInTable="columnINSTORE_OPERATOR_ID" msprop:Generator_ColumnPropNameInRow="INSTORE_OPERATOR_ID" msprop:Generator_ColumnPropNameInTable="INSTORE_OPERATOR_IDColumn" type="xs:decimal" minOccurs="0" />
+              <xs:element name="INSTORE_OPERATOR_NAME" msprop:Generator_UserColumnName="INSTORE_OPERATOR_NAME" msprop:Generator_ColumnVarNameInTable="columnINSTORE_OPERATOR_NAME" msprop:Generator_ColumnPropNameInRow="INSTORE_OPERATOR_NAME" msprop:Generator_ColumnPropNameInTable="INSTORE_OPERATOR_NAMEColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="150" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="INSTORE_OPERATE_DATE" msprop:Generator_UserColumnName="INSTORE_OPERATE_DATE" msprop:Generator_ColumnVarNameInTable="columnINSTORE_OPERATE_DATE" msprop:Generator_ColumnPropNameInRow="INSTORE_OPERATE_DATE" msprop:Generator_ColumnPropNameInTable="INSTORE_OPERATE_DATEColumn" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="BUYER_DESCRIPTIONS" msprop:Generator_UserColumnName="BUYER_DESCRIPTIONS" msprop:Generator_ColumnVarNameInTable="columnBUYER_DESCRIPTIONS" msprop:Generator_ColumnPropNameInRow="BUYER_DESCRIPTIONS" msprop:Generator_ColumnPropNameInTable="BUYER_DESCRIPTIONSColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1000" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CREATE_USER_ID" msprop:Generator_UserColumnName="CREATE_USER_ID" msprop:Generator_ColumnVarNameInTable="columnCREATE_USER_ID" msprop:Generator_ColumnPropNameInRow="CREATE_USER_ID" msprop:Generator_ColumnPropNameInTable="CREATE_USER_IDColumn" type="xs:decimal" />
+              <xs:element name="CREATE_USER_NAME" msprop:Generator_UserColumnName="CREATE_USER_NAME" msprop:Generator_ColumnVarNameInTable="columnCREATE_USER_NAME" msprop:Generator_ColumnPropNameInRow="CREATE_USER_NAME" msprop:Generator_ColumnPropNameInTable="CREATE_USER_NAMEColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="200" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CREATE_DATE" msprop:Generator_UserColumnName="CREATE_DATE" msprop:Generator_ColumnVarNameInTable="columnCREATE_DATE" msprop:Generator_ColumnPropNameInRow="CREATE_DATE" msprop:Generator_ColumnPropNameInTable="CREATE_DATEColumn" type="xs:dateTime" />
+              <xs:element name="MODIFY_USER_ID" msprop:Generator_UserColumnName="MODIFY_USER_ID" msprop:Generator_ColumnVarNameInTable="columnMODIFY_USER_ID" msprop:Generator_ColumnPropNameInRow="MODIFY_USER_ID" msprop:Generator_ColumnPropNameInTable="MODIFY_USER_IDColumn" type="xs:decimal" />
+              <xs:element name="MODIFY_USER_NAME" msprop:Generator_UserColumnName="MODIFY_USER_NAME" msprop:Generator_ColumnVarNameInTable="columnMODIFY_USER_NAME" msprop:Generator_ColumnPropNameInRow="MODIFY_USER_NAME" msprop:Generator_ColumnPropNameInTable="MODIFY_USER_NAMEColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="200" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="MODIFY_DATE" msprop:Generator_UserColumnName="MODIFY_DATE" msprop:Generator_ColumnVarNameInTable="columnMODIFY_DATE" msprop:Generator_ColumnPropNameInRow="MODIFY_DATE" msprop:Generator_ColumnPropNameInTable="MODIFY_DATEColumn" type="xs:dateTime" />
+              <xs:element name="SALER_DESCRIPTIONS" msprop:Generator_UserColumnName="SALER_DESCRIPTIONS" msprop:Generator_ColumnVarNameInTable="columnSALER_DESCRIPTIONS" msprop:Generator_ColumnPropNameInRow="SALER_DESCRIPTIONS" msprop:Generator_ColumnPropNameInTable="SALER_DESCRIPTIONSColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1000" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="sync_state" msprop:Generator_UserColumnName="sync_state" msprop:Generator_ColumnVarNameInTable="columnsync_state" msprop:Generator_ColumnPropNameInRow="sync_state" msprop:Generator_ColumnPropNameInTable="sync_stateColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:HC_ORD_BUYER_RETURN" />
+      <xs:field xpath="mstns:ID" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

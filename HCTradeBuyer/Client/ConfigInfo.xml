@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<config>
+  <dbType>
+    <exl tablename="采购计划" tablenameEx="导出到货信息" txt="用于Excel的数据库类型" />
+    <fxp tablename="到货信息导出模板" tablenameEx="到货信息导出模板" txt="用于Foxpro的数据库类型" />    
+  </dbType>
+  <currentDb typeIm="" typeEx=""/>
+</config>

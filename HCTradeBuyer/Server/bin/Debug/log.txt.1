@@ -1,0 +1,3286 @@
+[Header]\r\n2007-11-26 16:04:47,218 [4864] DEBUG Emedchina.Commons.Data.DataBaseFacade [(null)] - select sysdate from dual
+2007-11-26 16:04:47,531 [4864] DEBUG Emedchina.Commons.Data.DataBaseFacade [(null)] - DbParameter Id's Value is 411847.
+2007-11-26 16:04:47,562 [4864] DEBUG Emedchina.Commons.Data.DataBaseFacade [(null)] - SELECT
+      ID,
+      DATA_PRODUCT_ID,
+      PROJECT_ID,
+      CODE,
+      RECEIVE_ID,
+      ORD_ID,
+      ORD_ITEM_ID,
+      PROJECT_PRODUCT_ID,
+      BUYER_ID,
+      BUYER_NAME,
+      BUYER_NAME_ABBR,
+      SALER_ID,
+      SALER_NAME,
+      SALER_NAME_ABBR,
+      SENDER_ID,
+      SENDER_NAME,
+      SENDER_NAME_ABBR,
+      MANUFACTURE_ID,
+      MANUFACTURE_NAME,
+      MANUFACTURE_NAME_ABBR,
+      COMMON_NAME,
+      PRODUCT_NAME,
+      PRODUCT_CODE,
+      GOODS_NO,
+      BARCODE,
+      PBNO,
+      BRAND,
+      SPEC_ID,
+      MODEL_ID,
+      SPEC,
+      MODEL,
+      SEND_BATCH_NO,
+      INSTORE_BATCH_NO,
+      PRICE,
+      SUM,
+      BASE_MEASURE_SPEC,
+      BASE_MEASURE_MATER,
+      BASE_MEASURE,
+      SEND_MEASURE,
+      SEND_MEASURE_EX,
+      AMOUNT,
+      STATE,
+      SEND_OPERATOR_ID,
+      SEND_OPERATOR_NAME,
+      SEND_OPERATOR_DATE,
+      INSTORE_OPERATOR_ID,
+      INSTORE_OPERATOR_NAME,
+      INSTORE_OPERATOR_DATE,
+      BUYER_DESCRIPTIONS,
+      CREATE_USER_ID,
+      CREATE_USER_NAME,
+      CREATE_DATE,
+      MODIFY_USER_ID,
+      MODIFY_USER_NAME,
+      MODIFY_DATE,
+      SALER_DESCRIPTIONS,
+      '1' as SYNC_STATE
+      FROM HC_ORD_BUYER_RETURN
+      WHERE STATE != '3' AND BUYER_ID = :Id
+2007-11-26 16:04:47,765 [4864] DEBUG Emedchina.Commons.Data.DataBaseFacade [(null)] - select sysdate from dual
+2007-11-26 16:04:47,765 [4864] DEBUG Emedchina.Commons.Data.DataBaseFacade [(null)] - DbParameter Id's Value is 411847.
+2007-11-26 16:04:47,828 [4864] DEBUG Emedchina.Commons.Data.DataBaseFacade [(null)] - SELECT
+      ID,
+      DATA_PRODUCT_ID,
+      PROJECT_ID,
+      PROJECT_PRODUCT_ID,
+      ORDER_ID,
+      ORDER_ITEM_ID,
+      RECEIVE_ID,
+      RETRUN_ID,
+      RESULT_TYPE,
+      TYPE,
+      CODE,
+      INVOICE_ID,
+      BUYER_ID,
+      BUYER_NAME,
+      BUYER_NAME_ABBR,
+      SALER_ID,
+      SALER_NAME,
+      SALER_NAME_ABBR,
+      SENDER_ID,
+      SENDER_NAME,
+      SENDER_NAME_ABBR,
+      MANUFACTURE_ID,
+      MANUFACTURE_NAME,
+      MANUFACTURE_NAME_ABBR,
+      PRODUCT_NAME,
+      PRODUCT_CODE,
+      SPEC_ID,
+      MODEL_ID,
+      SPEC,
+      MODEL,
+      COMMON_NAME,
+      BRAND,
+      GOODS_NO,
+      BARCODE,
+      PBNO,
+      BASE_MEASURE_SPEC,
+      BASE_MEASURE_MATER,
+      BASE_MEASURE,
+      SEND_MEASURE,
+      SEND_MEASURE_EX,
+      SEND_BATCH_NO,
+      INSTORE_BATCH_NO,
+      STORE_ROOM_ID,
+      STORE_ROOM_NAME,
+      ARRIVAL_ADDRESS,
+      ARRIVE_DATE,
+      PRICE,
+      FACT_AMOUNT,
+      FACT_SUM,
+      STATE,
+      SEND_OPERATOR_ID,
+      SEND_OPERATOR_NAME,
+      SEND_OPERATOR_DATE,
+      INSTORE_OPERATOR_ID,
+      INSTORE_OPERATOR_NAME,
+      INSTORE_OPERATOR_DATE,
+      BACK_AMOUNT,
+      BACK_SUM,
+      MODIFY_USER_ID,
+      MODIFY_USER_NAME,
+      MODIFY_DATE,
+      DESCRIPTIONS,
+      CREATE_USER_ID,
+      CREATE_USER_NAME,
+      CREATE_DATE,
+      '1' as SYNC_STATE
+      FROM HC_ORD_ORDER_RESULT
+      WHERE BUYER_ID = :Id
+2007-11-26 16:04:48,265 [4864] DEBUG Emedchina.Commons.Data.DataBaseFacade [(null)] - select sysdate from dual
+2007-11-26 16:04:48,281 [4864] DEBUG Emedchina.Commons.Data.DataBaseFacade [(null)] - DbParameter Id's Value is 411847.
+2007-11-26 16:04:48,296 [4864] DEBUG Emedchina.Commons.Data.DataBaseFacade [(null)] - SELECT
+      ID,
+      INVOICE_CODE,
+      BUYER_ID,
+      BUYER_NAME,
+      SENDER_ID,
+      SENDER_NAME,
+      TOTAL_SUM,
+      OVER_SUM,
+      SENDED_DATE,
+      STATE,
+      BUYER_DESCRIPTIONS,
+      CREATE_USER_ID,
+      CREATE_USER_NAME,
+      CREATE_DATE,
+      MODIFY_USER_ID,
+      MODIFY_USER_NAME,
+      MODIFY_DATE,
+      SALER_DESCRIPTIONS,
+      '1' as SYNC_STATE
+      FROM HC_ORD_INVOICE_FROM
+      WHERE STATE != '4' AND BUYER_ID = :Id
+2007-11-26 16:04:48,343 [4864] DEBUG Emedchina.Commons.Data.DataBaseFacade [(null)] - select sysdate from dual
+2007-11-26 16:04:48,359 [4864] DEBUG Emedchina.Commons.Data.DataBaseFacade [(null)] - DbParameter Id's Value is 411847.
+2007-11-26 16:04:48,390 [4864] DEBUG Emedchina.Commons.Data.DataBaseFacade [(null)] - SELECT
+      ID,
+      DATA_PRODUCT_ID,
+      PROJECT_ID,
+      INVOICE_FROM_ID,
+      PROJECT_PROD_ID,
+      BUYER_ID,
+      SALER_ID,
+      SALER_NAME,
+      SALER_NAME_ABBR,
+      MANUFACTURE_ID,
+      MANUFACTURE_NAME,
+      MANUFACTURE_NAME_ABBR,
+      COMMON_NAME,
+      PRODUCT_NAME,
+      PRODUCT_CODE,
+      SPEC_ID,
+      MODEL_ID,
+      SPEC,
+      MODEL,
+      BRAND,
+      GOODS_NO,
+      BARCODE,
+      BATCH_NO,
+      VALID_DATE,
+      STORE_ROOM_ID,
+      STORE_ROOM_NAME,
+      STORE_ROOM_ADDRESS,
+      BASE_MEASURE,
+      BASE_MEASURE_SPEC,
+      BASE_MEASURE_MATER,
+      SEND_MEASURE,
+      SEND_MEASURE_EX,
+      RETAIL_PRICE,
+      TRADE_PRICE,
+      AMOUNT,
+      SUM,
+      OVER_AMOUNT,
+      OVER_SUM,
+      STATE,
+      BUYER_DESCRIPTIONS,
+      BALANCE_ID,
+      BALANCE_NAME,
+      BALANCE_EASY,
+      BALANCE_FAST,
+      BALANCE_WUBI,
+      CREATE_USER_ID,
+      CREATE_USER_NAME,
+      CREATE_DATE,
+      MODIFY_USER_ID,
+      MODIFY_USER_NAME,
+      MODIFY_DATE,
+      SALER_DESCRIPTIONS,
+      PBNO,
+      SEND_BATCH_NO,
+      INSTORE_BATCH_NO,
+      '1' as SYNC_STATE
+      FROM HC_ORD_INVOICE_FROM_ITEM
+      WHERE STATE != '3' AND BUYER_ID = :Id
+2007-11-26 16:04:48,609 [4864] DEBUG Emedchina.Commons.Data.DataBaseFacade [(null)] - select sysdate from dual
+2007-11-26 16:04:48,687 [4864] DEBUG Emedchina.Commons.Data.DataBaseFacade [(null)] - DbParameter Id's Value is 411847.
+2007-11-26 16:04:48,687 [4864] DEBUG Emedchina.Commons.Data.DataBaseFacade [(null)] - SELECT
+      ID,
+      CODE,
+      BUYER_ID,
+      BUYER_NAME,
+      BUYER_NAME_ABBR,
+      SENDER_ID,
+      SENDER_NAME,
+      SENDER_NAME_ABBR,
+      STATE,
+      REMARK,
+      CREATE_USER_NAME,
+      CREATE_DATE,
+      MODIFY_USER_ID,
+      MODIFY_USER_NAME,
+      MODIFY_DATE,
+      CREATE_USER_ID,
+      SEND_USER_ID,
+      SEND_USER_NAME,
+      SEND_DATE,
+      '1' as SYNC_STATE
+      FROM HC_ORD_ORD_STOCK
+      WHERE STATE!= '4' AND BUYER_ID = :Id
+2007-11-26 16:04:48,750 [4864] DEBUG Emedchina.Commons.Data.DataBaseFacade [(null)] - select sysdate from dual
+2007-11-26 16:04:48,765 [4864] DEBUG Emedchina.Commons.Data.DataBaseFacade [(null)] - DbParameter Id's Value is 411847.
+2007-11-26 16:04:48,796 [4864] DEBUG Emedchina.Commons.Data.DataBaseFacade [(null)] - SELECT
+      hosi.ID,
+      hosi.DATA_PRODUCT_ID,
+      hosi.PROJECT_ID,
+      hosi.STOCK_ID,
+      hosi.PROJECT_PROD_ID,
+      hosi.MANUFACTURE_ID,
+      hosi.MANUFACTURE_NAME,
+      hosi.MANUFACTURE_NAME_ABBR,
+      hosi.COMMON_NAME,
+      hosi.PRODUCT_NAME,
+      hosi.PRODUCT_CODE,
+      hosi.BRAND,
+      hosi.SPEC_ID,
+      hosi.MODEL_ID,
+      hosi.SPEC,
+      hosi.MODEL,
+      hosi.GOODS_NO,
+      hosi.BARCODE,
+      hosi.BATCH_NO,
+      hosi.VALID_DATE,
+      hosi.NUM,
+      hosi.STATE,
+      hosi.REMARK,
+      hosi.CREATE_USER_ID,
+      hosi.CREATE_USER_NAME,
+      hosi.CREATE_DATE,
+      hosi.MODIFY_USER_ID,
+      hosi.MODIFY_USER_NAME,
+      hosi.MODIFY_DATE,
+      hosi.PBNO,
+      hosi.SEND_BATCH_NO,
+      hosi.INSTORE_BATCH_NO,
+      '1' as SYNC_STATE
+      FROM HC_ORD_ORD_STOCK_ITEM hosi, HC_ORD_ORD_STOCK hoos
+      WHERE hosi.STATE!= '4' AND  hosi.STOCK_ID = hoos.ID AND hoos.BUYER_ID = :Id
+2007-11-26 16:04:48,937 [4864] DEBUG Emedchina.Commons.Data.DataBaseFacade [(null)] - select sysdate from dual
+2007-11-26 16:04:48,953 [4864] DEBUG Emedchina.Commons.Data.DataBaseFacade [(null)] - DbParameter Id's Value is 411847.
+2007-11-26 16:04:48,953 [4864] DEBUG Emedchina.Commons.Data.DataBaseFacade [(null)] - SELECT
+      ID,
+      DATA_PRODUCT_ID,
+      PROJECT_ID,
+      BUYER_ID,
+      SALER_ID,
+      SENDER_ID,
+      PBNO,
+      SEND_BATCH_NO,
+      INSTORE_BATCH_NO,
+      SENDER_NAME,
+      PROJECT_PRODUCT_ID,
+      SPEC_ID,
+      MODEL_ID,
+      BARCODE,
+      PRICE,
+      BATCH_NO,
+      VALID_DATE,
+      NUM,
+      REMARK,
+      STATE,
+      CREATE_USER_ID,
+      CREATE_USER_NAME,
+      CREATE_DATE,
+      MODIFY_USER_ID,
+      MODIFY_USER_NAME,
+      MODIFY_DATE,
+      STOCK_ITEM_ID,
+      '1' as SYNC_STATE
+      FROM HC_ORD_SECOND_AYRLNV
+      WHERE BUYER_ID = :Id
+2007-11-26 16:04:49,031 [4864] DEBUG Emedchina.Commons.Data.DataBaseFacade [(null)] - select sysdate from dual
+2007-11-26 16:04:49,046 [4864] DEBUG Emedchina.Commons.Data.DataBaseFacade [(null)] - DbParameter Id's Value is 411847.
+2007-11-26 16:04:49,062 [4864] DEBUG Emedchina.Commons.Data.DataBaseFacade [(null)] - SELECT
+      ID,
+      SECOND_ID,
+      DATA_PRODUCT_ID,
+      PROJECT_ID,
+      PROJECT_PRODUCT_ID,
+      GOODS_NO,
+      BARCODE,
+      PBNO,
+      SEND_BATCH_NO,
+      INSTORE_BATCH_NO,
+      STORE_ROOM_ID,
+      STORE_ROOM_NAME,
+      ARRIVAL_ADDRESS,
+      ARRIVE_DATE,
+      PRICE,
+      FACT_AMOUNT,
+      FACT_SUM,
+      STATUS,
+      CREATE_USER_ID,
+      CREATE_USER_NAME,
+      CREATE_DATE,
+      MODIFY_USER_ID,
+      MODIFY_USER_NAME,
+      MODIFY_DATE,
+      DESCRIPTIONS,
+      BUYER_ID,
+      SENDER_ID,
+      '1' as SYNC_STATE
+      FROM HC_ORG_SECOND_AYRLNV_USE
+      WHERE STATUS != '0' AND BUYER_ID = :Id
+2007-11-26 16:04:49,187 [4864] DEBUG Emedchina.Commons.Data.DataBaseFacade [(null)] - select sysdate from dual
+2007-11-26 16:04:49,187 [4864] DEBUG Emedchina.Commons.Data.DataBaseFacade [(null)] - DbParameter Id's Value is 411847.
+2007-11-26 16:04:49,265 [4864] DEBUG Emedchina.Commons.Data.DataBaseFacade [(null)] - SELECT
+      ID,
+      PROJECT_ID,
+      BULLETIN_ID,
+      RECEIVER_ID,
+      IS_READ,
+      CREATE_USER_NAME,
+      CREATE_DATE,
+      MODIFY_USER_ID,
+      MODIFY_USER_NAME,
+      MODIFY_DATE,
+      CREATE_USER_ID,
+      '1' as SYNC_STATE
+      FROM HC_BULLETIN_RECEIVER
+      WHERE RECEIVER_ID = :Id
+2007-11-26 16:04:49,312 [4864] DEBUG Emedchina.Commons.Data.DataBaseFacade [(null)] - select sysdate from dual
+2007-11-26 16:04:49,328 [4864] DEBUG Emedchina.Commons.Data.DataBaseFacade [(null)] - DbParameter Id's Value is 411847.
+2007-11-26 16:04:49,437 [4864] DEBUG Emedchina.Commons.Data.DataBaseFacade [(null)] - SELECT
+      HBI.ID,
+      HBI.PROJECT_ID,
+      HBI.TITLE,
+      HBI.CONTENT,
+      HBI.STATE,
+      HBI.TYPE,
+      HBI.ISSUER_ORG_ID,
+      HBI.ISSUER_ID,
+      HBI.ISSUER_NAME,
+      HBI.ISSUE_DATE,
+      HBI.CREATE_USER_ID,
+      HBI.CREATE_USER_NAME,
+      HBI.CREATE_DATE,
+      HBI.MODIFY_USER_ID,
+      HBI.MODIFY_USER_NAME,
+      HBI.MODIFY_DATE
+      FROM HC_BULLETIN_INFO HBI,HC_BULLETIN_RECEIVER HBR
+      WHERE HBI.ID = HBR.BULLETIN_ID
+      AND STATE != '3' AND HBR.RECEIVER_ID = :Id
+2007-11-26 16:04:49,578 [4864] DEBUG Emedchina.Commons.Data.DataBaseFacade [(null)] - select sysdate from dual
+2007-11-26 16:04:49,593 [4864] DEBUG Emedchina.Commons.Data.DataBaseFacade [(null)] - DbParameter Id's Value is 411847.
+2007-11-26 16:04:49,640 [4864] DEBUG Emedchina.Commons.Data.DataBaseFacade [(null)] - SELECT
+      hppc.ID,
+      hppc.CLASS_NAME,
+      hppc.PROJECT_ID,
+      hppc.CREATE_USER_ID,
+      hppc.CREATE_USER_NAME,
+      hppc.CREATE_DATE,
+      hppc.MODIFY_USER_ID,
+      hppc.MODIFY_USER_NAME,
+      hppc.MODIFY_DATE
+      FROM HC_PROJECT_PRODUCT_CLASS hppc , HC_PROJECT_ORG hpo
+      WHERE hppc.PROJECT_ID = hpo.PROJECT_ID
+      AND hpo.ENABLE_FLAG != '0' AND hpo.DATA_ORG_ID = :Id
+2007-11-26 16:04:49,671 [4864] DEBUG Emedchina.Commons.Data.DataBaseFacade [(null)] - select sysdate from dual
+2007-11-26 16:04:49,687 [4864] DEBUG Emedchina.Commons.Data.DataBaseFacade [(null)] - DbParameter Id's Value is 411847.
+2007-11-26 16:04:51,593 [4864] DEBUG Emedchina.Commons.Data.DataBaseFacade [(null)] - SELECT
+      hppc.ID,
+      hppc.CLASS_ID,
+      hppc.PROJECT_ID,
+      hppc.PRODUCT_ID,
+      hppc.CREATE_USER_ID,
+      hppc.CREATE_USER_NAME,
+      hppc.CREATE_DATE,
+      hppc.MODIFY_USER_ID,
+      hppc.MODIFY_USER_NAME,
+      hppc.MODIFY_DATE
+      FROM HC_PROJECT_PROD_CLASS_CONTENT hppc , HC_PROJECT_ORG hpo
+      WHERE hppc.PROJECT_ID = hpo.PROJECT_ID
+      AND hpo.ENABLE_FLAG != '0' AND hpo.DATA_ORG_ID = :Id
+      AND exists (select 1
+      from hc_ord_buyer_sender b
+      where b.enable_flag = '1'
+      AND b.buyer_id = :Id
+      AND b.project_prod_id = hppc.PRODUCT_ID)
+2007-11-26 16:04:58,406 [4864] DEBUG Emedchina.Commons.Data.DataBaseFacade [(null)] - select sysdate from dual
+2007-11-26 16:04:58,421 [4864] DEBUG Emedchina.Commons.Data.DataBaseFacade [(null)] - DbParameter Id's Value is 411847.
+2007-11-26 16:05:00,437 [4864] DEBUG Emedchina.Commons.Data.DataBaseFacade [(null)] - SELECT
+      ID,
+      CREATE_USER_ID,
+      BUYER_ID,
+      SALER_ID,
+      CLASS_ID,
+      INVOICE_FLAG,
+      ORDER_FLAG,
+      STOCK_FLAG,
+      CREATE_USER_NAME,
+      CREATE_DATE,
+      MODIFY_USER_ID,
+      MODIFY_USER_NAME,
+      MODIFY_DATE,
+      PROJECT_ID
+      FROM HC_PROJECT_PROD_CLASS_CONFIG
+      WHERE BUYER_ID = :Id
+2007-11-26 16:05:07,203 [4864] DEBUG Emedchina.Commons.Data.DataBaseFacade [(null)] - select sysdate from dual
+2007-11-26 16:05:07,218 [4864] DEBUG Emedchina.Commons.Data.DataBaseFacade [(null)] - DbParameter Id's Value is 411847.
+2007-11-26 16:05:07,234 [4864] DEBUG Emedchina.Commons.Data.DataBaseFacade [(null)] - SELECT
+      ID,
+      ORGID,
+      HIT_COMM_ID,
+      PRODUCT_MNEMONIC,
+      SELF_PACKAGE,
+      ALIAS,
+      ALIAS_PINYIN,
+      MODIFY_USERID,
+      MODIFY_DATE,
+      '1' as SYNC_STATE
+      FROM HC_SELF_DEFINE_INFO
+      WHERE ORGID = :Id
+2007-11-26 16:05:07,281 [4864] DEBUG Emedchina.Commons.Data.DataBaseFacade [(null)] - select sysdate from dual
+2007-11-26 16:05:07,296 [4864] DEBUG Emedchina.Commons.Data.DataBaseFacade [(null)] - DbParameter Id's Value is 411847.
+2007-11-26 16:05:07,312 [4864] DEBUG Emedchina.Commons.Data.DataBaseFacade [(null)] - SELECT
+      ID,
+      MAP_ORGTYPE,
+      MAP_ORGID,
+      PROJECT_PROD_ID,
+      HH_MODE_ID,
+      HH_SPEC_ID,
+      PRODUCT_ID,
+      HIS_PRODUCT_ID,
+      COMMON_NAME,
+      PRODUCT_NAME,
+      COMMERCE_NAME,
+      BRAND,
+      MODE_ID,
+      MODE_NAME,
+      SPEC_ID,
+      SPEC,
+      BASE_MEASURE,
+      BASE_MEASURE_SPEC,
+      BASE_MEASURE_MATE,
+      STAND_RATE,
+      FACTORY_CODE,
+      FACTORY_Name,
+      SALER_CODE,
+      SALER_NAME,
+      SENDER_CODE,
+      SENDER_NAME,
+      STOCK_ID,
+      STOCK_NAME,
+      MODIFY_USERID,
+      MODIFY_DATE,
+      PROCESS_FLAG,
+      '1' as SYNC_STATE,
+      REMARK,
+      ISMAP
+      FROM HC_PRODUCT_MAP
+      WHERE MAP_ORGID = :Id
+2007-11-26 16:05:07,359 [4864] DEBUG Emedchina.Commons.Data.DataBaseFacade [(null)] - select sysdate from dual
+2007-11-26 16:05:07,375 [4864] DEBUG Emedchina.Commons.Data.DataBaseFacade [(null)] - DbParameter Id's Value is 411847.
+2007-11-26 16:05:07,375 [4864] DEBUG Emedchina.Commons.Data.DataBaseFacade [(null)] - SELECT
+      ID,
+      MAP_ORGTYPE,
+      MAP_ORGID,
+      ORG_ID,
+      HIS_ORG_ID,
+      FULL_NAME,
+      EASY_NAME,
+      ADDRESS,
+      POSTCODE,
+      TELPHONE,
+      LINKMAN,
+      ISFACTORY,
+      ISSENDER,
+      ISSALER,
+      MODIFY_USERID,
+      MODIFY_DATE,
+      PROCESS_FLAG,
+      '1' as SYNC_STATE,
+      REMARK,
+      ISMAP
+      FROM HC_CORP_MAP
+      WHERE MAP_ORGID = :Id
+2007-11-26 16:05:07,406 [4864] DEBUG Emedchina.Commons.Data.DataBaseFacade [(null)] - select sysdate from dual
+2007-11-26 16:07:32,015 [7128] DEBUG Emedchina.Commons.Data.DataBaseFacade [(null)] - DbParameter Id's Value is 411847.
+2007-11-26 16:07:32,015 [7128] DEBUG Emedchina.Commons.Data.DataBaseFacade [(null)] - SELECT
+      u.ID ,
+      u.MAIL,
+      u.NAME,
+      u.PASSWORD,
+      u.ADMIN_LEVEL,
+      u.DESCRIPTION,
+      u.ENABLE_FLAG,
+      u.REMARK,
+      u.CREATE_USER,
+      u.CREATE_NAME,
+      u.CREATE_DATE,
+      u.MODIFY_USER,
+      u.MODIFY_NAME,
+      u.MODIFY_DATE,
+      u.CA_FLAG,
+      u.KEY_FLAG,
+      u.PW_FLAG,
+      u.LOGIN_DATE,
+      '1' AS SYNC_STATE
+      FROM cen_usr_user u, HC_USER_ORG uo
+      where u.id = uo.USER_ID and u.ENABLE_FLAG != '0' 
+      and uo.org_id = :Id
+2007-11-26 16:07:32,109 [7128] DEBUG Emedchina.Commons.Data.DataBaseFacade [(null)] - select sysdate from dual
+2007-11-26 16:07:32,343 [7128] DEBUG Emedchina.Commons.Data.DataBaseFacade [(null)] - Select
+      ID     ,
+      GOV_FLAG ,
+      AGENCY_FLAG,
+      BUYER_FLAG ,
+      MANUFACTURE_FLAG,
+      SALER_FLAG,
+      SENDER_FLAG,
+      ORG_NAME ,
+      ORG_ABBR,
+      SPELL_ABBR ,
+      ORG_NAME_WB,
+      LINK_MAN,
+      ORG_PHONE,
+      ORG_ADDRESS,
+      ENABLE_FLAG,
+      CREATE_USER_ID,
+      CREATE_USER_NAME,
+      CREATE_DATE,
+      MODIFY_USER_ID,
+      MODIFY_USER_NAME,
+      MODIFY_DATE
+      From HC_ORG
+      WHERE ENABLE_FLAG != '0'
+2007-11-26 16:07:40,125 [7128] DEBUG Emedchina.Commons.Data.DataBaseFacade [(null)] - select sysdate from dual
+2007-11-26 16:07:40,140 [7128] DEBUG Emedchina.Commons.Data.DataBaseFacade [(null)] - DbParameter Id's Value is 411847.
+2007-11-26 16:07:40,140 [7128] DEBUG Emedchina.Commons.Data.DataBaseFacade [(null)] - SELECT
+      ID  ,
+      USER_ID ,
+      ORG_ID,
+      CREATE_USER_NAME,
+      CREATE_USER_ID ,
+      CREATE_DATE,
+      MODIFY_USER_ID,
+      MODIFY_USER_NAME,
+      MODIFY_DATE
+      From HC_USER_ORG
+      WHERE ORG_ID = :Id
+2007-11-26 16:07:40,156 [7128] DEBUG Emedchina.Commons.Data.DataBaseFacade [(null)] - select sysdate from dual
+2007-11-26 16:07:40,171 [7128] DEBUG Emedchina.Commons.Data.DataBaseFacade [(null)] - DbParameter Id's Value is 411847.
+2007-11-26 16:07:40,187 [7128] DEBUG Emedchina.Commons.Data.DataBaseFacade [(null)] - SELECT
+      ID,
+      ORG_ID,
+      STORE_NAME,
+      STORE_ADDRESS,
+      LINKMAN,
+      TEL,
+      ENABLE_FLAG,
+      CREATE_USER_NAME,
+      CREATE_USER_ID,
+      CREATE_DATE,
+      MODIFY_USER_ID,
+      MODIFY_USER_NAME,
+      MODIFY_DATE,
+      TYPE,
+      '1' AS SYNC_STATE
+      FROM HC_BUYER_STORE
+      WHERE ORG_ID = :Id
+2007-11-26 16:07:40,250 [7128] DEBUG Emedchina.Commons.Data.DataBaseFacade [(null)] - select sysdate from dual
+2007-11-26 16:07:40,265 [6560] DEBUG Emedchina.Commons.Data.DataBaseFacade [(null)] - DbParameter Id's Value is 411847.
+2007-11-26 16:07:40,312 [6560] DEBUG Emedchina.Commons.Data.DataBaseFacade [(null)] - SELECT
+      ID ,
+      PROJECT_ID,
+      DATA_ORG_ID ,
+      BUYER_FLAG,
+      MANUFACTURE_FLAG,
+      SALER_FLAG ,
+      SENDER_FLAG ,
+      ORG_NAME,
+      ORG_ABBR,
+      SPELL_ABBR,
+      ORG_NAME_WB,
+      ORG_PHONE,
+      ORG_ADDRESS,
+      ENABLE_FLAG,
+      CREATE_USER_ID,
+      CREATE_USER_NAME,
+      CREATE_DATE,
+      MODIFY_USER_ID,
+      MODIFY_USER_NAME,
+      MODIFY_DATE,
+      LINK_MAN
+      FROM HC_PROJECT_ORG
+      WHERE ENABLE_FLAG != '0' AND DATA_ORG_ID = :Id
+2007-11-26 16:07:40,328 [6560] DEBUG Emedchina.Commons.Data.DataBaseFacade [(null)] - select sysdate from dual
+2007-11-26 16:07:40,343 [7128] DEBUG Emedchina.Commons.Data.DataBaseFacade [(null)] - DbParameter Id's Value is 411847.
+2007-11-26 16:07:40,390 [7128] DEBUG Emedchina.Commons.Data.DataBaseFacade [(null)] - SELECT
+      HOP.ID,
+      HOP.CONT_ID,
+      HOP.PROJECT_NAME,
+      HOP.PROJECT_TYPE,
+      HOP.PROJECT_CODE,
+      HOP.PROJECT_STRAT_DATE,
+      HOP.PROJECT_END_DATE,
+      HOP.PROJECT_STATE,
+      HOP.PROJECT_DESC,
+      HOP.DECIMAL_DIGITS,
+      HOP.CREATE_USER_ID,
+      HOP.CREATE_USER_NAME,
+      HOP.CREATE_DATE ,
+      HOP.MODIFY_USER_ID ,
+      HOP.MODIFY_USER_NAME,
+      HOP.MODIFY_DATE,
+      AUTO_CREATE_FLAG
+      FROM HC_ORD_PROJECT HOP, HC_PROJECT_ORG HPO
+      WHERE HPO.PROJECT_ID = HOP.ID AND HPO.ENABLE_FLAG != '0' AND HPO.DATA_ORG_ID = :Id
+2007-11-26 16:07:40,421 [7128] DEBUG Emedchina.Commons.Data.DataBaseFacade [(null)] - select sysdate from dual
+2007-11-26 16:07:40,437 [7128] DEBUG Emedchina.Commons.Data.DataBaseFacade [(null)] - DbParameter Id's Value is 411847.
+2007-11-26 16:07:42,640 [7128] DEBUG Emedchina.Commons.Data.DataBaseFacade [(null)] - SELECT
+      ID,
+      PROJECT_ID,
+      PROJECT_PROD_ID,
+      BUYER_ID,
+      IS_OOS,
+      SENDER_ID,
+      SENDER_ABBR,
+      SENDER_NAME,
+      CREATE_USER_ID,
+      CREATE_USER_NAME,
+      CREATE_DATE ,
+      MODIFY_USER_ID,
+      MODIFY_USER_NAME,
+      MODIFY_DATE,
+      ENABLE_FLAG
+      FROM HC_ORD_BUYER_SENDER
+      WHERE ENABLE_FLAG != '0' AND BUYER_ID = :Id
+2007-11-26 16:08:09,203 [4872] DEBUG Emedchina.Commons.Data.DataBaseFacade [(null)] - select sysdate from dual
+2007-11-26 16:08:09,234 [4872] DEBUG Emedchina.Commons.Data.DataBaseFacade [(null)] - DbParameter Id's Value is 411847.
+2007-11-26 16:08:16,140 [4872] DEBUG Emedchina.Commons.Data.DataBaseFacade [(null)] - SELECT distinct
+      HP.ID,
+      HP.PROJECT_ID,
+      HP.DATA_PRODUCT_ID,
+      HP.CONT_PRODUCT_ID,
+      HP.PRODUCT_NAME,
+      HP.COMMERCE_NAME,
+      HP.COMMON_NAME,
+      HP.CODE,
+      HP.ABBR_PY,
+      HP.ABBR_WB,
+      HP.BRAND,
+      HP.SPEC,
+      HP.MODEL,
+      HP.GOODS_NO,
+      HP.BARCODE,
+      HP.BASE_MEASURE,
+      HP.BASE_MEASURE_SPEC,
+      HP.BASE_MEASURE_MATER,
+      HP.MAX_PRICE,
+      HP.HISTORY_PIRCE,
+      HP.PRICE,
+      HP.MANU_ID,
+      HP.MANU_NAME,
+      HP.MANU_NAME_ABBR,
+      HP.SALER_ID,
+      HP.SALER_NAME,
+      HP.SALER_NAME_ABBR,
+      HP.BALANCE_ID,
+      HP.BALANCE_NAME,
+      HP.BALANCE_EASY,
+      HP.BALANCE_FAST,
+      HP.BALANCE_WUBI,
+      HP.DEFAULT_MEASURE,
+      HP.DEFAULT_MEASURE_EX,
+      HP.BAK_MEASURE_ONE,
+      HP.BAK_MEASURE_ONE_EX,
+      HP.BAK_MEASURE_TWO,
+      HP.BAK_MEASURE_TWO_EX,
+      HP.PRICE_DESCRIPTION,
+      HP.PERFORMANCE,
+      HP.PRE_PURCHASE,
+      HP.STATE,
+      HP.STATE_CHANGE_REASON,
+      HP.REG_NO,
+      HP.REG_VALID_DATE,
+      HP.SENDER_ID,
+      HP.SENDER_NAME,
+      HP.SENDER_NAME_ABBR,
+      HP.AUDIT_FLAG,
+      HP.CREATE_USER_ID,
+      HP.CREATE_USER_NAME,
+      HP.CREATE_DATE,
+      HP.MODIFY_USER_ID,
+      HP.MODIFY_USER_NAME,
+      HP.MODIFY_DATE,
+      HP.INSTRU_CODE,
+      HP.INSTRU_NAME,
+      HP.BID_ID 
+      FROM HC_ORD_PRODUCT HP,HC_PROJECT_ORG HPO
+      WHERE HP.PROJECT_ID = HPO.PROJECT_ID AND HPO.ENABLE_FLAG != '0'
+      AND HP.STATE != '0' AND HPO.DATA_ORG_ID = :Id
+      AND exists (select 1
+      from hc_ord_buyer_sender b
+      where b.enable_flag = '1'
+      AND HP.PROJECT_ID = b.project_id
+      AND b.buyer_id = :Id
+      AND b.project_prod_id = HP.id)
+      AND exists (select 1
+      from HC_PROJECT_PROD_CLASS_CONTENT a,
+      HC_PROJECT_PROD_CLASS_CONFIG  b,
+      HC_PROJECT_PRODUCT_CLASS      c
+      where a.class_id = c.id
+      AND b.class_id = c.id
+      AND b.buyer_id = :Id
+      AND a.PRODUCT_ID = HP.id
+      AND b.SALER_ID = HP.SALER_ID)
+2007-11-26 16:08:46,406 [4872] DEBUG Emedchina.Commons.Data.DataBaseFacade [(null)] - select sysdate from dual
+2007-11-26 16:08:46,421 [4872] DEBUG Emedchina.Commons.Data.DataBaseFacade [(null)] - DbParameter Id's Value is 411847.
+2007-11-26 16:08:46,515 [4872] DEBUG Emedchina.Commons.Data.DataBaseFacade [(null)] - SELECT
+      ID,
+      PROJECT_ID,
+      DATA_PRODUCT_ID,
+      PROJECT_PROD_ID,
+      CONT_PRODUCT_ID,
+      PRODUCT_NAME,
+      COMMERCE_NAME,
+      COMMON_NAME,
+      CODE,
+      ABBR_PY,
+      ABBR_WB,
+      BRAND,
+      MODEL_ID,
+      SPEC_ID,
+      MODEL,
+      SPEC,
+      GOODS_NO,
+      BARCODE,
+      BASE_MEASURE,
+      BASE_MEASURE_SPEC,
+      BASE_MEASURE_MATER,
+      MAX_PRICE,
+      HISTORY_PIRCE,
+      PRICE,
+      MANU_ID,
+      MANU_NAME,
+      MANU_NAME_ABBR,
+      SALER_ID,
+      SALER_NAME,
+      BUYER_ID,
+      BALANCE_ID,
+      BALANCE_NAME,
+      BALANCE_EASY,
+      BALANCE_FAST,
+      BALANCE_WUBI,
+      SALER_NAME_ABBR,
+      DEFAULT_MEASURE,
+      DEFAULT_MEASURE_EX,
+      BAK_MEASURE_ONE,
+      BAK_MEASURE_ONE_EX,
+      BAK_MEASURE_TWO,
+      BAK_MEASURE_TWO_EX,
+      PRICE_DESCRIPTION,
+      PERFORMANCE,
+      PRE_PURCHASE,
+      STATE_CHANGE_REASON,
+      REG_NO,
+      REG_VALID_DATE,
+      DESCRIPTIONS,
+      LAST_AMOUNT,
+      LAST_SUM,
+      LAST_DATE,
+      ALL_AMOUNT,
+      ALL_SUM,
+      STORE_ROOM_ID,
+      STORE_ROOM_NAME,
+      SENDER_ID,
+      SENDER_NAME,
+      SENDER_NAME_ABBR,
+      STATE,
+      CREATE_USER_ID,
+      CREATE_USER_NAME,
+      CREATE_DATE,
+      MODIFY_USER_ID,
+      MODIFY_USER_NAME,
+      MODIFY_DATE,
+      INSTRU_CODE,
+      INSTRU_NAME,
+      '1' as SYNC_STATE
+      FROM HC_ORD_HIT_COMM WHERE BUYER_ID = :Id AND STATE != '0'
+2007-11-26 16:08:46,890 [4872] DEBUG Emedchina.Commons.Data.DataBaseFacade [(null)] - select sysdate from dual
+2007-11-26 16:08:46,937 [4872] DEBUG Emedchina.Commons.Data.DataBaseFacade [(null)] - DbParameter Id's Value is 411847.
+2007-11-26 16:08:48,203 [4872] DEBUG Emedchina.Commons.Data.DataBaseFacade [(null)] - SELECT
+      HPP.ID,
+      HPP.PROJECT_ID,
+      HPP.NAME,
+      HPP.STATE,
+      HPP.MODIFY_USER_ID,
+      HPP.CREATE_USER_NAME,
+      HPP.MODIFY_DATE,
+      HPP.CREATE_USER_ID,
+      HPP.CREATE_DATE,
+      HPP.MODIFY_USER_NAME,
+      HPP.BAK_PACKAGE_ID
+      FROM HC_ORD_PRODUCT_PACKAGE HPP,HC_PROJECT_ORG HPO
+      WHERE HPP.PROJECT_ID = HPO.PROJECT_ID AND HPO.ENABLE_FLAG != '0'
+      AND HPP.STATE != '0' AND HPO.DATA_ORG_ID = :Id
+2007-11-26 16:08:55,000 [4872] DEBUG Emedchina.Commons.Data.DataBaseFacade [(null)] - select sysdate from dual
+2007-11-26 16:08:55,015 [4872] DEBUG Emedchina.Commons.Data.DataBaseFacade [(null)] - DbParameter Id's Value is 411847.
+2007-11-26 16:08:57,078 [4872] DEBUG Emedchina.Commons.Data.DataBaseFacade [(null)] - SELECT
+      HPPI.ID,
+      HPPI.PACKAGE_ID,
+      HPPI.NAME,
+      HPPI.AMOUNT,
+      HPPI.MODIFY_USER_ID,
+      HPPI.CREATE_USER_NAME,
+      HPPI.MODIFY_DATE,
+      HPPI.CREATE_USER_ID,
+      HPPI.CREATE_DATE,
+      HPPI.MODIFY_USER_NAME,
+      HPPI.PROJECT_PROD_ID
+      FROM HC_ORD_PRODUCT_PACKAGE_ITEM HPPI,HC_ORD_PRODUCT_PACKAGE HPP,HC_PROJECT_ORG HPO
+      WHERE HPP.STATE != '0' AND HPPI.PACKAGE_ID = HPP.ID
+      AND HPP.PROJECT_ID = HPO.PROJECT_ID AND HPO.ENABLE_FLAG != '0' AND HPO.DATA_ORG_ID = :Id
+      AND exists (select 1
+      from hc_ord_buyer_sender b
+      where b.enable_flag = '1'
+      AND b.buyer_id = :Id
+      AND b.project_prod_id = HPPI.PROJECT_PROD_ID)
+      AND exists (select 1
+      from HC_PROJECT_PROD_CLASS_CONTENT a,
+      HC_PROJECT_PROD_CLASS_CONFIG  b,
+      HC_PROJECT_PRODUCT_CLASS      c
+      where a.class_id = c.id
+      AND b.class_id = c.id
+      AND b.buyer_id = :Id
+      AND a.PRODUCT_ID = HPPI.PROJECT_PROD_ID)
+2007-11-26 16:09:03,031 [4872] DEBUG Emedchina.Commons.Data.DataBaseFacade [(null)] - select sysdate from dual
+2007-11-26 16:09:03,046 [4872] DEBUG Emedchina.Commons.Data.DataBaseFacade [(null)] - SELECT
+      ID,
+      MODEL_NAME,
+      MODIFY_USER_ID,
+      MODIFY_USER_NAME,
+      CREATE_USER_ID,
+      CREATE_USER_NAME,
+      CREATE_DATE,
+      MODIFY_DATE
+      FROM HC_ORD_PRODUCT_MODEL
+2007-11-26 16:09:03,187 [4872] DEBUG Emedchina.Commons.Data.DataBaseFacade [(null)] - select sysdate from dual
+2007-11-26 16:09:03,218 [4872] DEBUG Emedchina.Commons.Data.DataBaseFacade [(null)] - SELECT
+      ID,
+      SPEC_NAME,
+      CREATE_USER_ID,
+      MODIFY_USER_ID,
+      CREATE_USER_NAME,
+      MODIFY_USER_NAME,
+      MODIFY_DATE,
+      CREATE_DATE
+      FROM HC_ORD_PRODUCT_SPEC
+2007-11-26 16:09:03,250 [4872] DEBUG Emedchina.Commons.Data.DataBaseFacade [(null)] - select sysdate from dual
+2007-11-26 16:09:03,281 [4872] DEBUG Emedchina.Commons.Data.DataBaseFacade [(null)] - DbParameter Id's Value is 411847.
+2007-11-26 16:09:03,312 [4872] DEBUG Emedchina.Commons.Data.DataBaseFacade [(null)] - SELECT
+      ID,
+      BUYER_ID,
+      CODE,
+      TYPE,
+      TOTAL_SUM,
+      PURCHASE_DATE,
+      CREATE_USER_ID,
+      CREATE_USER_NAME,
+      STATE,
+      AUDIT_USER_ID,
+      AUDIT_USER_NAME,
+      AUDIT_DATE,
+      QUICKSEND_LEVEL,
+      CREATE_DATE,
+      MODIFY_USER_ID,
+      MODIFY_USER_NAME,
+      MODIFY_DATE,
+      '1' as SYNC_STATE
+      FROM HC_ORD_PURCHASE
+      WHERE BUYER_ID = :Id
+2007-11-26 16:09:03,671 [4872] DEBUG Emedchina.Commons.Data.DataBaseFacade [(null)] - select sysdate from dual
+2007-11-26 16:09:03,687 [4872] DEBUG Emedchina.Commons.Data.DataBaseFacade [(null)] - DbParameter Id's Value is 411847.
+2007-11-26 16:09:03,828 [4872] DEBUG Emedchina.Commons.Data.DataBaseFacade [(null)] - SELECT
+      ID,
+      PROJECT_ID,
+      PURCHASE_ID,
+      PROJECT_PROD_ID,
+      DATA_PRODUCT_ID,
+      BUYER_ID,
+      SALER_ID,
+      SALER_NAME,
+      SALER_NAME_ABBR,
+      SENDER_ID,
+      SENDER_NAME,
+      SENDER_NAME_ABBR,
+      MANUFACTURE_ID,
+      MANUFACTURE_NAME,
+      MANUFACTURE_NAME_ABBR,
+      COMMON_NAME,
+      PRODUCT_NAME,
+      PRODUCT_CODE,
+      SPEC_ID,
+      MODEL_ID,
+      SPEC,
+      MODEL,
+      BRAND,
+      GOODS_NO,
+      BARCODE,
+      STORE_ROOM_ID,
+      STORE_ROOM_NAME,
+      STORE_ROOM_ADDRESS,
+      BASE_MEASURE,
+      BASE_MEASURE_SPEC,
+      BASE_MEASURE_MATER,
+      SEND_MEASURE,
+      SEND_MEASURE_EX,
+      RETAIL_PRICE,
+      TRADE_PRICE,
+      AMOUNT,
+      SUM,
+      OVER_AMOUNT,
+      OVER_SUM,
+      IS_QUICKSEND,
+      BALANCE_ID,
+      BALANCE_NAME,
+      BALANCE_EASY,
+      BALANCE_FAST,
+      BALANCE_WUBI,
+      CREATE_USER_ID,
+      CREATE_USER_NAME,
+      CREATE_DATE,
+      MODIFY_USER_ID,
+      MODIFY_USER_NAME,
+      MODIFY_DATE,
+      DESCRIPTIONS,
+      '1' as SYNC_STATE
+      FROM HC_ORD_PURCHASE_ITEM
+      WHERE BUYER_ID = :Id
+2007-11-26 16:09:04,484 [4872] DEBUG Emedchina.Commons.Data.DataBaseFacade [(null)] - select sysdate from dual
+2007-11-26 16:09:04,500 [4872] DEBUG Emedchina.Commons.Data.DataBaseFacade [(null)] - DbParameter Id's Value is 411847.
+2007-11-26 16:09:04,531 [4872] DEBUG Emedchina.Commons.Data.DataBaseFacade [(null)] - Select
+      ID,
+      ORDER_CODE,
+      BUYER_ID,
+      BUYER_NAME,
+      BUYER_NAME_ABBR,
+      SENDER_ID,
+      SENDER_NAME,
+      SENDER_NAME_ABBR,
+      TOTAL_SUM,
+      OVER_SUM,
+      SALER_APPROVER_ID,
+      SALER_APPROVER_NAME,
+      SALER_APPROVER_DATE,
+      STATE,
+      TYPE,
+      PURCHASE_DATE,
+      QUICKSEND_LEVEL,
+      SALER_DESCRIPTIONS,
+      BUYER_DESCRIPTIONS,
+      CREATE_USER_NAME,
+      CREATE_DATE,
+      MODIFY_USER_ID,
+      MODIFY_USER_NAME,
+      MODIFY_DATE,
+      CREATE_USER_ID,
+      PURCHASE_ID,
+      PURCHASE_CODE,
+      '1' as SYNC_STATE
+      From HC_ORD_ORDER
+      Where STATE != '6' AND BUYER_ID = :Id
+2007-11-26 16:09:04,656 [4872] DEBUG Emedchina.Commons.Data.DataBaseFacade [(null)] - select sysdate from dual
+2007-11-26 16:09:04,671 [4872] DEBUG Emedchina.Commons.Data.DataBaseFacade [(null)] - DbParameter Id's Value is 411847.
+2007-11-26 16:09:04,812 [4872] DEBUG Emedchina.Commons.Data.DataBaseFacade [(null)] - SELECT
+      ID,
+      PROJECT_ID,
+      ORDER_ID,
+      PURCHASE_ID,
+      DATA_PRODUCT_ID,
+      PROJECT_PROD_ID,
+      BUYER_ID,
+      BUYER_NAME,
+      BUYER_NAME_ABBR,
+      SALER_ID,
+      SALER_NAME,
+      SALER_NAME_ABBR,
+      SENDER_ID,
+      SENDER_NAME,
+      SENDER_NAME_ABBR,
+      MANUFACTURE_ID,
+      MANUFACTURE_NAME,
+      MANUFACTURE_NAME_ABBR,
+      COMMON_NAME,
+      PRODUCT_NAME,
+      PRODUCT_CODE,
+      SPEC_ID,
+      MODEL_ID,
+      SPEC,
+      MODEL,
+      BRAND,
+      GOODS_NO,
+      BARCODE,
+      STORE_ROOM_ID,
+      STORE_ROOM_NAME,
+      STORE_ROOM_ADDRESS,
+      BASE_MEASURE_SPEC,
+      BASE_MEASURE_MATER,
+      BASE_MEASURE,
+      SEND_MEASURE,
+      SEND_MEASURE_EX,
+      RETAIL_PRICE,
+      TRADE_PRICE,
+      SUM,
+      AMOUNT,
+      OVER_AMOUNT,
+      OVER_SUM,
+      IS_QUICKSEND,
+      ORDER_TYPE,
+      STATE,
+      BALANCE_ID,
+      BALANCE_NAME,
+      BALANCE_EASY,
+      BALANCE_FAST,
+      BALANCE_WUBI,
+      BUYER_DESCRIPTIONS,
+      SALER_DESCRIPTIONS,
+      CREATE_USER_ID,
+      CREATE_USER_NAME,
+      CREATE_DATE,
+      MODIFY_USER_ID,
+      MODIFY_USER_NAME,
+      MODIFY_DATE,
+      PURCHASE_ITEM_ID,
+      ORIGINAL_ITEM_ID,
+      PARENT_ITEM_ID,
+      '1' as SYNC_STATE
+      FROM HC_ORD_ORDER_ITEM
+      WHERE STATE != '3' AND BUYER_ID = :Id
+2007-11-26 16:09:05,296 [4872] DEBUG Emedchina.Commons.Data.DataBaseFacade [(null)] - select sysdate from dual
+2007-11-26 16:09:05,312 [4872] DEBUG Emedchina.Commons.Data.DataBaseFacade [(null)] - DbParameter Id's Value is 411847.
+2007-11-26 16:09:05,328 [4872] DEBUG Emedchina.Commons.Data.DataBaseFacade [(null)] - SELECT
+      hoos.ID,
+      hoos.DATA_PRODUCT_ID,
+      hoos.PROJECT_ID,
+      hoos.ORDER_ID,
+      hoos.ORDER_ITEM_ID,
+      hoos.PROJECT_PROD_ID,
+      hoos.STOCKUP_QTY,
+      hoos.READY_FLAG,
+      hoos.GOODS_NO,
+      hoos.BARCODE,
+      hoos.PBNO,
+      hoos.SEND_BATCH_NO,
+      hoos.INSTORE_BATCH_NO,
+      hoos.CREATE_USER_ID,
+      hoos.CREATE_USER_NAME,
+      hoos.CREATE_DATE,
+      hoos.MODIFY_USER_ID,
+      hoos.MODIFY_USER_NAME,
+      hoos.MODIFY_DATE,
+      '1' as SYNC_STATE
+      FROM HC_ORD_ORDER_STOCKUP hoos, HC_ORD_ORDER hoo
+      WHERE hoos.ORDER_ID = hoo.ID AND hoo.STATE != '6' AND hoo.BUYER_ID = :Id
+2007-11-26 16:09:05,515 [4872] DEBUG Emedchina.Commons.Data.DataBaseFacade [(null)] - select sysdate from dual
+2007-11-26 16:09:05,531 [4872] DEBUG Emedchina.Commons.Data.DataBaseFacade [(null)] - DbParameter Id's Value is 411847.
+2007-11-26 16:09:05,562 [4872] DEBUG Emedchina.Commons.Data.DataBaseFacade [(null)] - SELECT
+      hoor.ID,
+      hoor.DATA_PRODUCT_ID,
+      hoor.PROJECT_ID,
+      hoor.TYPE,
+      hoor.CODE,
+      hoor.PROJECT_PRODUCT_ID,
+      hoor.ORDER_ID,
+      hoor.ORDER_ITEM_ID,
+      hoor.INVOICE_ID,
+      hoor.GOODS_NO,
+      hoor.BARCODE,
+      hoor.PBNO,
+      hoor.SEND_BATCH_NO,
+      hoor.INSTORE_BATCH_NO,
+      hoor.STORE_ROOM_ID,
+      hoor.STORE_ROOM_NAME,
+      hoor.ARRIVAL_ADDRESS,
+      hoor.ARRIVE_DATE,
+      hoor.PRICE,
+      hoor.FACT_AMOUNT,
+      hoor.FACT_SUM,
+      hoor.RETURN_AMOUNT,
+      hoor.RETURN_SUM,
+      hoor.CREATE_USER_ID,
+      hoor.CREATE_USER_NAME,
+      hoor.CREATE_DATE,
+      hoor.MODIFY_USER_ID,
+      hoor.MODIFY_USER_NAME,
+      hoor.MODIFY_DATE,
+      hoor.DESCRIPTIONS,
+      hoor.STOCKUP_ID,
+      '1' as SYNC_STATE
+      FROM HC_ORD_ORDER_RECEIVE hoor, HC_ORD_ORDER hoo
+      WHERE hoor.ORDER_ID = hoo.ID AND hoo.STATE != '6' AND hoo.BUYER_ID = :Id
+2007-11-26 16:09:05,703 [4872] DEBUG Emedchina.Commons.Data.DataBaseFacade [(null)] - select sysdate from dual
+2007-11-26 16:09:05,718 [4872] DEBUG Emedchina.Commons.Data.DataBaseFacade [(null)] - DbParameter Id's Value is 411847.
+2007-11-26 16:09:05,734 [4872] DEBUG Emedchina.Commons.Data.DataBaseFacade [(null)] - SELECT
+      ID,
+      DATA_PRODUCT_ID,
+      PROJECT_ID,
+      CODE,
+      RECEIVE_ID,
+      ORD_ID,
+      ORD_ITEM_ID,
+      PROJECT_PRODUCT_ID,
+      BUYER_ID,
+      BUYER_NAME,
+      BUYER_NAME_ABBR,
+      SALER_ID,
+      SALER_NAME,
+      SALER_NAME_ABBR,
+      SENDER_ID,
+      SENDER_NAME,
+      SENDER_NAME_ABBR,
+      MANUFACTURE_ID,
+      MANUFACTURE_NAME,
+      MANUFACTURE_NAME_ABBR,
+      COMMON_NAME,
+      PRODUCT_NAME,
+      PRODUCT_CODE,
+      GOODS_NO,
+      BARCODE,
+      PBNO,
+      BRAND,
+      SPEC_ID,
+      MODEL_ID,
+      SPEC,
+      MODEL,
+      SEND_BATCH_NO,
+      INSTORE_BATCH_NO,
+      PRICE,
+      SUM,
+      BASE_MEASURE_SPEC,
+      BASE_MEASURE_MATER,
+      BASE_MEASURE,
+      SEND_MEASURE,
+      SEND_MEASURE_EX,
+      AMOUNT,
+      STATE,
+      SEND_OPERATOR_ID,
+      SEND_OPERATOR_NAME,
+      SEND_OPERATOR_DATE,
+      INSTORE_OPERATOR_ID,
+      INSTORE_OPERATOR_NAME,
+      INSTORE_OPERATOR_DATE,
+      BUYER_DESCRIPTIONS,
+      CREATE_USER_ID,
+      CREATE_USER_NAME,
+      CREATE_DATE,
+      MODIFY_USER_ID,
+      MODIFY_USER_NAME,
+      MODIFY_DATE,
+      SALER_DESCRIPTIONS,
+      '1' as SYNC_STATE
+      FROM HC_ORD_BUYER_RETURN
+      WHERE STATE != '3' AND BUYER_ID = :Id
+2007-11-26 16:09:05,906 [4872] DEBUG Emedchina.Commons.Data.DataBaseFacade [(null)] - select sysdate from dual
+2007-11-26 16:09:05,921 [4872] DEBUG Emedchina.Commons.Data.DataBaseFacade [(null)] - DbParameter Id's Value is 411847.
+2007-11-26 16:09:05,984 [4872] DEBUG Emedchina.Commons.Data.DataBaseFacade [(null)] - SELECT
+      ID,
+      DATA_PRODUCT_ID,
+      PROJECT_ID,
+      PROJECT_PRODUCT_ID,
+      ORDER_ID,
+      ORDER_ITEM_ID,
+      RECEIVE_ID,
+      RETRUN_ID,
+      RESULT_TYPE,
+      TYPE,
+      CODE,
+      INVOICE_ID,
+      BUYER_ID,
+      BUYER_NAME,
+      BUYER_NAME_ABBR,
+      SALER_ID,
+      SALER_NAME,
+      SALER_NAME_ABBR,
+      SENDER_ID,
+      SENDER_NAME,
+      SENDER_NAME_ABBR,
+      MANUFACTURE_ID,
+      MANUFACTURE_NAME,
+      MANUFACTURE_NAME_ABBR,
+      PRODUCT_NAME,
+      PRODUCT_CODE,
+      SPEC_ID,
+      MODEL_ID,
+      SPEC,
+      MODEL,
+      COMMON_NAME,
+      BRAND,
+      GOODS_NO,
+      BARCODE,
+      PBNO,
+      BASE_MEASURE_SPEC,
+      BASE_MEASURE_MATER,
+      BASE_MEASURE,
+      SEND_MEASURE,
+      SEND_MEASURE_EX,
+      SEND_BATCH_NO,
+      INSTORE_BATCH_NO,
+      STORE_ROOM_ID,
+      STORE_ROOM_NAME,
+      ARRIVAL_ADDRESS,
+      ARRIVE_DATE,
+      PRICE,
+      FACT_AMOUNT,
+      FACT_SUM,
+      STATE,
+      SEND_OPERATOR_ID,
+      SEND_OPERATOR_NAME,
+      SEND_OPERATOR_DATE,
+      INSTORE_OPERATOR_ID,
+      INSTORE_OPERATOR_NAME,
+      INSTORE_OPERATOR_DATE,
+      BACK_AMOUNT,
+      BACK_SUM,
+      MODIFY_USER_ID,
+      MODIFY_USER_NAME,
+      MODIFY_DATE,
+      DESCRIPTIONS,
+      CREATE_USER_ID,
+      CREATE_USER_NAME,
+      CREATE_DATE,
+      '1' as SYNC_STATE
+      FROM HC_ORD_ORDER_RESULT
+      WHERE BUYER_ID = :Id
+2007-11-26 16:09:06,390 [4872] DEBUG Emedchina.Commons.Data.DataBaseFacade [(null)] - select sysdate from dual
+2007-11-26 16:09:06,406 [4872] DEBUG Emedchina.Commons.Data.DataBaseFacade [(null)] - DbParameter Id's Value is 411847.
+2007-11-26 16:09:06,421 [4872] DEBUG Emedchina.Commons.Data.DataBaseFacade [(null)] - SELECT
+      ID,
+      INVOICE_CODE,
+      BUYER_ID,
+      BUYER_NAME,
+      SENDER_ID,
+      SENDER_NAME,
+      TOTAL_SUM,
+      OVER_SUM,
+      SENDED_DATE,
+      STATE,
+      BUYER_DESCRIPTIONS,
+      CREATE_USER_ID,
+      CREATE_USER_NAME,
+      CREATE_DATE,
+      MODIFY_USER_ID,
+      MODIFY_USER_NAME,
+      MODIFY_DATE,
+      SALER_DESCRIPTIONS,
+      '1' as SYNC_STATE
+      FROM HC_ORD_INVOICE_FROM
+      WHERE STATE != '4' AND BUYER_ID = :Id
+2007-11-26 16:09:06,484 [4872] DEBUG Emedchina.Commons.Data.DataBaseFacade [(null)] - select sysdate from dual
+2007-11-26 16:09:06,500 [4872] DEBUG Emedchina.Commons.Data.DataBaseFacade [(null)] - DbParameter Id's Value is 411847.
+2007-11-26 16:09:06,531 [4872] DEBUG Emedchina.Commons.Data.DataBaseFacade [(null)] - SELECT
+      ID,
+      DATA_PRODUCT_ID,
+      PROJECT_ID,
+      INVOICE_FROM_ID,
+      PROJECT_PROD_ID,
+      BUYER_ID,
+      SALER_ID,
+      SALER_NAME,
+      SALER_NAME_ABBR,
+      MANUFACTURE_ID,
+      MANUFACTURE_NAME,
+      MANUFACTURE_NAME_ABBR,
+      COMMON_NAME,
+      PRODUCT_NAME,
+      PRODUCT_CODE,
+      SPEC_ID,
+      MODEL_ID,
+      SPEC,
+      MODEL,
+      BRAND,
+      GOODS_NO,
+      BARCODE,
+      BATCH_NO,
+      VALID_DATE,
+      STORE_ROOM_ID,
+      STORE_ROOM_NAME,
+      STORE_ROOM_ADDRESS,
+      BASE_MEASURE,
+      BASE_MEASURE_SPEC,
+      BASE_MEASURE_MATER,
+      SEND_MEASURE,
+      SEND_MEASURE_EX,
+      RETAIL_PRICE,
+      TRADE_PRICE,
+      AMOUNT,
+      SUM,
+      OVER_AMOUNT,
+      OVER_SUM,
+      STATE,
+      BUYER_DESCRIPTIONS,
+      BALANCE_ID,
+      BALANCE_NAME,
+      BALANCE_EASY,
+      BALANCE_FAST,
+      BALANCE_WUBI,
+      CREATE_USER_ID,
+      CREATE_USER_NAME,
+      CREATE_DATE,
+      MODIFY_USER_ID,
+      MODIFY_USER_NAME,
+      MODIFY_DATE,
+      SALER_DESCRIPTIONS,
+      PBNO,
+      SEND_BATCH_NO,
+      INSTORE_BATCH_NO,
+      '1' as SYNC_STATE
+      FROM HC_ORD_INVOICE_FROM_ITEM
+      WHERE STATE != '3' AND BUYER_ID = :Id
+2007-11-26 16:09:06,750 [4872] DEBUG Emedchina.Commons.Data.DataBaseFacade [(null)] - select sysdate from dual
+2007-11-26 16:09:06,765 [4872] DEBUG Emedchina.Commons.Data.DataBaseFacade [(null)] - DbParameter Id's Value is 411847.
+2007-11-26 16:09:06,781 [4872] DEBUG Emedchina.Commons.Data.DataBaseFacade [(null)] - SELECT
+      ID,
+      CODE,
+      BUYER_ID,
+      BUYER_NAME,
+      BUYER_NAME_ABBR,
+      SENDER_ID,
+      SENDER_NAME,
+      SENDER_NAME_ABBR,
+      STATE,
+      REMARK,
+      CREATE_USER_NAME,
+      CREATE_DATE,
+      MODIFY_USER_ID,
+      MODIFY_USER_NAME,
+      MODIFY_DATE,
+      CREATE_USER_ID,
+      SEND_USER_ID,
+      SEND_USER_NAME,
+      SEND_DATE,
+      '1' as SYNC_STATE
+      FROM HC_ORD_ORD_STOCK
+      WHERE STATE!= '4' AND BUYER_ID = :Id
+2007-11-26 16:09:06,812 [4872] DEBUG Emedchina.Commons.Data.DataBaseFacade [(null)] - select sysdate from dual
+2007-11-26 16:09:06,828 [4872] DEBUG Emedchina.Commons.Data.DataBaseFacade [(null)] - DbParameter Id's Value is 411847.
+2007-11-26 16:09:06,843 [4872] DEBUG Emedchina.Commons.Data.DataBaseFacade [(null)] - SELECT
+      hosi.ID,
+      hosi.DATA_PRODUCT_ID,
+      hosi.PROJECT_ID,
+      hosi.STOCK_ID,
+      hosi.PROJECT_PROD_ID,
+      hosi.MANUFACTURE_ID,
+      hosi.MANUFACTURE_NAME,
+      hosi.MANUFACTURE_NAME_ABBR,
+      hosi.COMMON_NAME,
+      hosi.PRODUCT_NAME,
+      hosi.PRODUCT_CODE,
+      hosi.BRAND,
+      hosi.SPEC_ID,
+      hosi.MODEL_ID,
+      hosi.SPEC,
+      hosi.MODEL,
+      hosi.GOODS_NO,
+      hosi.BARCODE,
+      hosi.BATCH_NO,
+      hosi.VALID_DATE,
+      hosi.NUM,
+      hosi.STATE,
+      hosi.REMARK,
+      hosi.CREATE_USER_ID,
+      hosi.CREATE_USER_NAME,
+      hosi.CREATE_DATE,
+      hosi.MODIFY_USER_ID,
+      hosi.MODIFY_USER_NAME,
+      hosi.MODIFY_DATE,
+      hosi.PBNO,
+      hosi.SEND_BATCH_NO,
+      hosi.INSTORE_BATCH_NO,
+      '1' as SYNC_STATE
+      FROM HC_ORD_ORD_STOCK_ITEM hosi, HC_ORD_ORD_STOCK hoos
+      WHERE hosi.STATE!= '4' AND  hosi.STOCK_ID = hoos.ID AND hoos.BUYER_ID = :Id
+2007-11-26 16:09:06,937 [4872] DEBUG Emedchina.Commons.Data.DataBaseFacade [(null)] - select sysdate from dual
+2007-11-26 16:09:06,953 [4872] DEBUG Emedchina.Commons.Data.DataBaseFacade [(null)] - DbParameter Id's Value is 411847.
+2007-11-26 16:09:06,968 [4872] DEBUG Emedchina.Commons.Data.DataBaseFacade [(null)] - SELECT
+      ID,
+      DATA_PRODUCT_ID,
+      PROJECT_ID,
+      BUYER_ID,
+      SALER_ID,
+      SENDER_ID,
+      PBNO,
+      SEND_BATCH_NO,
+      INSTORE_BATCH_NO,
+      SENDER_NAME,
+      PROJECT_PRODUCT_ID,
+      SPEC_ID,
+      MODEL_ID,
+      BARCODE,
+      PRICE,
+      BATCH_NO,
+      VALID_DATE,
+      NUM,
+      REMARK,
+      STATE,
+      CREATE_USER_ID,
+      CREATE_USER_NAME,
+      CREATE_DATE,
+      MODIFY_USER_ID,
+      MODIFY_USER_NAME,
+      MODIFY_DATE,
+      STOCK_ITEM_ID,
+      '1' as SYNC_STATE
+      FROM HC_ORD_SECOND_AYRLNV
+      WHERE BUYER_ID = :Id
+2007-11-26 16:09:07,031 [4872] DEBUG Emedchina.Commons.Data.DataBaseFacade [(null)] - select sysdate from dual
+2007-11-26 16:09:07,031 [4872] DEBUG Emedchina.Commons.Data.DataBaseFacade [(null)] - DbParameter Id's Value is 411847.
+2007-11-26 16:09:07,062 [4872] DEBUG Emedchina.Commons.Data.DataBaseFacade [(null)] - SELECT
+      ID,
+      SECOND_ID,
+      DATA_PRODUCT_ID,
+      PROJECT_ID,
+      PROJECT_PRODUCT_ID,
+      GOODS_NO,
+      BARCODE,
+      PBNO,
+      SEND_BATCH_NO,
+      INSTORE_BATCH_NO,
+      STORE_ROOM_ID,
+      STORE_ROOM_NAME,
+      ARRIVAL_ADDRESS,
+      ARRIVE_DATE,
+      PRICE,
+      FACT_AMOUNT,
+      FACT_SUM,
+      STATUS,
+      CREATE_USER_ID,
+      CREATE_USER_NAME,
+      CREATE_DATE,
+      MODIFY_USER_ID,
+      MODIFY_USER_NAME,
+      MODIFY_DATE,
+      DESCRIPTIONS,
+      BUYER_ID,
+      SENDER_ID,
+      '1' as SYNC_STATE
+      FROM HC_ORG_SECOND_AYRLNV_USE
+      WHERE STATUS != '0' AND BUYER_ID = :Id
+2007-11-26 16:09:07,140 [4872] DEBUG Emedchina.Commons.Data.DataBaseFacade [(null)] - select sysdate from dual
+2007-11-26 16:09:07,140 [4872] DEBUG Emedchina.Commons.Data.DataBaseFacade [(null)] - DbParameter Id's Value is 411847.
+2007-11-26 16:09:07,218 [4872] DEBUG Emedchina.Commons.Data.DataBaseFacade [(null)] - SELECT
+      ID,
+      PROJECT_ID,
+      BULLETIN_ID,
+      RECEIVER_ID,
+      IS_READ,
+      CREATE_USER_NAME,
+      CREATE_DATE,
+      MODIFY_USER_ID,
+      MODIFY_USER_NAME,
+      MODIFY_DATE,
+      CREATE_USER_ID,
+      '1' as SYNC_STATE
+      FROM HC_BULLETIN_RECEIVER
+      WHERE RECEIVER_ID = :Id
+2007-11-26 16:09:07,265 [4872] DEBUG Emedchina.Commons.Data.DataBaseFacade [(null)] - select sysdate from dual
+2007-11-26 16:09:07,281 [4872] DEBUG Emedchina.Commons.Data.DataBaseFacade [(null)] - DbParameter Id's Value is 411847.
+2007-11-26 16:09:07,406 [4872] DEBUG Emedchina.Commons.Data.DataBaseFacade [(null)] - SELECT
+      HBI.ID,
+      HBI.PROJECT_ID,
+      HBI.TITLE,
+      HBI.CONTENT,
+      HBI.STATE,
+      HBI.TYPE,
+      HBI.ISSUER_ORG_ID,
+      HBI.ISSUER_ID,
+      HBI.ISSUER_NAME,
+      HBI.ISSUE_DATE,
+      HBI.CREATE_USER_ID,
+      HBI.CREATE_USER_NAME,
+      HBI.CREATE_DATE,
+      HBI.MODIFY_USER_ID,
+      HBI.MODIFY_USER_NAME,
+      HBI.MODIFY_DATE
+      FROM HC_BULLETIN_INFO HBI,HC_BULLETIN_RECEIVER HBR
+      WHERE HBI.ID = HBR.BULLETIN_ID
+      AND STATE != '3' AND HBR.RECEIVER_ID = :Id
+2007-11-26 16:09:07,500 [4872] DEBUG Emedchina.Commons.Data.DataBaseFacade [(null)] - select sysdate from dual
+2007-11-26 16:09:07,515 [4872] DEBUG Emedchina.Commons.Data.DataBaseFacade [(null)] - DbParameter Id's Value is 411847.
+2007-11-26 16:09:07,562 [4872] DEBUG Emedchina.Commons.Data.DataBaseFacade [(null)] - SELECT
+      hppc.ID,
+      hppc.CLASS_NAME,
+      hppc.PROJECT_ID,
+      hppc.CREATE_USER_ID,
+      hppc.CREATE_USER_NAME,
+      hppc.CREATE_DATE,
+      hppc.MODIFY_USER_ID,
+      hppc.MODIFY_USER_NAME,
+      hppc.MODIFY_DATE
+      FROM HC_PROJECT_PRODUCT_CLASS hppc , HC_PROJECT_ORG hpo
+      WHERE hppc.PROJECT_ID = hpo.PROJECT_ID
+      AND hpo.ENABLE_FLAG != '0' AND hpo.DATA_ORG_ID = :Id
+2007-11-26 16:09:07,593 [4872] DEBUG Emedchina.Commons.Data.DataBaseFacade [(null)] - select sysdate from dual
+2007-11-26 16:09:07,609 [7128] DEBUG Emedchina.Commons.Data.DataBaseFacade [(null)] - DbParameter Id's Value is 411847.
+2007-11-26 16:09:09,578 [7128] DEBUG Emedchina.Commons.Data.DataBaseFacade [(null)] - SELECT
+      hppc.ID,
+      hppc.CLASS_ID,
+      hppc.PROJECT_ID,
+      hppc.PRODUCT_ID,
+      hppc.CREATE_USER_ID,
+      hppc.CREATE_USER_NAME,
+      hppc.CREATE_DATE,
+      hppc.MODIFY_USER_ID,
+      hppc.MODIFY_USER_NAME,
+      hppc.MODIFY_DATE
+      FROM HC_PROJECT_PROD_CLASS_CONTENT hppc , HC_PROJECT_ORG hpo
+      WHERE hppc.PROJECT_ID = hpo.PROJECT_ID
+      AND hpo.ENABLE_FLAG != '0' AND hpo.DATA_ORG_ID = :Id
+      AND exists (select 1
+      from hc_ord_buyer_sender b
+      where b.enable_flag = '1'
+      AND b.buyer_id = :Id
+      AND b.project_prod_id = hppc.PRODUCT_ID)
+2007-11-26 16:09:16,656 [7128] DEBUG Emedchina.Commons.Data.DataBaseFacade [(null)] - select sysdate from dual
+2007-11-26 16:09:16,671 [7128] DEBUG Emedchina.Commons.Data.DataBaseFacade [(null)] - DbParameter Id's Value is 411847.
+2007-11-26 16:09:18,625 [7128] DEBUG Emedchina.Commons.Data.DataBaseFacade [(null)] - SELECT
+      ID,
+      CREATE_USER_ID,
+      BUYER_ID,
+      SALER_ID,
+      CLASS_ID,
+      INVOICE_FLAG,
+      ORDER_FLAG,
+      STOCK_FLAG,
+      CREATE_USER_NAME,
+      CREATE_DATE,
+      MODIFY_USER_ID,
+      MODIFY_USER_NAME,
+      MODIFY_DATE,
+      PROJECT_ID
+      FROM HC_PROJECT_PROD_CLASS_CONFIG
+      WHERE BUYER_ID = :Id
+2007-11-26 16:09:25,656 [7128] DEBUG Emedchina.Commons.Data.DataBaseFacade [(null)] - select sysdate from dual
+2007-11-26 16:09:25,671 [2036] DEBUG Emedchina.Commons.Data.DataBaseFacade [(null)] - DbParameter Id's Value is 411847.
+2007-11-26 16:09:25,671 [2036] DEBUG Emedchina.Commons.Data.DataBaseFacade [(null)] - SELECT
+      ID,
+      ORGID,
+      HIT_COMM_ID,
+      PRODUCT_MNEMONIC,
+      SELF_PACKAGE,
+      ALIAS,
+      ALIAS_PINYIN,
+      MODIFY_USERID,
+      MODIFY_DATE,
+      '1' as SYNC_STATE
+      FROM HC_SELF_DEFINE_INFO
+      WHERE ORGID = :Id
+2007-11-26 16:09:25,734 [2036] DEBUG Emedchina.Commons.Data.DataBaseFacade [(null)] - select sysdate from dual
+2007-11-26 16:09:25,750 [2036] DEBUG Emedchina.Commons.Data.DataBaseFacade [(null)] - DbParameter Id's Value is 411847.
+2007-11-26 16:09:25,765 [2036] DEBUG Emedchina.Commons.Data.DataBaseFacade [(null)] - SELECT
+      ID,
+      MAP_ORGTYPE,
+      MAP_ORGID,
+      PROJECT_PROD_ID,
+      HH_MODE_ID,
+      HH_SPEC_ID,
+      PRODUCT_ID,
+      HIS_PRODUCT_ID,
+      COMMON_NAME,
+      PRODUCT_NAME,
+      COMMERCE_NAME,
+      BRAND,
+      MODE_ID,
+      MODE_NAME,
+      SPEC_ID,
+      SPEC,
+      BASE_MEASURE,
+      BASE_MEASURE_SPEC,
+      BASE_MEASURE_MATE,
+      STAND_RATE,
+      FACTORY_CODE,
+      FACTORY_Name,
+      SALER_CODE,
+      SALER_NAME,
+      SENDER_CODE,
+      SENDER_NAME,
+      STOCK_ID,
+      STOCK_NAME,
+      MODIFY_USERID,
+      MODIFY_DATE,
+      PROCESS_FLAG,
+      '1' as SYNC_STATE,
+      REMARK,
+      ISMAP
+      FROM HC_PRODUCT_MAP
+      WHERE MAP_ORGID = :Id
+2007-11-26 16:09:25,828 [2036] DEBUG Emedchina.Commons.Data.DataBaseFacade [(null)] - select sysdate from dual
+2007-11-26 16:09:25,843 [2036] DEBUG Emedchina.Commons.Data.DataBaseFacade [(null)] - DbParameter Id's Value is 411847.
+2007-11-26 16:09:25,843 [2036] DEBUG Emedchina.Commons.Data.DataBaseFacade [(null)] - SELECT
+      ID,
+      MAP_ORGTYPE,
+      MAP_ORGID,
+      ORG_ID,
+      HIS_ORG_ID,
+      FULL_NAME,
+      EASY_NAME,
+      ADDRESS,
+      POSTCODE,
+      TELPHONE,
+      LINKMAN,
+      ISFACTORY,
+      ISSENDER,
+      ISSALER,
+      MODIFY_USERID,
+      MODIFY_DATE,
+      PROCESS_FLAG,
+      '1' as SYNC_STATE,
+      REMARK,
+      ISMAP
+      FROM HC_CORP_MAP
+      WHERE MAP_ORGID = :Id
+2007-11-26 16:09:25,859 [2036] DEBUG Emedchina.Commons.Data.DataBaseFacade [(null)] - select sysdate from dual
+2007-11-26 16:14:31,437 [7128] DEBUG Emedchina.Commons.Data.DataBaseFacade [(null)] - DbParameter Id's Value is 411847.
+2007-11-26 16:14:31,500 [7128] DEBUG Emedchina.Commons.Data.DataBaseFacade [(null)] - SELECT
+      u.ID ,
+      u.MAIL,
+      u.NAME,
+      u.PASSWORD,
+      u.ADMIN_LEVEL,
+      u.DESCRIPTION,
+      u.ENABLE_FLAG,
+      u.REMARK,
+      u.CREATE_USER,
+      u.CREATE_NAME,
+      u.CREATE_DATE,
+      u.MODIFY_USER,
+      u.MODIFY_NAME,
+      u.MODIFY_DATE,
+      u.CA_FLAG,
+      u.KEY_FLAG,
+      u.PW_FLAG,
+      u.LOGIN_DATE,
+      '1' AS SYNC_STATE
+      FROM cen_usr_user u, HC_USER_ORG uo
+      where u.id = uo.USER_ID and u.ENABLE_FLAG != '0' 
+      and uo.org_id = :Id
+2007-11-26 16:14:31,562 [7128] DEBUG Emedchina.Commons.Data.DataBaseFacade [(null)] - select sysdate from dual
+2007-11-26 16:14:31,796 [7128] DEBUG Emedchina.Commons.Data.DataBaseFacade [(null)] - Select
+      ID     ,
+      GOV_FLAG ,
+      AGENCY_FLAG,
+      BUYER_FLAG ,
+      MANUFACTURE_FLAG,
+      SALER_FLAG,
+      SENDER_FLAG,
+      ORG_NAME ,
+      ORG_ABBR,
+      SPELL_ABBR ,
+      ORG_NAME_WB,
+      LINK_MAN,
+      ORG_PHONE,
+      ORG_ADDRESS,
+      ENABLE_FLAG,
+      CREATE_USER_ID,
+      CREATE_USER_NAME,
+      CREATE_DATE,
+      MODIFY_USER_ID,
+      MODIFY_USER_NAME,
+      MODIFY_DATE
+      From HC_ORG
+      WHERE ENABLE_FLAG != '0'
+2007-11-26 16:14:39,375 [7128] DEBUG Emedchina.Commons.Data.DataBaseFacade [(null)] - select sysdate from dual
+2007-11-26 16:14:39,390 [7128] DEBUG Emedchina.Commons.Data.DataBaseFacade [(null)] - DbParameter Id's Value is 411847.
+2007-11-26 16:14:39,406 [7128] DEBUG Emedchina.Commons.Data.DataBaseFacade [(null)] - SELECT
+      ID  ,
+      USER_ID ,
+      ORG_ID,
+      CREATE_USER_NAME,
+      CREATE_USER_ID ,
+      CREATE_DATE,
+      MODIFY_USER_ID,
+      MODIFY_USER_NAME,
+      MODIFY_DATE
+      From HC_USER_ORG
+      WHERE ORG_ID = :Id
+2007-11-26 16:14:39,421 [7128] DEBUG Emedchina.Commons.Data.DataBaseFacade [(null)] - select sysdate from dual
+2007-11-26 16:14:39,421 [7128] DEBUG Emedchina.Commons.Data.DataBaseFacade [(null)] - DbParameter Id's Value is 411847.
+2007-11-26 16:14:39,437 [7128] DEBUG Emedchina.Commons.Data.DataBaseFacade [(null)] - SELECT
+      ID,
+      ORG_ID,
+      STORE_NAME,
+      STORE_ADDRESS,
+      LINKMAN,
+      TEL,
+      ENABLE_FLAG,
+      CREATE_USER_NAME,
+      CREATE_USER_ID,
+      CREATE_DATE,
+      MODIFY_USER_ID,
+      MODIFY_USER_NAME,
+      MODIFY_DATE,
+      TYPE,
+      '1' AS SYNC_STATE
+      FROM HC_BUYER_STORE
+      WHERE ORG_ID = :Id
+2007-11-26 16:14:39,531 [7128] DEBUG Emedchina.Commons.Data.DataBaseFacade [(null)] - select sysdate from dual
+2007-11-26 16:14:39,546 [7156] DEBUG Emedchina.Commons.Data.DataBaseFacade [(null)] - DbParameter Id's Value is 411847.
+2007-11-26 16:14:39,593 [7156] DEBUG Emedchina.Commons.Data.DataBaseFacade [(null)] - SELECT
+      ID ,
+      PROJECT_ID,
+      DATA_ORG_ID ,
+      BUYER_FLAG,
+      MANUFACTURE_FLAG,
+      SALER_FLAG ,
+      SENDER_FLAG ,
+      ORG_NAME,
+      ORG_ABBR,
+      SPELL_ABBR,
+      ORG_NAME_WB,
+      ORG_PHONE,
+      ORG_ADDRESS,
+      ENABLE_FLAG,
+      CREATE_USER_ID,
+      CREATE_USER_NAME,
+      CREATE_DATE,
+      MODIFY_USER_ID,
+      MODIFY_USER_NAME,
+      MODIFY_DATE,
+      LINK_MAN
+      FROM HC_PROJECT_ORG
+      WHERE ENABLE_FLAG != '0' AND DATA_ORG_ID = :Id
+2007-11-26 16:14:39,609 [7128] DEBUG Emedchina.Commons.Data.DataBaseFacade [(null)] - select sysdate from dual
+2007-11-26 16:14:39,625 [7128] DEBUG Emedchina.Commons.Data.DataBaseFacade [(null)] - DbParameter Id's Value is 411847.
+2007-11-26 16:14:39,671 [7128] DEBUG Emedchina.Commons.Data.DataBaseFacade [(null)] - SELECT
+      HOP.ID,
+      HOP.CONT_ID,
+      HOP.PROJECT_NAME,
+      HOP.PROJECT_TYPE,
+      HOP.PROJECT_CODE,
+      HOP.PROJECT_STRAT_DATE,
+      HOP.PROJECT_END_DATE,
+      HOP.PROJECT_STATE,
+      HOP.PROJECT_DESC,
+      HOP.DECIMAL_DIGITS,
+      HOP.CREATE_USER_ID,
+      HOP.CREATE_USER_NAME,
+      HOP.CREATE_DATE ,
+      HOP.MODIFY_USER_ID ,
+      HOP.MODIFY_USER_NAME,
+      HOP.MODIFY_DATE,
+      AUTO_CREATE_FLAG
+      FROM HC_ORD_PROJECT HOP, HC_PROJECT_ORG HPO
+      WHERE HPO.PROJECT_ID = HOP.ID AND HPO.ENABLE_FLAG != '0' AND HPO.DATA_ORG_ID = :Id
+2007-11-26 16:14:39,687 [7128] DEBUG Emedchina.Commons.Data.DataBaseFacade [(null)] - select sysdate from dual
+2007-11-26 16:14:39,703 [7128] DEBUG Emedchina.Commons.Data.DataBaseFacade [(null)] - DbParameter Id's Value is 411847.
+2007-11-26 16:14:41,921 [7128] DEBUG Emedchina.Commons.Data.DataBaseFacade [(null)] - SELECT
+      ID,
+      PROJECT_ID,
+      PROJECT_PROD_ID,
+      BUYER_ID,
+      IS_OOS,
+      SENDER_ID,
+      SENDER_ABBR,
+      SENDER_NAME,
+      CREATE_USER_ID,
+      CREATE_USER_NAME,
+      CREATE_DATE ,
+      MODIFY_USER_ID,
+      MODIFY_USER_NAME,
+      MODIFY_DATE,
+      ENABLE_FLAG
+      FROM HC_ORD_BUYER_SENDER
+      WHERE ENABLE_FLAG != '0' AND BUYER_ID = :Id
+2007-11-26 16:15:09,781 [7508] DEBUG Emedchina.Commons.Data.DataBaseFacade [(null)] - select sysdate from dual
+2007-11-26 16:15:09,796 [8016] DEBUG Emedchina.Commons.Data.DataBaseFacade [(null)] - DbParameter Id's Value is 411847.
+2007-11-26 16:15:16,609 [8016] DEBUG Emedchina.Commons.Data.DataBaseFacade [(null)] - SELECT distinct
+      HP.ID,
+      HP.PROJECT_ID,
+      HP.DATA_PRODUCT_ID,
+      HP.CONT_PRODUCT_ID,
+      HP.PRODUCT_NAME,
+      HP.COMMERCE_NAME,
+      HP.COMMON_NAME,
+      HP.CODE,
+      HP.ABBR_PY,
+      HP.ABBR_WB,
+      HP.BRAND,
+      HP.SPEC,
+      HP.MODEL,
+      HP.GOODS_NO,
+      HP.BARCODE,
+      HP.BASE_MEASURE,
+      HP.BASE_MEASURE_SPEC,
+      HP.BASE_MEASURE_MATER,
+      HP.MAX_PRICE,
+      HP.HISTORY_PIRCE,
+      HP.PRICE,
+      HP.MANU_ID,
+      HP.MANU_NAME,
+      HP.MANU_NAME_ABBR,
+      HP.SALER_ID,
+      HP.SALER_NAME,
+      HP.SALER_NAME_ABBR,
+      HP.BALANCE_ID,
+      HP.BALANCE_NAME,
+      HP.BALANCE_EASY,
+      HP.BALANCE_FAST,
+      HP.BALANCE_WUBI,
+      HP.DEFAULT_MEASURE,
+      HP.DEFAULT_MEASURE_EX,
+      HP.BAK_MEASURE_ONE,
+      HP.BAK_MEASURE_ONE_EX,
+      HP.BAK_MEASURE_TWO,
+      HP.BAK_MEASURE_TWO_EX,
+      HP.PRICE_DESCRIPTION,
+      HP.PERFORMANCE,
+      HP.PRE_PURCHASE,
+      HP.STATE,
+      HP.STATE_CHANGE_REASON,
+      HP.REG_NO,
+      HP.REG_VALID_DATE,
+      HP.SENDER_ID,
+      HP.SENDER_NAME,
+      HP.SENDER_NAME_ABBR,
+      HP.AUDIT_FLAG,
+      HP.CREATE_USER_ID,
+      HP.CREATE_USER_NAME,
+      HP.CREATE_DATE,
+      HP.MODIFY_USER_ID,
+      HP.MODIFY_USER_NAME,
+      HP.MODIFY_DATE,
+      HP.INSTRU_CODE,
+      HP.INSTRU_NAME,
+      HP.BID_ID 
+      FROM HC_ORD_PRODUCT HP,HC_PROJECT_ORG HPO
+      WHERE HP.PROJECT_ID = HPO.PROJECT_ID AND HPO.ENABLE_FLAG != '0'
+      AND HP.STATE != '0' AND HPO.DATA_ORG_ID = :Id
+      AND exists (select 1
+      from hc_ord_buyer_sender b
+      where b.enable_flag = '1'
+      AND HP.PROJECT_ID = b.project_id
+      AND b.buyer_id = :Id
+      AND b.project_prod_id = HP.id)
+      AND exists (select 1
+      from HC_PROJECT_PROD_CLASS_CONTENT a,
+      HC_PROJECT_PROD_CLASS_CONFIG  b,
+      HC_PROJECT_PRODUCT_CLASS      c
+      where a.class_id = c.id
+      AND b.class_id = c.id
+      AND b.buyer_id = :Id
+      AND a.PRODUCT_ID = HP.id
+      AND b.SALER_ID = HP.SALER_ID)
+2007-11-26 16:15:43,562 [8016] DEBUG Emedchina.Commons.Data.DataBaseFacade [(null)] - select sysdate from dual
+2007-11-26 16:15:43,578 [6952] DEBUG Emedchina.Commons.Data.DataBaseFacade [(null)] - DbParameter Id's Value is 411847.
+2007-11-26 16:15:43,656 [6952] DEBUG Emedchina.Commons.Data.DataBaseFacade [(null)] - SELECT
+      ID,
+      PROJECT_ID,
+      DATA_PRODUCT_ID,
+      PROJECT_PROD_ID,
+      CONT_PRODUCT_ID,
+      PRODUCT_NAME,
+      COMMERCE_NAME,
+      COMMON_NAME,
+      CODE,
+      ABBR_PY,
+      ABBR_WB,
+      BRAND,
+      MODEL_ID,
+      SPEC_ID,
+      MODEL,
+      SPEC,
+      GOODS_NO,
+      BARCODE,
+      BASE_MEASURE,
+      BASE_MEASURE_SPEC,
+      BASE_MEASURE_MATER,
+      MAX_PRICE,
+      HISTORY_PIRCE,
+      PRICE,
+      MANU_ID,
+      MANU_NAME,
+      MANU_NAME_ABBR,
+      SALER_ID,
+      SALER_NAME,
+      BUYER_ID,
+      BALANCE_ID,
+      BALANCE_NAME,
+      BALANCE_EASY,
+      BALANCE_FAST,
+      BALANCE_WUBI,
+      SALER_NAME_ABBR,
+      DEFAULT_MEASURE,
+      DEFAULT_MEASURE_EX,
+      BAK_MEASURE_ONE,
+      BAK_MEASURE_ONE_EX,
+      BAK_MEASURE_TWO,
+      BAK_MEASURE_TWO_EX,
+      PRICE_DESCRIPTION,
+      PERFORMANCE,
+      PRE_PURCHASE,
+      STATE_CHANGE_REASON,
+      REG_NO,
+      REG_VALID_DATE,
+      DESCRIPTIONS,
+      LAST_AMOUNT,
+      LAST_SUM,
+      LAST_DATE,
+      ALL_AMOUNT,
+      ALL_SUM,
+      STORE_ROOM_ID,
+      STORE_ROOM_NAME,
+      SENDER_ID,
+      SENDER_NAME,
+      SENDER_NAME_ABBR,
+      STATE,
+      CREATE_USER_ID,
+      CREATE_USER_NAME,
+      CREATE_DATE,
+      MODIFY_USER_ID,
+      MODIFY_USER_NAME,
+      MODIFY_DATE,
+      INSTRU_CODE,
+      INSTRU_NAME,
+      '1' as SYNC_STATE
+      FROM HC_ORD_HIT_COMM WHERE BUYER_ID = :Id AND STATE != '0'
+2007-11-26 16:15:43,968 [6952] DEBUG Emedchina.Commons.Data.DataBaseFacade [(null)] - select sysdate from dual
+2007-11-26 16:15:43,984 [6952] DEBUG Emedchina.Commons.Data.DataBaseFacade [(null)] - DbParameter Id's Value is 411847.
+2007-11-26 16:15:45,203 [6952] DEBUG Emedchina.Commons.Data.DataBaseFacade [(null)] - SELECT
+      HPP.ID,
+      HPP.PROJECT_ID,
+      HPP.NAME,
+      HPP.STATE,
+      HPP.MODIFY_USER_ID,
+      HPP.CREATE_USER_NAME,
+      HPP.MODIFY_DATE,
+      HPP.CREATE_USER_ID,
+      HPP.CREATE_DATE,
+      HPP.MODIFY_USER_NAME,
+      HPP.BAK_PACKAGE_ID
+      FROM HC_ORD_PRODUCT_PACKAGE HPP,HC_PROJECT_ORG HPO
+      WHERE HPP.PROJECT_ID = HPO.PROJECT_ID AND HPO.ENABLE_FLAG != '0'
+      AND HPP.STATE != '0' AND HPO.DATA_ORG_ID = :Id
+2007-11-26 16:15:51,500 [6952] DEBUG Emedchina.Commons.Data.DataBaseFacade [(null)] - select sysdate from dual
+2007-11-26 16:15:51,515 [6952] DEBUG Emedchina.Commons.Data.DataBaseFacade [(null)] - DbParameter Id's Value is 411847.
+2007-11-26 16:15:53,625 [6952] DEBUG Emedchina.Commons.Data.DataBaseFacade [(null)] - SELECT
+      HPPI.ID,
+      HPPI.PACKAGE_ID,
+      HPPI.NAME,
+      HPPI.AMOUNT,
+      HPPI.MODIFY_USER_ID,
+      HPPI.CREATE_USER_NAME,
+      HPPI.MODIFY_DATE,
+      HPPI.CREATE_USER_ID,
+      HPPI.CREATE_DATE,
+      HPPI.MODIFY_USER_NAME,
+      HPPI.PROJECT_PROD_ID
+      FROM HC_ORD_PRODUCT_PACKAGE_ITEM HPPI,HC_ORD_PRODUCT_PACKAGE HPP,HC_PROJECT_ORG HPO
+      WHERE HPP.STATE != '0' AND HPPI.PACKAGE_ID = HPP.ID
+      AND HPP.PROJECT_ID = HPO.PROJECT_ID AND HPO.ENABLE_FLAG != '0' AND HPO.DATA_ORG_ID = :Id
+      AND exists (select 1
+      from hc_ord_buyer_sender b
+      where b.enable_flag = '1'
+      AND b.buyer_id = :Id
+      AND b.project_prod_id = HPPI.PROJECT_PROD_ID)
+      AND exists (select 1
+      from HC_PROJECT_PROD_CLASS_CONTENT a,
+      HC_PROJECT_PROD_CLASS_CONFIG  b,
+      HC_PROJECT_PRODUCT_CLASS      c
+      where a.class_id = c.id
+      AND b.class_id = c.id
+      AND b.buyer_id = :Id
+      AND a.PRODUCT_ID = HPPI.PROJECT_PROD_ID)
+2007-11-26 16:15:58,953 [6952] DEBUG Emedchina.Commons.Data.DataBaseFacade [(null)] - select sysdate from dual
+2007-11-26 16:15:58,984 [7128] DEBUG Emedchina.Commons.Data.DataBaseFacade [(null)] - SELECT
+      ID,
+      MODEL_NAME,
+      MODIFY_USER_ID,
+      MODIFY_USER_NAME,
+      CREATE_USER_ID,
+      CREATE_USER_NAME,
+      CREATE_DATE,
+      MODIFY_DATE
+      FROM HC_ORD_PRODUCT_MODEL
+2007-11-26 16:15:59,000 [7128] DEBUG Emedchina.Commons.Data.DataBaseFacade [(null)] - select sysdate from dual
+2007-11-26 16:15:59,031 [7128] DEBUG Emedchina.Commons.Data.DataBaseFacade [(null)] - SELECT
+      ID,
+      SPEC_NAME,
+      CREATE_USER_ID,
+      MODIFY_USER_ID,
+      CREATE_USER_NAME,
+      MODIFY_USER_NAME,
+      MODIFY_DATE,
+      CREATE_DATE
+      FROM HC_ORD_PRODUCT_SPEC
+2007-11-26 16:15:59,046 [7128] DEBUG Emedchina.Commons.Data.DataBaseFacade [(null)] - select sysdate from dual
+2007-11-26 16:15:59,062 [6952] DEBUG Emedchina.Commons.Data.DataBaseFacade [(null)] - DbParameter Id's Value is 411847.
+2007-11-26 16:15:59,078 [6952] DEBUG Emedchina.Commons.Data.DataBaseFacade [(null)] - SELECT
+      ID,
+      BUYER_ID,
+      CODE,
+      TYPE,
+      TOTAL_SUM,
+      PURCHASE_DATE,
+      CREATE_USER_ID,
+      CREATE_USER_NAME,
+      STATE,
+      AUDIT_USER_ID,
+      AUDIT_USER_NAME,
+      AUDIT_DATE,
+      QUICKSEND_LEVEL,
+      CREATE_DATE,
+      MODIFY_USER_ID,
+      MODIFY_USER_NAME,
+      MODIFY_DATE,
+      '1' as SYNC_STATE
+      FROM HC_ORD_PURCHASE
+      WHERE BUYER_ID = :Id
+2007-11-26 16:15:59,234 [6952] DEBUG Emedchina.Commons.Data.DataBaseFacade [(null)] - select sysdate from dual
+2007-11-26 16:15:59,250 [6952] DEBUG Emedchina.Commons.Data.DataBaseFacade [(null)] - DbParameter Id's Value is 411847.
+2007-11-26 16:15:59,375 [6952] DEBUG Emedchina.Commons.Data.DataBaseFacade [(null)] - SELECT
+      ID,
+      PROJECT_ID,
+      PURCHASE_ID,
+      PROJECT_PROD_ID,
+      DATA_PRODUCT_ID,
+      BUYER_ID,
+      SALER_ID,
+      SALER_NAME,
+      SALER_NAME_ABBR,
+      SENDER_ID,
+      SENDER_NAME,
+      SENDER_NAME_ABBR,
+      MANUFACTURE_ID,
+      MANUFACTURE_NAME,
+      MANUFACTURE_NAME_ABBR,
+      COMMON_NAME,
+      PRODUCT_NAME,
+      PRODUCT_CODE,
+      SPEC_ID,
+      MODEL_ID,
+      SPEC,
+      MODEL,
+      BRAND,
+      GOODS_NO,
+      BARCODE,
+      STORE_ROOM_ID,
+      STORE_ROOM_NAME,
+      STORE_ROOM_ADDRESS,
+      BASE_MEASURE,
+      BASE_MEASURE_SPEC,
+      BASE_MEASURE_MATER,
+      SEND_MEASURE,
+      SEND_MEASURE_EX,
+      RETAIL_PRICE,
+      TRADE_PRICE,
+      AMOUNT,
+      SUM,
+      OVER_AMOUNT,
+      OVER_SUM,
+      IS_QUICKSEND,
+      BALANCE_ID,
+      BALANCE_NAME,
+      BALANCE_EASY,
+      BALANCE_FAST,
+      BALANCE_WUBI,
+      CREATE_USER_ID,
+      CREATE_USER_NAME,
+      CREATE_DATE,
+      MODIFY_USER_ID,
+      MODIFY_USER_NAME,
+      MODIFY_DATE,
+      DESCRIPTIONS,
+      '1' as SYNC_STATE
+      FROM HC_ORD_PURCHASE_ITEM
+      WHERE BUYER_ID = :Id
+2007-11-26 16:15:59,812 [6952] DEBUG Emedchina.Commons.Data.DataBaseFacade [(null)] - select sysdate from dual
+2007-11-26 16:15:59,828 [7128] DEBUG Emedchina.Commons.Data.DataBaseFacade [(null)] - DbParameter Id's Value is 411847.
+2007-11-26 16:15:59,859 [7128] DEBUG Emedchina.Commons.Data.DataBaseFacade [(null)] - Select
+      ID,
+      ORDER_CODE,
+      BUYER_ID,
+      BUYER_NAME,
+      BUYER_NAME_ABBR,
+      SENDER_ID,
+      SENDER_NAME,
+      SENDER_NAME_ABBR,
+      TOTAL_SUM,
+      OVER_SUM,
+      SALER_APPROVER_ID,
+      SALER_APPROVER_NAME,
+      SALER_APPROVER_DATE,
+      STATE,
+      TYPE,
+      PURCHASE_DATE,
+      QUICKSEND_LEVEL,
+      SALER_DESCRIPTIONS,
+      BUYER_DESCRIPTIONS,
+      CREATE_USER_NAME,
+      CREATE_DATE,
+      MODIFY_USER_ID,
+      MODIFY_USER_NAME,
+      MODIFY_DATE,
+      CREATE_USER_ID,
+      PURCHASE_ID,
+      PURCHASE_CODE,
+      '1' as SYNC_STATE
+      From HC_ORD_ORDER
+      Where STATE != '6' AND BUYER_ID = :Id
+2007-11-26 16:15:59,953 [7128] DEBUG Emedchina.Commons.Data.DataBaseFacade [(null)] - select sysdate from dual
+2007-11-26 16:15:59,984 [7128] DEBUG Emedchina.Commons.Data.DataBaseFacade [(null)] - DbParameter Id's Value is 411847.
+2007-11-26 16:16:00,125 [7128] DEBUG Emedchina.Commons.Data.DataBaseFacade [(null)] - SELECT
+      ID,
+      PROJECT_ID,
+      ORDER_ID,
+      PURCHASE_ID,
+      DATA_PRODUCT_ID,
+      PROJECT_PROD_ID,
+      BUYER_ID,
+      BUYER_NAME,
+      BUYER_NAME_ABBR,
+      SALER_ID,
+      SALER_NAME,
+      SALER_NAME_ABBR,
+      SENDER_ID,
+      SENDER_NAME,
+      SENDER_NAME_ABBR,
+      MANUFACTURE_ID,
+      MANUFACTURE_NAME,
+      MANUFACTURE_NAME_ABBR,
+      COMMON_NAME,
+      PRODUCT_NAME,
+      PRODUCT_CODE,
+      SPEC_ID,
+      MODEL_ID,
+      SPEC,
+      MODEL,
+      BRAND,
+      GOODS_NO,
+      BARCODE,
+      STORE_ROOM_ID,
+      STORE_ROOM_NAME,
+      STORE_ROOM_ADDRESS,
+      BASE_MEASURE_SPEC,
+      BASE_MEASURE_MATER,
+      BASE_MEASURE,
+      SEND_MEASURE,
+      SEND_MEASURE_EX,
+      RETAIL_PRICE,
+      TRADE_PRICE,
+      SUM,
+      AMOUNT,
+      OVER_AMOUNT,
+      OVER_SUM,
+      IS_QUICKSEND,
+      ORDER_TYPE,
+      STATE,
+      BALANCE_ID,
+      BALANCE_NAME,
+      BALANCE_EASY,
+      BALANCE_FAST,
+      BALANCE_WUBI,
+      BUYER_DESCRIPTIONS,
+      SALER_DESCRIPTIONS,
+      CREATE_USER_ID,
+      CREATE_USER_NAME,
+      CREATE_DATE,
+      MODIFY_USER_ID,
+      MODIFY_USER_NAME,
+      MODIFY_DATE,
+      PURCHASE_ITEM_ID,
+      ORIGINAL_ITEM_ID,
+      PARENT_ITEM_ID,
+      '1' as SYNC_STATE
+      FROM HC_ORD_ORDER_ITEM
+      WHERE STATE != '3' AND BUYER_ID = :Id
+2007-11-26 16:16:00,546 [7128] DEBUG Emedchina.Commons.Data.DataBaseFacade [(null)] - select sysdate from dual
+2007-11-26 16:16:00,562 [6952] DEBUG Emedchina.Commons.Data.DataBaseFacade [(null)] - DbParameter Id's Value is 411847.
+2007-11-26 16:16:00,593 [6952] DEBUG Emedchina.Commons.Data.DataBaseFacade [(null)] - SELECT
+      hoos.ID,
+      hoos.DATA_PRODUCT_ID,
+      hoos.PROJECT_ID,
+      hoos.ORDER_ID,
+      hoos.ORDER_ITEM_ID,
+      hoos.PROJECT_PROD_ID,
+      hoos.STOCKUP_QTY,
+      hoos.READY_FLAG,
+      hoos.GOODS_NO,
+      hoos.BARCODE,
+      hoos.PBNO,
+      hoos.SEND_BATCH_NO,
+      hoos.INSTORE_BATCH_NO,
+      hoos.CREATE_USER_ID,
+      hoos.CREATE_USER_NAME,
+      hoos.CREATE_DATE,
+      hoos.MODIFY_USER_ID,
+      hoos.MODIFY_USER_NAME,
+      hoos.MODIFY_DATE,
+      '1' as SYNC_STATE
+      FROM HC_ORD_ORDER_STOCKUP hoos, HC_ORD_ORDER hoo
+      WHERE hoos.ORDER_ID = hoo.ID AND hoo.STATE != '6' AND hoo.BUYER_ID = :Id
+2007-11-26 16:16:00,718 [6952] DEBUG Emedchina.Commons.Data.DataBaseFacade [(null)] - select sysdate from dual
+2007-11-26 16:16:00,734 [7128] DEBUG Emedchina.Commons.Data.DataBaseFacade [(null)] - DbParameter Id's Value is 411847.
+2007-11-26 16:16:00,765 [7128] DEBUG Emedchina.Commons.Data.DataBaseFacade [(null)] - SELECT
+      hoor.ID,
+      hoor.DATA_PRODUCT_ID,
+      hoor.PROJECT_ID,
+      hoor.TYPE,
+      hoor.CODE,
+      hoor.PROJECT_PRODUCT_ID,
+      hoor.ORDER_ID,
+      hoor.ORDER_ITEM_ID,
+      hoor.INVOICE_ID,
+      hoor.GOODS_NO,
+      hoor.BARCODE,
+      hoor.PBNO,
+      hoor.SEND_BATCH_NO,
+      hoor.INSTORE_BATCH_NO,
+      hoor.STORE_ROOM_ID,
+      hoor.STORE_ROOM_NAME,
+      hoor.ARRIVAL_ADDRESS,
+      hoor.ARRIVE_DATE,
+      hoor.PRICE,
+      hoor.FACT_AMOUNT,
+      hoor.FACT_SUM,
+      hoor.RETURN_AMOUNT,
+      hoor.RETURN_SUM,
+      hoor.CREATE_USER_ID,
+      hoor.CREATE_USER_NAME,
+      hoor.CREATE_DATE,
+      hoor.MODIFY_USER_ID,
+      hoor.MODIFY_USER_NAME,
+      hoor.MODIFY_DATE,
+      hoor.DESCRIPTIONS,
+      hoor.STOCKUP_ID,
+      '1' as SYNC_STATE
+      FROM HC_ORD_ORDER_RECEIVE hoor, HC_ORD_ORDER hoo
+      WHERE hoor.ORDER_ID = hoo.ID AND hoo.STATE != '6' AND hoo.BUYER_ID = :Id
+2007-11-26 16:16:00,890 [7128] DEBUG Emedchina.Commons.Data.DataBaseFacade [(null)] - select sysdate from dual
+2007-11-26 16:16:00,906 [6952] DEBUG Emedchina.Commons.Data.DataBaseFacade [(null)] - DbParameter Id's Value is 411847.
+2007-11-26 16:16:00,921 [6952] DEBUG Emedchina.Commons.Data.DataBaseFacade [(null)] - SELECT
+      ID,
+      DATA_PRODUCT_ID,
+      PROJECT_ID,
+      CODE,
+      RECEIVE_ID,
+      ORD_ID,
+      ORD_ITEM_ID,
+      PROJECT_PRODUCT_ID,
+      BUYER_ID,
+      BUYER_NAME,
+      BUYER_NAME_ABBR,
+      SALER_ID,
+      SALER_NAME,
+      SALER_NAME_ABBR,
+      SENDER_ID,
+      SENDER_NAME,
+      SENDER_NAME_ABBR,
+      MANUFACTURE_ID,
+      MANUFACTURE_NAME,
+      MANUFACTURE_NAME_ABBR,
+      COMMON_NAME,
+      PRODUCT_NAME,
+      PRODUCT_CODE,
+      GOODS_NO,
+      BARCODE,
+      PBNO,
+      BRAND,
+      SPEC_ID,
+      MODEL_ID,
+      SPEC,
+      MODEL,
+      SEND_BATCH_NO,
+      INSTORE_BATCH_NO,
+      PRICE,
+      SUM,
+      BASE_MEASURE_SPEC,
+      BASE_MEASURE_MATER,
+      BASE_MEASURE,
+      SEND_MEASURE,
+      SEND_MEASURE_EX,
+      AMOUNT,
+      STATE,
+      SEND_OPERATOR_ID,
+      SEND_OPERATOR_NAME,
+      SEND_OPERATOR_DATE,
+      INSTORE_OPERATOR_ID,
+      INSTORE_OPERATOR_NAME,
+      INSTORE_OPERATOR_DATE,
+      BUYER_DESCRIPTIONS,
+      CREATE_USER_ID,
+      CREATE_USER_NAME,
+      CREATE_DATE,
+      MODIFY_USER_ID,
+      MODIFY_USER_NAME,
+      MODIFY_DATE,
+      SALER_DESCRIPTIONS,
+      '1' as SYNC_STATE
+      FROM HC_ORD_BUYER_RETURN
+      WHERE STATE != '3' AND BUYER_ID = :Id
+2007-11-26 16:16:01,140 [6952] DEBUG Emedchina.Commons.Data.DataBaseFacade [(null)] - select sysdate from dual
+2007-11-26 16:16:01,156 [6952] DEBUG Emedchina.Commons.Data.DataBaseFacade [(null)] - DbParameter Id's Value is 411847.
+2007-11-26 16:16:01,203 [6952] DEBUG Emedchina.Commons.Data.DataBaseFacade [(null)] - SELECT
+      ID,
+      DATA_PRODUCT_ID,
+      PROJECT_ID,
+      PROJECT_PRODUCT_ID,
+      ORDER_ID,
+      ORDER_ITEM_ID,
+      RECEIVE_ID,
+      RETRUN_ID,
+      RESULT_TYPE,
+      TYPE,
+      CODE,
+      INVOICE_ID,
+      BUYER_ID,
+      BUYER_NAME,
+      BUYER_NAME_ABBR,
+      SALER_ID,
+      SALER_NAME,
+      SALER_NAME_ABBR,
+      SENDER_ID,
+      SENDER_NAME,
+      SENDER_NAME_ABBR,
+      MANUFACTURE_ID,
+      MANUFACTURE_NAME,
+      MANUFACTURE_NAME_ABBR,
+      PRODUCT_NAME,
+      PRODUCT_CODE,
+      SPEC_ID,
+      MODEL_ID,
+      SPEC,
+      MODEL,
+      COMMON_NAME,
+      BRAND,
+      GOODS_NO,
+      BARCODE,
+      PBNO,
+      BASE_MEASURE_SPEC,
+      BASE_MEASURE_MATER,
+      BASE_MEASURE,
+      SEND_MEASURE,
+      SEND_MEASURE_EX,
+      SEND_BATCH_NO,
+      INSTORE_BATCH_NO,
+      STORE_ROOM_ID,
+      STORE_ROOM_NAME,
+      ARRIVAL_ADDRESS,
+      ARRIVE_DATE,
+      PRICE,
+      FACT_AMOUNT,
+      FACT_SUM,
+      STATE,
+      SEND_OPERATOR_ID,
+      SEND_OPERATOR_NAME,
+      SEND_OPERATOR_DATE,
+      INSTORE_OPERATOR_ID,
+      INSTORE_OPERATOR_NAME,
+      INSTORE_OPERATOR_DATE,
+      BACK_AMOUNT,
+      BACK_SUM,
+      MODIFY_USER_ID,
+      MODIFY_USER_NAME,
+      MODIFY_DATE,
+      DESCRIPTIONS,
+      CREATE_USER_ID,
+      CREATE_USER_NAME,
+      CREATE_DATE,
+      '1' as SYNC_STATE
+      FROM HC_ORD_ORDER_RESULT
+      WHERE BUYER_ID = :Id
+2007-11-26 16:16:01,578 [6952] DEBUG Emedchina.Commons.Data.DataBaseFacade [(null)] - select sysdate from dual
+2007-11-26 16:16:01,593 [7128] DEBUG Emedchina.Commons.Data.DataBaseFacade [(null)] - DbParameter Id's Value is 411847.
+2007-11-26 16:16:01,609 [7128] DEBUG Emedchina.Commons.Data.DataBaseFacade [(null)] - SELECT
+      ID,
+      INVOICE_CODE,
+      BUYER_ID,
+      BUYER_NAME,
+      SENDER_ID,
+      SENDER_NAME,
+      TOTAL_SUM,
+      OVER_SUM,
+      SENDED_DATE,
+      STATE,
+      BUYER_DESCRIPTIONS,
+      CREATE_USER_ID,
+      CREATE_USER_NAME,
+      CREATE_DATE,
+      MODIFY_USER_ID,
+      MODIFY_USER_NAME,
+      MODIFY_DATE,
+      SALER_DESCRIPTIONS,
+      '1' as SYNC_STATE
+      FROM HC_ORD_INVOICE_FROM
+      WHERE STATE != '4' AND BUYER_ID = :Id
+2007-11-26 16:16:01,656 [7128] DEBUG Emedchina.Commons.Data.DataBaseFacade [(null)] - select sysdate from dual
+2007-11-26 16:16:01,671 [7128] DEBUG Emedchina.Commons.Data.DataBaseFacade [(null)] - DbParameter Id's Value is 411847.
+2007-11-26 16:16:01,703 [7128] DEBUG Emedchina.Commons.Data.DataBaseFacade [(null)] - SELECT
+      ID,
+      DATA_PRODUCT_ID,
+      PROJECT_ID,
+      INVOICE_FROM_ID,
+      PROJECT_PROD_ID,
+      BUYER_ID,
+      SALER_ID,
+      SALER_NAME,
+      SALER_NAME_ABBR,
+      MANUFACTURE_ID,
+      MANUFACTURE_NAME,
+      MANUFACTURE_NAME_ABBR,
+      COMMON_NAME,
+      PRODUCT_NAME,
+      PRODUCT_CODE,
+      SPEC_ID,
+      MODEL_ID,
+      SPEC,
+      MODEL,
+      BRAND,
+      GOODS_NO,
+      BARCODE,
+      BATCH_NO,
+      VALID_DATE,
+      STORE_ROOM_ID,
+      STORE_ROOM_NAME,
+      STORE_ROOM_ADDRESS,
+      BASE_MEASURE,
+      BASE_MEASURE_SPEC,
+      BASE_MEASURE_MATER,
+      SEND_MEASURE,
+      SEND_MEASURE_EX,
+      RETAIL_PRICE,
+      TRADE_PRICE,
+      AMOUNT,
+      SUM,
+      OVER_AMOUNT,
+      OVER_SUM,
+      STATE,
+      BUYER_DESCRIPTIONS,
+      BALANCE_ID,
+      BALANCE_NAME,
+      BALANCE_EASY,
+      BALANCE_FAST,
+      BALANCE_WUBI,
+      CREATE_USER_ID,
+      CREATE_USER_NAME,
+      CREATE_DATE,
+      MODIFY_USER_ID,
+      MODIFY_USER_NAME,
+      MODIFY_DATE,
+      SALER_DESCRIPTIONS,
+      PBNO,
+      SEND_BATCH_NO,
+      INSTORE_BATCH_NO,
+      '1' as SYNC_STATE
+      FROM HC_ORD_INVOICE_FROM_ITEM
+      WHERE STATE != '3' AND BUYER_ID = :Id
+2007-11-26 16:16:01,937 [7128] DEBUG Emedchina.Commons.Data.DataBaseFacade [(null)] - select sysdate from dual
+2007-11-26 16:16:01,953 [7128] DEBUG Emedchina.Commons.Data.DataBaseFacade [(null)] - DbParameter Id's Value is 411847.
+2007-11-26 16:16:01,968 [7128] DEBUG Emedchina.Commons.Data.DataBaseFacade [(null)] - SELECT
+      ID,
+      CODE,
+      BUYER_ID,
+      BUYER_NAME,
+      BUYER_NAME_ABBR,
+      SENDER_ID,
+      SENDER_NAME,
+      SENDER_NAME_ABBR,
+      STATE,
+      REMARK,
+      CREATE_USER_NAME,
+      CREATE_DATE,
+      MODIFY_USER_ID,
+      MODIFY_USER_NAME,
+      MODIFY_DATE,
+      CREATE_USER_ID,
+      SEND_USER_ID,
+      SEND_USER_NAME,
+      SEND_DATE,
+      '1' as SYNC_STATE
+      FROM HC_ORD_ORD_STOCK
+      WHERE STATE!= '4' AND BUYER_ID = :Id
+2007-11-26 16:16:02,000 [7128] DEBUG Emedchina.Commons.Data.DataBaseFacade [(null)] - select sysdate from dual
+2007-11-26 16:16:02,015 [7128] DEBUG Emedchina.Commons.Data.DataBaseFacade [(null)] - DbParameter Id's Value is 411847.
+2007-11-26 16:16:02,031 [7128] DEBUG Emedchina.Commons.Data.DataBaseFacade [(null)] - SELECT
+      hosi.ID,
+      hosi.DATA_PRODUCT_ID,
+      hosi.PROJECT_ID,
+      hosi.STOCK_ID,
+      hosi.PROJECT_PROD_ID,
+      hosi.MANUFACTURE_ID,
+      hosi.MANUFACTURE_NAME,
+      hosi.MANUFACTURE_NAME_ABBR,
+      hosi.COMMON_NAME,
+      hosi.PRODUCT_NAME,
+      hosi.PRODUCT_CODE,
+      hosi.BRAND,
+      hosi.SPEC_ID,
+      hosi.MODEL_ID,
+      hosi.SPEC,
+      hosi.MODEL,
+      hosi.GOODS_NO,
+      hosi.BARCODE,
+      hosi.BATCH_NO,
+      hosi.VALID_DATE,
+      hosi.NUM,
+      hosi.STATE,
+      hosi.REMARK,
+      hosi.CREATE_USER_ID,
+      hosi.CREATE_USER_NAME,
+      hosi.CREATE_DATE,
+      hosi.MODIFY_USER_ID,
+      hosi.MODIFY_USER_NAME,
+      hosi.MODIFY_DATE,
+      hosi.PBNO,
+      hosi.SEND_BATCH_NO,
+      hosi.INSTORE_BATCH_NO,
+      '1' as SYNC_STATE
+      FROM HC_ORD_ORD_STOCK_ITEM hosi, HC_ORD_ORD_STOCK hoos
+      WHERE hosi.STATE!= '4' AND  hosi.STOCK_ID = hoos.ID AND hoos.BUYER_ID = :Id
+2007-11-26 16:16:02,140 [7128] DEBUG Emedchina.Commons.Data.DataBaseFacade [(null)] - select sysdate from dual
+2007-11-26 16:16:02,203 [7128] DEBUG Emedchina.Commons.Data.DataBaseFacade [(null)] - DbParameter Id's Value is 411847.
+2007-11-26 16:16:02,203 [7128] DEBUG Emedchina.Commons.Data.DataBaseFacade [(null)] - SELECT
+      ID,
+      DATA_PRODUCT_ID,
+      PROJECT_ID,
+      BUYER_ID,
+      SALER_ID,
+      SENDER_ID,
+      PBNO,
+      SEND_BATCH_NO,
+      INSTORE_BATCH_NO,
+      SENDER_NAME,
+      PROJECT_PRODUCT_ID,
+      SPEC_ID,
+      MODEL_ID,
+      BARCODE,
+      PRICE,
+      BATCH_NO,
+      VALID_DATE,
+      NUM,
+      REMARK,
+      STATE,
+      CREATE_USER_ID,
+      CREATE_USER_NAME,
+      CREATE_DATE,
+      MODIFY_USER_ID,
+      MODIFY_USER_NAME,
+      MODIFY_DATE,
+      STOCK_ITEM_ID,
+      '1' as SYNC_STATE
+      FROM HC_ORD_SECOND_AYRLNV
+      WHERE BUYER_ID = :Id
+2007-11-26 16:16:02,265 [7128] DEBUG Emedchina.Commons.Data.DataBaseFacade [(null)] - select sysdate from dual
+2007-11-26 16:16:02,281 [6952] DEBUG Emedchina.Commons.Data.DataBaseFacade [(null)] - DbParameter Id's Value is 411847.
+2007-11-26 16:16:02,296 [6952] DEBUG Emedchina.Commons.Data.DataBaseFacade [(null)] - SELECT
+      ID,
+      SECOND_ID,
+      DATA_PRODUCT_ID,
+      PROJECT_ID,
+      PROJECT_PRODUCT_ID,
+      GOODS_NO,
+      BARCODE,
+      PBNO,
+      SEND_BATCH_NO,
+      INSTORE_BATCH_NO,
+      STORE_ROOM_ID,
+      STORE_ROOM_NAME,
+      ARRIVAL_ADDRESS,
+      ARRIVE_DATE,
+      PRICE,
+      FACT_AMOUNT,
+      FACT_SUM,
+      STATUS,
+      CREATE_USER_ID,
+      CREATE_USER_NAME,
+      CREATE_DATE,
+      MODIFY_USER_ID,
+      MODIFY_USER_NAME,
+      MODIFY_DATE,
+      DESCRIPTIONS,
+      BUYER_ID,
+      SENDER_ID,
+      '1' as SYNC_STATE
+      FROM HC_ORG_SECOND_AYRLNV_USE
+      WHERE STATUS != '0' AND BUYER_ID = :Id
+2007-11-26 16:16:02,375 [6952] DEBUG Emedchina.Commons.Data.DataBaseFacade [(null)] - select sysdate from dual
+2007-11-26 16:16:02,390 [7128] DEBUG Emedchina.Commons.Data.DataBaseFacade [(null)] - DbParameter Id's Value is 411847.
+2007-11-26 16:16:02,453 [7128] DEBUG Emedchina.Commons.Data.DataBaseFacade [(null)] - SELECT
+      ID,
+      PROJECT_ID,
+      BULLETIN_ID,
+      RECEIVER_ID,
+      IS_READ,
+      CREATE_USER_NAME,
+      CREATE_DATE,
+      MODIFY_USER_ID,
+      MODIFY_USER_NAME,
+      MODIFY_DATE,
+      CREATE_USER_ID,
+      '1' as SYNC_STATE
+      FROM HC_BULLETIN_RECEIVER
+      WHERE RECEIVER_ID = :Id
+2007-11-26 16:16:02,484 [7128] DEBUG Emedchina.Commons.Data.DataBaseFacade [(null)] - select sysdate from dual
+2007-11-26 16:16:02,500 [7128] DEBUG Emedchina.Commons.Data.DataBaseFacade [(null)] - DbParameter Id's Value is 411847.
+2007-11-26 16:16:02,609 [7128] DEBUG Emedchina.Commons.Data.DataBaseFacade [(null)] - SELECT
+      HBI.ID,
+      HBI.PROJECT_ID,
+      HBI.TITLE,
+      HBI.CONTENT,
+      HBI.STATE,
+      HBI.TYPE,
+      HBI.ISSUER_ORG_ID,
+      HBI.ISSUER_ID,
+      HBI.ISSUER_NAME,
+      HBI.ISSUE_DATE,
+      HBI.CREATE_USER_ID,
+      HBI.CREATE_USER_NAME,
+      HBI.CREATE_DATE,
+      HBI.MODIFY_USER_ID,
+      HBI.MODIFY_USER_NAME,
+      HBI.MODIFY_DATE
+      FROM HC_BULLETIN_INFO HBI,HC_BULLETIN_RECEIVER HBR
+      WHERE HBI.ID = HBR.BULLETIN_ID
+      AND STATE != '3' AND HBR.RECEIVER_ID = :Id
+2007-11-26 16:16:02,671 [7128] DEBUG Emedchina.Commons.Data.DataBaseFacade [(null)] - select sysdate from dual
+2007-11-26 16:16:02,687 [6952] DEBUG Emedchina.Commons.Data.DataBaseFacade [(null)] - DbParameter Id's Value is 411847.
+2007-11-26 16:16:02,734 [6952] DEBUG Emedchina.Commons.Data.DataBaseFacade [(null)] - SELECT
+      hppc.ID,
+      hppc.CLASS_NAME,
+      hppc.PROJECT_ID,
+      hppc.CREATE_USER_ID,
+      hppc.CREATE_USER_NAME,
+      hppc.CREATE_DATE,
+      hppc.MODIFY_USER_ID,
+      hppc.MODIFY_USER_NAME,
+      hppc.MODIFY_DATE
+      FROM HC_PROJECT_PRODUCT_CLASS hppc , HC_PROJECT_ORG hpo
+      WHERE hppc.PROJECT_ID = hpo.PROJECT_ID
+      AND hpo.ENABLE_FLAG != '0' AND hpo.DATA_ORG_ID = :Id
+2007-11-26 16:16:02,765 [6952] DEBUG Emedchina.Commons.Data.DataBaseFacade [(null)] - select sysdate from dual
+2007-11-26 16:16:02,781 [6952] DEBUG Emedchina.Commons.Data.DataBaseFacade [(null)] - DbParameter Id's Value is 411847.
+2007-11-26 16:16:04,625 [6952] DEBUG Emedchina.Commons.Data.DataBaseFacade [(null)] - SELECT
+      hppc.ID,
+      hppc.CLASS_ID,
+      hppc.PROJECT_ID,
+      hppc.PRODUCT_ID,
+      hppc.CREATE_USER_ID,
+      hppc.CREATE_USER_NAME,
+      hppc.CREATE_DATE,
+      hppc.MODIFY_USER_ID,
+      hppc.MODIFY_USER_NAME,
+      hppc.MODIFY_DATE
+      FROM HC_PROJECT_PROD_CLASS_CONTENT hppc , HC_PROJECT_ORG hpo
+      WHERE hppc.PROJECT_ID = hpo.PROJECT_ID
+      AND hpo.ENABLE_FLAG != '0' AND hpo.DATA_ORG_ID = :Id
+      AND exists (select 1
+      from hc_ord_buyer_sender b
+      where b.enable_flag = '1'
+      AND b.buyer_id = :Id
+      AND b.project_prod_id = hppc.PRODUCT_ID)
+2007-11-26 16:16:11,031 [6952] DEBUG Emedchina.Commons.Data.DataBaseFacade [(null)] - select sysdate from dual
+2007-11-26 16:16:11,031 [6952] DEBUG Emedchina.Commons.Data.DataBaseFacade [(null)] - DbParameter Id's Value is 411847.
+2007-11-26 16:16:12,875 [6952] DEBUG Emedchina.Commons.Data.DataBaseFacade [(null)] - SELECT
+      ID,
+      CREATE_USER_ID,
+      BUYER_ID,
+      SALER_ID,
+      CLASS_ID,
+      INVOICE_FLAG,
+      ORDER_FLAG,
+      STOCK_FLAG,
+      CREATE_USER_NAME,
+      CREATE_DATE,
+      MODIFY_USER_ID,
+      MODIFY_USER_NAME,
+      MODIFY_DATE,
+      PROJECT_ID
+      FROM HC_PROJECT_PROD_CLASS_CONFIG
+      WHERE BUYER_ID = :Id
+2007-11-26 16:16:19,421 [6952] DEBUG Emedchina.Commons.Data.DataBaseFacade [(null)] - select sysdate from dual
+2007-11-26 16:16:19,437 [7128] DEBUG Emedchina.Commons.Data.DataBaseFacade [(null)] - DbParameter Id's Value is 411847.
+2007-11-26 16:16:19,437 [7128] DEBUG Emedchina.Commons.Data.DataBaseFacade [(null)] - SELECT
+      ID,
+      ORGID,
+      HIT_COMM_ID,
+      PRODUCT_MNEMONIC,
+      SELF_PACKAGE,
+      ALIAS,
+      ALIAS_PINYIN,
+      MODIFY_USERID,
+      MODIFY_DATE,
+      '1' as SYNC_STATE
+      FROM HC_SELF_DEFINE_INFO
+      WHERE ORGID = :Id
+2007-11-26 16:16:19,468 [7128] DEBUG Emedchina.Commons.Data.DataBaseFacade [(null)] - select sysdate from dual
+2007-11-26 16:16:19,484 [7128] DEBUG Emedchina.Commons.Data.DataBaseFacade [(null)] - DbParameter Id's Value is 411847.
+2007-11-26 16:16:19,500 [7128] DEBUG Emedchina.Commons.Data.DataBaseFacade [(null)] - SELECT
+      ID,
+      MAP_ORGTYPE,
+      MAP_ORGID,
+      PROJECT_PROD_ID,
+      HH_MODE_ID,
+      HH_SPEC_ID,
+      PRODUCT_ID,
+      HIS_PRODUCT_ID,
+      COMMON_NAME,
+      PRODUCT_NAME,
+      COMMERCE_NAME,
+      BRAND,
+      MODE_ID,
+      MODE_NAME,
+      SPEC_ID,
+      SPEC,
+      BASE_MEASURE,
+      BASE_MEASURE_SPEC,
+      BASE_MEASURE_MATE,
+      STAND_RATE,
+      FACTORY_CODE,
+      FACTORY_Name,
+      SALER_CODE,
+      SALER_NAME,
+      SENDER_CODE,
+      SENDER_NAME,
+      STOCK_ID,
+      STOCK_NAME,
+      MODIFY_USERID,
+      MODIFY_DATE,
+      PROCESS_FLAG,
+      '1' as SYNC_STATE,
+      REMARK,
+      ISMAP
+      FROM HC_PRODUCT_MAP
+      WHERE MAP_ORGID = :Id
+2007-11-26 16:16:19,531 [7128] DEBUG Emedchina.Commons.Data.DataBaseFacade [(null)] - select sysdate from dual
+2007-11-26 16:16:19,546 [6952] DEBUG Emedchina.Commons.Data.DataBaseFacade [(null)] - DbParameter Id's Value is 411847.
+2007-11-26 16:16:19,546 [6952] DEBUG Emedchina.Commons.Data.DataBaseFacade [(null)] - SELECT
+      ID,
+      MAP_ORGTYPE,
+      MAP_ORGID,
+      ORG_ID,
+      HIS_ORG_ID,
+      FULL_NAME,
+      EASY_NAME,
+      ADDRESS,
+      POSTCODE,
+      TELPHONE,
+      LINKMAN,
+      ISFACTORY,
+      ISSENDER,
+      ISSALER,
+      MODIFY_USERID,
+      MODIFY_DATE,
+      PROCESS_FLAG,
+      '1' as SYNC_STATE,
+      REMARK,
+      ISMAP
+      FROM HC_CORP_MAP
+      WHERE MAP_ORGID = :Id
+2007-11-26 16:16:19,562 [6952] DEBUG Emedchina.Commons.Data.DataBaseFacade [(null)] - select sysdate from dual
+2007-11-26 17:00:42,968 [7128] DEBUG Emedchina.Commons.Data.DataBaseFacade [(null)] -  SELECT SEQ_HC_TRADE_HIGH_ID.NEXTVAL AS ID FROM DUAL
+[Header]\r\n2007-11-27 13:00:50,218 [416] DEBUG Emedchina.Commons.Data.DataBaseFacade [(null)] -  SELECT SEQ_HC_TRADE_HIGH_ID.NEXTVAL AS ID FROM DUAL
+2007-11-27 14:59:59,828 [1436] DEBUG Emedchina.Commons.Data.DataBaseFacade [(null)] -  SELECT SEQ_HC_TRADE_HIGH_ID.NEXTVAL AS ID FROM DUAL
+[Header]\r\n2007-11-28 10:50:04,718 [2940] DEBUG Emedchina.Commons.Data.DataBaseFacade [(null)] -  SELECT SEQ_HC_TRADE_HIGH_ID.NEXTVAL AS ID FROM DUAL
+2007-11-28 10:50:22,781 [2940] DEBUG Emedchina.Commons.Data.DataBaseFacade [(null)] - DbParameter Id's Value is 411847.
+2007-11-28 10:50:22,890 [2940] DEBUG Emedchina.Commons.Data.DataBaseFacade [(null)] - SELECT
+      u.ID ,
+      u.MAIL,
+      u.NAME,
+      u.PASSWORD,
+      u.ADMIN_LEVEL,
+      u.DESCRIPTION,
+      u.ENABLE_FLAG,
+      u.REMARK,
+      u.CREATE_USER,
+      u.CREATE_NAME,
+      u.CREATE_DATE,
+      u.MODIFY_USER,
+      u.MODIFY_NAME,
+      u.MODIFY_DATE,
+      u.CA_FLAG,
+      u.KEY_FLAG,
+      u.PW_FLAG,
+      u.LOGIN_DATE,
+      '1' AS SYNC_STATE
+      FROM cen_usr_user u, HC_USER_ORG uo
+      where u.id = uo.USER_ID and u.ENABLE_FLAG != '0' 
+      and uo.org_id = :Id
+2007-11-28 10:50:23,718 [2940] DEBUG Emedchina.Commons.Data.DataBaseFacade [(null)] - select sysdate from dual
+2007-11-28 10:50:24,156 [7856] DEBUG Emedchina.Commons.Data.DataBaseFacade [(null)] - Select
+      ID     ,
+      GOV_FLAG ,
+      AGENCY_FLAG,
+      BUYER_FLAG ,
+      MANUFACTURE_FLAG,
+      SALER_FLAG,
+      SENDER_FLAG,
+      ORG_NAME ,
+      ORG_ABBR,
+      SPELL_ABBR ,
+      ORG_NAME_WB,
+      LINK_MAN,
+      ORG_PHONE,
+      ORG_ADDRESS,
+      ENABLE_FLAG,
+      CREATE_USER_ID,
+      CREATE_USER_NAME,
+      CREATE_DATE,
+      MODIFY_USER_ID,
+      MODIFY_USER_NAME,
+      MODIFY_DATE
+      From HC_ORG
+      WHERE ENABLE_FLAG != '0'
+2007-11-28 10:50:28,859 [7856] DEBUG Emedchina.Commons.Data.DataBaseFacade [(null)] - select sysdate from dual
+2007-11-28 10:50:28,890 [7856] DEBUG Emedchina.Commons.Data.DataBaseFacade [(null)] - DbParameter Id's Value is 411847.
+2007-11-28 10:50:28,890 [7856] DEBUG Emedchina.Commons.Data.DataBaseFacade [(null)] - SELECT
+      ID  ,
+      USER_ID ,
+      ORG_ID,
+      CREATE_USER_NAME,
+      CREATE_USER_ID ,
+      CREATE_DATE,
+      MODIFY_USER_ID,
+      MODIFY_USER_NAME,
+      MODIFY_DATE
+      From HC_USER_ORG
+      WHERE ORG_ID = :Id
+2007-11-28 10:50:28,937 [7856] DEBUG Emedchina.Commons.Data.DataBaseFacade [(null)] - select sysdate from dual
+2007-11-28 10:50:28,968 [7856] DEBUG Emedchina.Commons.Data.DataBaseFacade [(null)] - DbParameter Id's Value is 411847.
+2007-11-28 10:50:28,968 [7856] DEBUG Emedchina.Commons.Data.DataBaseFacade [(null)] - SELECT
+      ID,
+      ORG_ID,
+      STORE_NAME,
+      STORE_ADDRESS,
+      LINKMAN,
+      TEL,
+      ENABLE_FLAG,
+      CREATE_USER_NAME,
+      CREATE_USER_ID,
+      CREATE_DATE,
+      MODIFY_USER_ID,
+      MODIFY_USER_NAME,
+      MODIFY_DATE,
+      TYPE,
+      '1' AS SYNC_STATE
+      FROM HC_BUYER_STORE
+      WHERE ORG_ID = :Id
+2007-11-28 10:50:29,093 [7856] DEBUG Emedchina.Commons.Data.DataBaseFacade [(null)] - select sysdate from dual
+2007-11-28 10:50:29,109 [7856] DEBUG Emedchina.Commons.Data.DataBaseFacade [(null)] - DbParameter Id's Value is 411847.
+2007-11-28 10:50:29,281 [7856] DEBUG Emedchina.Commons.Data.DataBaseFacade [(null)] - SELECT
+      ID ,
+      PROJECT_ID,
+      DATA_ORG_ID ,
+      BUYER_FLAG,
+      MANUFACTURE_FLAG,
+      SALER_FLAG ,
+      SENDER_FLAG ,
+      ORG_NAME,
+      ORG_ABBR,
+      SPELL_ABBR,
+      ORG_NAME_WB,
+      ORG_PHONE,
+      ORG_ADDRESS,
+      ENABLE_FLAG,
+      CREATE_USER_ID,
+      CREATE_USER_NAME,
+      CREATE_DATE,
+      MODIFY_USER_ID,
+      MODIFY_USER_NAME,
+      MODIFY_DATE,
+      LINK_MAN
+      FROM HC_PROJECT_ORG
+      WHERE ENABLE_FLAG != '0' AND DATA_ORG_ID = :Id
+2007-11-28 10:50:29,296 [7856] DEBUG Emedchina.Commons.Data.DataBaseFacade [(null)] - select sysdate from dual
+2007-11-28 10:50:29,296 [7856] DEBUG Emedchina.Commons.Data.DataBaseFacade [(null)] - DbParameter Id's Value is 411847.
+2007-11-28 10:50:29,359 [7856] DEBUG Emedchina.Commons.Data.DataBaseFacade [(null)] - SELECT
+      HOP.ID,
+      HOP.CONT_ID,
+      HOP.PROJECT_NAME,
+      HOP.PROJECT_TYPE,
+      HOP.PROJECT_CODE,
+      HOP.PROJECT_STRAT_DATE,
+      HOP.PROJECT_END_DATE,
+      HOP.PROJECT_STATE,
+      HOP.PROJECT_DESC,
+      HOP.DECIMAL_DIGITS,
+      HOP.CREATE_USER_ID,
+      HOP.CREATE_USER_NAME,
+      HOP.CREATE_DATE ,
+      HOP.MODIFY_USER_ID ,
+      HOP.MODIFY_USER_NAME,
+      HOP.MODIFY_DATE,
+      AUTO_CREATE_FLAG
+      FROM HC_ORD_PROJECT HOP, HC_PROJECT_ORG HPO
+      WHERE HPO.PROJECT_ID = HOP.ID AND HPO.ENABLE_FLAG != '0' AND HPO.DATA_ORG_ID = :Id
+2007-11-28 10:50:29,406 [7856] DEBUG Emedchina.Commons.Data.DataBaseFacade [(null)] - select sysdate from dual
+2007-11-28 10:50:29,406 [7856] DEBUG Emedchina.Commons.Data.DataBaseFacade [(null)] - DbParameter Id's Value is 411847.
+2007-11-28 10:50:32,578 [7856] DEBUG Emedchina.Commons.Data.DataBaseFacade [(null)] - SELECT
+      ID,
+      PROJECT_ID,
+      PROJECT_PROD_ID,
+      BUYER_ID,
+      IS_OOS,
+      SENDER_ID,
+      SENDER_ABBR,
+      SENDER_NAME,
+      CREATE_USER_ID,
+      CREATE_USER_NAME,
+      CREATE_DATE ,
+      MODIFY_USER_ID,
+      MODIFY_USER_NAME,
+      MODIFY_DATE,
+      ENABLE_FLAG
+      FROM HC_ORD_BUYER_SENDER
+      WHERE ENABLE_FLAG != '0' AND BUYER_ID = :Id
+2007-11-28 10:50:56,015 [2172] DEBUG Emedchina.Commons.Data.DataBaseFacade [(null)] - select sysdate from dual
+2007-11-28 10:50:56,031 [2172] DEBUG Emedchina.Commons.Data.DataBaseFacade [(null)] - DbParameter Id's Value is 411847.
+2007-11-28 10:51:05,718 [2172] DEBUG Emedchina.Commons.Data.DataBaseFacade [(null)] - SELECT distinct
+      HP.ID,
+      HP.PROJECT_ID,
+      HP.DATA_PRODUCT_ID,
+      HP.CONT_PRODUCT_ID,
+      HP.PRODUCT_NAME,
+      HP.COMMERCE_NAME,
+      HP.COMMON_NAME,
+      HP.CODE,
+      HP.ABBR_PY,
+      HP.ABBR_WB,
+      HP.BRAND,
+      HP.SPEC,
+      HP.MODEL,
+      HP.GOODS_NO,
+      HP.BARCODE,
+      HP.BASE_MEASURE,
+      HP.BASE_MEASURE_SPEC,
+      HP.BASE_MEASURE_MATER,
+      HP.MAX_PRICE,
+      HP.HISTORY_PIRCE,
+      HP.PRICE,
+      HP.MANU_ID,
+      HP.MANU_NAME,
+      HP.MANU_NAME_ABBR,
+      HP.SALER_ID,
+      HP.SALER_NAME,
+      HP.SALER_NAME_ABBR,
+      HP.BALANCE_ID,
+      HP.BALANCE_NAME,
+      HP.BALANCE_EASY,
+      HP.BALANCE_FAST,
+      HP.BALANCE_WUBI,
+      HP.DEFAULT_MEASURE,
+      HP.DEFAULT_MEASURE_EX,
+      HP.BAK_MEASURE_ONE,
+      HP.BAK_MEASURE_ONE_EX,
+      HP.BAK_MEASURE_TWO,
+      HP.BAK_MEASURE_TWO_EX,
+      HP.PRICE_DESCRIPTION,
+      HP.PERFORMANCE,
+      HP.PRE_PURCHASE,
+      HP.STATE,
+      HP.STATE_CHANGE_REASON,
+      HP.REG_NO,
+      HP.REG_VALID_DATE,
+      HP.SENDER_ID,
+      HP.SENDER_NAME,
+      HP.SENDER_NAME_ABBR,
+      HP.AUDIT_FLAG,
+      HP.CREATE_USER_ID,
+      HP.CREATE_USER_NAME,
+      HP.CREATE_DATE,
+      HP.MODIFY_USER_ID,
+      HP.MODIFY_USER_NAME,
+      HP.MODIFY_DATE,
+      HP.INSTRU_CODE,
+      HP.INSTRU_NAME,
+      HP.BID_ID 
+      FROM HC_ORD_PRODUCT HP,HC_PROJECT_ORG HPO
+      WHERE HP.PROJECT_ID = HPO.PROJECT_ID AND HPO.ENABLE_FLAG != '0'
+      AND HP.STATE != '0' AND HPO.DATA_ORG_ID = :Id
+      AND exists (select 1
+      from hc_ord_buyer_sender b
+      where b.enable_flag = '1'
+      AND HP.PROJECT_ID = b.project_id
+      AND b.buyer_id = :Id
+      AND b.project_prod_id = HP.id)
+      AND exists (select 1
+      from HC_PROJECT_PROD_CLASS_CONTENT a,
+      HC_PROJECT_PROD_CLASS_CONFIG  b,
+      HC_PROJECT_PRODUCT_CLASS      c
+      where a.class_id = c.id
+      AND b.class_id = c.id
+      AND b.buyer_id = :Id
+      AND a.PRODUCT_ID = HP.id
+      AND b.SALER_ID = HP.SALER_ID)
+2007-11-28 10:51:26,437 [2172] DEBUG Emedchina.Commons.Data.DataBaseFacade [(null)] - select sysdate from dual
+2007-11-28 10:51:26,468 [2172] DEBUG Emedchina.Commons.Data.DataBaseFacade [(null)] - DbParameter Id's Value is 411847.
+2007-11-28 10:51:26,578 [2172] DEBUG Emedchina.Commons.Data.DataBaseFacade [(null)] - SELECT
+      ID,
+      PROJECT_ID,
+      DATA_PRODUCT_ID,
+      PROJECT_PROD_ID,
+      CONT_PRODUCT_ID,
+      PRODUCT_NAME,
+      COMMERCE_NAME,
+      COMMON_NAME,
+      CODE,
+      ABBR_PY,
+      ABBR_WB,
+      BRAND,
+      MODEL_ID,
+      SPEC_ID,
+      MODEL,
+      SPEC,
+      GOODS_NO,
+      BARCODE,
+      BASE_MEASURE,
+      BASE_MEASURE_SPEC,
+      BASE_MEASURE_MATER,
+      MAX_PRICE,
+      HISTORY_PIRCE,
+      PRICE,
+      MANU_ID,
+      MANU_NAME,
+      MANU_NAME_ABBR,
+      SALER_ID,
+      SALER_NAME,
+      BUYER_ID,
+      BALANCE_ID,
+      BALANCE_NAME,
+      BALANCE_EASY,
+      BALANCE_FAST,
+      BALANCE_WUBI,
+      SALER_NAME_ABBR,
+      DEFAULT_MEASURE,
+      DEFAULT_MEASURE_EX,
+      BAK_MEASURE_ONE,
+      BAK_MEASURE_ONE_EX,
+      BAK_MEASURE_TWO,
+      BAK_MEASURE_TWO_EX,
+      PRICE_DESCRIPTION,
+      PERFORMANCE,
+      PRE_PURCHASE,
+      STATE_CHANGE_REASON,
+      REG_NO,
+      REG_VALID_DATE,
+      DESCRIPTIONS,
+      LAST_AMOUNT,
+      LAST_SUM,
+      LAST_DATE,
+      ALL_AMOUNT,
+      ALL_SUM,
+      STORE_ROOM_ID,
+      STORE_ROOM_NAME,
+      SENDER_ID,
+      SENDER_NAME,
+      SENDER_NAME_ABBR,
+      STATE,
+      CREATE_USER_ID,
+      CREATE_USER_NAME,
+      CREATE_DATE,
+      MODIFY_USER_ID,
+      MODIFY_USER_NAME,
+      MODIFY_DATE,
+      INSTRU_CODE,
+      INSTRU_NAME,
+      '1' as SYNC_STATE
+      FROM HC_ORD_HIT_COMM WHERE BUYER_ID = :Id AND STATE != '0'
+2007-11-28 10:51:27,156 [2172] DEBUG Emedchina.Commons.Data.DataBaseFacade [(null)] - select sysdate from dual
+2007-11-28 10:51:27,250 [2172] DEBUG Emedchina.Commons.Data.DataBaseFacade [(null)] - DbParameter Id's Value is 411847.
+2007-11-28 10:51:28,562 [2172] DEBUG Emedchina.Commons.Data.DataBaseFacade [(null)] - SELECT
+      HPP.ID,
+      HPP.PROJECT_ID,
+      HPP.NAME,
+      HPP.STATE,
+      HPP.MODIFY_USER_ID,
+      HPP.CREATE_USER_NAME,
+      HPP.MODIFY_DATE,
+      HPP.CREATE_USER_ID,
+      HPP.CREATE_DATE,
+      HPP.MODIFY_USER_NAME,
+      HPP.BAK_PACKAGE_ID
+      FROM HC_ORD_PRODUCT_PACKAGE HPP,HC_PROJECT_ORG HPO
+      WHERE HPP.PROJECT_ID = HPO.PROJECT_ID AND HPO.ENABLE_FLAG != '0'
+      AND HPP.STATE != '0' AND HPO.DATA_ORG_ID = :Id
+2007-11-28 10:51:35,187 [2172] DEBUG Emedchina.Commons.Data.DataBaseFacade [(null)] - select sysdate from dual
+2007-11-28 10:51:35,218 [2172] DEBUG Emedchina.Commons.Data.DataBaseFacade [(null)] - DbParameter Id's Value is 411847.
+2007-11-28 10:51:37,531 [2172] DEBUG Emedchina.Commons.Data.DataBaseFacade [(null)] - SELECT
+      HPPI.ID,
+      HPPI.PACKAGE_ID,
+      HPPI.NAME,
+      HPPI.AMOUNT,
+      HPPI.MODIFY_USER_ID,
+      HPPI.CREATE_USER_NAME,
+      HPPI.MODIFY_DATE,
+      HPPI.CREATE_USER_ID,
+      HPPI.CREATE_DATE,
+      HPPI.MODIFY_USER_NAME,
+      HPPI.PROJECT_PROD_ID
+      FROM HC_ORD_PRODUCT_PACKAGE_ITEM HPPI,HC_ORD_PRODUCT_PACKAGE HPP,HC_PROJECT_ORG HPO
+      WHERE HPP.STATE != '0' AND HPPI.PACKAGE_ID = HPP.ID
+      AND HPP.PROJECT_ID = HPO.PROJECT_ID AND HPO.ENABLE_FLAG != '0' AND HPO.DATA_ORG_ID = :Id
+      AND exists (select 1
+      from hc_ord_buyer_sender b
+      where b.enable_flag = '1'
+      AND b.buyer_id = :Id
+      AND b.project_prod_id = HPPI.PROJECT_PROD_ID)
+      AND exists (select 1
+      from HC_PROJECT_PROD_CLASS_CONTENT a,
+      HC_PROJECT_PROD_CLASS_CONFIG  b,
+      HC_PROJECT_PRODUCT_CLASS      c
+      where a.class_id = c.id
+      AND b.class_id = c.id
+      AND b.buyer_id = :Id
+      AND a.PRODUCT_ID = HPPI.PROJECT_PROD_ID)
+2007-11-28 10:51:43,671 [2172] DEBUG Emedchina.Commons.Data.DataBaseFacade [(null)] - select sysdate from dual
+2007-11-28 10:51:43,765 [2172] DEBUG Emedchina.Commons.Data.DataBaseFacade [(null)] - SELECT
+      ID,
+      MODEL_NAME,
+      MODIFY_USER_ID,
+      MODIFY_USER_NAME,
+      CREATE_USER_ID,
+      CREATE_USER_NAME,
+      CREATE_DATE,
+      MODIFY_DATE
+      FROM HC_ORD_PRODUCT_MODEL
+2007-11-28 10:51:44,140 [2172] DEBUG Emedchina.Commons.Data.DataBaseFacade [(null)] - select sysdate from dual
+2007-11-28 10:51:44,250 [2172] DEBUG Emedchina.Commons.Data.DataBaseFacade [(null)] - SELECT
+      ID,
+      SPEC_NAME,
+      CREATE_USER_ID,
+      MODIFY_USER_ID,
+      CREATE_USER_NAME,
+      MODIFY_USER_NAME,
+      MODIFY_DATE,
+      CREATE_DATE
+      FROM HC_ORD_PRODUCT_SPEC
+2007-11-28 10:51:44,437 [2172] DEBUG Emedchina.Commons.Data.DataBaseFacade [(null)] - select sysdate from dual
+2007-11-28 10:51:44,453 [2172] DEBUG Emedchina.Commons.Data.DataBaseFacade [(null)] - DbParameter Id's Value is 411847.
+2007-11-28 10:51:44,484 [2172] DEBUG Emedchina.Commons.Data.DataBaseFacade [(null)] - SELECT
+      ID,
+      BUYER_ID,
+      CODE,
+      TYPE,
+      TOTAL_SUM,
+      PURCHASE_DATE,
+      CREATE_USER_ID,
+      CREATE_USER_NAME,
+      STATE,
+      AUDIT_USER_ID,
+      AUDIT_USER_NAME,
+      AUDIT_DATE,
+      QUICKSEND_LEVEL,
+      CREATE_DATE,
+      MODIFY_USER_ID,
+      MODIFY_USER_NAME,
+      MODIFY_DATE,
+      '1' as SYNC_STATE
+      FROM HC_ORD_PURCHASE
+      WHERE BUYER_ID = :Id
+2007-11-28 10:51:44,750 [2172] DEBUG Emedchina.Commons.Data.DataBaseFacade [(null)] - select sysdate from dual
+2007-11-28 10:51:44,921 [2172] DEBUG Emedchina.Commons.Data.DataBaseFacade [(null)] - DbParameter Id's Value is 411847.
+2007-11-28 10:51:45,109 [2172] DEBUG Emedchina.Commons.Data.DataBaseFacade [(null)] - SELECT
+      ID,
+      PROJECT_ID,
+      PURCHASE_ID,
+      PROJECT_PROD_ID,
+      DATA_PRODUCT_ID,
+      BUYER_ID,
+      SALER_ID,
+      SALER_NAME,
+      SALER_NAME_ABBR,
+      SENDER_ID,
+      SENDER_NAME,
+      SENDER_NAME_ABBR,
+      MANUFACTURE_ID,
+      MANUFACTURE_NAME,
+      MANUFACTURE_NAME_ABBR,
+      COMMON_NAME,
+      PRODUCT_NAME,
+      PRODUCT_CODE,
+      SPEC_ID,
+      MODEL_ID,
+      SPEC,
+      MODEL,
+      BRAND,
+      GOODS_NO,
+      BARCODE,
+      STORE_ROOM_ID,
+      STORE_ROOM_NAME,
+      STORE_ROOM_ADDRESS,
+      BASE_MEASURE,
+      BASE_MEASURE_SPEC,
+      BASE_MEASURE_MATER,
+      SEND_MEASURE,
+      SEND_MEASURE_EX,
+      RETAIL_PRICE,
+      TRADE_PRICE,
+      AMOUNT,
+      SUM,
+      OVER_AMOUNT,
+      OVER_SUM,
+      IS_QUICKSEND,
+      BALANCE_ID,
+      BALANCE_NAME,
+      BALANCE_EASY,
+      BALANCE_FAST,
+      BALANCE_WUBI,
+      CREATE_USER_ID,
+      CREATE_USER_NAME,
+      CREATE_DATE,
+      MODIFY_USER_ID,
+      MODIFY_USER_NAME,
+      MODIFY_DATE,
+      DESCRIPTIONS,
+      '1' as SYNC_STATE
+      FROM HC_ORD_PURCHASE_ITEM
+      WHERE BUYER_ID = :Id
+2007-11-28 10:51:46,234 [2172] DEBUG Emedchina.Commons.Data.DataBaseFacade [(null)] - select sysdate from dual
+2007-11-28 10:51:46,281 [2172] DEBUG Emedchina.Commons.Data.DataBaseFacade [(null)] - DbParameter Id's Value is 411847.
+2007-11-28 10:51:46,343 [2172] DEBUG Emedchina.Commons.Data.DataBaseFacade [(null)] - Select
+      ID,
+      ORDER_CODE,
+      BUYER_ID,
+      BUYER_NAME,
+      BUYER_NAME_ABBR,
+      SENDER_ID,
+      SENDER_NAME,
+      SENDER_NAME_ABBR,
+      TOTAL_SUM,
+      OVER_SUM,
+      SALER_APPROVER_ID,
+      SALER_APPROVER_NAME,
+      SALER_APPROVER_DATE,
+      STATE,
+      TYPE,
+      PURCHASE_DATE,
+      QUICKSEND_LEVEL,
+      SALER_DESCRIPTIONS,
+      BUYER_DESCRIPTIONS,
+      CREATE_USER_NAME,
+      CREATE_DATE,
+      MODIFY_USER_ID,
+      MODIFY_USER_NAME,
+      MODIFY_DATE,
+      CREATE_USER_ID,
+      PURCHASE_ID,
+      PURCHASE_CODE,
+      '1' as SYNC_STATE
+      From HC_ORD_ORDER
+      Where STATE != '6' AND BUYER_ID = :Id
+2007-11-28 10:51:46,593 [2172] DEBUG Emedchina.Commons.Data.DataBaseFacade [(null)] - select sysdate from dual
+2007-11-28 10:51:46,656 [2172] DEBUG Emedchina.Commons.Data.DataBaseFacade [(null)] - DbParameter Id's Value is 411847.
+[Footer]\r\n

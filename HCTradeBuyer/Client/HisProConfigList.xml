@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" standalone="yes" ?>
+<Config Name="" Type="" Ver="1.000">
+	<CfgList>
+    <Cfg Index="1" Name="导出到货项目" Type="0" IsMulti = '1' DllName="HisPortalReceiveLib.dll" CfgName="HisOrderReceive.xml"
+			CfgTemplet="ReceivePortal.data">
+      <FoxTemplet>SendReceive.dbf</FoxTemplet>
+      <FoxDetailTemplet></FoxDetailTemplet>
+      <TxtTemplet>SendReceive.txt</TxtTemplet>
+      <ExcelTemplet>SendReceive.xls</ExcelTemplet>
+    </Cfg>
+    <Cfg Index="2" Name="导入采购计划项目" Type="1" IsMulti = '0' DllName="HisPortalPurchaseLib.dll" CfgName="HisPurchase.xml"
+			CfgTemplet="PurchasePortal.data">
+      <FoxTemplet>GetPurchase.dbf</FoxTemplet>
+      <FoxDetailTemplet></FoxDetailTemplet>
+      <TxtTemplet>GetPurchase.txt</TxtTemplet>
+      <ExcelTemplet>GetPurchase.xls</ExcelTemplet>
+    </Cfg>
+    
+
+	</CfgList>
+</Config>

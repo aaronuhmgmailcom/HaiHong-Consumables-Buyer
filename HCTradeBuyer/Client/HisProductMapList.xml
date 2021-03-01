@@ -1,0 +1,144 @@
+﻿<?xml version="1.0" standalone="yes"?>
+<Config Name="" Type="" Ver="1.0">
+  <SourceDB DBType="EXCEL" ServerName="" DataBase="" User="" Password="" DBPath="GetHisProductList.xls">
+    <SourceTable TableName="sheet1">
+      <SourceField Index="1" Name="HIS产品ID码" Type="字符型" Length="" Default="" Desc="" />
+      <SourceField Index="2" Name="HIS产品编码" Type="字符型" Length="" Default="" Desc="" />
+      <SourceField Index="3" Name="产品通用名" Type="字符型" Length="" Default="" Desc="" />
+      <SourceField Index="4" Name="商品名" Type="字符型" Length="" Default="" Desc="" />
+      <SourceField Index="5" Name="剂型ID" Type="字符型" Length="" Default="" Desc="" />
+      <SourceField Index="6" Name="剂型名称" Type="字符型" Length="" Default="" Desc="" />
+      <SourceField Index="7" Name="规格ID" Type="字符型" Length="" Default="" Desc="" />
+      <SourceField Index="8" Name="规格包装" Type="字符型" Length="" Default="" Desc="" />
+      <SourceField Index="9" Name="最小使用单位ID" Type="字符型" Length="" Default="" Desc="" />
+      <SourceField Index="10" Name="最小使用单位" Type="字符型" Length="" Default="" Desc="" />
+      <SourceField Index="11" Name="最小包装单位ID" Type="字符型" Length="" Default="" Desc="" />
+      <SourceField Index="12" Name="包装单位" Type="字符型" Length="" Default="" Desc="" />
+      <SourceField Index="13" Name="HIS单位转换比" Type="字符型" Length="" Default="" Desc="" />
+      <SourceField Index="14" Name="生产企业编码" Type="浮点数" Length="" Default="" Desc="" />
+      <SourceField Index="15" Name="生产企业名称" Type="浮点数" Length="" Default="" Desc="" />
+      <SourceField Index="16" Name="海虹产品ID" Type="浮点数" Length="" Default="" Desc="" />
+      <SourceField Index="17" Name="海虹数据产品ID" Type="浮点数" Length="" Default="" Desc="" />
+      <SourceField Index="18" Name="批号" Type="字符型" Length="" Default="" Desc="" />
+      <SourceField Index="19" Name="经销企业ID" Type="字符型" Length="" Default="" Desc="" />
+      <SourceField Index="20" Name="经销企业名称" Type="字符型" Length="" Default="" Desc="" />
+      <SourceField Index="21" Name="配送企业ID" Type="字符型" Length="" Default="" Desc="" />
+      <SourceField Index="22" Name="配送企业名称" Type="字符型" Length="" Default="" Desc="" />
+      <!--
+      <SourceField Index="23" Name="产品分类ID" Type="字符型" Length="" Default="" Desc="" />
+      <SourceField Index="24" Name="产品分类名称" Type="字符型" Length="" Default="" Desc="" />
+      -->
+      <SourceField Index="25" Name="库房ID" Type="字符型" Length="" Default="" Desc="" />
+      <SourceField Index="26" Name="库房名称" Type="字符型" Length="" Default="" Desc="" />
+      <SourceField Index="27" Name="包装转换比" Type="字符型" Length="" Default="" Desc="" />
+    </SourceTable>
+  </SourceDB>
+  <DestDB DBType="" ServerName="" DataBase="" User="" Password="" DBPath="">
+    <DestTable TableName="">
+      <DestField Index="1" Name="PRODUCT_CODE" Type="VARCHAR(200)" Length="" Default="" Desc="HIS产品ID码">
+      </DestField>
+      <DestField Index="2" Name="MEDICAL_CODE" Type="VARCHAR(50)" Length="" Default="" Desc="HIS产品编码">
+      </DestField>
+      <DestField Index="3" Name="COMMON_NAME" Type="VARCHAR(200)" Length="" Default="" Desc="产品通用名">
+      </DestField>
+      <DestField Index="4" Name="PRODUCT_NAME" Type="VARCHAR(200)" Length="" Default="" Desc="商品名">
+      </DestField>
+      <DestField Index="5" Name="MODE_ID" Type="VARCHAR(50)" Length="" Default="" Desc="剂型ID">
+      </DestField>
+      <DestField Index="6" Name="MODE_NAME" Type="VARCHAR(50)" Length="" Default="" Desc="剂型名称">
+      </DestField>
+      <DestField Index="7" Name="MEDICAL_SPEC_ID" Type="VARCHAR(50)" Length="" Default="" Desc="规格ID">
+      </DestField>
+      <DestField Index="8" Name="MEDICAL_SPEC" Type="VARCHAR(100)" Length="" Default="" Desc="规格包装">
+      </DestField>
+      <DestField Index="9" Name="USE_UNIT_ID" Type="VARCHAR(50)" Length="" Default="" Desc="最小使用单位ID">
+      </DestField>
+      <DestField Index="10" Name="USE_UNIT" Type="VARCHAR(50)" Length="" Default="" Desc="最小使用单位">
+      </DestField>
+      <DestField Index="11" Name="SPEC_UNIT_ID" Type="VARCHAR(50)" Length="" Default="" Desc="最小包装单位ID">
+      </DestField>
+      <DestField Index="12" Name="SPEC_UNIT" Type="VARCHAR(50)" Length="" Default="" Desc="包装单位">
+      </DestField>
+      <DestField Index="13" Name="STAND_RATE" Type="VARCHAR(50)" Length="" Default="" Desc="HIS单位转换比">
+      </DestField>
+      <DestField Index="14" Name="FACTORY_CODE" Type="VARCHAR(50)" Length="" Default="" Desc="生产企业编码">
+      </DestField>
+      <DestField Index="15" Name="FACTORY_NAME" Type="VARCHAR(50)" Length="" Default="" Desc="生产企业名称">
+      </DestField>
+      <DestField Index="16" Name="product_id" Type="VARCHAR(50)" Length="" Default="" Desc="海虹产品ID">
+      </DestField>
+      <DestField Index="17" Name="data_product_id" Type="VARCHAR(50)" Length="" Default="" Desc="海虹数据产品ID">
+      </DestField>
+      <DestField Index="18" Name="PERMIT_NO" Type="VARCHAR(150)" Length="" Default="" Desc="批号">
+      </DestField>
+      <DestField Index="19" Name="SALER_CODE" Type="VARCHAR(50)" Length="" Default="" Desc="经销企业ID">
+      </DestField>
+      <DestField Index="20" Name="SALER_NAME" Type="VARCHAR(100)" Length="" Default="" Desc="经销企业名称">
+      </DestField>
+      <DestField Index="21" Name="SENDER_CODE" Type="VARCHAR(50)" Length="" Default="" Desc="配送企业ID">
+      </DestField>
+      <DestField Index="22" Name="SENDER_NAME" Type="VARCHAR(100)" Length="" Default="" Desc="配送企业名称">
+      </DestField>
+      <!--
+      <DestField Index="23" Name="CATEGORY_ID" Type="VARCHAR(50)" Length="" Default="" Desc="产品分类ID">
+      </DestField>
+      <DestField Index="24" Name="CATEGORY_NAME" Type="VARCHAR(100)" Length="" Default="" Desc="产品分类名称">
+      </DestField>
+      -->
+      <DestField Index="23" Name="STOCK_ID" Type="VARCHAR(50)" Length="" Default="" Desc="库房ID">
+      </DestField>
+      <DestField Index="24" Name="STOCK_NAME" Type="VARCHAR(50)" Length="" Default="" Desc="库房名称">
+      </DestField>
+      <DestField Index="25" Name="PACKAGE_RATE" Type="VARCHAR(10)" Length="" Default="" Desc="包装转换比">
+      </DestField>      
+    </DestTable>
+  </DestDB>
+  <ContrastList Delimited="">
+    <Contrast SourceField="HIS产品ID码" DestField="PRODUCT_CODE" Algorithm="" IsNew="0" DestDBType="VARCHAR(200)" />
+    <Contrast SourceField="HIS产品编码" DestField="MEDICAL_CODE" Algorithm="" IsNew="0" DestDBType="VARCHAR(50)" />
+    <Contrast SourceField="产品通用名" DestField="COMMON_NAME" Algorithm="" IsNew="0" DestDBType="VARCHAR(200)" />
+    <Contrast SourceField="商品名" DestField="PRODUCT_NAME" Algorithm="" IsNew="0" DestDBType="VARCHAR(200)" />
+    <Contrast SourceField="剂型ID" DestField="MODE_ID" Algorithm="" IsNew="0" DestDBType="VARCHAR(50)" />
+    <Contrast SourceField="剂型名称" DestField="MODE_NAME" Algorithm="" IsNew="0" DestDBType="VARCHAR(50)" />
+    <Contrast SourceField="规格ID" DestField="MEDICAL_SPEC_ID" Algorithm="" IsNew="0" DestDBType="VARCHAR(50)" />
+    <Contrast SourceField="规格包装" DestField="MEDICAL_SPEC" Algorithm="" IsNew="0" DestDBType="VARCHAR(100)" />
+    <Contrast SourceField="最小使用单位ID" DestField="USE_UNIT_ID" Algorithm="" IsNew="0" DestDBType="VARCHAR(50)" />
+    <Contrast SourceField="最小使用单位" DestField="USE_UNIT" Algorithm="" IsNew="0" DestDBType="VARCHAR(50)" />
+    <Contrast SourceField="最小包装单位ID" DestField="SPEC_UNIT_ID" Algorithm="" IsNew="0" DestDBType="VARCHAR(100)" />
+    <Contrast SourceField="包装单位" DestField="SPEC_UNIT" Algorithm="" IsNew="0" DestDBType="VARCHAR(50)" />
+    <Contrast SourceField="HIS单位转换比" DestField="STAND_RATE" Algorithm="" IsNew="0" DestDBType="VARCHAR(50)" />
+    <Contrast SourceField="生产企业编码" DestField="FACTORY_CODE" Algorithm="" IsNew="0" DestDBType="VARCHAR(50)" />
+    <Contrast SourceField="生产企业名称" DestField="FACTORY_NAME" Algorithm="" IsNew="0" DestDBType="VARCHAR(50)" />
+    <Contrast SourceField="海虹产品ID" DestField="product_id" Algorithm="" IsNew="0" DestDBType="VARCHAR(50)" />
+    <Contrast SourceField="海虹数据产品ID" DestField="data_product_id" Algorithm="" IsNew="0" DestDBType="VARCHAR(50)" />
+    <Contrast SourceField="批号" DestField="PERMIT_NO" Algorithm="" IsNew="0" DestDBType="VARCHAR(150)" />
+    <Contrast SourceField="经销企业ID" DestField="SALER_CODE" Algorithm="" IsNew="0" DestDBType="VARCHAR(50)" />
+    <Contrast SourceField="经销企业名称" DestField="SALER_NAME" Algorithm="" IsNew="0" DestDBType="VARCHAR(100)" />
+    <Contrast SourceField="配送企业ID" DestField="SENDER_CODE" Algorithm="" IsNew="0" DestDBType="VARCHAR(50)" />
+    <Contrast SourceField="配送企业名称" DestField="SENDER_NAME" Algorithm="" IsNew="0" DestDBType="VARCHAR(100)" />
+    <!--
+    <Contrast SourceField="产品分类ID" DestField="CATEGORY_ID" Algorithm="" IsNew="0" DestDBType="VARCHAR(50)" />
+    <Contrast SourceField="产品分类名称" DestField="CATEGORY_NAME" Algorithm="" IsNew="0" DestDBType="VARCHAR(100)" />
+    -->
+    <Contrast SourceField="库房ID" DestField="STOCK_ID" Algorithm="" IsNew="0" DestDBType="VARCHAR(50)" />
+    <Contrast SourceField="库房名称" DestField="STOCK_NAME" Algorithm="" IsNew="0" DestDBType="VARCHAR(50)" />
+    <Contrast SourceField="包装转换比" DestField="PACKAGE_RATE" Algorithm="" IsNew="0" DestDBType="VARCHAR(10)" />
+  </ContrastList>
+  <BeginSql>
+
+  </BeginSql>
+  <Sqls>
+    <Sql Pattern="0" ExecSort="1">select HIS产品ID码 as PRODUCT_CODE,HIS产品编码 as MEDICAL_CODE,产品通用名 as COMMON_NAME,商品名 as PRODUCT_NAME,剂型ID as MODE_ID,剂型名称 as MODE_NAME,规格ID as MEDICAL_SPEC_ID,规格包装 as MEDICAL_SPEC,最小使用单位ID as USE_UNIT_ID,最小使用单位 as USE_UNIT,最小包装单位ID as SPEC_UNIT_ID,包装单位 as SPEC_UNIT,HIS单位转换比 as STAND_RATE,生产企业编码 as FACTORY_CODE,生产企业名称 as FACTORY_NAME,海虹产品ID as product_id,海虹数据产品ID as data_product_id,批号 as PERMIT_NO,经销企业ID as SALER_CODE,经销企业名称 as SALER_NAME,配送企业ID as SENDER_CODE,配送企业名称 as SENDER_NAME,库房ID as STOCK_ID,库房名称 as STOCK_NAME,包装转换比 as PACKAGE_RATE from `sheet1$`</Sql>
+  </Sqls>
+
+  <MSqls>
+    <Sql Pattern="0" ExecSort="1">select HIS产品ID码 as PRODUCT_CODE,HIS产品编码 as MEDICAL_CODE,产品通用名 as COMMON_NAME,商品名 as PRODUCT_NAME,剂型ID as MODE_ID,剂型名称 as MODE_NAME,规格ID as MEDICAL_SPEC_ID,规格包装 as MEDICAL_SPEC,最小使用单位ID as USE_UNIT_ID,最小使用单位 as USE_UNIT,最小包装单位ID as SPEC_UNIT_ID,包装单位 as SPEC_UNIT,HIS单位转换比 as STAND_RATE,生产企业编码 as FACTORY_CODE,生产企业名称 as FACTORY_NAME,海虹产品ID as product_id,海虹数据产品ID as data_product_id,批号 as PERMIT_NO,经销企业ID as SALER_CODE,经销企业名称 as SALER_NAME,配送企业ID as SENDER_CODE,配送企业名称 as SENDER_NAME,库房ID as STOCK_ID,库房名称 as STOCK_NAME,包装转换比 as PACKAGE_RATE from Gpo_HisProductMap</Sql>
+  </MSqls>
+  
+  <ASqls>
+    <Sql Pattern="0" ExecSort="1">select HIS产品ID码 as PRODUCT_CODE,HIS产品编码 as MEDICAL_CODE,产品通用名 as COMMON_NAME,商品名 as PRODUCT_NAME,剂型ID as MODE_ID,剂型名称 as MODE_NAME,规格ID as MEDICAL_SPEC_ID,规格包装 as MEDICAL_SPEC,最小使用单位ID as USE_UNIT_ID,最小使用单位 as USE_UNIT,最小包装单位ID as SPEC_UNIT_ID,包装单位 as SPEC_UNIT,HIS单位转换比 as STAND_RATE,生产企业编码 as FACTORY_CODE,生产企业名称 as FACTORY_NAME,海虹产品ID as product_id,海虹数据产品ID as data_product_id,批号 as PERMIT_NO,经销企业ID as SALER_CODE,经销企业名称 as SALER_NAME,配送企业ID as SENDER_CODE,配送企业名称 as SENDER_NAME,库房ID as STOCK_ID,库房名称 as STOCK_NAME,包装转换比 as PACKAGE_RATE from Gpo_HisProductMap</Sql>
+  </ASqls>
+  
+  <EndSql>
+  </EndSql>
+</Config>

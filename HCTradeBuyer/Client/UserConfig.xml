@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<UserConfig>
+  <!--
+  //是否按离线方法登录
+
+  IsOfflineLogin  
+  -->
+  <ConnectLogic              
+                IsOffline="True"
+                IsOfflineLogin="True"
+                
+                IfSendImmediately="False"
+                IfDefineBigPacking="False"
+                IfUseSecondCate="False"
+                IfSetAutoReceive="False"
+                IfSetProEasy="False"
+                IfCompelSync="False"    
+                IfUseDefaultSet="False" 
+                DotSetting="2"  
+                AutoReceiveDays="0" 
+                EvenColor = "-984833"
+                OddColor ="0"
+                
+  />
+  <ClientOptions
+       MenuStyle ="0"
+       Skin =""
+    />
+  <LoginLog LoginedUsersCode="" LastLoginedUserCode="" LastFormName="" />
+  <Matching Product="False" Enterprise="False" />
+  <!--1:福建-->
+  <ClientType type="" />
+  <!--判断客户端平台("进销存"对接功能) shangfu 2007-8-28 1:"进销存对接" -->
+  <ClientPlat type="0" />
+  
+</UserConfig>

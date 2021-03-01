@@ -1,0 +1,1119 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<sync>
+  
+  <!--参数说明：表名，同步方向，是否使用log表(1:是;0否),是否使用查询服务器(0:默认服务器;1:查询服务器)-->
+  <!--如该表需要上传，请在sqlstring上注明SQL查询语句-->
+  <!--<SendNow>立即发送标志-->
+  <!--用户信息表-->
+  <sql table="CEN_USR_USER">
+    <parameter>用户信息表,下载,0,1</parameter>
+    <sqlstring>
+    </sqlstring>
+    <Pk>
+    </Pk>
+    <SendNow>0</SendNow>
+  </sql>
+
+
+  <!--用户可用模块表
+  <sql table="GPO_USR_USER_MODULE">
+    <parameter>用户可用模块表,下载,0,1</parameter>
+    <sqlstring>
+    </sqlstring>
+    <Pk>      
+    </Pk>
+  </sql>
+-->
+
+  <!--用户角色信息表
+  <sql table="GPO_USR_ROLE">
+    <parameter>用户角色信息表,下载,0,1</parameter>
+    <sqlstring>
+    </sqlstring>
+    <Pk>
+
+    </Pk>
+    <timefield></timefield>
+  </sql>
+-->
+
+
+  <!--机构信息表-->
+  <sql table="HC_ORG">
+    <parameter>机构信息表,下载,0,1</parameter>
+    <sqlstring>
+    </sqlstring>
+    <Pk>
+    </Pk>
+    <SendNow>0</SendNow>
+  </sql>
+
+  <!--用户菜单设置表
+  <sql table="CLIENT_MENU">
+    <parameter>用户菜单设置表,下载,0,1</parameter>
+    <sqlstring>
+    </sqlstring>
+    <keysql>
+
+    </keysql>
+    <timefield></timefield>
+  </sql>
+  
+  -->
+
+  <!--用户机构关联表-->
+  <sql table="HC_USER_ORG">
+    <parameter>用户机构关联表,下载,0,1</parameter>
+    <sqlstring>
+    </sqlstring>
+    <Pk>
+    </Pk>
+    <SendNow>0</SendNow>
+  </sql>
+
+
+  <!--药库表-->
+  <sql table="HC_BUYER_STORE">
+    <parameter>药库表,下载,0,1</parameter>
+    <sqlstring>
+      SELECT
+      ID,
+      ORG_ID,
+      STORE_NAME,
+      STORE_ADDRESS,
+      LINKMAN,
+      TEL,
+      ENABLE_FLAG,
+      CREATE_USER_NAME,
+      CREATE_USER_ID,
+      MODIFY_USER_ID,
+      MODIFY_USER_NAME,
+      TYPE
+      FROM HC_BUYER_STORE
+      WHERE SYNC_STATE = '0'
+    </sqlstring>
+    <Pk>
+      ID
+    </Pk>
+    <SendNow>0</SendNow>
+  </sql>
+
+  <!--项目机构表-->
+  <sql table="HC_PROJECT_ORG">
+    <parameter>项目机构表,下载,0,1</parameter>
+    <sqlstring>
+    </sqlstring>
+    <Pk>
+    </Pk>
+    <SendNow>0</SendNow>
+  </sql>
+
+  <!--项目表-->
+  <sql table="HC_ORD_PROJECT">
+    <parameter>项目表,下载,0,1</parameter>
+    <sqlstring>
+    </sqlstring>
+    <Pk>
+    </Pk>
+    <SendNow>0</SendNow>
+  </sql>
+
+  <!--买方配送企业-->
+  <sql table="HC_ORD_BUYER_SENDER">
+    <parameter>买方配送企业,下载,0,1</parameter>
+    <sqlstring>
+    </sqlstring>
+    <Pk>
+    </Pk>
+    <SendNow>0</SendNow>
+  </sql>
+  
+
+
+  <!--项目产品目录表 -->
+  <sql table="HC_ORD_PRODUCT" >
+    <parameter>项目产品目录表,下载,1,1</parameter>
+    <sqlstring>
+    </sqlstring>
+    <Pk>
+    </Pk>
+    <SendNow>0</SendNow>
+  </sql>
+
+  <!--经常采购目录表-->
+  <sql table="HC_ORD_HIT_COMM" >
+    <parameter>经常采购目录表,下载,0,1</parameter>
+    <sqlstring>
+      SELECT
+      ID,
+      PROJECT_ID,
+      DATA_PRODUCT_ID,
+      PROJECT_PROD_ID,
+      CONT_PRODUCT_ID,
+      PRODUCT_NAME,
+      COMMERCE_NAME,
+      COMMON_NAME,
+      CODE,
+      ABBR_PY,
+      ABBR_WB,
+      BRAND,
+      MODEL_ID,
+      SPEC_ID,
+      MODEL,
+      SPEC,
+      GOODS_NO,
+      BARCODE,
+      BASE_MEASURE,
+      BASE_MEASURE_SPEC,
+      BASE_MEASURE_MATER,
+      MAX_PRICE,
+      HISTORY_PIRCE,
+      PRICE,
+      MANU_ID,
+      MANU_NAME,
+      MANU_NAME_ABBR,
+      SALER_ID,
+      SALER_NAME,
+      BUYER_ID,
+      BALANCE_ID,
+      BALANCE_NAME,
+      BALANCE_EASY,
+      BALANCE_FAST,
+      BALANCE_WUBI,
+      SALER_NAME_ABBR,
+      DEFAULT_MEASURE,
+      DEFAULT_MEASURE_EX,
+      BAK_MEASURE_ONE,
+      BAK_MEASURE_ONE_EX,
+      BAK_MEASURE_TWO,
+      BAK_MEASURE_TWO_EX,
+      PRICE_DESCRIPTION,
+      PERFORMANCE,
+      PRE_PURCHASE,
+      STATE_CHANGE_REASON,
+      REG_NO,
+      REG_VALID_DATE,
+      DESCRIPTIONS,
+      LAST_AMOUNT,
+      LAST_SUM,
+      LAST_DATE,
+      ALL_AMOUNT,
+      ALL_SUM,
+      STORE_ROOM_ID,
+      STORE_ROOM_NAME,
+      SENDER_ID,
+      SENDER_NAME,
+      SENDER_NAME_ABBR,
+      STATE,
+      CREATE_USER_ID,
+      CREATE_USER_NAME,
+      MODIFY_USER_ID,
+      MODIFY_USER_NAME,
+      INSTRU_CODE,
+      INSTRU_NAME
+      FROM HC_ORD_HIT_COMM
+      WHERE SYNC_STATE = '0' AND STATE != '0'
+    </sqlstring>
+    <Pk>
+      ID
+    </Pk>
+    <SendNow>1</SendNow>
+  </sql>
+
+  <!--产品配套表-->
+  <sql table="HC_ORD_PRODUCT_PACKAGE" >
+    <parameter>产品配套表,下载,0,1</parameter>
+    <sqlstring>
+    </sqlstring>
+    <Pk>
+    </Pk>
+    <SendNow>0</SendNow>
+  </sql>
+
+  <!--产品配套子表-->
+  <sql table="HC_ORD_PRODUCT_PACKAGE_ITEM" >
+    <parameter>产品配套子表,下载,0,1</parameter>
+    <sqlstring>
+    </sqlstring>
+    <Pk>
+    </Pk>
+    <SendNow>0</SendNow>
+  </sql>
+
+  <!--规格表-->
+  <sql table="HC_ORD_PRODUCT_MODEL" >
+    <parameter>规格表,下载,0,1</parameter>
+    <sqlstring>
+    </sqlstring>
+    <Pk>
+    </Pk>
+    <SendNow>0</SendNow>
+  </sql>
+
+  <!--型号表-->
+  <sql table="HC_ORD_PRODUCT_SPEC">
+    <parameter>型号表,下载,0,1</parameter>
+    <sqlstring>
+    </sqlstring>
+    <Pk>
+    </Pk>
+    <SendNow>0</SendNow>
+  </sql>
+
+  <!--采购单表-->
+  <sql table="HC_ORD_PURCHASE" >
+    <parameter>采购单表,下载,0,1</parameter>
+    <sqlstring>
+      SELECT
+      ID,
+      BUYER_ID,
+      CODE,
+      TYPE,
+      TOTAL_SUM,
+      PURCHASE_DATE,
+      CREATE_USER_ID,
+      CREATE_USER_NAME,
+      STATE,
+      AUDIT_USER_ID,
+      AUDIT_USER_NAME,
+      AUDIT_DATE,
+      QUICKSEND_LEVEL,
+      MODIFY_USER_ID,
+      MODIFY_USER_NAME
+      FROM HC_ORD_PURCHASE
+      WHERE SYNC_STATE = '0'
+    </sqlstring>
+    <Pk>
+      ID
+    </Pk>
+    <SendNow>1</SendNow>
+  </sql>
+
+
+  <!--采购单明细表-->
+  <sql table="HC_ORD_PURCHASE_ITEM" >
+    <parameter>采购单明细表,下载,0,0</parameter>
+    <sqlstring>
+      SELECT
+      ID,
+      PROJECT_ID,
+      PURCHASE_ID,
+      PROJECT_PROD_ID,
+      DATA_PRODUCT_ID,
+      BUYER_ID,
+      SALER_ID,
+      SALER_NAME,
+      SALER_NAME_ABBR,
+      SENDER_ID,
+      SENDER_NAME,
+      SENDER_NAME_ABBR,
+      MANUFACTURE_ID,
+      MANUFACTURE_NAME,
+      MANUFACTURE_NAME_ABBR,
+      COMMON_NAME,
+      PRODUCT_NAME,
+      PRODUCT_CODE,
+      SPEC_ID,
+      MODEL_ID,
+      SPEC,
+      MODEL,
+      BRAND,
+      GOODS_NO,
+      BARCODE,
+      STORE_ROOM_ID,
+      STORE_ROOM_NAME,
+      STORE_ROOM_ADDRESS,
+      BASE_MEASURE,
+      BASE_MEASURE_SPEC,
+      BASE_MEASURE_MATER,
+      SEND_MEASURE,
+      SEND_MEASURE_EX,
+      RETAIL_PRICE,
+      TRADE_PRICE,
+      AMOUNT,
+      SUM,
+      OVER_AMOUNT,
+      OVER_SUM,
+      IS_QUICKSEND,
+      BALANCE_ID,
+      BALANCE_NAME,
+      BALANCE_EASY,
+      BALANCE_FAST,
+      BALANCE_WUBI,
+      CREATE_USER_ID,
+      CREATE_USER_NAME,
+      MODIFY_USER_ID,
+      MODIFY_USER_NAME,
+      DESCRIPTIONS
+      FROM HC_ORD_PURCHASE_ITEM
+      WHERE SYNC_STATE = '0'
+    </sqlstring>
+    <Pk>
+      ID
+    </Pk>
+    <SendNow>1</SendNow>
+  </sql>
+
+
+
+  <!--订单表-->
+  <sql table="HC_ORD_ORDER" >
+    <parameter>订单表,下载,0,0</parameter>
+    <sqlstring>
+      Select
+      ID,
+      ORDER_CODE,
+      BUYER_ID,
+      BUYER_NAME,
+      BUYER_NAME_ABBR,
+      SENDER_ID,
+      SENDER_NAME,
+      SENDER_NAME_ABBR,
+      TOTAL_SUM,
+      OVER_SUM,
+      SALER_APPROVER_ID,
+      SALER_APPROVER_NAME,
+      SALER_APPROVER_DATE,
+      STATE,
+      TYPE,
+      PURCHASE_DATE,
+      QUICKSEND_LEVEL,
+      SALER_DESCRIPTIONS,
+      BUYER_DESCRIPTIONS,
+      CREATE_USER_NAME,
+      MODIFY_USER_ID,
+      MODIFY_USER_NAME,
+      CREATE_USER_ID,
+      PURCHASE_ID,
+      PURCHASE_CODE
+      From HC_ORD_ORDER
+      Where STATE != '6' AND SYNC_STATE ='0'
+    </sqlstring>
+    <Pk>
+      ID
+    </Pk>
+    <SendNow>1</SendNow>
+  </sql>
+
+
+
+  <!--订单明细表-->
+  <sql table="HC_ORD_ORDER_ITEM" >
+    <parameter>订单明细表,下载,0,0</parameter>
+    <sqlstring>
+      SELECT
+      ID,
+      PROJECT_ID,
+      ORDER_ID,
+      PURCHASE_ID,
+      DATA_PRODUCT_ID,
+      PROJECT_PROD_ID,
+      BUYER_ID,
+      BUYER_NAME,
+      BUYER_NAME_ABBR,
+      SALER_ID,
+      SALER_NAME,
+      SALER_NAME_ABBR,
+      SENDER_ID,
+      SENDER_NAME,
+      SENDER_NAME_ABBR,
+      MANUFACTURE_ID,
+      MANUFACTURE_NAME,
+      MANUFACTURE_NAME_ABBR,
+      COMMON_NAME,
+      PRODUCT_NAME,
+      PRODUCT_CODE,
+      SPEC_ID,
+      MODEL_ID,
+      SPEC,
+      MODEL,
+      BRAND,
+      GOODS_NO,
+      BARCODE,
+      STORE_ROOM_ID,
+      STORE_ROOM_NAME,
+      STORE_ROOM_ADDRESS,
+      BASE_MEASURE_SPEC,
+      BASE_MEASURE_MATER,
+      BASE_MEASURE,
+      SEND_MEASURE,
+      SEND_MEASURE_EX,
+      RETAIL_PRICE,
+      TRADE_PRICE,
+      SUM,
+      AMOUNT,
+      OVER_AMOUNT,
+      OVER_SUM,
+      IS_QUICKSEND,
+      ORDER_TYPE,
+      STATE,
+      BALANCE_ID,
+      BALANCE_NAME,
+      BALANCE_EASY,
+      BALANCE_FAST,
+      BALANCE_WUBI,
+      BUYER_DESCRIPTIONS,
+      SALER_DESCRIPTIONS,
+      CREATE_USER_ID,
+      CREATE_USER_NAME,
+      MODIFY_USER_ID,
+      MODIFY_USER_NAME,
+      PURCHASE_ITEM_ID,
+      ORIGINAL_ITEM_ID,
+      PARENT_ITEM_ID
+      FROM HC_ORD_ORDER_ITEM
+      WHERE STATE != '3' AND SYNC_STATE = '0'
+    </sqlstring>
+    <Pk>
+      ID
+    </Pk>
+    <SendNow>1</SendNow>
+  </sql>
+
+  <!--订单备货表-->
+  <sql table="HC_ORD_ORDER_STOCKUP" >
+    <parameter>订单备货表,下载,0,0</parameter>
+    <sqlstring>
+      SELECT
+      ID,
+      DATA_PRODUCT_ID,
+      PROJECT_ID,
+      ORDER_ID,
+      ORDER_ITEM_ID,
+      PROJECT_PROD_ID,
+      STOCKUP_QTY,
+      READY_FLAG,
+      GOODS_NO,
+      BARCODE,
+      PBNO,
+      SEND_BATCH_NO,
+      INSTORE_BATCH_NO,
+      CREATE_USER_ID,
+      CREATE_USER_NAME,
+      MODIFY_USER_ID,
+      MODIFY_USER_NAME
+      FROM HC_ORD_ORDER_STOCKUP
+      WHERE SYNC_STATE = '0'
+    </sqlstring>
+    <Pk>
+      ID
+    </Pk>
+    <SendNow>0</SendNow>
+  </sql>
+
+  <!--到货表-->
+  <sql table="HC_ORD_ORDER_RECEIVE" >
+    <parameter>到货表,下载,0,0</parameter>
+    <sqlstring>
+      SELECT
+      ID,
+      DATA_PRODUCT_ID,
+      PROJECT_ID,
+      TYPE,
+      CODE,
+      PROJECT_PRODUCT_ID,
+      ORDER_ID,
+      ORDER_ITEM_ID,
+      INVOICE_ID,
+      GOODS_NO,
+      BARCODE,
+      PBNO,
+      SEND_BATCH_NO,
+      INSTORE_BATCH_NO,
+      STORE_ROOM_ID,
+      STORE_ROOM_NAME,
+      ARRIVAL_ADDRESS,
+      ARRIVE_DATE,
+      PRICE,
+      FACT_AMOUNT,
+      FACT_SUM,
+      RETURN_AMOUNT,
+      RETURN_SUM,
+      CREATE_USER_ID,
+      CREATE_USER_NAME,
+      MODIFY_USER_ID,
+      MODIFY_USER_NAME,
+      DESCRIPTIONS,
+      STOCKUP_ID
+      FROM HC_ORD_ORDER_RECEIVE
+      WHERE SYNC_STATE = '0'
+    </sqlstring>
+    <Pk>
+      ID
+    </Pk>
+    <SendNow>0</SendNow>
+  </sql>
+
+
+  <!--退货表-->
+  <sql table="HC_ORD_BUYER_RETURN" >
+    <parameter>退货表,下载,0,0</parameter>
+    <sqlstring>
+      SELECT
+      ID,
+      DATA_PRODUCT_ID,
+      PROJECT_ID,
+      CODE,
+      RECEIVE_ID,
+      ORD_ID,
+      ORD_ITEM_ID,
+      PROJECT_PRODUCT_ID,
+      BUYER_ID,
+      BUYER_NAME,
+      BUYER_NAME_ABBR,
+      SALER_ID,
+      SALER_NAME,
+      SALER_NAME_ABBR,
+      SENDER_ID,
+      SENDER_NAME,
+      SENDER_NAME_ABBR,
+      MANUFACTURE_ID,
+      MANUFACTURE_NAME,
+      MANUFACTURE_NAME_ABBR,
+      COMMON_NAME,
+      PRODUCT_NAME,
+      PRODUCT_CODE,
+      GOODS_NO,
+      BARCODE,
+      PBNO,
+      BRAND,
+      SPEC_ID,
+      MODEL_ID,
+      SPEC,
+      MODEL,
+      SEND_BATCH_NO,
+      INSTORE_BATCH_NO,
+      PRICE,
+      SUM,
+      BASE_MEASURE_SPEC,
+      BASE_MEASURE_MATER,
+      BASE_MEASURE,
+      SEND_MEASURE,
+      SEND_MEASURE_EX,
+      AMOUNT,
+      STATE,
+      SEND_OPERATOR_ID,
+      SEND_OPERATOR_NAME,
+      SEND_OPERATOR_DATE,
+      INSTORE_OPERATOR_ID,
+      INSTORE_OPERATOR_NAME,
+      INSTORE_OPERATOR_DATE,
+      BUYER_DESCRIPTIONS,
+      CREATE_USER_ID,
+      CREATE_USER_NAME,
+      MODIFY_USER_ID,
+      MODIFY_USER_NAME,
+      SALER_DESCRIPTIONS
+      FROM HC_ORD_BUYER_RETURN
+      WHERE SYNC_STATE = '0'
+    </sqlstring>
+    <Pk>
+      ID
+    </Pk>
+    <SendNow>0</SendNow>
+  </sql>
+
+  <!--订单结果表-->
+  <sql table="HC_ORD_ORDER_RESULT" >
+    <parameter>订单结果表,下载,0,0</parameter>
+    <sqlstring>
+      SELECT
+      ID,
+      DATA_PRODUCT_ID,
+      PROJECT_ID,
+      PROJECT_PRODUCT_ID,
+      ORDER_ID,
+      ORDER_ITEM_ID,
+      RECEIVE_ID,
+      RETRUN_ID,
+      RESULT_TYPE,
+      TYPE,
+      CODE,
+      INVOICE_ID,
+      BUYER_ID,
+      BUYER_NAME,
+      BUYER_NAME_ABBR,
+      SALER_ID,
+      SALER_NAME,
+      SALER_NAME_ABBR,
+      SENDER_ID,
+      SENDER_NAME,
+      SENDER_NAME_ABBR,
+      MANUFACTURE_ID,
+      MANUFACTURE_NAME,
+      MANUFACTURE_NAME_ABBR,
+      PRODUCT_NAME,
+      PRODUCT_CODE,
+      SPEC_ID,
+      MODEL_ID,
+      SPEC,
+      MODEL,
+      COMMON_NAME,
+      BRAND,
+      GOODS_NO,
+      BARCODE,
+      PBNO,
+      BASE_MEASURE_SPEC,
+      BASE_MEASURE_MATER,
+      BASE_MEASURE,
+      SEND_MEASURE,
+      SEND_MEASURE_EX,
+      SEND_BATCH_NO,
+      INSTORE_BATCH_NO,
+      STORE_ROOM_ID,
+      STORE_ROOM_NAME,
+      ARRIVAL_ADDRESS,
+      ARRIVE_DATE,
+      PRICE,
+      FACT_AMOUNT,
+      FACT_SUM,
+      STATE,
+      SEND_OPERATOR_ID,
+      SEND_OPERATOR_NAME,
+      SEND_OPERATOR_DATE,
+      INSTORE_OPERATOR_ID,
+      INSTORE_OPERATOR_NAME,
+      INSTORE_OPERATOR_DATE,
+      BACK_AMOUNT,
+      BACK_SUM,
+      MODIFY_USER_ID,
+      MODIFY_USER_NAME,
+      DESCRIPTIONS,
+      CREATE_USER_ID,
+      CREATE_USER_NAME
+      FROM HC_ORD_ORDER_RESULT
+      WHERE SYNC_STATE = '0'
+    </sqlstring>
+    <Pk>
+      ID
+    </Pk>
+    <SendNow>0</SendNow>
+  </sql>
+
+  <!--发货单表-->
+  <sql table="HC_ORD_INVOICE_FROM" >
+    <parameter>发货单表,下载,0,0</parameter>
+    <sqlstring>
+      SELECT
+      ID,
+      INVOICE_CODE,
+      BUYER_ID,
+      BUYER_NAME,
+      SENDER_ID,
+      SENDER_NAME,
+      TOTAL_SUM,
+      OVER_SUM,
+      SENDED_DATE,
+      STATE,
+      BUYER_DESCRIPTIONS,
+      CREATE_USER_ID,
+      CREATE_USER_NAME,
+      CREATE_DATE,
+      MODIFY_USER_ID,
+      MODIFY_USER_NAME,
+      SALER_DESCRIPTIONS
+      FROM HC_ORD_INVOICE_FROM
+      WHERE SYNC_STATE = '0'
+    </sqlstring>
+    <Pk>
+      ID
+    </Pk>
+    <SendNow>0</SendNow>
+  </sql>
+
+
+  <!--发货单明细表-->
+  <sql table="HC_ORD_INVOICE_FROM_ITEM" >
+    <parameter>发货单明细表,下载,0,0</parameter>
+    <sqlstring>
+      SELECT
+      ID,
+      DATA_PRODUCT_ID,
+      PROJECT_ID,
+      INVOICE_FROM_ID,
+      PROJECT_PROD_ID,
+      BUYER_ID,
+      SALER_ID,
+      SALER_NAME,
+      SALER_NAME_ABBR,
+      MANUFACTURE_ID,
+      MANUFACTURE_NAME,
+      MANUFACTURE_NAME_ABBR,
+      COMMON_NAME,
+      PRODUCT_NAME,
+      PRODUCT_CODE,
+      SPEC_ID,
+      MODEL_ID,
+      SPEC,
+      MODEL,
+      BRAND,
+      GOODS_NO,
+      BARCODE,
+      BATCH_NO,
+      VALID_DATE,
+      STORE_ROOM_ID,
+      STORE_ROOM_NAME,
+      STORE_ROOM_ADDRESS,
+      BASE_MEASURE,
+      BASE_MEASURE_SPEC,
+      BASE_MEASURE_MATER,
+      SEND_MEASURE,
+      SEND_MEASURE_EX,
+      RETAIL_PRICE,
+      TRADE_PRICE,
+      AMOUNT,
+      SUM,
+      OVER_AMOUNT,
+      OVER_SUM,
+      STATE,
+      BUYER_DESCRIPTIONS,
+      BALANCE_ID,
+      BALANCE_NAME,
+      BALANCE_EASY,
+      BALANCE_FAST,
+      BALANCE_WUBI,
+      CREATE_USER_ID,
+      CREATE_USER_NAME,
+      CREATE_DATE,
+      MODIFY_USER_ID,
+      MODIFY_USER_NAME,
+      SALER_DESCRIPTIONS,
+      PBNO,
+      SEND_BATCH_NO,
+      INSTORE_BATCH_NO
+      FROM HC_ORD_INVOICE_FROM_ITEM
+      WHERE SYNC_STATE = '0'
+    </sqlstring>
+    <Pk>
+      ID
+    </Pk>
+    <SendNow>0</SendNow>
+  </sql>
+
+  <!--备货单表-->
+  <sql table="HC_ORD_ORD_STOCK" >
+    <parameter>备货单表,下载,0,0</parameter>
+    <sqlstring>
+      SELECT
+      ID,
+      CODE,
+      BUYER_ID,
+      BUYER_NAME,
+      BUYER_NAME_ABBR,
+      SENDER_ID,
+      SENDER_NAME,
+      SENDER_NAME_ABBR,
+      STATE,
+      REMARK,
+      CREATE_USER_NAME,
+      CREATE_DATE,
+      MODIFY_USER_ID,
+      MODIFY_USER_NAME,
+      CREATE_USER_ID,
+      SEND_USER_ID,
+      SEND_USER_NAME,
+      SEND_DATE
+      FROM HC_ORD_ORD_STOCK
+      WHERE SYNC_STATE = '0'
+    </sqlstring>
+    <Pk>
+      ID
+    </Pk>
+    <SendNow>0</SendNow>
+  </sql>
+
+  <!--备货单明细表-->
+  <sql table="HC_ORD_ORD_STOCK_ITEM" >
+    <parameter>备货单明细表,下载,0,0</parameter>
+    <sqlstring>
+      SELECT
+      ID,
+      DATA_PRODUCT_ID,
+      PROJECT_ID,
+      STOCK_ID,
+      PROJECT_PROD_ID,
+      MANUFACTURE_ID,
+      MANUFACTURE_NAME,
+      MANUFACTURE_NAME_ABBR,
+      COMMON_NAME,
+      PRODUCT_NAME,
+      PRODUCT_CODE,
+      BRAND,
+      SPEC_ID,
+      MODEL_ID,
+      SPEC,
+      MODEL,
+      GOODS_NO,
+      BARCODE,
+      BATCH_NO,
+      VALID_DATE,
+      NUM,
+      STATE,
+      REMARK,
+      CREATE_USER_ID,
+      CREATE_USER_NAME,
+      CREATE_DATE,
+      MODIFY_USER_ID,
+      MODIFY_USER_NAME,
+      PBNO,
+      SEND_BATCH_NO,
+      INSTORE_BATCH_NO
+      FROM HC_ORD_ORD_STOCK_ITEM
+      WHERE SYNC_STATE = '0'
+    </sqlstring>
+    <Pk>
+      ID
+    </Pk>
+    <SendNow>0</SendNow>
+  </sql>
+
+
+  <!--二级库存表-->
+  <sql table="HC_ORD_SECOND_AYRLNV" >
+    <parameter>二级库存表,下载,0,0</parameter>
+    <sqlstring>
+      SELECT
+      ID,
+      DATA_PRODUCT_ID,
+      PROJECT_ID,
+      BUYER_ID,
+      SALER_ID,
+      SENDER_ID,
+      PBNO,
+      SEND_BATCH_NO,
+      INSTORE_BATCH_NO,
+      SENDER_NAME,
+      PROJECT_PRODUCT_ID,
+      SPEC_ID,
+      MODEL_ID,
+      BARCODE,
+      PRICE,
+      BATCH_NO,
+      VALID_DATE,
+      NUM,
+      REMARK,
+      STATE,
+      CREATE_USER_ID,
+      CREATE_USER_NAME,
+      MODIFY_USER_ID,
+      MODIFY_USER_NAME,
+      STOCK_ITEM_ID
+      FROM HC_ORD_SECOND_AYRLNV
+      WHERE SYNC_STATE = '0'
+    </sqlstring>
+    <Pk>
+      ID
+    </Pk>
+    <SendNow>0</SendNow>
+  </sql>
+
+  <!--二级库使用表-->
+  <sql table="HC_ORG_SECOND_AYRLNV_USE" >
+    <parameter>二级库使用表,下载,0,0</parameter>
+    <sqlstring>
+      SELECT
+      ID,
+      SECOND_ID,
+      DATA_PRODUCT_ID,
+      PROJECT_ID,
+      PROJECT_PRODUCT_ID,
+      GOODS_NO,
+      BARCODE,
+      PBNO,
+      SEND_BATCH_NO,
+      INSTORE_BATCH_NO,
+      STORE_ROOM_ID,
+      STORE_ROOM_NAME,
+      ARRIVAL_ADDRESS,
+      ARRIVE_DATE,
+      PRICE,
+      FACT_AMOUNT,
+      FACT_SUM,
+      STATUS,
+      CREATE_USER_ID,
+      CREATE_USER_NAME,
+      MODIFY_USER_ID,
+      MODIFY_USER_NAME,
+      DESCRIPTIONS,
+      BUYER_ID,
+      SENDER_ID
+      FROM HC_ORG_SECOND_AYRLNV_USE
+      WHERE SYNC_STATE = '0'
+    </sqlstring>
+    <Pk>
+      ID
+    </Pk>
+    <SendNow>0</SendNow>
+  </sql>
+
+
+  <!--公告接收用户表-->
+  <sql table="HC_BULLETIN_RECEIVER" >
+    <parameter>公告接收用户表,下载,0,0</parameter>
+    <sqlstring>
+      SELECT
+      ID,
+      PROJECT_ID,
+      BULLETIN_ID,
+      RECEIVER_ID,
+      IS_READ,
+      CREATE_USER_NAME,
+      CREATE_DATE,
+      MODIFY_USER_ID,
+      MODIFY_USER_NAME,
+      CREATE_USER_ID
+      FROM HC_BULLETIN_RECEIVER
+      WHERE SYNC_STATE = '0'
+    </sqlstring>
+    <Pk>
+      ID
+    </Pk>
+    <SendNow>0</SendNow>
+  </sql>
+
+
+  <!--公告信息表-->
+  <sql table="HC_BULLETIN_INFO" >
+    <parameter>公告信息表,下载,0,0</parameter>
+    <sqlstring>
+    </sqlstring>
+    <Pk>
+    </Pk>
+    <SendNow>0</SendNow>
+  </sql>
+
+  <!--交易品种分类-->
+  <sql table="HC_PROJECT_PRODUCT_CLASS" >
+    <parameter>交易品种分类,下载,0,0</parameter>
+    <sqlstring>
+    </sqlstring>
+    <Pk>
+    </Pk>
+    <SendNow>0</SendNow>
+  </sql>
+
+
+  <!--交易品种分类内容-->
+  <sql table="HC_PROJECT_PROD_CLASS_CONTENT" >
+    <parameter>交易品种分类内容,下载,0,0</parameter>
+    <sqlstring>
+    </sqlstring>
+    <Pk>
+    </Pk>
+    <SendNow>0</SendNow>
+  </sql>
+
+
+  <!--买方交易方式配置表-->
+  <sql table="HC_PROJECT_PROD_CLASS_CONFIG" >
+    <parameter>买方交易方式配置表,下载,0,0</parameter>
+    <sqlstring>
+    </sqlstring>
+    <Pk>
+    </Pk>
+    <SendNow>0</SendNow>
+  </sql>
+
+  <!--自定义编码及大包装-->
+  <sql table="HC_SELF_DEFINE_INFO" >
+    <parameter>自定义编码及大包装,下载,0,0</parameter>
+    <sqlstring>
+      SELECT
+      ID,
+      ORGID,
+      HIT_COMM_ID,
+      PRODUCT_MNEMONIC,
+      MODIFY_USERID,
+      SELF_PACKAGE,
+      ALIAS,
+      ALIAS_PINYIN
+      FROM HC_SELF_DEFINE_INFO
+      WHERE SYNC_STATE = '0'
+    </sqlstring>
+    <Pk>
+      ID
+    </Pk>
+    <SendNow>0</SendNow>
+  </sql>
+
+  <!--产品匹配表-->
+  <sql table="HC_PRODUCT_MAP" >
+    <parameter>产品匹配表,下载,0,0</parameter>
+    <sqlstring>
+      SELECT
+      ID,
+      MAP_ORGTYPE,
+      MAP_ORGID,
+      PROJECT_PROD_ID,
+      HH_MODE_ID,
+      HH_SPEC_ID,
+      PRODUCT_ID,
+      HIS_PRODUCT_ID,
+      COMMON_NAME,
+      PRODUCT_NAME,
+      COMMERCE_NAME,
+      BRAND,
+      MODE_ID,
+      MODE_NAME,
+      SPEC_ID,
+      SPEC,
+      BASE_MEASURE,
+      BASE_MEASURE_SPEC,
+      BASE_MEASURE_MATE,
+      STAND_RATE,
+      FACTORY_CODE,
+      FACTORY_Name,
+      SALER_CODE,
+      SALER_NAME,
+      SENDER_CODE,
+      SENDER_NAME,
+      STOCK_ID,
+      STOCK_NAME,
+      MODIFY_USERID,
+      PROCESS_FLAG,
+      SYNC_STATE,
+      REMARK,
+      ISMAP
+      FROM HC_PRODUCT_MAP
+      WHERE SYNC_STATE = '0'
+    </sqlstring>
+    <Pk>
+      ID
+    </Pk>
+    <SendNow>0</SendNow>
+  </sql>
+
+  <!--企业匹配表-->
+  <sql table="HC_CORP_MAP" >
+    <parameter>企业匹配表,下载,0,0</parameter>
+    <sqlstring>
+      SELECT
+      ID,
+      MAP_ORGTYPE,
+      MAP_ORGID,
+      ORG_ID,
+      HIS_ORG_ID,
+      FULL_NAME,
+      EASY_NAME,
+      ADDRESS,
+      POSTCODE,
+      TELPHONE,
+      LINKMAN,
+      ISFACTORY,
+      ISSENDER,
+      ISSALER,
+      MODIFY_USERID,
+      PROCESS_FLAG,
+      SYNC_STATE,
+      REMARK,
+      ISMAP
+      FROM HC_CORP_MAP
+      WHERE SYNC_STATE = '0'
+    </sqlstring>
+    <Pk>
+      ID
+    </Pk>
+    <SendNow>0</SendNow>
+  </sql>
+  
+</sync>

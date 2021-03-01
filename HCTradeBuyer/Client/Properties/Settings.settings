@@ -1,0 +1,94 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="Emedchina.TradeAssistant.Client.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="ConnectionString" Type="(Connection string)" Scope="Application">
+      <DesignTimeValue Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;SerializableConnectionString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;ConnectionString&gt;Data Source=testcen;Persist Security Info=True;User ID=zh_ndmain_dev;Password=zh_ndmain_dev;Unicode=True&lt;/ConnectionString&gt;
+  &lt;ProviderName&gt;System.Data.OracleClient&lt;/ProviderName&gt;
+&lt;/SerializableConnectionString&gt;</DesignTimeValue>
+      <Value Profile="(Default)">Data Source=testcen;Persist Security Info=True;User ID=zh_ndmain_dev;Password=zh_ndmain_dev;Unicode=True</Value>
+    </Setting>
+    <Setting Name="HelpUrl" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Help.chm</Value>
+    </Setting>
+    <Setting Name="userInfoEdit" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="SyncLimit" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="TradeAssistantSalerConnectionString" Type="(Connection string)" Scope="Application">
+      <DesignTimeValue Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;SerializableConnectionString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;ConnectionString&gt;Provider=Microsoft.Jet.OLEDB.4.0;Data Source=|DataDirectory|\DB\TradeAssistantSaler.mdb;Persist Security Info=True&lt;/ConnectionString&gt;
+  &lt;ProviderName&gt;System.Data.OleDb&lt;/ProviderName&gt;
+&lt;/SerializableConnectionString&gt;</DesignTimeValue>
+      <Value Profile="(Default)">Provider=Microsoft.Jet.OLEDB.4.0;Data Source=|DataDirectory|\DB\TradeAssistantSaler.mdb;Persist Security Info=True</Value>
+    </Setting>
+    <Setting Name="ConnectionString1" Type="(Connection string)" Scope="Application">
+      <DesignTimeValue Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;SerializableConnectionString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;ConnectionString&gt;Data Source=testcen;Persist Security Info=True;User ID=zh_ndmain_dev;Password=zh_ndmain_dev;Unicode=True&lt;/ConnectionString&gt;
+  &lt;ProviderName&gt;System.Data.OracleClient&lt;/ProviderName&gt;
+&lt;/SerializableConnectionString&gt;</DesignTimeValue>
+      <Value Profile="(Default)">Data Source=testcen;Persist Security Info=True;User ID=zh_ndmain_dev;Password=zh_ndmain_dev;Unicode=True</Value>
+    </Setting>
+    <Setting Name="DirSearch" Type="System.String" Scope="User">
+      <Value Profile="(Default)">portal?isMenuFlag=1&amp;handlerId=contract.conmerchandisedir&amp;operate=List&amp;orgTypeFlag=2&amp;currModuleID=USER00000000000000580669</Value>
+    </Setting>
+    <Setting Name="OrderList" Type="System.String" Scope="User">
+      <Value Profile="(Default)">portal?isMenuFlag=1&amp;handlerId=trade.orderquery&amp;operate=OrderItemList&amp;currModuleID=USER00000000000000660664</Value>
+    </Setting>
+    <Setting Name="ContractList" Type="System.String" Scope="User">
+      <Value Profile="(Default)">portal?isMenuFlag=1&amp;handlerId=contract.contractquery&amp;operate=ConList&amp;currModuleID=USER00000000000000580671</Value>
+    </Setting>
+    <Setting Name="UserPassWord" Type="System.String" Scope="User">
+      <Value Profile="(Default)">portal?isMenuFlag=1&amp;handlerId=user.user&amp;operate=UpdateUserInfo&amp;updatePassOnly=true&amp;currModuleID=USER00000000000000581649</Value>
+    </Setting>
+    <Setting Name="ContractSign" Type="System.String" Scope="User">
+      <Value Profile="(Default)">portal?isMenuFlag=1&amp;handlerId=contract.contractsign&amp;operate=ConList&amp;currModuleID=USER00000000000000580670</Value>
+    </Setting>
+    <Setting Name="ContractUpdate" Type="System.String" Scope="User">
+      <Value Profile="(Default)">portal?isMenuFlag=1&amp;handlerId=contract.contractchange&amp;operate=ConChgList&amp;currModuleID=INIT10000000000000000028</Value>
+    </Setting>
+    <Setting Name="ReturnList" Type="System.String" Scope="User">
+      <Value Profile="(Default)">portal?isMenuFlag=1&amp;handlerId=trade.sellerreturn&amp;operate=ListConfirm&amp;currModuleID=USER00000000000000580674</Value>
+    </Setting>
+    <Setting Name="NoticeList" Type="System.String" Scope="User">
+      <Value Profile="(Default)">portal?isMenuFlag=1&amp;handlerId=gpo.member.notice&amp;operate=List&amp;currModuleID=USER00000000000000619845</Value>
+    </Setting>
+    <Setting Name="SmsNo" Type="System.String" Scope="User">
+      <Value Profile="(Default)">portal?isMenuFlag=1&amp;handlerId=trade.saler.sms&amp;operate=SmsUserList&amp;currModuleID=USER00000000000000241086</Value>
+    </Setting>
+    <Setting Name="WebSite" Type="System.String" Scope="User">
+      <Value Profile="(Default)">http://210.51.183.138/yunnan/</Value>
+    </Setting>
+    <Setting Name="UpdateUrl" Type="System.String" Scope="User">
+      <Value Profile="(Default)">http://202.96.54.112:8867/</Value>
+    </Setting>
+    <Setting Name="userInfo" Type="System.String" Scope="User">
+      <Value Profile="(Default)">portal?isMenuFlag=1&amp;handlerId=user.user&amp;operate=UpdateUserInfo&amp;currModuleID=USER00000000000000581659</Value>
+    </Setting>
+    <Setting Name="TempTradeConnectionString" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Data Source=.\SQLEXPRESS;AttachDbFilename=|DataDirectory|\DB\TradeAssistant.mdf;Integrated Security=True;Connect Timeout=30;Pooling=false;User Instance=True</Value>
+    </Setting>
+    <Setting Name="TradeAssistantConnectionString" Type="(Connection string)" Scope="Application">
+      <DesignTimeValue Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;SerializableConnectionString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;ConnectionString&gt;Data Source=.\SQLEXPRESS;AttachDbFilename=|DataDirectory|\bin\Debug\DB\TradeAssistant.mdf;Integrated Security=True;User Instance=True&lt;/ConnectionString&gt;
+  &lt;ProviderName&gt;System.Data.SqlClient&lt;/ProviderName&gt;
+&lt;/SerializableConnectionString&gt;</DesignTimeValue>
+      <Value Profile="(Default)">Data Source=.\SQLEXPRESS;AttachDbFilename=|DataDirectory|\bin\Debug\DB\TradeAssistant.mdf;Integrated Security=True;User Instance=True</Value>
+    </Setting>
+    <Setting Name="TempTradeConnectionString1" Type="(Connection string)" Scope="Application">
+      <DesignTimeValue Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;SerializableConnectionString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;ConnectionString&gt;Data Source=.\SQLEXPRESS;AttachDbFilename=|DataDirectory|\DB\TempTrade.mdf;Integrated Security=True;User Instance=True&lt;/ConnectionString&gt;
+  &lt;ProviderName&gt;System.Data.SqlClient&lt;/ProviderName&gt;
+&lt;/SerializableConnectionString&gt;</DesignTimeValue>
+      <Value Profile="(Default)">Data Source=.\SQLEXPRESS;AttachDbFilename=|DataDirectory|\DB\TempTrade.mdf;Integrated Security=True;User Instance=True</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>
